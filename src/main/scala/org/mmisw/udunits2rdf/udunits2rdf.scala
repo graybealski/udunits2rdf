@@ -9,16 +9,26 @@ import com.hp.hpl.jena.vocabulary.XSD
 import java.io.PrintWriter
 
 
+
+abstract class Converter {
+  /**
+   * @return  Resulting Jena model
+   */
+  def convert: Model
+
+  def getStats: String
+}
+
 /**
  * UDUnits to RDF converter.
  *
  * @param xmlIn       Input XML
  * @param namespace   Namespace for the generated ontology
  */
-class Converter(xmlIn: Node, namespace: String) {
+class UnitConverter(xmlIn: Node, namespace: String) extends Converter {
   require(namespace.matches(".*(/|#)$"), "namespace must end with / or #")
 
-  def createModel: Model = {
+  private def createModel: Model = {
     val model = ModelFactory.createDefaultModel()
     model.setNsPrefix("", namespace)
     model
@@ -33,7 +43,7 @@ class Converter(xmlIn: Node, namespace: String) {
   model.add(model.createStatement(UnitClass, RDF.`type`, OWL.Class))
   model.add(model.createStatement(UnitClass, RDFS.label, "Unit"))
 
-  object stats {
+  private object stats {
     var numUnitsInInput = 0
     var numUnitsInOutput = 0
     var numUnitsWithNoName = 0
@@ -83,10 +93,88 @@ class Converter(xmlIn: Node, namespace: String) {
     model
   }
 
-  def _createUnitInstance(uri: String): Resource = {
+  def getStats = stats.toString
+
+  private def _createUnitInstance(uri: String): Resource = {
     val concept = model.createResource(uri, UnitClass)
     model.add(model.createStatement(concept, RDF.`type`, UnitClass))
     stats.numUnitsInOutput += 1
+    concept
+  }
+}
+
+/**
+ * UDUnits prefixes to RDF converter.
+ *
+ * @param xmlIn       Input XML
+ * @param namespace   Namespace for the generated ontology
+ */
+class PrefixConverter(xmlIn: Node, namespace: String) extends Converter {
+  require(namespace.matches(".*(/|#)$"), "namespace must end with / or #")
+
+  private def createModel: Model = {
+    val model = ModelFactory.createDefaultModel()
+    model.setNsPrefix("", namespace)
+    model
+  }
+
+  private val model = createModel
+  private val PrefixClass: Resource = model.createResource(namespace + "Prefix")
+  private val valueProp  = model.createProperty(namespace + "value")
+  private val symbolProp = model.createProperty(namespace + "symbol")
+
+  model.add(model.createStatement(PrefixClass, RDF.`type`, OWL.Class))
+  model.add(model.createStatement(PrefixClass, RDFS.label, "Prefix"))
+
+  private object stats {
+    var numPrefixesInInput = 0
+    var numPrefixesInOutput = 0
+    var numPrefixesWithNoName = 0
+
+    override def toString =
+      s"""  numPrefixesInInput    = $numPrefixesInInput
+         |  numPrefixesInOutput   = $numPrefixesInOutput
+         |  numPrefixesWithNoName = $numPrefixesWithNoName
+       """.stripMargin
+  }
+
+  /**
+   * @return  Resulting Jena model
+   */
+  def convert: Model = {
+
+    for (prefix <- xmlIn \\ "prefix") {
+      stats.numPrefixesInInput += 1
+
+      val name = (prefix \ "name").text.trim
+      if (name.length > 0) {
+        createConcept(name, prefix)
+      }
+      else {
+        stats.numPrefixesWithNoName += 1
+      }
+    }
+
+    def createConcept(id: String, unit: Node) = {
+      val concept = _createUnitInstance(namespace + id)
+
+      for (value <- unit \\ "value") {
+        concept.addProperty(valueProp, value.text.trim)
+      }
+      for (symbol <- unit \\ "symbol") {
+        concept.addProperty(symbolProp, symbol.text.trim)
+      }
+    }
+
+    model
+  }
+
+  def getStats = stats.toString
+
+  private def _createUnitInstance(uri: String): Resource = {
+    val concept = model.createResource(uri, PrefixClass)
+    model.add(model.createStatement(concept, RDF.`type`, PrefixClass))
+    stats.numPrefixesInOutput += 1
     concept
   }
 }
@@ -143,7 +231,8 @@ object udunits2rdf extends App {
     val namespace   = opts("namespace")
 
     val xmlIn = scala.xml.XML.loadFile(xmlFilename)
-    val converter = new Converter(xmlIn, namespace)
+    val converter = if (xmlFilename.endsWith("prefixes.xml")) new PrefixConverter(xmlIn, namespace)
+                    else new UnitConverter(xmlIn, namespace)
     val model = converter.convert
 
     def getStats = {
@@ -153,7 +242,7 @@ object udunits2rdf extends App {
            |output: $rdfFilename
            |
            |conversion stats:
-           |${converter.stats}
+           |${converter.getStats}
         """.stripMargin
     }
 
