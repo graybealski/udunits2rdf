@@ -1,6 +1,6 @@
 #! /bin/bash
 
-authority="ucar_test"
+authority="mmitest"
 echo "will use authority=$authority"
 
 libdir=https://raw.githubusercontent.com/Unidata/UDUNITS-2/master/lib

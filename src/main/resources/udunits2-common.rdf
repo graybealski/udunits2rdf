@@ -2,9 +2,9 @@
 <rdf:RDF
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
-    xmlns="http://mmisw.org/ont/ucar_test/udunits2-common/"
+    xmlns="http://mmisw.org/ont/mmitest/udunits2-common/"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xml:base="http://mmisw.org/ont/ucar_test/udunits2-common/">
+  xml:base="http://mmisw.org/ont/mmitest/udunits2-common/">
   <owl:Class rdf:about="Unit">
     <rdfs:label>Unit</rdfs:label>
   </owl:Class>

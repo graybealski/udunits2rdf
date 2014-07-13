@@ -2,52 +2,16 @@
 <rdf:RDF
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
-    xmlns="http://mmisw.org/ont/ucar_test/udunits2-accepted/"
+    xmlns="http://mmisw.org/ont/mmitest/udunits2-accepted/"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xml:base="http://mmisw.org/ont/ucar_test/udunits2-accepted/">
+  xml:base="http://mmisw.org/ont/mmitest/udunits2-accepted/">
   <owl:Class rdf:about="Unit">
     <rdfs:label>Unit</rdfs:label>
   </owl:Class>
-  <Unit rdf:about="minute">
-    <symbol>min</symbol>
-    <def>60 s</def>
-  </Unit>
-  <Unit rdf:about="hour">
-    <symbol>hr</symbol>
-    <symbol>h</symbol>
-    <def>60 min</def>
-  </Unit>
-  <Unit rdf:about="electronvolt">
-    <alias>electron_volt</alias>
-    <symbol>eV</symbol>
-    <def>1.60217733e-19 J</def>
-  </Unit>
-  <Unit rdf:about="unified_atomic_mass_unit">
-    <alias>amu</alias>
-    <alias>atomicmassunit</alias>
-    <alias>atomic_mass_unit</alias>
-    <symbol>u</symbol>
-    <def>1.6605402e-27 kg</def>
-  </Unit>
   <Unit rdf:about="metric_ton">
     <alias>tonne</alias>
     <symbol>t</symbol>
     <def>1000 kg</def>
-  </Unit>
-  <Unit rdf:about="arc_degree">
-    <alias>arcdeg</alias>
-    <alias>degree</alias>
-    <alias>angular_degree</alias>
-    <symbol>°</symbol>
-    <def>(pi/180) rad</def>
-  </Unit>
-  <Unit rdf:about="arc_second">
-    <alias>arcsec</alias>
-    <alias>arcsecond</alias>
-    <alias>angular_second</alias>
-    <symbol>″</symbol>
-    <symbol>"</symbol>
-    <def>'/60</def>
   </Unit>
   <Unit rdf:about="arc_minute">
     <alias>arcmin</alias>
@@ -57,14 +21,50 @@
     <symbol>'</symbol>
     <def>°/60</def>
   </Unit>
+  <Unit rdf:about="hour">
+    <symbol>hr</symbol>
+    <symbol>h</symbol>
+    <def>60 min</def>
+  </Unit>
+  <Unit rdf:about="arc_second">
+    <alias>arcsec</alias>
+    <alias>arcsecond</alias>
+    <alias>angular_second</alias>
+    <symbol>″</symbol>
+    <symbol>"</symbol>
+    <def>'/60</def>
+  </Unit>
   <Unit rdf:about="day">
     <symbol>d</symbol>
     <def>24 h</def>
+  </Unit>
+  <Unit rdf:about="electronvolt">
+    <alias>electron_volt</alias>
+    <symbol>eV</symbol>
+    <def>1.60217733e-19 J</def>
+  </Unit>
+  <Unit rdf:about="arc_degree">
+    <alias>arcdeg</alias>
+    <alias>degree</alias>
+    <alias>angular_degree</alias>
+    <symbol>°</symbol>
+    <def>(pi/180) rad</def>
+  </Unit>
+  <Unit rdf:about="unified_atomic_mass_unit">
+    <alias>amu</alias>
+    <alias>atomicmassunit</alias>
+    <alias>atomic_mass_unit</alias>
+    <symbol>u</symbol>
+    <def>1.6605402e-27 kg</def>
   </Unit>
   <Unit rdf:about="liter">
     <alias>litre</alias>
     <symbol>l</symbol>
     <symbol>L</symbol>
     <def>dm^3</def>
+  </Unit>
+  <Unit rdf:about="minute">
+    <symbol>min</symbol>
+    <def>60 s</def>
   </Unit>
 </rdf:RDF>

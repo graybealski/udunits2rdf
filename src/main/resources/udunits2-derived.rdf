@@ -1,95 +1,95 @@
 <?xml version="1.0"?>
 <rdf:RDF
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns="http://mmisw.org/ont/ucar_test/udunits2-derived/"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns="http://mmisw.org/ont/mmitest/udunits2-derived/"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xml:base="http://mmisw.org/ont/ucar_test/udunits2-derived/">
+  xml:base="http://mmisw.org/ont/mmitest/udunits2-derived/">
   <owl:Class rdf:about="Unit">
     <rdfs:label>Unit</rdfs:label>
   </owl:Class>
-  <Unit rdf:about="tesla">
-    <symbol>T</symbol>
-    <def>Wb/m^2</def>
+  <Unit rdf:about="siemens">
+    <symbol>S</symbol>
+    <def>A/V</def>
   </Unit>
   <Unit rdf:about="katal">
     <symbol>kat</symbol>
     <def>mol/s</def>
   </Unit>
+  <Unit rdf:about="gram">
+    <symbol>g</symbol>
+    <def>1e-3 kg</def>
+  </Unit>
   <Unit rdf:about="newton">
     <symbol>N</symbol>
     <def>m.kg/s^2</def>
-  </Unit>
-  <Unit rdf:about="volt">
-    <symbol>V</symbol>
-    <def>W/A</def>
-  </Unit>
-  <Unit rdf:about="siemens">
-    <symbol>S</symbol>
-    <def>A/V</def>
   </Unit>
   <Unit rdf:about="henry">
     <symbol>H</symbol>
     <def>Wb/A</def>
   </Unit>
-  <Unit rdf:about="steradian">
-    <symbol>sr</symbol>
-    <def>rad^2</def>
-  </Unit>
-  <Unit rdf:about="degree_Celsius">
-    <symbol>°C</symbol>
-    <def>K @ 273.15</def>
-  </Unit>
-  <Unit rdf:about="gray">
-    <symbol>Gy</symbol>
-    <def>J/kg</def>
-  </Unit>
   <Unit rdf:about="weber">
     <symbol>Wb</symbol>
     <def>V.s</def>
-  </Unit>
-  <Unit rdf:about="lux">
-    <symbol>lx</symbol>
-    <def>lm/m^2</def>
-  </Unit>
-  <Unit rdf:about="watt">
-    <symbol>W</symbol>
-    <def>J/s</def>
   </Unit>
   <Unit rdf:about="pascal">
     <symbol>Pa</symbol>
     <def>N/m^2</def>
   </Unit>
+  <Unit rdf:about="farad">
+    <symbol>F</symbol>
+    <def>C/V</def>
+  </Unit>
   <Unit rdf:about="coulomb">
     <symbol>C</symbol>
     <def>s.A</def>
+  </Unit>
+  <Unit rdf:about="watt">
+    <symbol>W</symbol>
+    <def>J/s</def>
+  </Unit>
+  <Unit rdf:about="volt">
+    <symbol>V</symbol>
+    <def>W/A</def>
+  </Unit>
+  <Unit rdf:about="gray">
+    <symbol>Gy</symbol>
+    <def>J/kg</def>
   </Unit>
   <Unit rdf:about="lumen">
     <symbol>lm</symbol>
     <def>cd.sr</def>
   </Unit>
-  <Unit rdf:about="joule">
-    <symbol>J</symbol>
-    <def>N.m</def>
+  <Unit rdf:about="hertz">
+    <symbol>Hz</symbol>
+    <def>1/s</def>
+  </Unit>
+  <Unit rdf:about="steradian">
+    <symbol>sr</symbol>
+    <def>rad^2</def>
   </Unit>
   <Unit rdf:about="ohm">
     <symbol>Ω</symbol>
     <symbol>Ω</symbol>
     <def>V/A</def>
   </Unit>
-  <Unit rdf:about="hertz">
-    <symbol>Hz</symbol>
-    <def>1/s</def>
-  </Unit>
-  <Unit rdf:about="gram">
-    <symbol>g</symbol>
-    <def>1e-3 kg</def>
-  </Unit>
-  <Unit rdf:about="farad">
-    <symbol>F</symbol>
-    <def>C/V</def>
+  <Unit rdf:about="tesla">
+    <symbol>T</symbol>
+    <def>Wb/m^2</def>
   </Unit>
   <Unit rdf:about="radian">
     <symbol>rad</symbol>
+  </Unit>
+  <Unit rdf:about="joule">
+    <symbol>J</symbol>
+    <def>N.m</def>
+  </Unit>
+  <Unit rdf:about="lux">
+    <symbol>lx</symbol>
+    <def>lm/m^2</def>
+  </Unit>
+  <Unit rdf:about="degree_Celsius">
+    <symbol>°C</symbol>
+    <def>K @ 273.15</def>
   </Unit>
 </rdf:RDF>
