@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns="http://mmisw.org/ont/ucar_test/udunits2-base/"
+  xml:base="http://mmisw.org/ont/ucar_test/udunits2-base/">
+  <owl:Class rdf:about="Unit">
+    <rdfs:label>Unit</rdfs:label>
+  </owl:Class>
+  <Unit rdf:about="second">
+    <symbol>s</symbol>
+  </Unit>
+  <Unit rdf:about="kelvin">
+    <symbol>K</symbol>
+  </Unit>
+  <Unit rdf:about="ampere">
+    <symbol>A</symbol>
+  </Unit>
+  <Unit rdf:about="candela">
+    <symbol>cd</symbol>
+  </Unit>
+  <Unit rdf:about="mole">
+    <symbol>mol</symbol>
+  </Unit>
+  <Unit rdf:about="meter">
+    <alias>metre</alias>
+    <symbol>m</symbol>
+  </Unit>
+  <Unit rdf:about="kilogram">
+    <symbol>kg</symbol>
+  </Unit>
+</rdf:RDF>

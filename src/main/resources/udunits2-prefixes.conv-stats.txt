@@ -1,0 +1,11 @@
+udunits2rdf conversion
+date:   Sun Jul 13 14:52:40 PDT 2014
+input:  src/main/resources/udunits2-prefixes.xml
+output: src/main/resources/udunits2-prefixes.rdf
+
+conversion stats:
+  numPrefixesInInput    = 20
+  numPrefixesInOutput   = 20
+  numPrefixesWithNoName = 0
+       
+        
