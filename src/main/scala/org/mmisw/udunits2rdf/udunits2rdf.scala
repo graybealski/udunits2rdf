@@ -1,16 +1,45 @@
 package org.mmisw.udunits2rdf
 import scala.xml.Node
 
-import com.hp.hpl.jena.rdf.model.{ModelFactory, Model, Resource}
+import com.hp.hpl.jena.rdf.model.{Property, ModelFactory, Model, Resource}
 import com.hp.hpl.jena.vocabulary.OWL
 import com.hp.hpl.jena.vocabulary.RDF
 import com.hp.hpl.jena.vocabulary.RDFS
-import com.hp.hpl.jena.vocabulary.XSD
 import java.io.PrintWriter
 
 
+/**
+ * Base converter class for the unit and prefix subclasses.
+ *
+ * @param xmlIn       Input XML
+ * @param namespace   Namespace for the generated ontology
+ */
+abstract class Converter(xmlIn: Node, namespace: String) {
+  require(namespace.matches(".*(/|#)$"), "namespace must end with / or #")
 
-abstract class Converter {
+  protected def createModel: Model = {
+    val model = ModelFactory.createDefaultModel()
+    model.setNsPrefix("", namespace)
+    model
+  }
+
+  protected val model = createModel
+
+  protected def createResource(name: String): Resource = {
+    model.createResource(namespace + name)
+  }
+
+  protected def createProperty(name: String): Property = {
+    model.createProperty(namespace + name)
+  }
+
+  protected def createClass(name: String): Resource = {
+    val clazz  = createResource(name)
+    model.add(model.createStatement(clazz, RDF.`type`, OWL.Class))
+    model.add(model.createStatement(clazz, RDFS.label, name))
+    clazz
+  }
+
   /**
    * @return  Resulting Jena model
    */
@@ -20,111 +49,82 @@ abstract class Converter {
 }
 
 /**
- * UDUnits to RDF converter.
- *
- * @param xmlIn       Input XML
- * @param namespace   Namespace for the generated ontology
+ * UDUnits to RDF converter. A Unit in the XML will be converted into multiple Unit
+ * instances in the model, each instance corresponding to a name or alias associated
+ * to the unit. Each instance will be associates with all its aliases via an alias property.
  */
-class UnitConverter(xmlIn: Node, namespace: String) extends Converter {
-  require(namespace.matches(".*(/|#)$"), "namespace must end with / or #")
-
-  private def createModel: Model = {
-    val model = ModelFactory.createDefaultModel()
-    model.setNsPrefix("", namespace)
-    model
-  }
-
-  private val model = createModel
-  private val UnitClass: Resource = model.createResource(namespace + "Unit")
-  private val defProp    = model.createProperty(namespace + "def")
-  private val symbolProp = model.createProperty(namespace + "symbol")
-  private val aliasProp  = model.createProperty(namespace + "alias")
-
-  model.add(model.createStatement(UnitClass, RDF.`type`, OWL.Class))
-  model.add(model.createStatement(UnitClass, RDFS.label, "Unit"))
+class UnitConverter(xmlIn: Node, namespace: String) extends Converter(xmlIn: Node, namespace: String) {
+  private val UnitClass  = createClass("Unit")
+  private val defProp    = createProperty("def")
+  private val symbolProp = createProperty("symbol")
+  private val aliasProp  = createProperty("alias")
 
   private object stats {
     var numUnitsInInput = 0
     var numUnitsInOutput = 0
-    var numUnitsWithNoName = 0
+    var numUnitsWithNoNameOrAlias = 0
 
     override def toString =
       s"""  numUnitsInInput    = $numUnitsInInput
          |  numUnitsInOutput   = $numUnitsInOutput
-         |  numUnitsWithNoName = $numUnitsWithNoName
+         |  numUnitsWithNoNameOrAlias = $numUnitsWithNoNameOrAlias
        """.stripMargin
   }
 
-  /**
-   * @return  Resulting Jena model
-   */
-  def convert: Model = {
+  private def convertUnit(unit: Node) {
+    // set with all names from the node: the proper names and the aliases.
+    val names: Set[String] = {
+      val names   = (unit \\ "name" \\ "singular") map(_.text.trim)
+      val aliases = (unit \\ "aliases" \\ "name" \\ "singular") map(_.text.trim)
+      (names ++ aliases).toSet
+    }
+    if (names.size > 0) {
+      val name = names.head
+      val instance0 = createUnitInstance(namespace + name, unit)
 
+      for (otherName <- names.tail) {
+        val instance = createUnitInstance(namespace + otherName, unit)
+        model.add(model.createStatement(instance0, aliasProp, instance))
+        model.add(model.createStatement(instance, aliasProp, instance0))
+      }
+    }
+    else {
+      stats.numUnitsWithNoNameOrAlias += 1
+    }
+  }
+
+  def convert: Model = {
     for (unit <- xmlIn \\ "unit") {
       stats.numUnitsInInput += 1
-
-      val name = (unit \ "name").text.trim
-      if (name.length > 0) {
-        val id = {
-          val singular = (unit \ "name" \ "singular").text.trim
-          if (singular.length > 0) singular else name
-        }
-        createConcept(id, unit)
-      }
-      else {
-        stats.numUnitsWithNoName += 1
-      }
+      convertUnit(unit)
     }
-
-    def createConcept(id: String, unit: Node) = {
-      val concept = _createUnitInstance(namespace + id)
-
-      for (def_ <- unit \\ "def") {
-        concept.addProperty(defProp, def_.text.trim)
-      }
-      for (symbol <- unit \\ "symbol") {
-        concept.addProperty(symbolProp, symbol.text.trim)
-      }
-      for (alias <- unit \\ "aliases" \\ "name" \\ "singular") {
-        concept.addProperty(aliasProp, alias.text.trim)
-      }
-    }
-
     model
   }
 
   def getStats = stats.toString
 
-  private def _createUnitInstance(uri: String): Resource = {
-    val concept = model.createResource(uri, UnitClass)
-    model.add(model.createStatement(concept, RDF.`type`, UnitClass))
+  private def createUnitInstance(uri: String, unit: Node): Resource = {
+    val instance = model.createResource(uri, UnitClass)
+    model.add(model.createStatement(instance, RDF.`type`, UnitClass))
+    for (def_ <- unit \\ "def") {
+      instance.addProperty(defProp, def_.text.trim)
+    }
+    for (symbol <- unit \\ "symbol") {
+      instance.addProperty(symbolProp, symbol.text.trim)
+    }
+
     stats.numUnitsInOutput += 1
-    concept
+    instance
   }
 }
 
 /**
  * UDUnits prefixes to RDF converter.
- *
- * @param xmlIn       Input XML
- * @param namespace   Namespace for the generated ontology
  */
-class PrefixConverter(xmlIn: Node, namespace: String) extends Converter {
-  require(namespace.matches(".*(/|#)$"), "namespace must end with / or #")
-
-  private def createModel: Model = {
-    val model = ModelFactory.createDefaultModel()
-    model.setNsPrefix("", namespace)
-    model
-  }
-
-  private val model = createModel
-  private val PrefixClass: Resource = model.createResource(namespace + "Prefix")
-  private val valueProp  = model.createProperty(namespace + "value")
-  private val symbolProp = model.createProperty(namespace + "symbol")
-
-  model.add(model.createStatement(PrefixClass, RDF.`type`, OWL.Class))
-  model.add(model.createStatement(PrefixClass, RDFS.label, "Prefix"))
+class PrefixConverter(xmlIn: Node, namespace: String) extends Converter(xmlIn: Node, namespace: String) {
+  private val PrefixClass = createClass("Prefix")
+  private val valueProp   = createProperty("value")
+  private val symbolProp  = createProperty("symbol")
 
   private object stats {
     var numPrefixesInInput = 0
@@ -138,44 +138,35 @@ class PrefixConverter(xmlIn: Node, namespace: String) extends Converter {
        """.stripMargin
   }
 
-  /**
-   * @return  Resulting Jena model
-   */
   def convert: Model = {
-
     for (prefix <- xmlIn \\ "prefix") {
       stats.numPrefixesInInput += 1
 
       val name = (prefix \ "name").text.trim
       if (name.length > 0) {
-        createConcept(name, prefix)
+        val concept = createPrefixInstance(namespace + name)
+
+        for (value <- prefix \\ "value") {
+          concept.addProperty(valueProp, value.text.trim)
+        }
+        for (symbol <- prefix \\ "symbol") {
+          concept.addProperty(symbolProp, symbol.text.trim)
+        }
       }
       else {
         stats.numPrefixesWithNoName += 1
       }
     }
-
-    def createConcept(id: String, unit: Node) = {
-      val concept = _createUnitInstance(namespace + id)
-
-      for (value <- unit \\ "value") {
-        concept.addProperty(valueProp, value.text.trim)
-      }
-      for (symbol <- unit \\ "symbol") {
-        concept.addProperty(symbolProp, symbol.text.trim)
-      }
-    }
-
     model
   }
 
   def getStats = stats.toString
 
-  private def _createUnitInstance(uri: String): Resource = {
-    val concept = model.createResource(uri, PrefixClass)
-    model.add(model.createStatement(concept, RDF.`type`, PrefixClass))
+  private def createPrefixInstance(uri: String): Resource = {
+    val instance = model.createResource(uri, PrefixClass)
+    model.add(model.createStatement(instance, RDF.`type`, PrefixClass))
     stats.numPrefixesInOutput += 1
-    concept
+    instance
   }
 }
 
@@ -247,6 +238,7 @@ object udunits2rdf extends App {
     }
 
     def saveModel() {
+      //model.getWriter("N3").write(model, new java.io.FileOutputStream(rdfFilename + ".n3"), null)
       val writer = model.getWriter("RDF/XML-ABBREV")
       writer.setProperty("showXmlDeclaration", "true")
       writer.setProperty("relativeURIs", "same-document,relative")

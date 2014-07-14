@@ -20,6 +20,10 @@
     <symbol>g</symbol>
     <def>1e-3 kg</def>
   </Unit>
+  <Unit rdf:about="sievert">
+    <symbol>Sv</symbol>
+    <def>J/kg</def>
+  </Unit>
   <Unit rdf:about="newton">
     <symbol>N</symbol>
     <def>m.kg/s^2</def>
@@ -60,6 +64,10 @@
     <symbol>lm</symbol>
     <def>cd.sr</def>
   </Unit>
+  <Unit rdf:about="becquerel">
+    <symbol>Bq</symbol>
+    <def>1/s</def>
+  </Unit>
   <Unit rdf:about="hertz">
     <symbol>Hz</symbol>
     <def>1/s</def>
@@ -73,12 +81,12 @@
     <symbol>Ω</symbol>
     <def>V/A</def>
   </Unit>
+  <Unit rdf:about="radian">
+    <symbol>rad</symbol>
+  </Unit>
   <Unit rdf:about="tesla">
     <symbol>T</symbol>
     <def>Wb/m^2</def>
-  </Unit>
-  <Unit rdf:about="radian">
-    <symbol>rad</symbol>
   </Unit>
   <Unit rdf:about="joule">
     <symbol>J</symbol>

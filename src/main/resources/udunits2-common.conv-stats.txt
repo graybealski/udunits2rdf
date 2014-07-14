@@ -1,11 +1,11 @@
 udunits2rdf conversion
-date:   Sun Jul 13 15:01:52 PDT 2014
+date:   Sun Jul 13 19:13:53 PDT 2014
 input:  src/main/resources/udunits2-common.xml
 output: src/main/resources/udunits2-common.rdf
 
 conversion stats:
   numUnitsInInput    = 221
-  numUnitsInOutput   = 1
-  numUnitsWithNoName = 220
+  numUnitsInOutput   = 286
+  numUnitsWithNoNameOrAlias = 21
        
         

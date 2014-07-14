@@ -8,63 +8,227 @@
   <owl:Class rdf:about="Unit">
     <rdfs:label>Unit</rdfs:label>
   </owl:Class>
-  <Unit rdf:about="metric_ton">
-    <alias>tonne</alias>
-    <symbol>t</symbol>
-    <def>1000 kg</def>
+  <Unit rdf:about="day">
+    <symbol>d</symbol>
+    <def>24 h</def>
   </Unit>
-  <Unit rdf:about="arc_minute">
-    <alias>arcmin</alias>
-    <alias>arcminute</alias>
-    <alias>angular_minute</alias>
-    <symbol>′</symbol>
-    <symbol>'</symbol>
-    <def>°/60</def>
+  <Unit rdf:about="roentgen">
+    <symbol>R</symbol>
+    <def>2.58e-4 C/kg</def>
+  </Unit>
+  <Unit rdf:about="gal">
+    <def>cm/s^2</def>
+  </Unit>
+  <Unit rdf:about="minute">
+    <symbol>min</symbol>
+    <def>60 s</def>
   </Unit>
   <Unit rdf:about="hour">
     <symbol>hr</symbol>
     <symbol>h</symbol>
     <def>60 min</def>
   </Unit>
+  <Unit rdf:about="rem">
+    <def>cSv</def>
+  </Unit>
+  <Unit rdf:about="pi">
+    <symbol>π</symbol>
+    <def>3.141592653589793238462643383279</def>
+  </Unit>
+  <Unit rdf:about="astronomical_unit">
+    <symbol>ua</symbol>
+    <def>1.495979e11 m</def>
+  </Unit>
+  <Unit rdf:about="are">
+    <symbol>a</symbol>
+    <def>dam^2</def>
+  </Unit>
+  <Unit rdf:about="barn">
+    <symbol>b</symbol>
+    <def>100 fm^2</def>
+  </Unit>
+  <Unit rdf:about="hectare">
+    <def>100 are</def>
+  </Unit>
+  <Unit rdf:about="bar">
+    <def>1000 hPa</def>
+  </Unit>
+  <Unit rdf:about="curie">
+    <symbol>Ci</symbol>
+    <def>3.7e10 Bq</def>
+  </Unit>
+  <Unit rdf:about="nautical_mile">
+    <def>1852 m</def>
+  </Unit>
   <Unit rdf:about="arc_second">
-    <alias>arcsec</alias>
-    <alias>arcsecond</alias>
-    <alias>angular_second</alias>
+    <alias>
+      <Unit rdf:about="arcsec">
+        <alias rdf:resource="arc_second"/>
+        <symbol>″</symbol>
+        <symbol>"</symbol>
+        <def>'/60</def>
+      </Unit>
+    </alias>
+    <alias>
+      <Unit rdf:about="arcsecond">
+        <alias rdf:resource="arc_second"/>
+        <symbol>″</symbol>
+        <symbol>"</symbol>
+        <def>'/60</def>
+      </Unit>
+    </alias>
+    <alias>
+      <Unit rdf:about="angular_second">
+        <alias rdf:resource="arc_second"/>
+        <symbol>″</symbol>
+        <symbol>"</symbol>
+        <def>'/60</def>
+      </Unit>
+    </alias>
     <symbol>″</symbol>
     <symbol>"</symbol>
     <def>'/60</def>
   </Unit>
-  <Unit rdf:about="day">
-    <symbol>d</symbol>
-    <def>24 h</def>
-  </Unit>
-  <Unit rdf:about="electronvolt">
-    <alias>electron_volt</alias>
-    <symbol>eV</symbol>
-    <def>1.60217733e-19 J</def>
+  <Unit rdf:about="international_knot">
+    <alias>
+      <Unit rdf:about="knot">
+        <alias rdf:resource="international_knot"/>
+        <def>nautical_mile/hour</def>
+      </Unit>
+    </alias>
+    <alias>
+      <Unit rdf:about="knot_international">
+        <alias rdf:resource="international_knot"/>
+        <def>nautical_mile/hour</def>
+      </Unit>
+    </alias>
+    <def>nautical_mile/hour</def>
   </Unit>
   <Unit rdf:about="arc_degree">
-    <alias>arcdeg</alias>
-    <alias>degree</alias>
-    <alias>angular_degree</alias>
+    <alias>
+      <Unit rdf:about="arcdeg">
+        <alias rdf:resource="arc_degree"/>
+        <symbol>°</symbol>
+        <def>(pi/180) rad</def>
+      </Unit>
+    </alias>
+    <alias>
+      <Unit rdf:about="degree">
+        <alias rdf:resource="arc_degree"/>
+        <symbol>°</symbol>
+        <def>(pi/180) rad</def>
+      </Unit>
+    </alias>
+    <alias>
+      <Unit rdf:about="angular_degree">
+        <alias rdf:resource="arc_degree"/>
+        <symbol>°</symbol>
+        <def>(pi/180) rad</def>
+      </Unit>
+    </alias>
     <symbol>°</symbol>
     <def>(pi/180) rad</def>
   </Unit>
+  <Unit rdf:about="arc_minute">
+    <alias>
+      <Unit rdf:about="arcmin">
+        <alias rdf:resource="arc_minute"/>
+        <symbol>′</symbol>
+        <symbol>'</symbol>
+        <def>°/60</def>
+      </Unit>
+    </alias>
+    <alias>
+      <Unit rdf:about="arcminute">
+        <alias rdf:resource="arc_minute"/>
+        <symbol>′</symbol>
+        <symbol>'</symbol>
+        <def>°/60</def>
+      </Unit>
+    </alias>
+    <alias>
+      <Unit rdf:about="angular_minute">
+        <alias rdf:resource="arc_minute"/>
+        <symbol>′</symbol>
+        <symbol>'</symbol>
+        <def>°/60</def>
+      </Unit>
+    </alias>
+    <symbol>′</symbol>
+    <symbol>'</symbol>
+    <def>°/60</def>
+  </Unit>
   <Unit rdf:about="unified_atomic_mass_unit">
-    <alias>amu</alias>
-    <alias>atomicmassunit</alias>
-    <alias>atomic_mass_unit</alias>
+    <alias>
+      <Unit rdf:about="amu">
+        <alias rdf:resource="unified_atomic_mass_unit"/>
+        <symbol>u</symbol>
+        <def>1.6605402e-27 kg</def>
+      </Unit>
+    </alias>
+    <alias>
+      <Unit rdf:about="atomicmassunit">
+        <alias rdf:resource="unified_atomic_mass_unit"/>
+        <symbol>u</symbol>
+        <def>1.6605402e-27 kg</def>
+      </Unit>
+    </alias>
+    <alias>
+      <Unit rdf:about="atomic_mass_unit">
+        <alias rdf:resource="unified_atomic_mass_unit"/>
+        <symbol>u</symbol>
+        <def>1.6605402e-27 kg</def>
+      </Unit>
+    </alias>
     <symbol>u</symbol>
     <def>1.6605402e-27 kg</def>
   </Unit>
-  <Unit rdf:about="liter">
-    <alias>litre</alias>
+  <Unit rdf:about="tonne">
+    <alias>
+      <Unit rdf:about="metric_ton">
+        <alias rdf:resource="tonne"/>
+        <symbol>t</symbol>
+        <def>1000 kg</def>
+      </Unit>
+    </alias>
+    <symbol>t</symbol>
+    <def>1000 kg</def>
+  </Unit>
+  <Unit rdf:about="electron_volt">
+    <alias>
+      <Unit rdf:about="electronvolt">
+        <alias rdf:resource="electron_volt"/>
+        <symbol>eV</symbol>
+        <def>1.60217733e-19 J</def>
+      </Unit>
+    </alias>
+    <symbol>eV</symbol>
+    <def>1.60217733e-19 J</def>
+  </Unit>
+  <Unit rdf:about="angstrom">
+    <alias>
+      <Unit rdf:about="ångström">
+        <alias rdf:resource="angstrom"/>
+        <symbol>Å</symbol>
+        <symbol>Å</symbol>
+        <def>1e-10 m</def>
+      </Unit>
+    </alias>
+    <symbol>Å</symbol>
+    <symbol>Å</symbol>
+    <def>1e-10 m</def>
+  </Unit>
+  <Unit rdf:about="litre">
+    <alias>
+      <Unit rdf:about="liter">
+        <alias rdf:resource="litre"/>
+        <symbol>l</symbol>
+        <symbol>L</symbol>
+        <def>dm^3</def>
+      </Unit>
+    </alias>
     <symbol>l</symbol>
     <symbol>L</symbol>
     <def>dm^3</def>
-  </Unit>
-  <Unit rdf:about="minute">
-    <symbol>min</symbol>
-    <def>60 s</def>
   </Unit>
 </rdf:RDF>

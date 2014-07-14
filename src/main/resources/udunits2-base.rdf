@@ -14,10 +14,6 @@
   <Unit rdf:about="candela">
     <symbol>cd</symbol>
   </Unit>
-  <Unit rdf:about="meter">
-    <alias>metre</alias>
-    <symbol>m</symbol>
-  </Unit>
   <Unit rdf:about="kilogram">
     <symbol>kg</symbol>
   </Unit>
@@ -29,5 +25,14 @@
   </Unit>
   <Unit rdf:about="kelvin">
     <symbol>K</symbol>
+  </Unit>
+  <Unit rdf:about="meter">
+    <alias>
+      <Unit rdf:about="metre">
+        <alias rdf:resource="meter"/>
+        <symbol>m</symbol>
+      </Unit>
+    </alias>
+    <symbol>m</symbol>
   </Unit>
 </rdf:RDF>
