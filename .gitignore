@@ -2,5 +2,5 @@
 .idea_modules
 *.iml
 target
-*/.DS_Store
+.DS_Store
 */*~
