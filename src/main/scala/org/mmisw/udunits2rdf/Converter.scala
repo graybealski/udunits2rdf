@@ -59,11 +59,13 @@ class UnitConverter(xmlIn: Node, namespace: String) extends Converter(xmlIn: Nod
   private object stats {
     var numUnitsInInput = 0
     var numUnitsInOutput = 0
+    var numUnitsWithNoDef = 0
     var numUnitsWithNoNameOrAlias = 0
 
     override def toString =
       s"""  numUnitsInInput    = $numUnitsInInput
          |  numUnitsInOutput   = $numUnitsInOutput
+         |  numUnitsWithNoDef  = $numUnitsWithNoDef
          |  numUnitsWithNoNameOrAlias = $numUnitsWithNoNameOrAlias
        """.stripMargin
   }
@@ -103,9 +105,15 @@ class UnitConverter(xmlIn: Node, namespace: String) extends Converter(xmlIn: Nod
   private def createUnitInstance(uri: String, unit: Node): Resource = {
     val instance = model.createResource(uri, UnitClass)
     model.add(model.createStatement(instance, RDF.`type`, UnitClass))
-    for (def_ <- unit \\ "def") {
-      instance.addProperty(defProp, def_.text.trim)
+
+    val def_ = (unit \\ "def").text.trim
+    if (def_.length > 0) {
+      instance.addProperty(defProp, def_)
     }
+    else {
+      stats.numUnitsWithNoDef +=1
+    }
+
     for (symbol <- unit \\ "symbol") {
       instance.addProperty(symbolProp, symbol.text.trim)
     }
