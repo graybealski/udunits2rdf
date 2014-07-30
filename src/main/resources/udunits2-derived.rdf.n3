@@ -1,0 +1,256 @@
+@prefix :        <http://mmisw.org/ont/mmitest/udunits2-derived/> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix u2:      <http://mmisw.org/ont/mmitest/udunits2/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+
+:_3bf67536
+      a       u2:Unit ;
+      u2:hasDefinition "N.m" ;
+      u2:hasName :joule ;
+      u2:hasSymbol "J" .
+
+:gram
+      a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:hasSymbol "g" ;
+      u2:namesUnit :_0c6e2e25 .
+
+:sievert
+      a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:hasSymbol "Sv" ;
+      u2:namesUnit :_854014f0 .
+
+:henry
+      a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:hasSymbol "H" ;
+      u2:namesUnit :_6a30db22 .
+
+:newton
+      a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:hasSymbol "N" ;
+      u2:namesUnit :_f425db5a .
+
+:_42d4a060
+      a       u2:Unit ;
+      u2:hasDefinition "K @ 273.15" ;
+      u2:hasName :degree_Celsius ;
+      u2:hasSymbol "°C" .
+
+:coulomb
+      a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:hasSymbol "C" ;
+      u2:namesUnit :_abcb503c .
+
+:watt
+      a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:hasSymbol "W" ;
+      u2:namesUnit :_17a4abb9 .
+
+:volt
+      a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:hasSymbol "V" ;
+      u2:namesUnit :_ad04a0b8 .
+
+:lumen
+      a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:hasSymbol "lm" ;
+      u2:namesUnit :_4b72e705 .
+
+:_ec96bc27
+      a       u2:Unit ;
+      u2:hasDefinition "rad^2" ;
+      u2:hasName :steradian ;
+      u2:hasSymbol "sr" .
+
+:steradian
+      a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:hasSymbol "sr" ;
+      u2:namesUnit :_ec96bc27 .
+
+:_7d0e39d5
+      a       u2:Unit ;
+      u2:hasAlias :becquerel ;
+      u2:hasDefinition "1/s" ;
+      u2:hasName :hertz ;
+      u2:hasSymbol "Hz" .
+
+:_993c8f1a
+      a       u2:Unit ;
+      u2:hasDefinition "Wb/m^2" ;
+      u2:hasName :tesla ;
+      u2:hasSymbol "T" .
+
+:_17a4abb9
+      a       u2:Unit ;
+      u2:hasDefinition "J/s" ;
+      u2:hasName :watt ;
+      u2:hasSymbol "W" .
+
+:_c1fa6dc6
+      a       u2:Unit ;
+      u2:hasDefinition "N/m^2" ;
+      u2:hasName :pascal ;
+      u2:hasSymbol "Pa" .
+
+:_a06d5ce7
+      a       u2:Unit ;
+      u2:hasDefinition "mol/s" ;
+      u2:hasName :katal ;
+      u2:hasSymbol "kat" .
+
+:_0c6e2e25
+      a       u2:Unit ;
+      u2:hasDefinition "1e-3 kg" ;
+      u2:hasName :gram ;
+      u2:hasSymbol "g" .
+
+:_be99ec61
+      a       u2:Unit ;
+      u2:hasDefinition "C/V" ;
+      u2:hasName :farad ;
+      u2:hasSymbol "F" .
+
+:joule
+      a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:hasSymbol "J" ;
+      u2:namesUnit :_3bf67536 .
+
+:_4b72e705
+      a       u2:Unit ;
+      u2:hasDefinition "cd.sr" ;
+      u2:hasName :lumen ;
+      u2:hasSymbol "lm" .
+
+:_bdd01af8
+      a       u2:Unit ;
+      u2:hasDefinition "V/A" ;
+      u2:hasName :ohm ;
+      u2:hasSymbol "Ω" , "Ω" .
+
+:_abcb503c
+      a       u2:Unit ;
+      u2:hasDefinition "s.A" ;
+      u2:hasName :coulomb ;
+      u2:hasSymbol "C" .
+
+:_854014f0
+      a       u2:Unit ;
+      u2:hasAlias :sievert ;
+      u2:hasDefinition "J/kg" ;
+      u2:hasName :gray ;
+      u2:hasSymbol "Gy" .
+
+:siemens
+      a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:hasSymbol "S" ;
+      u2:namesUnit :_4653532e .
+
+:_48441204
+      a       u2:Unit ;
+      u2:hasDefinition "lm/m^2" ;
+      u2:hasName :lux ;
+      u2:hasSymbol "lx" .
+
+:katal
+      a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:hasSymbol "kat" ;
+      u2:namesUnit :_a06d5ce7 .
+
+:_ad04a0b8
+      a       u2:Unit ;
+      u2:hasDefinition "W/A" ;
+      u2:hasName :volt ;
+      u2:hasSymbol "V" .
+
+:_f425db5a
+      a       u2:Unit ;
+      u2:hasDefinition "m.kg/s^2" ;
+      u2:hasName :newton ;
+      u2:hasSymbol "N" .
+
+:weber
+      a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:hasSymbol "Wb" ;
+      u2:namesUnit :_6a74bd21 .
+
+:pascal
+      a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:hasSymbol "Pa" ;
+      u2:namesUnit :_c1fa6dc6 .
+
+:_6a30db22
+      a       u2:Unit ;
+      u2:hasDefinition "Wb/A" ;
+      u2:hasName :henry ;
+      u2:hasSymbol "H" .
+
+:farad
+      a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:hasSymbol "F" ;
+      u2:namesUnit :_be99ec61 .
+
+:gray
+      a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:hasSymbol "Gy" ;
+      u2:namesUnit :_854014f0 .
+
+:_6a74bd21
+      a       u2:Unit ;
+      u2:hasDefinition "V.s" ;
+      u2:hasName :weber ;
+      u2:hasSymbol "Wb" .
+
+:hertz
+      a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:hasSymbol "Hz" ;
+      u2:namesUnit :_7d0e39d5 .
+
+:becquerel
+      a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:hasSymbol "Bq" ;
+      u2:namesUnit :_7d0e39d5 .
+
+:ohm  a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:hasSymbol "Ω" ;
+      u2:namesUnit :_bdd01af8 .
+
+:_4653532e
+      a       u2:Unit ;
+      u2:hasDefinition "A/V" ;
+      u2:hasName :siemens ;
+      u2:hasSymbol "S" .
+
+:tesla
+      a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:hasSymbol "T" ;
+      u2:namesUnit :_993c8f1a .
+
+:lux  a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:hasSymbol "lx" ;
+      u2:namesUnit :_48441204 .
+
+:degree_Celsius
+      a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:hasSymbol "°C" ;
+      u2:namesUnit :_42d4a060 .

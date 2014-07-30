@@ -1,0 +1,38 @@
+@prefix :        <http://mmisw.org/ont/mmitest/udunits2/> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+
+:hasCardinality
+      rdfs:domain :UnitName ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+:hasSymbol
+      rdfs:domain :UnitName ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+:hasDefinition
+      a       owl:FunctionalProperty ;
+      rdfs:domain :Unit ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+:UnitName
+      a       owl:Class ;
+      rdfs:label "UnitName" .
+
+:hasName
+      a       owl:FunctionalProperty ;
+      rdfs:domain :Unit ;
+      rdfs:range :UnitName .
+
+:hasAlias
+      rdfs:domain :Unit ;
+      rdfs:range :UnitName .
+
+:Unit
+      a       owl:Class ;
+      rdfs:label "Unit" .
+
+:namesUnit
+      a       owl:FunctionalProperty ;
+      rdfs:domain :UnitName ;
+      rdfs:range :Unit .

@@ -16,6 +16,10 @@ import scala.collection.mutable
 abstract class Converter(xmlIn: Node, namespace: String) {
   require(namespace.matches(".*(/|#)$"), "namespace must end with / or #")
 
+  def convert: Model
+
+  def getStats: String
+
   protected def createModel: Model = {
     val model = ModelFactory.createDefaultModel()
     model.setNsPrefix("",      namespace)
@@ -40,29 +44,24 @@ abstract class Converter(xmlIn: Node, namespace: String) {
     model.add(model.createStatement(clazz, RDFS.label, name))
     clazz
   }
-
-  /**
-   * @return  Resulting Jena model
-   */
-  def convert: Model
-
-  def getStats: String
 }
 
 /**
  * UDUnits to RDF converter.
  */
-class UnitConverter(xmlIn: Node, namespace: String) extends Converter(xmlIn: Node, namespace: String) {
-  private val UnitClass      = createClass("Unit")
-  private val UnitNameClass  = createClass("UnitName")
+class UnitConverter(xmlIn: Node, baseDefs: BaseDefs, namespace: String) extends Converter(xmlIn: Node, namespace: String) {
+  private val UnitClass      = baseDefs.UnitClass
+  private val UnitNameClass  = baseDefs.UnitNameClass
 
-  private val hasDefinition  = createProperty("hasDefinition")
-  private val hasName        = createProperty("hasName")
-  private val hasAlias       = createProperty("hasAlias")
-  private val hasSymbol      = createProperty("hasSymbol")
+  private val hasDefinition  = baseDefs.hasDefinition
+  private val hasName        = baseDefs.hasName
+  private val hasAlias       = baseDefs.hasAlias
+  private val hasSymbol      = baseDefs.hasSymbol
 
-  private val hasCardinality = createProperty("hasCardinality")
-  private val namesUnit      = createProperty("namesUnit")
+  private val hasCardinality = baseDefs.hasCardinality
+  private val namesUnit      = baseDefs.namesUnit
+
+  model.setNsPrefix("u2", baseDefs.namespace)
 
   private object stats {
     var unitsInInput = 0
@@ -144,7 +143,7 @@ class UnitConverter(xmlIn: Node, namespace: String) extends Converter(xmlIn: Nod
       //
       // first singular name, if any, will be the primary name
       //
-      val nameInstance = createUnitNameInstance(name, "singular", unitInstance, Some(unit))
+      val nameInstance = createUnitNameInstance(name, "singular", false, unitInstance, Some(unit))
       model.add(model.createStatement(unitInstance, hasName, nameInstance))
     }
 
@@ -157,7 +156,7 @@ class UnitConverter(xmlIn: Node, namespace: String) extends Converter(xmlIn: Nod
     if (plurals.length >= 1) {
       if (singulars.length == 0) {
         // that is., not primary name yet given, then take first plural:
-        val nameInstance = createUnitNameInstance(plurals.head, "plural", unitInstance)
+        val nameInstance = createUnitNameInstance(plurals.head, "plural", false, unitInstance)
         model.add(model.createStatement(unitInstance, hasName, nameInstance))
       }
       if (plurals.length > 1) {
@@ -186,10 +185,10 @@ class UnitConverter(xmlIn: Node, namespace: String) extends Converter(xmlIn: Nod
           //println(s"nameNode -- ${nameNode}  ${nameNode.getClass}")
           nameNode foreach {
             case <singular>{singular}</singular> =>
-              currUnitNameInstance = Some(createUnitNameInstance(singular.text, "singular", unitInstance))
+              currUnitNameInstance = Some(createUnitNameInstance(singular.text, "singular", true, unitInstance))
 
             case <plural>{plural}</plural> =>
-              currUnitNameInstance = Some(createUnitNameInstance(plural.text, "plural", unitInstance))
+              currUnitNameInstance = Some(createUnitNameInstance(plural.text, "plural", true, unitInstance))
 
             case <noplural/> => // ignored
 
@@ -217,7 +216,9 @@ class UnitConverter(xmlIn: Node, namespace: String) extends Converter(xmlIn: Nod
     }
   }
 
-  private def createUnitNameInstance(name: String, cardinality: String, unitInstance: Resource,
+  private def createUnitNameInstance(name: String, cardinality: String,
+                                     isAlias: Boolean = false,
+                                     unitInstance: Resource,
                                      nodeOpt: Option[Node] = None): Resource = {
     val uri = namespace + name
     val unitNameInstance = model.createResource(uri, UnitNameClass)
@@ -225,7 +226,8 @@ class UnitConverter(xmlIn: Node, namespace: String) extends Converter(xmlIn: Nod
 
     unitNameInstance.addProperty(hasCardinality, cardinality)
     unitNameInstance.addProperty(namesUnit, unitInstance)
-    unitInstance.addProperty(hasAlias, unitNameInstance)
+
+    if (isAlias) unitInstance.addProperty(hasAlias, unitNameInstance)
 
     for (node <- nodeOpt; symbol <- node \ "symbol") {
       unitNameInstance.addProperty(hasSymbol, symbol.text)

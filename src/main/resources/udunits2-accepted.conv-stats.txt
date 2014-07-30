@@ -1,5 +1,5 @@
 udunits2rdf conversion
-date:   Tue Jul 29 22:12:51 PDT 2014
+date:   Wed Jul 30 11:15:02 PDT 2014
 input:  src/main/resources/udunits2-accepted.xml
 output: src/main/resources/udunits2-accepted.rdf
 

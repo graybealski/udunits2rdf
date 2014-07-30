@@ -1,0 +1,106 @@
+@prefix :        <http://mmisw.org/ont/mmitest/udunits2-prefixes/> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+
+:pico
+      a       :Prefix ;
+      :symbol "p" ;
+      :value  "1e-12" .
+
+:hecto
+      a       :Prefix ;
+      :symbol "h" ;
+      :value  "100" .
+
+:centi
+      a       :Prefix ;
+      :symbol "c" ;
+      :value  ".01" .
+
+:zepto
+      a       :Prefix ;
+      :symbol "z" ;
+      :value  "1e-21" .
+
+:femto
+      a       :Prefix ;
+      :symbol "f" ;
+      :value  "1e-15" .
+
+:yotta
+      a       :Prefix ;
+      :symbol "Y" ;
+      :value  "1e24" .
+
+:giga
+      a       :Prefix ;
+      :symbol "G" ;
+      :value  "1e9" .
+
+:tera
+      a       :Prefix ;
+      :symbol "T" ;
+      :value  "1e12" .
+
+:zetta
+      a       :Prefix ;
+      :symbol "Z" ;
+      :value  "1e21" .
+
+:deci
+      a       :Prefix ;
+      :symbol "d" ;
+      :value  ".1" .
+
+:peta
+      a       :Prefix ;
+      :symbol "P" ;
+      :value  "1e15" .
+
+:deka
+      a       :Prefix ;
+      :symbol "da" ;
+      :value  "10" .
+
+:yocto
+      a       :Prefix ;
+      :symbol "y" ;
+      :value  "1e-24" .
+
+:milli
+      a       :Prefix ;
+      :symbol "m" ;
+      :value  "1e-3" .
+
+:mega
+      a       :Prefix ;
+      :symbol "M" ;
+      :value  "1e6" .
+
+:kilo
+      a       :Prefix ;
+      :symbol "k" ;
+      :value  "1e3" .
+
+:atto
+      a       :Prefix ;
+      :symbol "a" ;
+      :value  "1e-18" .
+
+:Prefix
+      a       owl:Class ;
+      rdfs:label "Prefix" .
+
+:nano
+      a       :Prefix ;
+      :symbol "n" ;
+      :value  "1e-9" .
+
+:exa  a       :Prefix ;
+      :symbol "E" ;
+      :value  "1e18" .
+
+:micro
+      a       :Prefix ;
+      :symbol "u" , "μ" , "µ" ;
+      :value  "1e-6" .
