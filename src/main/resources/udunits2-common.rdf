@@ -8,1236 +8,2852 @@
   <owl:Class rdf:about="Unit">
     <rdfs:label>Unit</rdfs:label>
   </owl:Class>
-  <Unit rdf:about="UK_horsepower">
-    <def>7.4570e2 W</def>
-  </Unit>
-  <Unit rdf:about="clo">
-    <def>1.55e-1 K.m^2/W</def>
-  </Unit>
-  <Unit rdf:about="big_point">
-    <def>inch/72</def>
-  </Unit>
-  <Unit rdf:about="sidereal_day">
-    <def>8.616409e4 s</def>
-  </Unit>
-  <Unit rdf:about="work_year">
-    <def>2056 hours</def>
-  </Unit>
-  <Unit rdf:about="board_foot">
-    <def>2.359737e-3 m^3</def>
-  </Unit>
-  <Unit rdf:about="gravity">
-    <def>standard_free_fall</def>
-  </Unit>
-  <Unit rdf:about="EC_therm">
-    <def>1.05506e8 J</def>
-  </Unit>
-  <Unit rdf:about="gilbert">
-    <def>7.957747e-1 A</def>
-  </Unit>
-  <Unit rdf:about="perm_0C">
-    <def>5.72135e-11 kg/(Pa.s.m^2)</def>
-  </Unit>
-  <Unit rdf:about="sidereal_hour">
-    <def>3.590170e3 s</def>
-  </Unit>
-  <Unit rdf:about="TNT">
-    <def>4.184 MJ/kg</def>
-  </Unit>
-  <Unit rdf:about="statvolt">
-    <def>2.997925e2 V</def>
-  </Unit>
-  <Unit rdf:about="gamma">
-    <def>1e-9 T</def>
-  </Unit>
-  <Unit rdf:about="unit_pole">
-    <def>1.256637e-7 Wb</def>
-  </Unit>
-  <Unit rdf:about="metric_horsepower">
-    <def>7.35499e2 W</def>
-  </Unit>
-  <Unit rdf:about="boiler_horsepower">
-    <def>9.80950e3 W</def>
-  </Unit>
-  <Unit rdf:about="bit">
-    <def>1</def>
-  </Unit>
-  <Unit rdf:about="teaspoon">
-    <symbol>tsp</symbol>
-    <def>tablespoon/3</def>
-  </Unit>
-  <Unit rdf:about="UK_liquid_gallon">
-    <def>4.546090e-3 m^3</def>
-  </Unit>
-  <Unit rdf:about="standard_free_fall">
-    <def>9.806650 m/s^2</def>
-  </Unit>
-  <Unit rdf:about="shake">
-    <def>1e-8 s</def>
-  </Unit>
-  <Unit rdf:about="oersted">
-    <symbol>Oe</symbol>
-    <def>7.957747e1 A/m</def>
-  </Unit>
-  <Unit rdf:about="dyne">
-    <def>1e-5 N</def>
-  </Unit>
-  <Unit rdf:about="poundal">
-    <def>1.382550e-1 N</def>
-  </Unit>
-  <Unit rdf:about="printers_point">
-    <def>3.514598e-4 m</def>
-  </Unit>
-  <Unit rdf:about="abmho">
-    <def>1e9 S</def>
-  </Unit>
-  <Unit rdf:about="thermochemical_calorie">
-    <def>4.184000 J</def>
-  </Unit>
-  <Unit rdf:about="nit">
-    <symbol>nt</symbol>
-    <def>1 cd/m^2</def>
-  </Unit>
-  <Unit rdf:about="long_hundredweight">
-    <def>5.080235e1 kg</def>
-  </Unit>
-  <Unit rdf:about="inch_H2O_39F">
-    <def>inch water_39F</def>
-  </Unit>
-  <Unit rdf:about="abohm">
-    <def>1e-9 ohm</def>
-  </Unit>
-  <Unit rdf:about="bag">
-    <def>94 pound</def>
-  </Unit>
-  <Unit rdf:about="tablespoon">
-    <symbol>tblsp</symbol>
-    <symbol>Tblsp</symbol>
-    <symbol>tbsp</symbol>
-    <symbol>Tbsp</symbol>
-    <symbol>Tbl</symbol>
-    <def>US_fluid_ounce/2</def>
-  </Unit>
-  <Unit rdf:about="inch_Hg">
-    <symbol>inHg</symbol>
-    <symbol>in_Hg</symbol>
-    <def>inch Hg</def>
-  </Unit>
-  <Unit rdf:about="stathenry">
-    <def>8.987554e11 H</def>
-  </Unit>
-  <Unit rdf:about="lambert">
-    <def>(1e4/pi) cd/m^2</def>
-  </Unit>
-  <Unit rdf:about="perm_23C">
-    <def>5.74525e-11 kg/(Pa.s.m^2)</def>
-  </Unit>
-  <Unit rdf:about="phot">
-    <symbol>ph</symbol>
-    <def>1e4 lm/m^2</def>
-  </Unit>
-  <Unit rdf:about="grade">
-    <def>0.9 arc_degree</def>
-  </Unit>
-  <Unit rdf:about="light_year">
-    <def>9.46073e15 m</def>
-  </Unit>
-  <Unit rdf:about="potential_vorticity_unit">
-    <symbol>PVU</symbol>
-    <def>1e-6 m^2 s^-1 K kg^-1</def>
-  </Unit>
-  <Unit rdf:about="fermi">
-    <def>1e-15 m</def>
-  </Unit>
-  <Unit rdf:about="month">
-    <def>year/12</def>
-  </Unit>
-  <Unit rdf:about="rhe">
-    <def>10/(Pa.s)</def>
-  </Unit>
-  <Unit rdf:about="arpentlin">
-    <def>191.835 foot</def>
-  </Unit>
-  <Unit rdf:about="sidereal_second">
-    <def>0.9972696 s</def>
-  </Unit>
-  <Unit rdf:about="firkin">
-    <def>barrel/4</def>
-  </Unit>
-  <Unit rdf:about="voltampere">
-    <symbol>VA</symbol>
-    <def>V.A</def>
-  </Unit>
-  <Unit rdf:about="count">
-    <def>1</def>
-  </Unit>
-  <Unit rdf:about="gauss">
-    <def>1e-4 T</def>
-  </Unit>
-  <Unit rdf:about="sidereal_month">
-    <def>27.321661 day</def>
-  </Unit>
-  <Unit rdf:about="barrel">
-    <symbol>bbl</symbol>
-    <def>42 US_liquid_gallon</def>
-  </Unit>
-  <Unit rdf:about="mil">
-    <def>2.54e-5 m</def>
-  </Unit>
-  <Unit rdf:about="darcy">
-    <def>9.869233e-13 m^2</def>
-  </Unit>
-  <Unit rdf:about="leap_year">
-    <def>366 day</def>
-  </Unit>
-  <Unit rdf:about="stokes">
-    <symbol>St</symbol>
-    <def>1e-4 m^2/s</def>
-  </Unit>
-  <Unit rdf:about="water_horsepower">
-    <def>7.46043e2 W</def>
-  </Unit>
-  <Unit rdf:about="technical_atmosphere">
-    <symbol>at</symbol>
-    <def>1 kg gravity/cm2</def>
-  </Unit>
-  <Unit rdf:about="fortnight">
-    <def>14 day</def>
-  </Unit>
-  <Unit rdf:about="erg">
-    <def>1e-7 J</def>
-  </Unit>
-  <Unit rdf:about="sec">
-    <def>s</def>
-  </Unit>
-  <Unit rdf:about="ton_TNT">
-    <def>4.184e9 J</def>
-  </Unit>
-  <Unit rdf:about="common_year">
-    <def>365 day</def>
-  </Unit>
-  <Unit rdf:about="statohm">
-    <def>8.987554e11 ohm</def>
-  </Unit>
-  <Unit rdf:about="millimeter_Hg_0C">
-    <def>mm mercury_0C</def>
-  </Unit>
-  <Unit rdf:about="peck">
-    <symbol>pk</symbol>
-    <def>bushel/4</def>
-  </Unit>
-  <Unit rdf:about="barleycorn">
-    <def>inch/3</def>
-  </Unit>
-  <Unit rdf:about="abvolt">
-    <def>1e-8 V</def>
-  </Unit>
-  <Unit rdf:about="poise">
-    <def>1e-1 Pa.s</def>
-  </Unit>
-  <Unit rdf:about="sidereal_minute">
-    <def>5.983617e1 s</def>
-  </Unit>
-  <Unit rdf:about="maxwell">
-    <def>1e-8 Wb</def>
-  </Unit>
-  <Unit rdf:about="nmile">
-    <def>nautical_mile</def>
-  </Unit>
-  <Unit rdf:about="bushel">
-    <symbol>bu</symbol>
-    <def>3.523907e-2 m^3</def>
-  </Unit>
-  <Unit rdf:about="biot">
-    <def>10 A</def>
-  </Unit>
-  <Unit rdf:about="chain">
-    <def>2.011684e1 m</def>
-  </Unit>
-  <Unit rdf:about="assay_ton">
-    <def>2.916667e-2 kg</def>
-  </Unit>
-  <Unit rdf:about="pond">
-    <def>9.806650e-3 N</def>
-  </Unit>
-  <Unit rdf:about="mercury_60F">
-    <def>gravity 13556.8 kg/m^3</def>
-  </Unit>
-  <Unit rdf:about="statampere">
-    <def>3.335640e-10 A</def>
-  </Unit>
-  <Unit rdf:about="inch_Hg_60F">
-    <def>inch mercury_60F</def>
-  </Unit>
-  <Unit rdf:about="US_survey_foot">
-    <def>(1200/3937) m</def>
-  </Unit>
-  <Unit rdf:about="acre">
-    <def>160 rod^2</def>
-  </Unit>
-  <Unit rdf:about="footlambert">
-    <def>3.426259 cd/m^2</def>
-  </Unit>
-  <Unit rdf:about="grain">
-    <symbol>gr</symbol>
-    <def>6.479891e-5 kg</def>
-  </Unit>
-  <Unit rdf:about="lunar_month">
-    <def>29.530589 day</def>
-  </Unit>
-  <Unit rdf:about="abhenry">
-    <def>1e-9 H</def>
-  </Unit>
-  <Unit rdf:about="UK_liquid_cup">
-    <def>UK_liquid_gallon/16</def>
-  </Unit>
-  <Unit rdf:about="percent">
-    <symbol>%</symbol>
-    <def>0.01</def>
-  </Unit>
-  <Unit rdf:about="stilb">
-    <symbol>sb</symbol>
-    <def>1e4 cd/m^2</def>
-  </Unit>
-  <Unit rdf:about="short_hundredweight">
-    <def>4.535924e1 kg</def>
-  </Unit>
-  <Unit rdf:about="footcandle">
-    <def>1.076391e-1 lx</def>
-  </Unit>
-  <Unit rdf:about="abfarad">
-    <def>1e9 F</def>
-  </Unit>
-  <Unit rdf:about="week">
-    <def>7 day</def>
-  </Unit>
-  <Unit rdf:about="eon">
-    <def>1e9 year</def>
-  </Unit>
-  <Unit rdf:about="force">
-    <def>standard_free_fall</def>
-  </Unit>
-  <Unit rdf:about="sverdrup">
-    <def>1e6 m^3/s</def>
-  </Unit>
-  <Unit rdf:about="apdram">
-    <def>60 grain</def>
-  </Unit>
-  <Unit rdf:about="electric_horsepower">
-    <def>7.460000e2 W</def>
-  </Unit>
-  <Unit rdf:about="inch_H2O_60F">
-    <def>inch water_60F</def>
-  </Unit>
-  <Unit rdf:about="langley">
-    <def>4.184000e4 J/m^2</def>
-  </Unit>
-  <Unit rdf:about="einstein">
-    <def>mole</def>
-  </Unit>
-  <Unit rdf:about="US_dry_gallon">
-    <def>4.404884e-3 m^3</def>
-  </Unit>
-  <Unit rdf:about="UK_liquid_quart">
-    <def>UK_liquid_gallon/4</def>
-  </Unit>
-  <Unit rdf:about="register_ton">
-    <def>2.831685 m^3</def>
-  </Unit>
-  <Unit rdf:about="stere">
-    <def>1 m^3</def>
-  </Unit>
-  <Unit rdf:about="inch_Hg_32F">
-    <def>inch mercury_32F</def>
-  </Unit>
-  <Unit rdf:about="Canadian_liquid_gallon">
-    <def>4.546090e-3 m^3</def>
-  </Unit>
-  <Unit rdf:about="dobson">
-    <symbol>DU</symbol>
-    <def>446.2 micromoles/meter^2</def>
-  </Unit>
-  <Unit rdf:about="avoirdupois_ounce">
-    <def>2.834952e-2 kg</def>
-  </Unit>
-  <Unit rdf:about="acre_foot">
-    <def>1.233489e3 m^3</def>
-  </Unit>
-  <Unit rdf:about="baud">
-    <symbol>bps</symbol>
-    <symbol>Bd</symbol>
-    <def>Hz</def>
-  </Unit>
-  <Unit rdf:about="Julian_year">
-    <def>365.25 day</def>
-  </Unit>
-  <Unit rdf:about="avogadro_constant">
-    <def>6.02214179e23/mol</def>
-  </Unit>
-  <Unit rdf:about="furlong">
-    <def>660 US_survey_feet</def>
-  </Unit>
-  <Unit rdf:about="UK_liquid_pint">
-    <def>UK_liquid_gallon/8</def>
-  </Unit>
-  <Unit rdf:about="apounce">
-    <def>480 grain</def>
-  </Unit>
-  <Unit rdf:about="work_month">
-    <def>work_year/12</def>
-  </Unit>
-  <Unit rdf:about="tex">
-    <def>1e-6 kg/m</def>
-  </Unit>
-  <Unit rdf:about="carat">
-    <def>2e-4 kg</def>
-  </Unit>
-  <Unit rdf:about="chemical_faraday">
-    <def>9.64957e4 C</def>
-  </Unit>
-  <Unit rdf:about="Gregorian_year">
-    <def>365.2425 day</def>
-  </Unit>
-  <Unit rdf:about="UK_liquid_gill">
-    <def>UK_liquid_gallon/32</def>
-  </Unit>
-  <Unit rdf:about="jiffy">
-    <def>0.01 s</def>
-  </Unit>
-  <Unit rdf:about="micron">
-    <def>1e-6 m</def>
-  </Unit>
-  <Unit rdf:about="kip">
-    <def>1000 lbf</def>
-  </Unit>
-  <Unit rdf:about="candle">
-    <def>cd</def>
-  </Unit>
-  <Unit rdf:about="slug">
-    <def>14.59390 kg</def>
-  </Unit>
-  <Unit rdf:about="parsec">
-    <def>3.085678e16 m</def>
-  </Unit>
-  <Unit rdf:about="water_60F">
-    <def>gravity 999.001 kg/m^3</def>
-  </Unit>
-  <Unit rdf:about="scruple">
-    <def>20 grain</def>
-  </Unit>
-  <Unit rdf:about="statmho">
-    <def>1.112650e-12 S</def>
-  </Unit>
-  <Unit rdf:about="fathom">
-    <def>6 US_survey_feet</def>
-  </Unit>
-  <Unit rdf:about="US_survey_yard">
-    <def>3 US_survey_feet</def>
-  </Unit>
-  <Unit rdf:about="tropical_month">
-    <def>27.321582 day</def>
-  </Unit>
-  <Unit rdf:about="physical_faraday">
-    <def>9.65219e4 C</def>
-  </Unit>
-  <Unit rdf:about="long_ton">
-    <def>2240 pound</def>
-  </Unit>
-  <Unit rdf:about="abampere">
-    <def>10 A</def>
-  </Unit>
-  <Unit rdf:about="appound">
-    <def>5760 grain</def>
-  </Unit>
-  <Unit rdf:about="statcoulomb">
-    <def>3.335640e-10 C</def>
-  </Unit>
-  <Unit rdf:about="kayser">
-    <def>100/m</def>
-  </Unit>
-  <Unit rdf:about="amp">
-    <def>A</def>
-  </Unit>
-  <Unit rdf:about="pennyweight">
-    <def>1.555174e-3 kg</def>
-  </Unit>
-  <Unit rdf:about="statfarad">
-    <def>1.112650e-12 F</def>
-  </Unit>
-  <Unit rdf:about="circular_mil">
-    <def>5.067075e-10 m^2</def>
-  </Unit>
-  <Unit rdf:about="denier">
-    <def>1.111111e-7 kg/m</def>
-  </Unit>
-  <Unit rdf:about="sidereal_year">
-    <def>3.155815e7 s</def>
-  </Unit>
-  <Unit rdf:about="watthour">
-    <def>watt.hour</def>
-  </Unit>
-  <Unit rdf:about="dram">
-    <symbol>dr</symbol>
-    <def>US_fluid_ounce/16</def>
-  </Unit>
-  <Unit rdf:about="rotation_per_second">
-    <symbol>cps</symbol>
-    <symbol>rps</symbol>
-    <def>rotation/second</def>
-  </Unit>
-  <Unit rdf:about="US_liquid_quart">
-    <alias>
-      <Unit rdf:about="quart">
-        <alias rdf:resource="US_liquid_quart"/>
-        <def>US_liquid_gallon/4</def>
-      </Unit>
-    </alias>
-    <alias>
-      <Unit rdf:about="liquid_quart">
-        <alias rdf:resource="US_liquid_quart"/>
-        <def>US_liquid_gallon/4</def>
-      </Unit>
-    </alias>
-    <def>US_liquid_gallon/4</def>
-  </Unit>
-  <Unit rdf:about="molecule">
-    <alias>
-      <Unit rdf:about="nuc">
-        <alias rdf:resource="molecule"/>
-        <def>mol/6.02214129e23</def>
-      </Unit>
-    </alias>
-    <alias>
-      <Unit rdf:about="nucleon">
-        <alias rdf:resource="molecule"/>
-        <def>mol/6.02214129e23</def>
-      </Unit>
-    </alias>
-    <alias>
-      <Unit rdf:about="molec">
-        <alias rdf:resource="molecule"/>
-        <def>mol/6.02214129e23</def>
-      </Unit>
-    </alias>
-    <def>mol/6.02214129e23</def>
-  </Unit>
-  <Unit rdf:about="US_fluid_ounce">
-    <alias>
-      <Unit rdf:about="liquid_ounce">
-        <alias rdf:resource="US_fluid_ounce"/>
-        <symbol>floz</symbol>
-        <symbol>oz</symbol>
-        <def>US_liquid_gallon/128</def>
-      </Unit>
-    </alias>
-    <alias>
-      <Unit rdf:about="fluid_ounce">
-        <alias rdf:resource="US_fluid_ounce"/>
-        <symbol>floz</symbol>
-        <symbol>oz</symbol>
-        <def>US_liquid_gallon/128</def>
-      </Unit>
-    </alias>
-    <alias>
-      <Unit rdf:about="US_liquid_ounce">
-        <alias rdf:resource="US_fluid_ounce"/>
-        <symbol>floz</symbol>
-        <symbol>oz</symbol>
-        <def>US_liquid_gallon/128</def>
-      </Unit>
-    </alias>
-    <symbol>floz</symbol>
-    <symbol>oz</symbol>
-    <def>US_liquid_gallon/128</def>
-  </Unit>
-  <Unit rdf:about="rod">
-    <alias>
-      <Unit rdf:about="perch">
-        <alias rdf:resource="rod"/>
-        <def>16.5 US_survey_feet</def>
-      </Unit>
-    </alias>
-    <alias>
-      <Unit rdf:about="pole">
-        <alias rdf:resource="rod"/>
-        <def>16.5 US_survey_feet</def>
-      </Unit>
-    </alias>
-    <def>16.5 US_survey_feet</def>
-  </Unit>
-  <Unit rdf:about="mercury_0C">
-    <alias>
-      <Unit rdf:about="conventional_mercury">
-        <alias rdf:resource="mercury_0C"/>
-        <symbol>Hg</symbol>
-        <def>gravity 13595.10 kg/m^3</def>
-      </Unit>
-    </alias>
-    <alias>
-      <Unit rdf:about="mercury_32F">
-        <alias rdf:resource="mercury_0C"/>
-        <symbol>Hg</symbol>
-        <def>gravity 13595.10 kg/m^3</def>
-      </Unit>
-    </alias>
-    <symbol>Hg</symbol>
-    <def>gravity 13595.10 kg/m^3</def>
-  </Unit>
-  <Unit rdf:about="degC">
-    <alias>
-      <Unit rdf:about="celsius">
-        <alias rdf:resource="degC"/>
-        <symbol>℃</symbol>
-        <def>degree_Celsius</def>
-      </Unit>
-    </alias>
-    <alias>
-      <Unit rdf:about="deg_C">
-        <alias rdf:resource="degC"/>
-        <symbol>℃</symbol>
-        <def>degree_Celsius</def>
-      </Unit>
-    </alias>
-    <alias>
-      <Unit rdf:about="degree_C">
-        <alias rdf:resource="degC"/>
-        <symbol>℃</symbol>
-        <def>degree_Celsius</def>
-      </Unit>
-    </alias>
-    <alias>
-      <Unit rdf:about="degreeC">
-        <alias rdf:resource="degC"/>
-        <symbol>℃</symbol>
-        <def>degree_Celsius</def>
-      </Unit>
-    </alias>
-    <symbol>℃</symbol>
-    <def>degree_Celsius</def>
-  </Unit>
-  <Unit rdf:about="US_liquid_pint">
-    <alias>
-      <Unit rdf:about="pint">
-        <alias rdf:resource="US_liquid_pint"/>
-        <symbol>pt</symbol>
-        <def>US_liquid_gallon/8</def>
-      </Unit>
-    </alias>
-    <alias>
-      <Unit rdf:about="liquid_pint">
-        <alias rdf:resource="US_liquid_pint"/>
-        <symbol>pt</symbol>
-        <def>US_liquid_gallon/8</def>
-      </Unit>
-    </alias>
-    <symbol>pt</symbol>
-    <def>US_liquid_gallon/8</def>
-  </Unit>
-  <Unit rdf:about="degR">
-    <alias>
-      <Unit rdf:about="deg_R">
-        <alias rdf:resource="degR"/>
-        <symbol>°R</symbol>
-        <def>K/1.8</def>
-      </Unit>
-    </alias>
-    <alias>
-      <Unit rdf:about="degreeR">
-        <alias rdf:resource="degR"/>
-        <symbol>°R</symbol>
-        <def>K/1.8</def>
-      </Unit>
-    </alias>
-    <alias>
-      <Unit rdf:about="degree_rankine">
-        <alias rdf:resource="degR"/>
-        <symbol>°R</symbol>
-        <def>K/1.8</def>
-      </Unit>
-    </alias>
-    <alias>
-      <Unit rdf:about="degree_R">
-        <alias rdf:resource="degR"/>
-        <symbol>°R</symbol>
-        <def>K/1.8</def>
-      </Unit>
-    </alias>
-    <symbol>°R</symbol>
-    <def>K/1.8</def>
-  </Unit>
-  <Unit rdf:about="degree_west">
-    <alias>
-      <Unit rdf:about="degreeW">
-        <alias rdf:resource="degree_west"/>
-        <def>-1 degree_east</def>
-      </Unit>
-    </alias>
-    <alias>
-      <Unit rdf:about="degree_W">
-        <alias rdf:resource="degree_west"/>
-        <def>-1 degree_east</def>
-      </Unit>
-    </alias>
-    <def>-1 degree_east</def>
-  </Unit>
-  <Unit rdf:about="foot_water">
-    <alias>
-      <Unit rdf:about="footH2O">
-        <alias rdf:resource="foot_water"/>
-        <symbol>fth2o</symbol>
-        <symbol>ftH2O</symbol>
-        <def>foot water</def>
-      </Unit>
-    </alias>
-    <alias>
-      <Unit rdf:about="foot_H2O">
-        <alias rdf:resource="foot_water"/>
-        <symbol>fth2o</symbol>
-        <symbol>ftH2O</symbol>
-        <def>foot water</def>
-      </Unit>
-    </alias>
-    <symbol>fth2o</symbol>
-    <symbol>ftH2O</symbol>
-    <def>foot water</def>
-  </Unit>
-  <Unit rdf:about="degF">
-    <alias>
-      <Unit rdf:about="degree_F">
-        <alias rdf:resource="degF"/>
-        <symbol>℉</symbol>
-        <symbol>°F</symbol>
-        <def>°R @ 459.67</def>
-      </Unit>
-    </alias>
-    <alias>
-      <Unit rdf:about="degreeF">
-        <alias rdf:resource="degF"/>
-        <symbol>℉</symbol>
-        <symbol>°F</symbol>
-        <def>°R @ 459.67</def>
-      </Unit>
-    </alias>
-    <alias>
-      <Unit rdf:about="degree_fahrenheit">
-        <alias rdf:resource="degF"/>
-        <symbol>℉</symbol>
-        <symbol>°F</symbol>
-        <def>°R @ 459.67</def>
-      </Unit>
-    </alias>
-    <alias>
-      <Unit rdf:about="fahrenheit">
-        <alias rdf:resource="degF"/>
-        <symbol>℉</symbol>
-        <symbol>°F</symbol>
-        <def>°R @ 459.67</def>
-      </Unit>
-    </alias>
-    <alias>
-      <Unit rdf:about="deg_F">
-        <alias rdf:resource="degF"/>
-        <symbol>℉</symbol>
-        <symbol>°F</symbol>
-        <def>°R @ 459.67</def>
-      </Unit>
-    </alias>
-    <symbol>℉</symbol>
-    <symbol>°F</symbol>
-    <def>°R @ 459.67</def>
-  </Unit>
-  <Unit rdf:about="US_liquid_gallon">
-    <alias>
-      <Unit rdf:about="gallon">
-        <alias rdf:resource="US_liquid_gallon"/>
-        <def>3.785412e-3 m^3</def>
-      </Unit>
-    </alias>
-    <alias>
-      <Unit rdf:about="liquid_gallon">
-        <alias rdf:resource="US_liquid_gallon"/>
-        <def>3.785412e-3 m^3</def>
-      </Unit>
-    </alias>
-    <def>3.785412e-3 m^3</def>
-  </Unit>
-  <Unit rdf:about="US_liquid_cup">
-    <alias>
-      <Unit rdf:about="cup">
-        <alias rdf:resource="US_liquid_cup"/>
-        <def>US_liquid_gallon/16</def>
-      </Unit>
-    </alias>
-    <alias>
-      <Unit rdf:about="liquid_cup">
-        <alias rdf:resource="US_liquid_cup"/>
-        <def>US_liquid_gallon/16</def>
-      </Unit>
-    </alias>
-    <def>US_liquid_gallon/16</def>
-  </Unit>
-  <Unit rdf:about="degree_T">
-    <alias>
-      <Unit rdf:about="degreeN">
-        <alias rdf:resource="degree_T"/>
-        <def>arc_degree</def>
-      </Unit>
-    </alias>
-    <alias>
-      <Unit rdf:about="degree_E">
-        <alias rdf:resource="degree_T"/>
-        <def>arc_degree</def>
-      </Unit>
-    </alias>
-    <alias>
-      <Unit rdf:about="degreeT">
-        <alias rdf:resource="degree_T"/>
-        <def>arc_degree</def>
-      </Unit>
-    </alias>
-    <alias>
-      <Unit rdf:about="degree_true">
-        <alias rdf:resource="degree_T"/>
-        <def>arc_degree</def>
-      </Unit>
-    </alias>
-    <alias>
-      <Unit rdf:about="degree_east">
-        <alias rdf:resource="degree_T"/>
-        <def>arc_degree</def>
-      </Unit>
-    </alias>
-    <def>arc_degree</def>
-    <alias>
-      <Unit rdf:about="degree_N">
-        <alias rdf:resource="degree_T"/>
-        <def>arc_degree</def>
-      </Unit>
-    </alias>
-    <alias>
-      <Unit rdf:about="degreeE">
-        <alias rdf:resource="degree_T"/>
-        <def>arc_degree</def>
-      </Unit>
-    </alias>
-    <alias>
-      <Unit rdf:about="degree_north">
-        <alias rdf:resource="degree_T"/>
-        <def>arc_degree</def>
-      </Unit>
-    </alias>
-  </Unit>
-  <Unit rdf:about="deg_K">
-    <alias>
-      <Unit rdf:about="degreeK">
-        <alias rdf:resource="deg_K"/>
-        <symbol>°K</symbol>
-        <def>K</def>
-      </Unit>
-    </alias>
-    <alias>
-      <Unit rdf:about="degree_kelvin">
-        <alias rdf:resource="deg_K"/>
-        <symbol>°K</symbol>
-        <def>K</def>
-      </Unit>
-    </alias>
-    <alias>
-      <Unit rdf:about="degK">
-        <alias rdf:resource="deg_K"/>
-        <symbol>°K</symbol>
-        <def>K</def>
-      </Unit>
-    </alias>
-    <alias>
-      <Unit rdf:about="degree_K">
-        <alias rdf:resource="deg_K"/>
-        <symbol>°K</symbol>
-        <def>K</def>
-      </Unit>
-    </alias>
-    <symbol>°K</symbol>
-    <def>K</def>
-  </Unit>
-  <Unit rdf:about="US_liquid_gill">
-    <alias>
-      <Unit rdf:about="gill">
-        <alias rdf:resource="US_liquid_gill"/>
-        <def>US_liquid_gallon/32</def>
-      </Unit>
-    </alias>
-    <alias>
-      <Unit rdf:about="liquid_gill">
-        <alias rdf:resource="US_liquid_gill"/>
-        <def>US_liquid_gallon/32</def>
-      </Unit>
-    </alias>
-    <def>US_liquid_gallon/32</def>
-  </Unit>
-  <Unit rdf:about="circle">
-    <alias>
-      <Unit rdf:about="turn">
-        <alias rdf:resource="circle"/>
-        <def>2 pi rad</def>
-      </Unit>
-    </alias>
-    <alias>
-      <Unit rdf:about="cycle">
-        <alias rdf:resource="circle"/>
-        <def>2 pi rad</def>
-      </Unit>
-    </alias>
-    <alias>
-      <Unit rdf:about="rotation">
-        <alias rdf:resource="circle"/>
-        <def>2 pi rad</def>
-      </Unit>
-    </alias>
-    <alias>
-      <Unit rdf:about="revolution">
-        <alias rdf:resource="circle"/>
-        <def>2 pi rad</def>
-      </Unit>
-    </alias>
-    <def>2 pi rad</def>
-  </Unit>
-  <Unit rdf:about="kilogram_force">
-    <alias>
-      <Unit rdf:about="force_kilogram">
-        <alias rdf:resource="kilogram_force"/>
-        <symbol>kgf</symbol>
-        <def>9.806650 N</def>
-      </Unit>
-    </alias>
-    <symbol>kgf</symbol>
-    <def>9.806650 N</def>
-  </Unit>
-  <Unit rdf:about="UK_liquid_ounce">
-    <alias>
-      <Unit rdf:about="UK_fluid_ounce">
-        <alias rdf:resource="UK_liquid_ounce"/>
-        <def>UK_liquid_gallon/160</def>
-      </Unit>
-    </alias>
-    <def>UK_liquid_gallon/160</def>
-  </Unit>
-  <Unit rdf:about="international_yard">
-    <alias>
-      <Unit rdf:about="yard">
-        <alias rdf:resource="international_yard"/>
-        <symbol>yd</symbol>
-        <def>3 international_feet</def>
-      </Unit>
-    </alias>
-    <symbol>yd</symbol>
-    <def>3 international_feet</def>
-  </Unit>
-  <Unit rdf:about="millimeter_Hg">
-    <alias>
-      <Unit rdf:about="torr">
-        <alias rdf:resource="millimeter_Hg"/>
-        <symbol>mmhg</symbol>
-        <symbol>mmHg</symbol>
-        <symbol>mm_hg</symbol>
-        <symbol>mm_Hg</symbol>
-        <def>mm Hg</def>
-      </Unit>
-    </alias>
-    <symbol>mmhg</symbol>
-    <symbol>mmHg</symbol>
-    <symbol>mm_hg</symbol>
-    <symbol>mm_Hg</symbol>
-    <def>mm Hg</def>
-  </Unit>
-  <Unit rdf:about="ton_of_refrigeration">
-    <alias>
-      <Unit rdf:about="refrigeration_ton">
-        <alias rdf:resource="ton_of_refrigeration"/>
-        <def>12000 Btu/hr</def>
-      </Unit>
-    </alias>
-    <def>12000 Btu/hr</def>
-  </Unit>
-  <Unit rdf:about="barye">
-    <alias>
-      <Unit rdf:about="barie">
-        <alias rdf:resource="barye"/>
-        <def>0.1 N/m^2</def>
-      </Unit>
-    </alias>
-    <def>0.1 N/m^2</def>
-  </Unit>
-  <Unit rdf:about="apothecary_pound">
-    <alias>
-      <Unit rdf:about="troy_pound">
-        <alias rdf:resource="apothecary_pound"/>
-        <def>3.732417e-1 kg</def>
-      </Unit>
-    </alias>
-    <def>3.732417e-1 kg</def>
-  </Unit>
-  <Unit rdf:about="water">
-    <alias>
-      <Unit rdf:about="conventional_water">
-        <alias rdf:resource="water"/>
-        <symbol>h2o</symbol>
-        <symbol>H2O</symbol>
-        <def>gravity 1000 kg/m^3</def>
-      </Unit>
-    </alias>
-    <symbol>h2o</symbol>
-    <symbol>H2O</symbol>
-    <def>gravity 1000 kg/m^3</def>
-  </Unit>
-  <Unit rdf:about="blondel">
-    <alias>
-      <Unit rdf:about="apostilb">
-        <alias rdf:resource="blondel"/>
-        <def>cd/(pi m^2)</def>
-      </Unit>
-    </alias>
-    <def>cd/(pi m^2)</def>
-  </Unit>
-  <Unit rdf:about="horsepower">
-    <alias>
-      <Unit rdf:about="shaft_horsepower">
-        <alias rdf:resource="horsepower"/>
-        <symbol>hp</symbol>
-        <def>7.456999e2 W</def>
-      </Unit>
-    </alias>
-    <symbol>hp</symbol>
-    <def>7.456999e2 W</def>
-  </Unit>
-  <Unit rdf:about="printers_pica">
-    <alias>
-      <Unit rdf:about="pica">
-        <alias rdf:resource="printers_pica"/>
-        <def>12 printers_point</def>
-      </Unit>
-    </alias>
-    <def>12 printers_point</def>
-  </Unit>
-  <Unit rdf:about="tropical_year">
-    <alias>
-      <Unit rdf:about="year">
-        <alias rdf:resource="tropical_year"/>
-        <symbol>yr</symbol>
-        <def>3.15569259747e7 s</def>
-      </Unit>
-    </alias>
-    <symbol>yr</symbol>
-    <def>3.15569259747e7 s</def>
-  </Unit>
-  <Unit rdf:about="US_statute_mile">
-    <alias>
-      <Unit rdf:about="US_survey_mile">
-        <alias rdf:resource="US_statute_mile"/>
-        <def>5280 US_survey_feet</def>
-      </Unit>
-    </alias>
-    <def>5280 US_survey_feet</def>
-  </Unit>
-  <Unit rdf:about="international_inch">
-    <alias>
-      <Unit rdf:about="inch">
-        <alias rdf:resource="international_inch"/>
-        <symbol>in</symbol>
-        <def>2.54 cm</def>
-      </Unit>
-    </alias>
-    <symbol>in</symbol>
-    <def>2.54 cm</def>
-  </Unit>
-  <Unit rdf:about="standard_atmosphere">
-    <alias>
-      <Unit rdf:about="atmosphere">
-        <alias rdf:resource="standard_atmosphere"/>
-        <symbol>atm</symbol>
-        <def>1.01325e5 Pa</def>
-      </Unit>
-    </alias>
-    <symbol>atm</symbol>
-    <def>1.01325e5 Pa</def>
-  </Unit>
-  <Unit rdf:about="force_gram">
-    <alias>
-      <Unit rdf:about="gram_force">
-        <alias rdf:resource="force_gram"/>
-        <symbol>gf</symbol>
-        <def>gram force</def>
-      </Unit>
-    </alias>
-    <symbol>gf</symbol>
-    <def>gram force</def>
-  </Unit>
-  <Unit rdf:about="US_therm">
-    <alias>
-      <Unit rdf:about="therm">
-        <alias rdf:resource="US_therm"/>
-        <symbol>thm</symbol>
-        <def>1.054804e8 J</def>
-      </Unit>
-    </alias>
-    <symbol>thm</symbol>
-    <def>1.054804e8 J</def>
-  </Unit>
-  <Unit rdf:about="force_ounce">
-    <alias>
-      <Unit rdf:about="ounce_force">
-        <alias rdf:resource="force_ounce"/>
-        <symbol>ozf</symbol>
-        <def>2.780139e-1 N</def>
-      </Unit>
-    </alias>
-    <symbol>ozf</symbol>
-    <def>2.780139e-1 N</def>
-  </Unit>
-  <Unit rdf:about="octet">
-    <alias>
-      <Unit rdf:about="byte">
-        <alias rdf:resource="octet"/>
-        <def>8</def>
-      </Unit>
-    </alias>
-    <def>8</def>
-  </Unit>
-  <Unit rdf:about="dry_quart">
-    <alias>
-      <Unit rdf:about="US_dry_quart">
-        <alias rdf:resource="dry_quart"/>
-        <def>US_dry_gallon/4</def>
-      </Unit>
-    </alias>
-    <def>US_dry_gallon/4</def>
-  </Unit>
-  <Unit rdf:about="water_39F">
-    <alias>
-      <Unit rdf:about="water_4C">
-        <alias rdf:resource="water_39F"/>
-        <def>gravity 999.972 kg/m^3</def>
-      </Unit>
-    </alias>
-    <def>gravity 999.972 kg/m^3</def>
-  </Unit>
-  <Unit rdf:about="Btu">
-    <alias>
-      <Unit rdf:about="IT_Btu">
-        <alias rdf:resource="Btu"/>
-        <def>1.05505585262e3 J</def>
-      </Unit>
-    </alias>
-    <def>1.05505585262e3 J</def>
-  </Unit>
-  <Unit rdf:about="dynamic">
-    <alias>
-      <Unit rdf:about="geopotential">
-        <alias rdf:resource="dynamic"/>
-        <symbol>gp</symbol>
-        <def>gravity</def>
-      </Unit>
-    </alias>
-    <symbol>gp</symbol>
-    <def>gravity</def>
-  </Unit>
-  <Unit rdf:about="mile">
-    <alias>
-      <Unit rdf:about="international_mile">
-        <alias rdf:resource="mile"/>
-        <symbol>mi</symbol>
-        <def>5280 international_feet</def>
-      </Unit>
-    </alias>
-    <symbol>mi</symbol>
-    <def>5280 international_feet</def>
-  </Unit>
-  <Unit rdf:about="foot">
-    <alias>
-      <Unit rdf:about="international_foot">
-        <alias rdf:resource="foot"/>
-        <symbol>ft</symbol>
-        <def>12 international_inches</def>
-      </Unit>
-    </alias>
-    <symbol>ft</symbol>
-    <def>12 international_inches</def>
-  </Unit>
-  <Unit rdf:about="pound_force">
-    <alias>
-      <Unit rdf:about="force_pound">
-        <alias rdf:resource="pound_force"/>
-        <symbol>lbf</symbol>
-        <def>4.4482216152605 N</def>
-      </Unit>
-    </alias>
-    <symbol>lbf</symbol>
-    <def>4.4482216152605 N</def>
-  </Unit>
-  <Unit rdf:about="calorie">
-    <alias>
-      <Unit rdf:about="IT_calorie">
-        <alias rdf:resource="calorie"/>
-        <symbol>cal</symbol>
-        <def>4.1868 J</def>
-      </Unit>
-    </alias>
-    <symbol>cal</symbol>
-    <def>4.1868 J</def>
-  </Unit>
-  <Unit rdf:about="avoirdupois_pound">
-    <alias>
-      <Unit rdf:about="pound">
-        <alias rdf:resource="avoirdupois_pound"/>
-        <symbol>lb</symbol>
-        <def>4.5359237e-1 kg</def>
-      </Unit>
-    </alias>
-    <symbol>lb</symbol>
-    <def>4.5359237e-1 kg</def>
-  </Unit>
-  <Unit rdf:about="troy_ounce">
-    <alias>
-      <Unit rdf:about="apothecary_ounce">
-        <alias rdf:resource="troy_ounce"/>
-        <def>3.110348e-2 kg</def>
-      </Unit>
-    </alias>
-    <def>3.110348e-2 kg</def>
-  </Unit>
-  <Unit rdf:about="C12_faraday">
-    <alias>
-      <Unit rdf:about="faraday">
-        <alias rdf:resource="C12_faraday"/>
-        <def>9.648531e4 C</def>
-      </Unit>
-    </alias>
-    <def>9.648531e4 C</def>
-  </Unit>
-  <Unit rdf:about="dry_pint">
-    <alias>
-      <Unit rdf:about="US_dry_pint">
-        <alias rdf:resource="dry_pint"/>
-        <def>US_dry_gallon/8</def>
-      </Unit>
-    </alias>
-    <def>US_dry_gallon/8</def>
-  </Unit>
-  <Unit rdf:about="force_ton">
-    <alias>
-      <Unit rdf:about="ton_force">
-        <alias rdf:resource="force_ton"/>
-        <def>2000 force_pound</def>
-      </Unit>
-    </alias>
-    <def>2000 force_pound</def>
-  </Unit>
-  <Unit rdf:about="short_ton">
-    <alias>
-      <Unit rdf:about="ton">
-        <alias rdf:resource="short_ton"/>
-        <def>2000 pound</def>
-      </Unit>
-    </alias>
-    <def>2000 pound</def>
+  <owl:Class rdf:about="UnitName">
+    <rdfs:label>UnitName</rdfs:label>
+  </owl:Class>
+  <Unit rdf:about="_2b224817">
+    <hasSymbol>BZ</hasSymbol>
+    <hasDefinition>lg(re (1e-6 m)^3)</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_53d0dd63">
+    <hasSymbol>fldr</hasSymbol>
+    <hasDefinition>US_fluid_ounce/8</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_80106dc0">
+    <hasSymbol>ppbv</hasSymbol>
+    <hasSymbol>ppb</hasSymbol>
+    <hasDefinition>1e-9</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_d0767833">
+    <hasSymbol>cmHg</hasSymbol>
+    <hasSymbol>cm_Hg</hasSymbol>
+    <hasDefinition>cm Hg</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_80ee5b1b">
+    <hasSymbol>cmH2O</hasSymbol>
+    <hasSymbol>cm_H2O</hasSymbol>
+    <hasDefinition>cm H2O</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_18f4a980">
+    <hasSymbol>BW</hasSymbol>
+    <hasDefinition>lg(re 1 W)</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_0e69ef04">
+    <hasSymbol>e</hasSymbol>
+    <hasDefinition>1.602176487e-19 C</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_0663aff2">
+    <hasSymbol>ppmv</hasSymbol>
+    <hasSymbol>ppm</hasSymbol>
+    <hasDefinition>1e-6</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_68b68883">
+    <hasSymbol>bev</hasSymbol>
+    <hasDefinition>1e9 eV</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_ab91ce07">
+    <hasSymbol>B_SPL</hasSymbol>
+    <hasDefinition>lg(re 20e-6 Pa)</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_47c23792">
+    <hasSymbol>rpm</hasSymbol>
+    <hasDefinition>rotation/minute</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_c1010e19">
+    <hasSymbol>pptv</hasSymbol>
+    <hasSymbol>ppt</hasSymbol>
+    <hasDefinition>1e-12</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_5bb2a292">
+    <hasSymbol>ppqv</hasSymbol>
+    <hasSymbol>ppq</hasSymbol>
+    <hasDefinition>1e-15</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_f89d43ce">
+    <hasSymbol>Bv</hasSymbol>
+    <hasDefinition>lg(re 0.775 V)</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_40a22a4a">
+    <hasSymbol>kts</hasSymbol>
+    <hasSymbol>kt</hasSymbol>
+    <hasDefinition>knot</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_7553526f">
+    <hasSymbol>BV</hasSymbol>
+    <hasDefinition>lg(re 1 V)</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_c2e7b0f0">
+    <hasSymbol>ksi</hasSymbol>
+    <hasDefinition>kip/in^2</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_46c72920">
+    <hasSymbol>Bm</hasSymbol>
+    <hasDefinition>lg(re 1 mW)</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_3d4ec05f">
+    <hasSymbol>psi</hasSymbol>
+    <hasDefinition>1 pound gravity/in^2</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_23baf5ca">
+    <hasSymbol>cc</hasSymbol>
+    <hasDefinition>cm^3</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_c4ab0a4c">
+    <hasSymbol>BµV</hasSymbol>
+    <hasDefinition>lg(re 1e-6 V)</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_6649a63c">
+    <hasAlias>
+      <UnitName rdf:about="waters_39F">
+        <namesUnit rdf:resource="_6649a63c"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="water_39F">
+        <namesUnit rdf:resource="_6649a63c"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="waters_4C">
+        <namesUnit rdf:resource="_6649a63c"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="water_4C">
+        <namesUnit rdf:resource="_6649a63c"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>gravity 999.972 kg/m^3</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_fe5dbbce">
+    <hasAlias>
+      <UnitName rdf:about="byte">
+        <namesUnit rdf:resource="_fe5dbbce"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="octet">
+        <namesUnit rdf:resource="_fe5dbbce"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>8</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_3fecf90d">
+    <hasAlias>
+      <UnitName rdf:about="perms_0C">
+        <namesUnit rdf:resource="_3fecf90d"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="perm_0C">
+        <namesUnit rdf:resource="_3fecf90d"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>5.72135e-11 kg/(Pa.s.m^2)</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_8edd2794">
+    <hasAlias>
+      <UnitName rdf:about="mercuries_60F">
+        <namesUnit rdf:resource="_8edd2794"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="mercury_60F">
+        <namesUnit rdf:resource="_8edd2794"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>gravity 13556.8 kg/m^3</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_dc7a9b29">
+    <hasAlias>
+      <UnitName rdf:about="horsepower">
+        <hasSymbol>hp</hasSymbol>
+        <namesUnit rdf:resource="_dc7a9b29"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="shaft_horsepower">
+        <namesUnit rdf:resource="_dc7a9b29"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>7.456999e2 W</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_a8350565">
+    <hasAlias>
+      <UnitName rdf:about="UK_liquid_ounce">
+        <namesUnit rdf:resource="_a8350565"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="UK_fluid_ounce">
+        <namesUnit rdf:resource="_a8350565"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>UK_liquid_gallon/160</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_27077b27">
+    <hasAlias>
+      <UnitName rdf:about="liquid_ounce">
+        <hasSymbol>floz</hasSymbol>
+        <hasSymbol>oz</hasSymbol>
+        <namesUnit rdf:resource="_27077b27"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="fluid_ounce">
+        <namesUnit rdf:resource="_27077b27"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="US_liquid_ounce">
+        <namesUnit rdf:resource="_27077b27"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="US_fluid_ounce">
+        <namesUnit rdf:resource="_27077b27"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>US_liquid_gallon/128</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_d5bfaf1d">
+    <hasAlias>
+      <UnitName rdf:about="inches_Hg_32F">
+        <namesUnit rdf:resource="_d5bfaf1d"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="inch_Hg_32F">
+        <namesUnit rdf:resource="_d5bfaf1d"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>inch mercury_32F</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_9a4d4789">
+    <hasAlias>
+      <UnitName rdf:about="dry_pint">
+        <namesUnit rdf:resource="_9a4d4789"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="US_dry_pint">
+        <namesUnit rdf:resource="_9a4d4789"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>US_dry_gallon/8</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_a87c034c">
+    <hasAlias>
+      <UnitName rdf:about="tons_of_refrigeration">
+        <namesUnit rdf:resource="_a87c034c"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="ton_of_refrigeration">
+        <namesUnit rdf:resource="_a87c034c"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="refrigeration_ton">
+        <namesUnit rdf:resource="_a87c034c"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>12000 Btu/hr</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_ab38f290">
+    <hasAlias>
+      <UnitName rdf:about="inches_Hg_60F">
+        <namesUnit rdf:resource="_ab38f290"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="inch_Hg_60F">
+        <namesUnit rdf:resource="_ab38f290"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>inch mercury_60F</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_a65e12b4">
+    <hasAlias>
+      <UnitName rdf:about="water">
+        <hasSymbol>h2o</hasSymbol>
+        <hasSymbol>H2O</hasSymbol>
+        <namesUnit rdf:resource="_a65e12b4"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="conventional_water">
+        <namesUnit rdf:resource="_a65e12b4"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>gravity 1000 kg/m^3</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_161de1b3">
+    <hasAlias>
+      <UnitName rdf:about="force_gram">
+        <hasSymbol>gf</hasSymbol>
+        <namesUnit rdf:resource="_161de1b3"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="grams_force">
+        <namesUnit rdf:resource="_161de1b3"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="gram_force">
+        <namesUnit rdf:resource="_161de1b3"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>gram force</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_7843fee8">
+    <hasAlias>
+      <UnitName rdf:about="inches_H2O_60F">
+        <namesUnit rdf:resource="_7843fee8"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="inch_H2O_60F">
+        <namesUnit rdf:resource="_7843fee8"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>inch water_60F</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_5d0588b9">
+    <hasAlias>
+      <UnitName rdf:about="conventional_mercuries">
+        <hasSymbol>Hg</hasSymbol>
+        <namesUnit rdf:resource="_5d0588b9"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="conventional_mercury">
+        <namesUnit rdf:resource="_5d0588b9"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="mercuries_32F">
+        <namesUnit rdf:resource="_5d0588b9"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="mercury_32F">
+        <namesUnit rdf:resource="_5d0588b9"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="mercuries_0C">
+        <namesUnit rdf:resource="_5d0588b9"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="mercury_0C">
+        <namesUnit rdf:resource="_5d0588b9"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>gravity 13595.10 kg/m^3</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_63cb0d5f">
+    <hasAlias>
+      <UnitName rdf:about="torr">
+        <hasSymbol>mmhg</hasSymbol>
+        <hasSymbol>mmHg</hasSymbol>
+        <hasSymbol>mm_hg</hasSymbol>
+        <hasSymbol>mm_Hg</hasSymbol>
+        <namesUnit rdf:resource="_63cb0d5f"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="millimeters_Hg">
+        <namesUnit rdf:resource="_63cb0d5f"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="millimeter_Hg">
+        <namesUnit rdf:resource="_63cb0d5f"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>mm Hg</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_f8ea039d">
+    <hasAlias>
+      <UnitName rdf:about="faraday">
+        <namesUnit rdf:resource="_f8ea039d"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="C12_faraday">
+        <namesUnit rdf:resource="_f8ea039d"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>9.648531e4 C</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_c1295929">
+    <hasAlias>
+      <UnitName rdf:about="board_feet">
+        <namesUnit rdf:resource="_c1295929"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="board_foot">
+        <namesUnit rdf:resource="_c1295929"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>2.359737e-3 m^3</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_9e744d58">
+    <hasAlias>
+      <UnitName rdf:about="US_survey_feet">
+        <namesUnit rdf:resource="_9e744d58"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="US_survey_foot">
+        <namesUnit rdf:resource="_9e744d58"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>(1200/3937) m</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_5a5b4c68">
+    <hasAlias>
+      <UnitName rdf:about="therm">
+        <hasSymbol>thm</hasSymbol>
+        <namesUnit rdf:resource="_5a5b4c68"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="US_therm">
+        <namesUnit rdf:resource="_5a5b4c68"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>1.054804e8 J</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_a498fa01">
+    <hasAlias>
+      <UnitName rdf:about="ounces_force">
+        <hasSymbol>ozf</hasSymbol>
+        <namesUnit rdf:resource="_a498fa01"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="ounce_force">
+        <namesUnit rdf:resource="_a498fa01"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="force_ounce">
+        <namesUnit rdf:resource="_a498fa01"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>2.780139e-1 N</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_5178baa2">
+    <hasAlias>
+      <UnitName rdf:about="pica">
+        <namesUnit rdf:resource="_5178baa2"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="printers_pica">
+        <namesUnit rdf:resource="_5178baa2"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>12 printers_point</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_40e5df5d">
+    <hasAlias>
+      <UnitName rdf:about="perms_23C">
+        <namesUnit rdf:resource="_40e5df5d"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="perm_23C">
+        <namesUnit rdf:resource="_40e5df5d"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>5.74525e-11 kg/(Pa.s.m^2)</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_d3c59bc9">
+    <hasSymbol>℉</hasSymbol>
+    <hasAlias>
+      <UnitName rdf:about="fahrenheit">
+        <namesUnit rdf:resource="_d3c59bc9"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="degs_F">
+        <namesUnit rdf:resource="_d3c59bc9"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="degsF">
+        <namesUnit rdf:resource="_d3c59bc9"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="degreeF">
+        <namesUnit rdf:resource="_d3c59bc9"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="degree_F">
+        <namesUnit rdf:resource="_d3c59bc9"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="degrees_fahrenheit">
+        <namesUnit rdf:resource="_d3c59bc9"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="degreesF">
+        <namesUnit rdf:resource="_d3c59bc9"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="degree_fahrenheit">
+        <namesUnit rdf:resource="_d3c59bc9"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>°R @ 459.67</hasDefinition>
+    <hasAlias>
+      <UnitName rdf:about="degrees_F">
+        <namesUnit rdf:resource="_d3c59bc9"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasSymbol>°F</hasSymbol>
+    <hasAlias>
+      <UnitName rdf:about="degF">
+        <namesUnit rdf:resource="_d3c59bc9"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="deg_F">
+        <namesUnit rdf:resource="_d3c59bc9"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+  </Unit>
+  <Unit rdf:about="_c9ebfd86">
+    <hasAlias>
+      <UnitName rdf:about="ton">
+        <namesUnit rdf:resource="_c9ebfd86"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="short_ton">
+        <namesUnit rdf:resource="_c9ebfd86"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>2000 pound</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_e7be0c33">
+    <hasAlias>
+      <UnitName rdf:about="barye">
+        <namesUnit rdf:resource="_e7be0c33"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="barie">
+        <namesUnit rdf:resource="_e7be0c33"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>0.1 N/m^2</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_856a4544">
+    <hasAlias>
+      <UnitName rdf:about="pounds_force">
+        <hasSymbol>lbf</hasSymbol>
+        <namesUnit rdf:resource="_856a4544"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="pound_force">
+        <namesUnit rdf:resource="_856a4544"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="force_pound">
+        <namesUnit rdf:resource="_856a4544"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>4.4482216152605 N</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_dc48740a">
+    <hasAlias>
+      <UnitName rdf:about="inch">
+        <hasSymbol>in</hasSymbol>
+        <namesUnit rdf:resource="_dc48740a"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="international_inch">
+        <namesUnit rdf:resource="_dc48740a"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>2.54 cm</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_199e6a19">
+    <hasAlias>
+      <UnitName rdf:about="force">
+        <namesUnit rdf:resource="_199e6a19"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="gravity">
+        <namesUnit rdf:resource="_199e6a19"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>standard_free_fall</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_7e623454">
+    <hasAlias>
+      <UnitName rdf:about="yard">
+        <hasSymbol>yd</hasSymbol>
+        <namesUnit rdf:resource="_7e623454"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="international_yard">
+        <namesUnit rdf:resource="_7e623454"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>3 international_feet</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_a7ee38bb">
+    <hasSymbol>°K</hasSymbol>
+    <hasAlias>
+      <UnitName rdf:about="deg_K">
+        <namesUnit rdf:resource="_a7ee38bb"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="degs_K">
+        <namesUnit rdf:resource="_a7ee38bb"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="degreeK">
+        <namesUnit rdf:resource="_a7ee38bb"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="degsK">
+        <namesUnit rdf:resource="_a7ee38bb"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="degrees_K">
+        <namesUnit rdf:resource="_a7ee38bb"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>K</hasDefinition>
+    <hasAlias>
+      <UnitName rdf:about="degrees_kelvin">
+        <namesUnit rdf:resource="_a7ee38bb"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="degree_kelvin">
+        <namesUnit rdf:resource="_a7ee38bb"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="degree_K">
+        <namesUnit rdf:resource="_a7ee38bb"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="degreesK">
+        <namesUnit rdf:resource="_a7ee38bb"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="degK">
+        <namesUnit rdf:resource="_a7ee38bb"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+  </Unit>
+  <Unit rdf:about="_72255695">
+    <hasAlias>
+      <UnitName rdf:about="quart">
+        <namesUnit rdf:resource="_72255695"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="liquid_quart">
+        <namesUnit rdf:resource="_72255695"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="US_liquid_quart">
+        <namesUnit rdf:resource="_72255695"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>US_liquid_gallon/4</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_e9ffa163">
+    <hasAlias>
+      <UnitName rdf:about="degreesW">
+        <namesUnit rdf:resource="_e9ffa163"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="degreeW">
+        <namesUnit rdf:resource="_e9ffa163"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="degrees_W">
+        <namesUnit rdf:resource="_e9ffa163"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="degree_W">
+        <namesUnit rdf:resource="_e9ffa163"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="degrees_west">
+        <namesUnit rdf:resource="_e9ffa163"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="degree_west">
+        <namesUnit rdf:resource="_e9ffa163"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>-1 degree_east</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_0e586513">
+    <hasAlias>
+      <UnitName rdf:about="pint">
+        <hasSymbol>pt</hasSymbol>
+        <namesUnit rdf:resource="_0e586513"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="liquid_pint">
+        <namesUnit rdf:resource="_0e586513"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="US_liquid_pint">
+        <namesUnit rdf:resource="_0e586513"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>US_liquid_gallon/8</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_356a192b">
+    <hasAlias>
+      <UnitName rdf:about="bit">
+        <namesUnit rdf:resource="_356a192b"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="count">
+        <namesUnit rdf:resource="_356a192b"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>1</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_b470b0e2">
+    <hasAlias>
+      <UnitName rdf:about="feet">
+        <hasSymbol>ft</hasSymbol>
+        <namesUnit rdf:resource="_b470b0e2"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="foot">
+        <namesUnit rdf:resource="_b470b0e2"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="international_feet">
+        <namesUnit rdf:resource="_b470b0e2"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="international_foot">
+        <namesUnit rdf:resource="_b470b0e2"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>12 international_inches</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_040938f3">
+    <hasAlias>
+      <UnitName rdf:about="degrees_true">
+        <namesUnit rdf:resource="_040938f3"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="degreesE">
+        <namesUnit rdf:resource="_040938f3"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="degree_east">
+        <namesUnit rdf:resource="_040938f3"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="degree_E">
+        <namesUnit rdf:resource="_040938f3"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="degrees_T">
+        <namesUnit rdf:resource="_040938f3"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="degrees_north">
+        <namesUnit rdf:resource="_040938f3"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="degree_north">
+        <namesUnit rdf:resource="_040938f3"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="degreesT">
+        <namesUnit rdf:resource="_040938f3"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="degrees_east">
+        <namesUnit rdf:resource="_040938f3"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>arc_degree</hasDefinition>
+    <hasAlias>
+      <UnitName rdf:about="degreeT">
+        <namesUnit rdf:resource="_040938f3"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="degree_T">
+        <namesUnit rdf:resource="_040938f3"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="degree_true">
+        <namesUnit rdf:resource="_040938f3"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="degreeE">
+        <namesUnit rdf:resource="_040938f3"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="degreeN">
+        <namesUnit rdf:resource="_040938f3"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="degrees_E">
+        <namesUnit rdf:resource="_040938f3"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="degrees_N">
+        <namesUnit rdf:resource="_040938f3"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="degreesN">
+        <namesUnit rdf:resource="_040938f3"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="degree_N">
+        <namesUnit rdf:resource="_040938f3"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+  </Unit>
+  <Unit rdf:about="_035027ec">
+    <hasAlias>
+      <UnitName rdf:about="calorie">
+        <hasSymbol>cal</hasSymbol>
+        <namesUnit rdf:resource="_035027ec"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="IT_calorie">
+        <namesUnit rdf:resource="_035027ec"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>4.1868 J</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_b7b2fa1f">
+    <hasAlias>
+      <UnitName rdf:about="tons_TNT">
+        <namesUnit rdf:resource="_b7b2fa1f"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="ton_TNT">
+        <namesUnit rdf:resource="_b7b2fa1f"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>4.184e9 J</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_e1afacc3">
+    <hasAlias>
+      <UnitName rdf:about="kilograms_force">
+        <hasSymbol>kgf</hasSymbol>
+        <namesUnit rdf:resource="_e1afacc3"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="kilogram_force">
+        <namesUnit rdf:resource="_e1afacc3"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="force_kilogram">
+        <namesUnit rdf:resource="_e1afacc3"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>9.806650 N</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_e14a3aa7">
+    <hasAlias>
+      <UnitName rdf:about="degreesR">
+        <namesUnit rdf:resource="_e14a3aa7"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="degsR">
+        <namesUnit rdf:resource="_e14a3aa7"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="degrees_rankine">
+        <namesUnit rdf:resource="_e14a3aa7"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="degreeR">
+        <namesUnit rdf:resource="_e14a3aa7"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasSymbol>°R</hasSymbol>
+    <hasDefinition>K/1.8</hasDefinition>
+    <hasAlias>
+      <UnitName rdf:about="degree_R">
+        <namesUnit rdf:resource="_e14a3aa7"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="degrees_R">
+        <namesUnit rdf:resource="_e14a3aa7"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="degree_rankine">
+        <namesUnit rdf:resource="_e14a3aa7"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="degs_R">
+        <namesUnit rdf:resource="_e14a3aa7"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="degR">
+        <namesUnit rdf:resource="_e14a3aa7"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="deg_R">
+        <namesUnit rdf:resource="_e14a3aa7"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+  </Unit>
+  <Unit rdf:about="_ada87b6c">
+    <hasAlias>
+      <UnitName rdf:about="dynamic">
+        <hasSymbol>gp</hasSymbol>
+        <namesUnit rdf:resource="_ada87b6c"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="geopotential">
+        <namesUnit rdf:resource="_ada87b6c"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>gravity</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_8510dbb4">
+    <hasAlias>
+      <UnitName rdf:about="year">
+        <hasSymbol>yr</hasSymbol>
+        <namesUnit rdf:resource="_8510dbb4"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="tropical_year">
+        <namesUnit rdf:resource="_8510dbb4"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>3.15569259747e7 s</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_a816adb0">
+    <hasAlias>
+      <UnitName rdf:about="UK_liquid_gallon">
+        <namesUnit rdf:resource="_a816adb0"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="Canadian_liquid_gallon">
+        <namesUnit rdf:resource="_a816adb0"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>4.546090e-3 m^3</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_3baf5098">
+    <hasAlias>
+      <UnitName rdf:about="tons_force">
+        <namesUnit rdf:resource="_3baf5098"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="ton_force">
+        <namesUnit rdf:resource="_3baf5098"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="force_ton">
+        <namesUnit rdf:resource="_3baf5098"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>2000 force_pound</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_d7d0df78">
+    <hasAlias>
+      <UnitName rdf:about="apostilb">
+        <namesUnit rdf:resource="_d7d0df78"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="blondel">
+        <namesUnit rdf:resource="_d7d0df78"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>cd/(pi m^2)</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_dcecb084">
+    <hasAlias>
+      <UnitName rdf:about="US_statute_mile">
+        <namesUnit rdf:resource="_dcecb084"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="US_survey_mile">
+        <namesUnit rdf:resource="_dcecb084"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>5280 US_survey_feet</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_d5993c05">
+    <hasAlias>
+      <UnitName rdf:about="gallon">
+        <namesUnit rdf:resource="_d5993c05"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="liquid_gallon">
+        <namesUnit rdf:resource="_d5993c05"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="US_liquid_gallon">
+        <namesUnit rdf:resource="_d5993c05"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>3.785412e-3 m^3</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_473c446f">
+    <hasAlias>
+      <UnitName rdf:about="atmosphere">
+        <hasSymbol>atm</hasSymbol>
+        <namesUnit rdf:resource="_473c446f"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="standard_atmosphere">
+        <namesUnit rdf:resource="_473c446f"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>1.01325e5 Pa</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_5eda5072">
+    <hasAlias>
+      <UnitName rdf:about="pound">
+        <hasSymbol>lb</hasSymbol>
+        <namesUnit rdf:resource="_5eda5072"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="avoirdupois_pound">
+        <namesUnit rdf:resource="_5eda5072"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>4.5359237e-1 kg</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_30298988">
+    <hasAlias>
+      <UnitName rdf:about="gill">
+        <namesUnit rdf:resource="_30298988"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="liquid_gill">
+        <namesUnit rdf:resource="_30298988"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="US_liquid_gill">
+        <namesUnit rdf:resource="_30298988"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>US_liquid_gallon/32</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_c9bcb147">
+    <hasAlias>
+      <UnitName rdf:about="waters_60F">
+        <namesUnit rdf:resource="_c9bcb147"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="water_60F">
+        <namesUnit rdf:resource="_c9bcb147"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>gravity 999.001 kg/m^3</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_5cee3bc9">
+    <hasAlias>
+      <UnitName rdf:about="Btus">
+        <namesUnit rdf:resource="_5cee3bc9"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="Btu">
+        <namesUnit rdf:resource="_5cee3bc9"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="IT_Btus">
+        <namesUnit rdf:resource="_5cee3bc9"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="IT_Btu">
+        <namesUnit rdf:resource="_5cee3bc9"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>1.05505585262e3 J</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_c709611a">
+    <hasAlias>
+      <UnitName rdf:about="apothecary_pound">
+        <namesUnit rdf:resource="_c709611a"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="troy_pound">
+        <namesUnit rdf:resource="_c709611a"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>3.732417e-1 kg</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_1fb88102">
+    <hasAlias>
+      <UnitName rdf:about="rotation">
+        <namesUnit rdf:resource="_1fb88102"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="revolution">
+        <namesUnit rdf:resource="_1fb88102"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="turn">
+        <namesUnit rdf:resource="_1fb88102"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="cycle">
+        <namesUnit rdf:resource="_1fb88102"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="circle">
+        <namesUnit rdf:resource="_1fb88102"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>2 pi rad</hasDefinition>
+  </Unit>
+  <UnitName rdf:about="molecule">
+    <namesUnit>
+      <Unit rdf:about="_78161f7d">
+        <hasAlias>
+          <UnitName rdf:about="nuc">
+            <namesUnit rdf:resource="_78161f7d"/>
+            <hasCardinality>singular</hasCardinality>
+          </UnitName>
+        </hasAlias>
+        <hasAlias>
+          <UnitName rdf:about="nucleon">
+            <namesUnit rdf:resource="_78161f7d"/>
+            <hasCardinality>singular</hasCardinality>
+          </UnitName>
+        </hasAlias>
+        <hasAlias>
+          <UnitName rdf:about="molec">
+            <namesUnit rdf:resource="_78161f7d"/>
+            <hasCardinality>singular</hasCardinality>
+          </UnitName>
+        </hasAlias>
+        <hasName rdf:resource="molecule"/>
+        <hasAlias rdf:resource="molecule"/>
+        <hasDefinition>mol/6.02214129e23</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <Unit rdf:about="_86385633">
+    <hasAlias>
+      <UnitName rdf:about="degreeC">
+        <namesUnit rdf:resource="_86385633"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="celsius">
+        <namesUnit rdf:resource="_86385633"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="degs_C">
+        <namesUnit rdf:resource="_86385633"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasSymbol>℃</hasSymbol>
+    <hasDefinition>degree_Celsius</hasDefinition>
+    <hasAlias>
+      <UnitName rdf:about="degreesC">
+        <namesUnit rdf:resource="_86385633"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="degC">
+        <namesUnit rdf:resource="_86385633"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="degsC">
+        <namesUnit rdf:resource="_86385633"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="deg_C">
+        <namesUnit rdf:resource="_86385633"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="degrees_C">
+        <namesUnit rdf:resource="_86385633"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="degree_C">
+        <namesUnit rdf:resource="_86385633"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+  </Unit>
+  <Unit rdf:about="_eb44856b">
+    <hasAlias>
+      <UnitName rdf:about="acre_feet">
+        <namesUnit rdf:resource="_eb44856b"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="acre_foot">
+        <namesUnit rdf:resource="_eb44856b"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>1.233489e3 m^3</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_2e4831ac">
+    <hasAlias>
+      <UnitName rdf:about="feetH2O">
+        <hasSymbol>fth2o</hasSymbol>
+        <hasSymbol>ftH2O</hasSymbol>
+        <namesUnit rdf:resource="_2e4831ac"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="footH2O">
+        <namesUnit rdf:resource="_2e4831ac"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="feet_H2O">
+        <namesUnit rdf:resource="_2e4831ac"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="foot_H2O">
+        <namesUnit rdf:resource="_2e4831ac"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="feet_water">
+        <namesUnit rdf:resource="_2e4831ac"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="foot_water">
+        <namesUnit rdf:resource="_2e4831ac"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>foot water</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_16c97360">
+    <hasAlias>
+      <UnitName rdf:about="cup">
+        <namesUnit rdf:resource="_16c97360"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="liquid_cup">
+        <namesUnit rdf:resource="_16c97360"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="US_liquid_cup">
+        <namesUnit rdf:resource="_16c97360"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>US_liquid_gallon/16</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_e4684f55">
+    <hasAlias>
+      <UnitName rdf:about="inches_H2O_39F">
+        <namesUnit rdf:resource="_e4684f55"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="inch_H2O_39F">
+        <namesUnit rdf:resource="_e4684f55"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>inch water_39F</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_1b7fac4e">
+    <hasAlias>
+      <UnitName rdf:about="rotations_per_second">
+        <hasSymbol>cps</hasSymbol>
+        <hasSymbol>rps</hasSymbol>
+        <namesUnit rdf:resource="_1b7fac4e"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="rotation_per_second">
+        <namesUnit rdf:resource="_1b7fac4e"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>rotation/second</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_ce44377e">
+    <hasAlias>
+      <UnitName rdf:about="mile">
+        <hasSymbol>mi</hasSymbol>
+        <namesUnit rdf:resource="_ce44377e"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="international_mile">
+        <namesUnit rdf:resource="_ce44377e"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>5280 international_feet</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_c8230af0">
+    <hasAlias>
+      <UnitName rdf:about="dry_quart">
+        <namesUnit rdf:resource="_c8230af0"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="US_dry_quart">
+        <namesUnit rdf:resource="_c8230af0"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>US_dry_gallon/4</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_41abb8fe">
+    <hasAlias>
+      <UnitName rdf:about="biot">
+        <namesUnit rdf:resource="_41abb8fe"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="abampere">
+        <namesUnit rdf:resource="_41abb8fe"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>10 A</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_8721f5c2">
+    <hasAlias>
+      <UnitName rdf:about="perch">
+        <namesUnit rdf:resource="_8721f5c2"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="pole">
+        <namesUnit rdf:resource="_8721f5c2"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="rod">
+        <namesUnit rdf:resource="_8721f5c2"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>16.5 US_survey_feet</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_0699858b">
+    <hasAlias>
+      <UnitName rdf:about="apothecary_ounce">
+        <namesUnit rdf:resource="_0699858b"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="troy_ounce">
+        <namesUnit rdf:resource="_0699858b"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>3.110348e-2 kg</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_fd2b4af7">
+    <hasAlias>
+      <UnitName rdf:about="millimeters_Hg_0C">
+        <namesUnit rdf:resource="_fd2b4af7"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="millimeter_Hg_0C">
+        <namesUnit rdf:resource="_fd2b4af7"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>mm mercury_0C</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_691857c1">
+    <hasAlias>
+      <UnitName rdf:about="inches_Hg">
+        <hasSymbol>inHg</hasSymbol>
+        <hasSymbol>in_Hg</hasSymbol>
+        <namesUnit rdf:resource="_691857c1"/>
+        <hasCardinality>plural</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasAlias>
+      <UnitName rdf:about="inch_Hg">
+        <namesUnit rdf:resource="_691857c1"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>inch Hg</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_6edf83f8">
+    <hasAlias>
+      <UnitName rdf:about="unit_pole">
+        <namesUnit rdf:resource="_6edf83f8"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>1.256637e-7 Wb</hasDefinition>
+  </Unit>
+  <UnitName rdf:about="UK_horsepower">
+    <namesUnit>
+      <Unit rdf:about="_ed6241f4">
+        <hasAlias rdf:resource="UK_horsepower"/>
+        <hasDefinition>7.4570e2 W</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <UnitName rdf:about="clo">
+    <namesUnit>
+      <Unit rdf:about="_8ef8b0aa">
+        <hasAlias rdf:resource="clo"/>
+        <hasDefinition>1.55e-1 K.m^2/W</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <Unit rdf:about="_88173a20">
+    <hasAlias>
+      <UnitName rdf:about="boiler_horsepower">
+        <namesUnit rdf:resource="_88173a20"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>9.80950e3 W</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_3275b154">
+    <hasAlias>
+      <UnitName rdf:about="footcandle">
+        <namesUnit rdf:resource="_3275b154"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>1.076391e-1 lx</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_19ae9060">
+    <hasAlias>
+      <UnitName rdf:about="grain">
+        <hasSymbol>gr</hasSymbol>
+        <namesUnit rdf:resource="_19ae9060"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>6.479891e-5 kg</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_d025fa39">
+    <hasAlias>
+      <UnitName rdf:about="jiffy">
+        <namesUnit rdf:resource="_d025fa39"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>0.01 s</hasDefinition>
+  </Unit>
+  <UnitName rdf:about="sidereal_hour">
+    <namesUnit>
+      <Unit rdf:about="_de2a3440">
+        <hasAlias rdf:resource="sidereal_hour"/>
+        <hasDefinition>3.590170e3 s</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <UnitName rdf:about="statvolt">
+    <namesUnit>
+      <Unit rdf:about="_219d0c68">
+        <hasAlias rdf:resource="statvolt"/>
+        <hasDefinition>2.997925e2 V</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <Unit rdf:about="_6751413e">
+    <hasAlias>
+      <UnitName rdf:about="furlong">
+        <namesUnit rdf:resource="_6751413e"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>660 US_survey_feet</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_0470c391">
+    <hasAlias>
+      <UnitName rdf:about="bushel">
+        <hasSymbol>bu</hasSymbol>
+        <namesUnit rdf:resource="_0470c391"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>3.523907e-2 m^3</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_1d3e70a0">
+    <hasAlias>
+      <UnitName rdf:about="short_hundredweight">
+        <namesUnit rdf:resource="_1d3e70a0"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>4.535924e1 kg</hasDefinition>
+  </Unit>
+  <UnitName rdf:about="teaspoon">
+    <hasSymbol>tsp</hasSymbol>
+    <namesUnit>
+      <Unit rdf:about="_06e1f7c2">
+        <hasAlias rdf:resource="teaspoon"/>
+        <hasDefinition>tablespoon/3</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <UnitName rdf:about="standard_free_fall">
+    <namesUnit>
+      <Unit rdf:about="_01797f87">
+        <hasAlias rdf:resource="standard_free_fall"/>
+        <hasDefinition>9.806650 m/s^2</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <UnitName rdf:about="dyne">
+    <namesUnit>
+      <Unit rdf:about="_5b91a853">
+        <hasAlias rdf:resource="dyne"/>
+        <hasDefinition>1e-5 N</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <UnitName rdf:about="abmho">
+    <namesUnit>
+      <Unit rdf:about="_585f9f9c">
+        <hasAlias rdf:resource="abmho"/>
+        <hasDefinition>1e9 S</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <UnitName rdf:about="nit">
+    <hasSymbol>nt</hasSymbol>
+    <namesUnit>
+      <Unit rdf:about="_048445d2">
+        <hasAlias rdf:resource="nit"/>
+        <hasDefinition>1 cd/m^2</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <Unit rdf:about="_fdc0a408">
+    <hasAlias>
+      <UnitName rdf:about="micron">
+        <namesUnit rdf:resource="_fdc0a408"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>1e-6 m</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_e79dad9a">
+    <hasAlias>
+      <UnitName rdf:about="common_year">
+        <namesUnit rdf:resource="_e79dad9a"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>365 day</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_a991570f">
+    <hasAlias>
+      <UnitName rdf:about="darcy">
+        <namesUnit rdf:resource="_a991570f"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>9.869233e-13 m^2</hasDefinition>
+  </Unit>
+  <UnitName rdf:about="lambert">
+    <namesUnit>
+      <Unit rdf:about="_f37df78f">
+        <hasAlias rdf:resource="lambert"/>
+        <hasDefinition>(1e4/pi) cd/m^2</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <UnitName rdf:about="grade">
+    <namesUnit>
+      <Unit rdf:about="_dcb22a74">
+        <hasAlias rdf:resource="grade"/>
+        <hasDefinition>0.9 arc_degree</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <UnitName rdf:about="light_year">
+    <namesUnit>
+      <Unit rdf:about="_3ec8d17a">
+        <hasAlias rdf:resource="light_year"/>
+        <hasDefinition>9.46073e15 m</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <Unit rdf:about="_7e0c6871">
+    <hasAlias>
+      <UnitName rdf:about="pond">
+        <namesUnit rdf:resource="_7e0c6871"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>9.806650e-3 N</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_1ab0fc54">
+    <hasAlias>
+      <UnitName rdf:about="denier">
+        <namesUnit rdf:resource="_1ab0fc54"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>1.111111e-7 kg/m</hasDefinition>
+  </Unit>
+  <UnitName rdf:about="rhe">
+    <namesUnit>
+      <Unit rdf:about="_5b7ac7e3">
+        <hasAlias rdf:resource="rhe"/>
+        <hasDefinition>10/(Pa.s)</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <Unit rdf:about="_d8eef780">
+    <hasAlias>
+      <UnitName rdf:about="acre">
+        <namesUnit rdf:resource="_d8eef780"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>160 rod^2</hasDefinition>
+  </Unit>
+  <UnitName rdf:about="arpentlin">
+    <namesUnit>
+      <Unit rdf:about="_67cb8956">
+        <hasAlias rdf:resource="arpentlin"/>
+        <hasDefinition>191.835 foot</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <Unit rdf:about="_5bd84efc">
+    <hasAlias>
+      <UnitName rdf:about="maxwell">
+        <namesUnit rdf:resource="_5bd84efc"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>1e-8 Wb</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_e976e9ab">
+    <hasAlias>
+      <UnitName rdf:about="parsec">
+        <namesUnit rdf:resource="_e976e9ab"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>3.085678e16 m</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_eefe1365">
+    <hasAlias>
+      <UnitName rdf:about="stathenry">
+        <namesUnit rdf:resource="_eefe1365"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>8.987554e11 H</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_11a81627">
+    <hasAlias>
+      <UnitName rdf:about="watthour">
+        <namesUnit rdf:resource="_11a81627"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>watt.hour</hasDefinition>
+  </Unit>
+  <UnitName rdf:about="stokes">
+    <hasSymbol>St</hasSymbol>
+    <namesUnit>
+      <Unit rdf:about="_8e1470ea">
+        <hasAlias rdf:resource="stokes"/>
+        <hasDefinition>1e-4 m^2/s</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <Unit rdf:about="_3c28d332">
+    <hasAlias>
+      <UnitName rdf:about="EC_therm">
+        <namesUnit rdf:resource="_3c28d332"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>1.05506e8 J</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_3bbba255">
+    <hasAlias>
+      <UnitName rdf:about="sidereal_second">
+        <namesUnit rdf:resource="_3bbba255"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>0.9972696 s</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_3edeacc2">
+    <hasAlias>
+      <UnitName rdf:about="nmile">
+        <namesUnit rdf:resource="_3edeacc2"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>nautical_mile</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_f43c6ffc">
+    <hasAlias>
+      <UnitName rdf:about="tropical_month">
+        <namesUnit rdf:resource="_f43c6ffc"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>27.321582 day</hasDefinition>
+  </Unit>
+  <UnitName rdf:about="fortnight">
+    <namesUnit>
+      <Unit rdf:about="_518a8bbd">
+        <hasAlias rdf:resource="fortnight"/>
+        <hasDefinition>14 day</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <UnitName rdf:about="technical_atmosphere">
+    <hasSymbol>at</hasSymbol>
+    <namesUnit>
+      <Unit rdf:about="_bc3d88ed">
+        <hasAlias rdf:resource="technical_atmosphere"/>
+        <hasDefinition>1 kg gravity/cm2</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <UnitName rdf:about="erg">
+    <namesUnit>
+      <Unit rdf:about="_e4dcc8ac">
+        <hasAlias rdf:resource="erg"/>
+        <hasDefinition>1e-7 J</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <UnitName rdf:about="sec">
+    <namesUnit>
+      <Unit rdf:about="_a0f1490a">
+        <hasAlias rdf:resource="sec"/>
+        <hasDefinition>s</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <Unit rdf:about="_a2fff373">
+    <hasAlias>
+      <UnitName rdf:about="einstein">
+        <namesUnit rdf:resource="_a2fff373"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>mole</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_1b73b8ae">
+    <hasAlias>
+      <UnitName rdf:about="lunar_month">
+        <namesUnit rdf:resource="_1b73b8ae"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>29.530589 day</hasDefinition>
+  </Unit>
+  <UnitName rdf:about="abvolt">
+    <namesUnit>
+      <Unit rdf:about="_14d48c16">
+        <hasAlias rdf:resource="abvolt"/>
+        <hasDefinition>1e-8 V</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <UnitName rdf:about="statohm">
+    <namesUnit>
+      <Unit rdf:about="_b1562406">
+        <hasAlias rdf:resource="statohm"/>
+        <hasDefinition>8.987554e11 ohm</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <UnitName rdf:about="barleycorn">
+    <namesUnit>
+      <Unit rdf:about="_13876128">
+        <hasAlias rdf:resource="barleycorn"/>
+        <hasDefinition>inch/3</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <UnitName rdf:about="peck">
+    <hasSymbol>pk</hasSymbol>
+    <namesUnit>
+      <Unit rdf:about="_4fc69eca">
+        <hasAlias rdf:resource="peck"/>
+        <hasDefinition>bushel/4</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <UnitName rdf:about="poise">
+    <namesUnit>
+      <Unit rdf:about="_eb8427fe">
+        <hasAlias rdf:resource="poise"/>
+        <hasDefinition>1e-1 Pa.s</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <Unit rdf:about="_1d948b2e">
+    <hasAlias>
+      <UnitName rdf:about="mil">
+        <namesUnit rdf:resource="_1d948b2e"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>2.54e-5 m</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_830adec8">
+    <hasAlias>
+      <UnitName rdf:about="gauss">
+        <namesUnit rdf:resource="_830adec8"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>1e-4 T</hasDefinition>
+  </Unit>
+  <UnitName rdf:about="assay_ton">
+    <namesUnit>
+      <Unit rdf:about="_fb730275">
+        <hasAlias rdf:resource="assay_ton"/>
+        <hasDefinition>2.916667e-2 kg</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <UnitName rdf:about="chain">
+    <namesUnit>
+      <Unit rdf:about="_b1cac674">
+        <hasAlias rdf:resource="chain"/>
+        <hasDefinition>2.011684e1 m</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <Unit rdf:about="_abec9ce1">
+    <hasAlias>
+      <UnitName rdf:about="oersted">
+        <hasSymbol>Oe</hasSymbol>
+        <namesUnit rdf:resource="_abec9ce1"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>7.957747e1 A/m</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_760da6b3">
+    <hasAlias>
+      <UnitName rdf:about="poundal">
+        <namesUnit rdf:resource="_760da6b3"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>1.382550e-1 N</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_bdc7caae">
+    <hasAlias>
+      <UnitName rdf:about="statfarad">
+        <namesUnit rdf:resource="_bdc7caae"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>1.112650e-12 F</hasDefinition>
+  </Unit>
+  <UnitName rdf:about="statampere">
+    <namesUnit>
+      <Unit rdf:about="_5ee6e4db">
+        <hasAlias rdf:resource="statampere"/>
+        <hasDefinition>3.335640e-10 A</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <UnitName rdf:about="footlambert">
+    <namesUnit>
+      <Unit rdf:about="_fc6a66a3">
+        <hasAlias rdf:resource="footlambert"/>
+        <hasDefinition>3.426259 cd/m^2</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <UnitName rdf:about="UK_liquid_cup">
+    <namesUnit>
+      <Unit rdf:about="_14508275">
+        <hasAlias rdf:resource="UK_liquid_cup"/>
+        <hasDefinition>UK_liquid_gallon/16</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <UnitName rdf:about="percent">
+    <hasSymbol>%</hasSymbol>
+    <namesUnit>
+      <Unit rdf:about="_6ae529bf">
+        <hasAlias rdf:resource="percent"/>
+        <hasDefinition>0.01</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <UnitName rdf:about="stilb">
+    <hasSymbol>sb</hasSymbol>
+    <namesUnit>
+      <Unit rdf:about="_7cb50f73">
+        <hasAlias rdf:resource="stilb"/>
+        <hasDefinition>1e4 cd/m^2</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <UnitName rdf:about="week">
+    <namesUnit>
+      <Unit rdf:about="_800ddf87">
+        <hasAlias rdf:resource="week"/>
+        <hasDefinition>7 day</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <Unit rdf:about="_ac61f53b">
+    <hasAlias>
+      <UnitName rdf:about="statcoulomb">
+        <namesUnit rdf:resource="_ac61f53b"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>3.335640e-10 C</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_7d849ef3">
+    <hasAlias>
+      <UnitName rdf:about="UK_liquid_gill">
+        <namesUnit rdf:resource="_7d849ef3"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>UK_liquid_gallon/32</hasDefinition>
+  </Unit>
+  <UnitName rdf:about="apdram">
+    <namesUnit>
+      <Unit rdf:about="_6734836e">
+        <hasAlias rdf:resource="apdram"/>
+        <hasDefinition>60 grain</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <Unit rdf:about="_73679a08">
+    <hasAlias>
+      <UnitName rdf:about="abfarad">
+        <namesUnit rdf:resource="_73679a08"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>1e9 F</hasDefinition>
+  </Unit>
+  <UnitName rdf:about="electric_horsepower">
+    <namesUnit>
+      <Unit rdf:about="_7e7e5c9e">
+        <hasAlias rdf:resource="electric_horsepower"/>
+        <hasDefinition>7.460000e2 W</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <UnitName rdf:about="langley">
+    <namesUnit>
+      <Unit rdf:about="_63d67a55">
+        <hasAlias rdf:resource="langley"/>
+        <hasDefinition>4.184000e4 J/m^2</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <Unit rdf:about="_1b40f767">
+    <hasAlias>
+      <UnitName rdf:about="dobson">
+        <hasSymbol>DU</hasSymbol>
+        <namesUnit rdf:resource="_1b40f767"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>446.2 micromoles/meter^2</hasDefinition>
+  </Unit>
+  <UnitName rdf:about="avoirdupois_ounce">
+    <namesUnit>
+      <Unit rdf:about="_9074abf1">
+        <hasAlias rdf:resource="avoirdupois_ounce"/>
+        <hasDefinition>2.834952e-2 kg</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <UnitName rdf:about="Julian_year">
+    <namesUnit>
+      <Unit rdf:about="_d8eef3c6">
+        <hasAlias rdf:resource="Julian_year"/>
+        <hasDefinition>365.25 day</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <Unit rdf:about="_db8f68be">
+    <hasAlias>
+      <UnitName rdf:about="scruple">
+        <namesUnit rdf:resource="_db8f68be"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>20 grain</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_a17898db">
+    <hasAlias>
+      <UnitName rdf:about="chemical_faraday">
+        <namesUnit rdf:resource="_a17898db"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>9.64957e4 C</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_a6425f48">
+    <hasAlias>
+      <UnitName rdf:about="US_survey_yard">
+        <namesUnit rdf:resource="_a6425f48"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>3 US_survey_feet</hasDefinition>
+  </Unit>
+  <UnitName rdf:about="tex">
+    <namesUnit>
+      <Unit rdf:about="_e5fdb49d">
+        <hasAlias rdf:resource="tex"/>
+        <hasDefinition>1e-6 kg/m</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <Unit rdf:about="_97aaf5bb">
+    <hasAlias>
+      <UnitName rdf:about="baud">
+        <hasSymbol>bps</hasSymbol>
+        <hasSymbol>Bd</hasSymbol>
+        <namesUnit rdf:resource="_97aaf5bb"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>Hz</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_d9a26f0c">
+    <hasAlias>
+      <UnitName rdf:about="leap_year">
+        <namesUnit rdf:resource="_d9a26f0c"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>366 day</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_a406cd04">
+    <hasAlias>
+      <UnitName rdf:about="sidereal_minute">
+        <namesUnit rdf:resource="_a406cd04"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>5.983617e1 s</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_2b88b485">
+    <hasAlias>
+      <UnitName rdf:about="stere">
+        <namesUnit rdf:resource="_2b88b485"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>1 m^3</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_7e2c792a">
+    <hasAlias>
+      <UnitName rdf:about="register_ton">
+        <namesUnit rdf:resource="_7e2c792a"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>2.831685 m^3</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_eb4450a7">
+    <hasAlias>
+      <UnitName rdf:about="tablespoon">
+        <hasSymbol>tblsp</hasSymbol>
+        <hasSymbol>Tblsp</hasSymbol>
+        <hasSymbol>tbsp</hasSymbol>
+        <hasSymbol>Tbsp</hasSymbol>
+        <hasSymbol>Tbl</hasSymbol>
+        <namesUnit rdf:resource="_eb4450a7"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>US_fluid_ounce/2</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_8745e79b">
+    <hasAlias>
+      <UnitName rdf:about="Gregorian_year">
+        <namesUnit rdf:resource="_8745e79b"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>365.2425 day</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_ba96c66f">
+    <hasAlias>
+      <UnitName rdf:about="barrel">
+        <hasSymbol>bbl</hasSymbol>
+        <namesUnit rdf:resource="_ba96c66f"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>42 US_liquid_gallon</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_7845c91a">
+    <hasAlias>
+      <UnitName rdf:about="fermi">
+        <namesUnit rdf:resource="_7845c91a"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>1e-15 m</hasDefinition>
+  </Unit>
+  <UnitName rdf:about="candle">
+    <namesUnit>
+      <Unit rdf:about="_03477819">
+        <hasAlias rdf:resource="candle"/>
+        <hasDefinition>cd</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <UnitName rdf:about="slug">
+    <namesUnit>
+      <Unit rdf:about="_f0050e15">
+        <hasAlias rdf:resource="slug"/>
+        <hasDefinition>14.59390 kg</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <Unit rdf:about="_08fce9d6">
+    <hasAlias>
+      <UnitName rdf:about="kayser">
+        <namesUnit rdf:resource="_08fce9d6"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>100/m</hasDefinition>
+  </Unit>
+  <UnitName rdf:about="statmho">
+    <namesUnit>
+      <Unit rdf:about="_12a38a32">
+        <hasAlias rdf:resource="statmho"/>
+        <hasDefinition>1.112650e-12 S</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <UnitName rdf:about="fathom">
+    <namesUnit>
+      <Unit rdf:about="_9d18b7dc">
+        <hasAlias rdf:resource="fathom"/>
+        <hasDefinition>6 US_survey_feet</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <UnitName rdf:about="physical_faraday">
+    <namesUnit>
+      <Unit rdf:about="_01bb6f2a">
+        <hasAlias rdf:resource="physical_faraday"/>
+        <hasDefinition>9.65219e4 C</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <UnitName rdf:about="appound">
+    <namesUnit>
+      <Unit rdf:about="_386b14e9">
+        <hasAlias rdf:resource="appound"/>
+        <hasDefinition>5760 grain</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <Unit rdf:about="_06705fa7">
+    <hasAlias>
+      <UnitName rdf:about="sidereal_day">
+        <namesUnit rdf:resource="_06705fa7"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>8.616409e4 s</hasDefinition>
+  </Unit>
+  <UnitName rdf:about="amp">
+    <namesUnit>
+      <Unit rdf:about="_6dcd4ce2">
+        <hasAlias rdf:resource="amp"/>
+        <hasDefinition>A</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <Unit rdf:about="_065ee504">
+    <hasAlias>
+      <UnitName rdf:about="month">
+        <namesUnit rdf:resource="_065ee504"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>year/12</hasDefinition>
+  </Unit>
+  <UnitName rdf:about="circular_mil">
+    <namesUnit>
+      <Unit rdf:about="_9e9df374">
+        <hasAlias rdf:resource="circular_mil"/>
+        <hasDefinition>5.067075e-10 m^2</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <Unit rdf:about="_47b2aa15">
+    <hasAlias>
+      <UnitName rdf:about="voltampere">
+        <hasSymbol>VA</hasSymbol>
+        <namesUnit rdf:resource="_47b2aa15"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>V.A</hasDefinition>
+  </Unit>
+  <UnitName rdf:about="sidereal_year">
+    <namesUnit>
+      <Unit rdf:about="_870c09b0">
+        <hasAlias rdf:resource="sidereal_year"/>
+        <hasDefinition>3.155815e7 s</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <Unit rdf:about="_4b42b360">
+    <hasAlias>
+      <UnitName rdf:about="UK_liquid_quart">
+        <namesUnit rdf:resource="_4b42b360"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>UK_liquid_gallon/4</hasDefinition>
+  </Unit>
+  <UnitName rdf:about="big_point">
+    <namesUnit>
+      <Unit rdf:about="_0dc96a27">
+        <hasAlias rdf:resource="big_point"/>
+        <hasDefinition>inch/72</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <UnitName rdf:about="work_year">
+    <namesUnit>
+      <Unit rdf:about="_39c4bf7e">
+        <hasAlias rdf:resource="work_year"/>
+        <hasDefinition>2056 hours</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <Unit rdf:about="_7bb123bb">
+    <hasAlias>
+      <UnitName rdf:about="pennyweight">
+        <namesUnit rdf:resource="_7bb123bb"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>1.555174e-3 kg</hasDefinition>
+  </Unit>
+  <UnitName rdf:about="gilbert">
+    <namesUnit>
+      <Unit rdf:about="_b8539d81">
+        <hasAlias rdf:resource="gilbert"/>
+        <hasDefinition>7.957747e-1 A</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <Unit rdf:about="_c056be8a">
+    <hasAlias>
+      <UnitName rdf:about="abhenry">
+        <namesUnit rdf:resource="_c056be8a"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>1e-9 H</hasDefinition>
+  </Unit>
+  <UnitName rdf:about="TNT">
+    <namesUnit>
+      <Unit rdf:about="_2e0655b1">
+        <hasAlias rdf:resource="TNT"/>
+        <hasDefinition>4.184 MJ/kg</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <UnitName rdf:about="gamma">
+    <namesUnit>
+      <Unit rdf:about="_6e9a2cff">
+        <hasAlias rdf:resource="gamma"/>
+        <hasDefinition>1e-9 T</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <UnitName rdf:about="metric_horsepower">
+    <namesUnit>
+      <Unit rdf:about="_f9863f0a">
+        <hasAlias rdf:resource="metric_horsepower"/>
+        <hasDefinition>7.35499e2 W</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <Unit rdf:about="_e8d0301d">
+    <hasAlias>
+      <UnitName rdf:about="firkin">
+        <namesUnit rdf:resource="_e8d0301d"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>barrel/4</hasDefinition>
+  </Unit>
+  <UnitName rdf:about="shake">
+    <namesUnit>
+      <Unit rdf:about="_a8ad8c14">
+        <hasAlias rdf:resource="shake"/>
+        <hasDefinition>1e-8 s</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <UnitName rdf:about="printers_point">
+    <namesUnit>
+      <Unit rdf:about="_74eda9b9">
+        <hasAlias rdf:resource="printers_point"/>
+        <hasDefinition>3.514598e-4 m</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <Unit rdf:about="_bdeedbb8">
+    <hasAlias>
+      <UnitName rdf:about="work_month">
+        <namesUnit rdf:resource="_bdeedbb8"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>work_year/12</hasDefinition>
+  </Unit>
+  <UnitName rdf:about="thermochemical_calorie">
+    <namesUnit>
+      <Unit rdf:about="_2bdec7d9">
+        <hasAlias rdf:resource="thermochemical_calorie"/>
+        <hasDefinition>4.184000 J</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <UnitName rdf:about="long_hundredweight">
+    <namesUnit>
+      <Unit rdf:about="_5ed453c1">
+        <hasAlias rdf:resource="long_hundredweight"/>
+        <hasDefinition>5.080235e1 kg</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <UnitName rdf:about="abohm">
+    <namesUnit>
+      <Unit rdf:about="_f5e874c2">
+        <hasAlias rdf:resource="abohm"/>
+        <hasDefinition>1e-9 ohm</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <UnitName rdf:about="bag">
+    <namesUnit>
+      <Unit rdf:about="_df706576">
+        <hasAlias rdf:resource="bag"/>
+        <hasDefinition>94 pound</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <Unit rdf:about="_982ed498">
+    <hasAlias>
+      <UnitName rdf:about="phot">
+        <hasSymbol>ph</hasSymbol>
+        <namesUnit rdf:resource="_982ed498"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>1e4 lm/m^2</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_4f363ffd">
+    <hasAlias>
+      <UnitName rdf:about="sverdrup">
+        <namesUnit rdf:resource="_4f363ffd"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>1e6 m^3/s</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_3d9453bb">
+    <hasAlias>
+      <UnitName rdf:about="kip">
+        <namesUnit rdf:resource="_3d9453bb"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>1000 lbf</hasDefinition>
+  </Unit>
+  <UnitName rdf:about="potential_vorticity_unit">
+    <hasSymbol>PVU</hasSymbol>
+    <namesUnit>
+      <Unit rdf:about="_f1f50a3b">
+        <hasAlias rdf:resource="potential_vorticity_unit"/>
+        <hasDefinition>1e-6 m^2 s^-1 K kg^-1</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <Unit rdf:about="_19015a05">
+    <hasAlias>
+      <UnitName rdf:about="sidereal_month">
+        <namesUnit rdf:resource="_19015a05"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>27.321661 day</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_0cf48af4">
+    <hasAlias>
+      <UnitName rdf:about="apounce">
+        <namesUnit rdf:resource="_0cf48af4"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>480 grain</hasDefinition>
+  </Unit>
+  <Unit rdf:about="_d9c5f8cf">
+    <hasAlias>
+      <UnitName rdf:about="dram">
+        <hasSymbol>dr</hasSymbol>
+        <namesUnit rdf:resource="_d9c5f8cf"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>US_fluid_ounce/16</hasDefinition>
+  </Unit>
+  <UnitName rdf:about="water_horsepower">
+    <namesUnit>
+      <Unit rdf:about="_e42565cf">
+        <hasAlias rdf:resource="water_horsepower"/>
+        <hasDefinition>7.46043e2 W</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <Unit rdf:about="_7e54a0fb">
+    <hasAlias>
+      <UnitName rdf:about="avogadro_constant">
+        <namesUnit rdf:resource="_7e54a0fb"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>6.02214179e23/mol</hasDefinition>
+  </Unit>
+  <UnitName rdf:about="eon">
+    <namesUnit>
+      <Unit rdf:about="_5e7061e3">
+        <hasAlias rdf:resource="eon"/>
+        <hasDefinition>1e9 year</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <UnitName rdf:about="US_dry_gallon">
+    <namesUnit>
+      <Unit rdf:about="_c4c9702e">
+        <hasAlias rdf:resource="US_dry_gallon"/>
+        <hasDefinition>4.404884e-3 m^3</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <UnitName rdf:about="UK_liquid_pint">
+    <namesUnit>
+      <Unit rdf:about="_ab402ec9">
+        <hasAlias rdf:resource="UK_liquid_pint"/>
+        <hasDefinition>UK_liquid_gallon/8</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <UnitName rdf:about="carat">
+    <namesUnit>
+      <Unit rdf:about="_f77b9ab7">
+        <hasAlias rdf:resource="carat"/>
+        <hasDefinition>2e-4 kg</hasDefinition>
+      </Unit>
+    </namesUnit>
+    <hasCardinality>singular</hasCardinality>
+  </UnitName>
+  <Unit rdf:about="_6f912672">
+    <hasAlias>
+      <UnitName rdf:about="long_ton">
+        <namesUnit rdf:resource="_6f912672"/>
+        <hasCardinality>singular</hasCardinality>
+      </UnitName>
+    </hasAlias>
+    <hasDefinition>2240 pound</hasDefinition>
   </Unit>
 </rdf:RDF>

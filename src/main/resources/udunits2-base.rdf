@@ -5,34 +5,10 @@
     xmlns="http://mmisw.org/ont/mmitest/udunits2-base/"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xml:base="http://mmisw.org/ont/mmitest/udunits2-base/">
+  <owl:Class rdf:about="UnitName">
+    <rdfs:label>UnitName</rdfs:label>
+  </owl:Class>
   <owl:Class rdf:about="Unit">
     <rdfs:label>Unit</rdfs:label>
   </owl:Class>
-  <Unit rdf:about="ampere">
-    <symbol>A</symbol>
-  </Unit>
-  <Unit rdf:about="candela">
-    <symbol>cd</symbol>
-  </Unit>
-  <Unit rdf:about="kilogram">
-    <symbol>kg</symbol>
-  </Unit>
-  <Unit rdf:about="second">
-    <symbol>s</symbol>
-  </Unit>
-  <Unit rdf:about="mole">
-    <symbol>mol</symbol>
-  </Unit>
-  <Unit rdf:about="kelvin">
-    <symbol>K</symbol>
-  </Unit>
-  <Unit rdf:about="meter">
-    <alias>
-      <Unit rdf:about="metre">
-        <alias rdf:resource="meter"/>
-        <symbol>m</symbol>
-      </Unit>
-    </alias>
-    <symbol>m</symbol>
-  </Unit>
 </rdf:RDF>

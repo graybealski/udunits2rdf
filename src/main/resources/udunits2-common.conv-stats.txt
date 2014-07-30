@@ -1,12 +1,20 @@
 udunits2rdf conversion
-date:   Sun Jul 27 16:03:19 PDT 2014
+date:   Tue Jul 29 22:13:01 PDT 2014
 input:  src/main/resources/udunits2-common.xml
 output: src/main/resources/udunits2-common.rdf
 
 conversion stats:
-  numUnitsInInput    = 221
-  numUnitsInOutput   = 286
-  numUnitsWithNoDef  = 0
-  numUnitsWithNoNameOrAlias = 21
+  unitsInInput                    = 221
+  unitsInOutput                   = 221
+  unitNamesInOutput               = 351
+  unitsWithNoDef                  = 0
+  unitsWithMultipleDefs           = 0
+  unitsWithMultipleSingularNames  = 0
+  unitsWithMultiplePluralNames    = 0
+
+  warning: repeated def='4.546090e-3 m^3'
+  warning: repeated def='standard_free_fall'
+  warning: repeated def='10 A'
+  warning: repeated def='1'
        
         

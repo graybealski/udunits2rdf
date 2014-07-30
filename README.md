@@ -19,15 +19,18 @@ $ sbt
 > run --namespace http://mmisw.org/ont/mmitest/udunits2-accepted/ --xml src/main/resources/udunits2-accepted.xml
 [info] Running org.mmisw.udunits2rdf.udunits2rdf --namespace http://mmisw.org/ont/mmitest/udunits2-accepted/ --xml src/main/resources/udunits2-accepted.xml
 udunits2rdf conversion
-date:   Sun Jul 27 16:28:47 PDT 2014
+date:   Tue Jul 29 22:12:51 PDT 2014
 input:  src/main/resources/udunits2-accepted.xml
 output: src/main/resources/udunits2-accepted.rdf
 
 conversion stats:
-  numUnitsInInput    = 23
-  numUnitsInOutput   = 41
-  numUnitsWithNoDef  = 0
-  numUnitsWithNoNameOrAlias = 0
+  unitsInInput                    = 23
+  unitsInOutput                   = 23
+  unitNamesInOutput               = 41
+  unitsWithNoDef                  = 0
+  unitsWithMultipleDefs           = 0
+  unitsWithMultipleSingularNames  = 0
+  unitsWithMultiplePluralNames    = 0
 ```
 
 Scripts under`scripts/` help do all downloads and conversions with single commands.

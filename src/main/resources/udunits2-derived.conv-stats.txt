@@ -1,12 +1,18 @@
 udunits2rdf conversion
-date:   Sun Jul 27 16:03:24 PDT 2014
+date:   Tue Jul 29 22:13:05 PDT 2014
 input:  src/main/resources/udunits2-derived.xml
 output: src/main/resources/udunits2-derived.rdf
 
 conversion stats:
-  numUnitsInInput    = 23
-  numUnitsInOutput   = 23
-  numUnitsWithNoDef  = 1
-  numUnitsWithNoNameOrAlias = 0
+  unitsInInput                    = 23
+  unitsInOutput                   = 22
+  unitNamesInOutput               = 22
+  unitsWithNoDef                  = 1
+  unitsWithMultipleDefs           = 0
+  unitsWithMultipleSingularNames  = 0
+  unitsWithMultiplePluralNames    = 0
+
+  warning: repeated def='1/s'
+  warning: repeated def='J/kg'
        
         

@@ -70,7 +70,7 @@ object udunits2rdf extends App {
     }
 
     def saveModel() {
-      //model.getWriter("N3").write(model, new java.io.FileOutputStream(rdfFilename + ".n3"), null)
+      model.getWriter("N3").write(model, new java.io.FileOutputStream(rdfFilename + ".n3"), null)
       val writer = model.getWriter("RDF/XML-ABBREV")
       writer.setProperty("showXmlDeclaration", "true")
       writer.setProperty("relativeURIs", "same-document,relative")

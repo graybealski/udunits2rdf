@@ -12,7 +12,8 @@ object build extends Build {
       version := "0.1-SNAPSHOT",
       scalaVersion := "2.10.2",
       libraryDependencies ++= Seq(
-        "com.hp.hpl.jena"   % "jena"    % "2.6.3"
+        "com.hp.hpl.jena"   % "jena"             % "2.6.3",
+        "commons-codec"     % "commons-codec"    % "1.9"
       )
     )
   )
