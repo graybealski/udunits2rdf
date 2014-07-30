@@ -1,2872 +1,2871 @@
 @prefix :        <http://mmisw.org/ont/mmitest/udunits2-common/> .
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix u2:      <http://mmisw.org/ont/mmitest/udunits2/> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 
 :UK_liquid_ounce
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_a8350565 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_a8350565 .
 
 :_6edf83f8
-      a       u2:Unit ;
-      u2:hasAlias :unit_pole ;
-      u2:hasDefinition "1.256637e-7 Wb" .
+      a       :Unit ;
+      :hasAlias :unit_pole ;
+      :hasDefinition "1.256637e-7 Wb" .
 
 :millimeter_Hg
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_63cb0d5f .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_63cb0d5f .
 
 :UK_horsepower
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_ed6241f4 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_ed6241f4 .
 
 :molec
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_78161f7d .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_78161f7d .
 
 :_2b224817
-      a       u2:Unit ;
-      u2:hasDefinition "lg(re (1e-6 m)^3)" ;
-      u2:hasSymbol "BZ" .
+      a       :Unit ;
+      :hasDefinition "lg(re (1e-6 m)^3)" ;
+      :hasSymbol "BZ" .
 
-:clo  a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_8ef8b0aa .
+:clo  a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_8ef8b0aa .
 
 :_88173a20
-      a       u2:Unit ;
-      u2:hasAlias :boiler_horsepower ;
-      u2:hasDefinition "9.80950e3 W" .
+      a       :Unit ;
+      :hasAlias :boiler_horsepower ;
+      :hasDefinition "9.80950e3 W" .
 
 :_3275b154
-      a       u2:Unit ;
-      u2:hasAlias :footcandle ;
-      u2:hasDefinition "1.076391e-1 lx" .
+      a       :Unit ;
+      :hasAlias :footcandle ;
+      :hasDefinition "1.076391e-1 lx" .
 
 :barye
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_e7be0c33 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_e7be0c33 .
 
 :apothecary_pound
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_c709611a .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_c709611a .
 
 :board_foot
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_c1295929 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_c1295929 .
 
 :_19ae9060
-      a       u2:Unit ;
-      u2:hasAlias :grain ;
-      u2:hasDefinition "6.479891e-5 kg" .
+      a       :Unit ;
+      :hasAlias :grain ;
+      :hasDefinition "6.479891e-5 kg" .
 
-:rod  a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_8721f5c2 .
+:rod  a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_8721f5c2 .
 
 :degreeF
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_d3c59bc9 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_d3c59bc9 .
 
 :gill
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_30298988 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_30298988 .
 
 :revolution
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_1fb88102 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_1fb88102 .
 
 :_d025fa39
-      a       u2:Unit ;
-      u2:hasAlias :jiffy ;
-      u2:hasDefinition "0.01 s" .
+      a       :Unit ;
+      :hasAlias :jiffy ;
+      :hasDefinition "0.01 s" .
 
 :gravity
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_199e6a19 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_199e6a19 .
 
 :degC
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_86385633 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_86385633 .
 
 :statvolt
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_219d0c68 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_219d0c68 .
 
 :sidereal_hour
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_de2a3440 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_de2a3440 .
 
 :_53d0dd63
-      a       u2:Unit ;
-      u2:hasDefinition "US_fluid_ounce/8" ;
-      u2:hasSymbol "fldr" .
+      a       :Unit ;
+      :hasDefinition "US_fluid_ounce/8" ;
+      :hasSymbol "fldr" .
 
 :unit_pole
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_6edf83f8 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_6edf83f8 .
 
 :_6751413e
-      a       u2:Unit ;
-      u2:hasAlias :furlong ;
-      u2:hasDefinition "660 US_survey_feet" .
+      a       :Unit ;
+      :hasAlias :furlong ;
+      :hasDefinition "660 US_survey_feet" .
 
 :_6649a63c
-      a       u2:Unit ;
-      u2:hasAlias :water_4C , :waters_39F , :waters_4C , :water_39F ;
-      u2:hasDefinition "gravity 999.972 kg/m^3" .
+      a       :Unit ;
+      :hasAlias :water_4C , :waters_39F , :waters_4C , :water_39F ;
+      :hasDefinition "gravity 999.972 kg/m^3" .
 
 :_0470c391
-      a       u2:Unit ;
-      u2:hasAlias :bushel ;
-      u2:hasDefinition "3.523907e-2 m^3" .
+      a       :Unit ;
+      :hasAlias :bushel ;
+      :hasDefinition "3.523907e-2 m^3" .
 
 :inches_Hg_60F
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_ab38f290 .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_ab38f290 .
 
 :_1d3e70a0
-      a       u2:Unit ;
-      u2:hasAlias :short_hundredweight ;
-      u2:hasDefinition "4.535924e1 kg" .
+      a       :Unit ;
+      :hasAlias :short_hundredweight ;
+      :hasDefinition "4.535924e1 kg" .
 
 :boiler_horsepower
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_88173a20 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_88173a20 .
 
 :tropical_year
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_8510dbb4 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_8510dbb4 .
 
 :degree_true
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_040938f3 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_040938f3 .
 
 :teaspoon
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:hasSymbol "tsp" ;
-      u2:namesUnit :_06e1f7c2 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :hasSymbol "tsp" ;
+      :namesUnit :_06e1f7c2 .
 
 :fluid_ounce
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_27077b27 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_27077b27 .
 
 :torr
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:hasSymbol "mmhg" , "mmHg" , "mm_Hg" , "mm_hg" ;
-      u2:namesUnit :_63cb0d5f .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :hasSymbol "mmhg" , "mmHg" , "mm_Hg" , "mm_hg" ;
+      :namesUnit :_63cb0d5f .
 
 :degrees_kelvin
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_a7ee38bb .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_a7ee38bb .
 
 :degsF
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_d3c59bc9 .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_d3c59bc9 .
 
 :standard_free_fall
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_01797f87 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_01797f87 .
 
 :dyne
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_5b91a853 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_5b91a853 .
 
 :celsius
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_86385633 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_86385633 .
 
 :US_therm
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_5a5b4c68 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_5a5b4c68 .
 
 :abmho
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_585f9f9c .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_585f9f9c .
 
-:nit  a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:hasSymbol "nt" ;
-      u2:namesUnit :_048445d2 .
+:nit  a       :UnitName ;
+      :hasCardinality "singular" ;
+      :hasSymbol "nt" ;
+      :namesUnit :_048445d2 .
 
-:cup  a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_16c97360 .
+:cup  a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_16c97360 .
 
 :inch_H2O_39F
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_e4684f55 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_e4684f55 .
 
 :pole
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_8721f5c2 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_8721f5c2 .
 
 :_fe5dbbce
-      a       u2:Unit ;
-      u2:hasAlias :byte , :octet ;
-      u2:hasDefinition "8" .
+      a       :Unit ;
+      :hasAlias :byte , :octet ;
+      :hasDefinition "8" .
 
 :dry_quart
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_c8230af0 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_c8230af0 .
 
 :water_39F
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_6649a63c .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_6649a63c .
 
 :_3fecf90d
-      a       u2:Unit ;
-      u2:hasAlias :perms_0C , :perm_0C ;
-      u2:hasDefinition "5.72135e-11 kg/(Pa.s.m^2)" .
+      a       :Unit ;
+      :hasAlias :perms_0C , :perm_0C ;
+      :hasDefinition "5.72135e-11 kg/(Pa.s.m^2)" .
 
 :_fdc0a408
-      a       u2:Unit ;
-      u2:hasAlias :micron ;
-      u2:hasDefinition "1e-6 m" .
+      a       :Unit ;
+      :hasAlias :micron ;
+      :hasDefinition "1e-6 m" .
 
 :_e79dad9a
-      a       u2:Unit ;
-      u2:hasAlias :common_year ;
-      u2:hasDefinition "365 day" .
+      a       :Unit ;
+      :hasAlias :common_year ;
+      :hasDefinition "365 day" .
 
 :dynamic
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:hasSymbol "gp" ;
-      u2:namesUnit :_ada87b6c .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :hasSymbol "gp" ;
+      :namesUnit :_ada87b6c .
 
 :_8edd2794
-      a       u2:Unit ;
-      u2:hasAlias :mercury_60F , :mercuries_60F ;
-      u2:hasDefinition "gravity 13556.8 kg/m^3" .
+      a       :Unit ;
+      :hasAlias :mercury_60F , :mercuries_60F ;
+      :hasDefinition "gravity 13556.8 kg/m^3" .
 
 :waters_39F
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_6649a63c .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_6649a63c .
 
 :_a991570f
-      a       u2:Unit ;
-      u2:hasAlias :darcy ;
-      u2:hasDefinition "9.869233e-13 m^2" .
+      a       :Unit ;
+      :hasAlias :darcy ;
+      :hasDefinition "9.869233e-13 m^2" .
 
 :degree_C
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_86385633 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_86385633 .
 
 :foot_water
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_2e4831ac .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_2e4831ac .
 
 :_dc7a9b29
-      a       u2:Unit ;
-      u2:hasAlias :horsepower , :shaft_horsepower ;
-      u2:hasDefinition "7.456999e2 W" .
+      a       :Unit ;
+      :hasAlias :horsepower , :shaft_horsepower ;
+      :hasDefinition "7.456999e2 W" .
 
 :lambert
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_f37df78f .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_f37df78f .
 
 :degree_east
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_040938f3 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_040938f3 .
 
 :pound_force
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_856a4544 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_856a4544 .
 
 :_a8350565
-      a       u2:Unit ;
-      u2:hasAlias :UK_fluid_ounce , :UK_liquid_ounce ;
-      u2:hasDefinition "UK_liquid_gallon/160" .
+      a       :Unit ;
+      :hasAlias :UK_fluid_ounce , :UK_liquid_ounce ;
+      :hasDefinition "UK_liquid_gallon/160" .
 
 :_ed6241f4
-      a       u2:Unit ;
-      u2:hasAlias :UK_horsepower ;
-      u2:hasDefinition "7.4570e2 W" .
+      a       :Unit ;
+      :hasAlias :UK_horsepower ;
+      :hasDefinition "7.4570e2 W" .
 
 :grade
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_dcb22a74 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_dcb22a74 .
 
 :degreeE
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_040938f3 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_040938f3 .
 
 :_27077b27
-      a       u2:Unit ;
-      u2:hasAlias :US_liquid_ounce , :liquid_ounce , :US_fluid_ounce , :fluid_ounce ;
-      u2:hasDefinition "US_liquid_gallon/128" .
+      a       :Unit ;
+      :hasAlias :US_liquid_ounce , :liquid_ounce , :US_fluid_ounce , :fluid_ounce ;
+      :hasDefinition "US_liquid_gallon/128" .
 
 :refrigeration_ton
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_a87c034c .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_a87c034c .
 
 :light_year
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_3ec8d17a .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_3ec8d17a .
 
 :_7e0c6871
-      a       u2:Unit ;
-      u2:hasAlias :pond ;
-      u2:hasDefinition "9.806650e-3 N" .
+      a       :Unit ;
+      :hasAlias :pond ;
+      :hasDefinition "9.806650e-3 N" .
 
 :degrees_F
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_d3c59bc9 .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_d3c59bc9 .
 
 :byte
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_fe5dbbce .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_fe5dbbce .
 
 :_d5bfaf1d
-      a       u2:Unit ;
-      u2:hasAlias :inch_Hg_32F , :inches_Hg_32F ;
-      u2:hasDefinition "inch mercury_32F" .
+      a       :Unit ;
+      :hasAlias :inch_Hg_32F , :inches_Hg_32F ;
+      :hasDefinition "inch mercury_32F" .
 
 :degF
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_d3c59bc9 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_d3c59bc9 .
 
 :_9a4d4789
-      a       u2:Unit ;
-      u2:hasAlias :dry_pint , :US_dry_pint ;
-      u2:hasDefinition "US_dry_gallon/8" .
+      a       :Unit ;
+      :hasAlias :dry_pint , :US_dry_pint ;
+      :hasDefinition "US_dry_gallon/8" .
 
 :troy_ounce
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_0699858b .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_0699858b .
 
 :_1ab0fc54
-      a       u2:Unit ;
-      u2:hasAlias :denier ;
-      u2:hasDefinition "1.111111e-7 kg/m" .
+      a       :Unit ;
+      :hasAlias :denier ;
+      :hasDefinition "1.111111e-7 kg/m" .
 
-:rhe  a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_5b7ac7e3 .
+:rhe  a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_5b7ac7e3 .
 
 :conventional_water
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_a65e12b4 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_a65e12b4 .
 
 :millimeters_Hg
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_63cb0d5f .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_63cb0d5f .
 
 :_d8eef780
-      a       u2:Unit ;
-      u2:hasAlias :acre ;
-      u2:hasDefinition "160 rod^2" .
+      a       :Unit ;
+      :hasAlias :acre ;
+      :hasDefinition "160 rod^2" .
 
 :_80106dc0
-      a       u2:Unit ;
-      u2:hasDefinition "1e-9" ;
-      u2:hasSymbol "ppbv" , "ppb" .
+      a       :Unit ;
+      :hasDefinition "1e-9" ;
+      :hasSymbol "ppbv" , "ppb" .
 
 :pound
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:hasSymbol "lb" ;
-      u2:namesUnit :_5eda5072 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :hasSymbol "lb" ;
+      :namesUnit :_5eda5072 .
 
 :IT_calorie
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_035027ec .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_035027ec .
 
 :US_survey_mile
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_dcecb084 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_dcecb084 .
 
 :arpentlin
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_67cb8956 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_67cb8956 .
 
 :_5bd84efc
-      a       u2:Unit ;
-      u2:hasAlias :maxwell ;
-      u2:hasDefinition "1e-8 Wb" .
+      a       :Unit ;
+      :hasAlias :maxwell ;
+      :hasDefinition "1e-8 Wb" .
 
 :degreesF
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_d3c59bc9 .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_d3c59bc9 .
 
 :_d0767833
-      a       u2:Unit ;
-      u2:hasDefinition "cm Hg" ;
-      u2:hasSymbol "cm_Hg" , "cmHg" .
+      a       :Unit ;
+      :hasDefinition "cm Hg" ;
+      :hasSymbol "cm_Hg" , "cmHg" .
 
 :_f37df78f
-      a       u2:Unit ;
-      u2:hasAlias :lambert ;
-      u2:hasDefinition "(1e4/pi) cd/m^2" .
+      a       :Unit ;
+      :hasAlias :lambert ;
+      :hasDefinition "(1e4/pi) cd/m^2" .
 
 :_a87c034c
-      a       u2:Unit ;
-      u2:hasAlias :ton_of_refrigeration , :tons_of_refrigeration , :refrigeration_ton ;
-      u2:hasDefinition "12000 Btu/hr" .
+      a       :Unit ;
+      :hasAlias :ton_of_refrigeration , :tons_of_refrigeration , :refrigeration_ton ;
+      :hasDefinition "12000 Btu/hr" .
 
 :degree_E
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_040938f3 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_040938f3 .
 
 :geopotential
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_ada87b6c .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_ada87b6c .
 
 :force_kilogram
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_e1afacc3 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_e1afacc3 .
 
 :_e976e9ab
-      a       u2:Unit ;
-      u2:hasAlias :parsec ;
-      u2:hasDefinition "3.085678e16 m" .
+      a       :Unit ;
+      :hasAlias :parsec ;
+      :hasDefinition "3.085678e16 m" .
 
 :degrees_E
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_040938f3 .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_040938f3 .
 
 :_eefe1365
-      a       u2:Unit ;
-      u2:hasAlias :stathenry ;
-      u2:hasDefinition "8.987554e11 H" .
+      a       :Unit ;
+      :hasAlias :stathenry ;
+      :hasDefinition "8.987554e11 H" .
 
 :degreeC
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_86385633 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_86385633 .
 
 :degreesE
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_040938f3 .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_040938f3 .
 
 :grams_force
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_161de1b3 .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_161de1b3 .
 
 :_ab38f290
-      a       u2:Unit ;
-      u2:hasAlias :inch_Hg_60F , :inches_Hg_60F ;
-      u2:hasDefinition "inch mercury_60F" .
+      a       :Unit ;
+      :hasAlias :inch_Hg_60F , :inches_Hg_60F ;
+      :hasDefinition "inch mercury_60F" .
 
 :_11a81627
-      a       u2:Unit ;
-      u2:hasAlias :watthour ;
-      u2:hasDefinition "watt.hour" .
+      a       :Unit ;
+      :hasAlias :watthour ;
+      :hasDefinition "watt.hour" .
 
 :_5b7ac7e3
-      a       u2:Unit ;
-      u2:hasAlias :rhe ;
-      u2:hasDefinition "10/(Pa.s)" .
+      a       :Unit ;
+      :hasAlias :rhe ;
+      :hasDefinition "10/(Pa.s)" .
 
 :darcy
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_a991570f .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_a991570f .
 
 :apothecary_ounce
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_0699858b .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_0699858b .
 
 :degree_F
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_d3c59bc9 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_d3c59bc9 .
 
 :_80ee5b1b
-      a       u2:Unit ;
-      u2:hasDefinition "cm H2O" ;
-      u2:hasSymbol "cmH2O" , "cm_H2O" .
+      a       :Unit ;
+      :hasDefinition "cm H2O" ;
+      :hasSymbol "cmH2O" , "cm_H2O" .
 
 :_18f4a980
-      a       u2:Unit ;
-      u2:hasDefinition "lg(re 1 W)" ;
-      u2:hasSymbol "BW" .
+      a       :Unit ;
+      :hasDefinition "lg(re 1 W)" ;
+      :hasSymbol "BW" .
 
 :_a65e12b4
-      a       u2:Unit ;
-      u2:hasAlias :water , :conventional_water ;
-      u2:hasDefinition "gravity 1000 kg/m^3" .
+      a       :Unit ;
+      :hasAlias :water , :conventional_water ;
+      :hasDefinition "gravity 1000 kg/m^3" .
 
 :nucleon
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_78161f7d .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_78161f7d .
 
 :conventional_mercury
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_5d0588b9 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_5d0588b9 .
 
 :_3c28d332
-      a       u2:Unit ;
-      u2:hasAlias :EC_therm ;
-      u2:hasDefinition "1.05506e8 J" .
+      a       :Unit ;
+      :hasAlias :EC_therm ;
+      :hasDefinition "1.05506e8 J" .
 
 :stokes
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:hasSymbol "St" ;
-      u2:namesUnit :_8e1470ea .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :hasSymbol "St" ;
+      :namesUnit :_8e1470ea .
 
 :_3bbba255
-      a       u2:Unit ;
-      u2:hasAlias :sidereal_second ;
-      u2:hasDefinition "0.9972696 s" .
+      a       :Unit ;
+      :hasAlias :sidereal_second ;
+      :hasDefinition "0.9972696 s" .
 
 :US_liquid_gill
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_30298988 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_30298988 .
 
 :degrees_fahrenheit
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_d3c59bc9 .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_d3c59bc9 .
 
 :_3edeacc2
-      a       u2:Unit ;
-      u2:hasAlias :nmile ;
-      u2:hasDefinition "nautical_mile" .
+      a       :Unit ;
+      :hasAlias :nmile ;
+      :hasDefinition "nautical_mile" .
 
 :US_dry_quart
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_c8230af0 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_c8230af0 .
 
 :_f43c6ffc
-      a       u2:Unit ;
-      u2:hasAlias :tropical_month ;
-      u2:hasDefinition "27.321582 day" .
+      a       :Unit ;
+      :hasAlias :tropical_month ;
+      :hasDefinition "27.321582 day" .
 
 :technical_atmosphere
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:hasSymbol "at" ;
-      u2:namesUnit :_bc3d88ed .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :hasSymbol "at" ;
+      :namesUnit :_bc3d88ed .
 
 :_161de1b3
-      a       u2:Unit ;
-      u2:hasAlias :gram_force , :force_gram , :grams_force ;
-      u2:hasDefinition "gram force" .
+      a       :Unit ;
+      :hasAlias :gram_force , :force_gram , :grams_force ;
+      :hasDefinition "gram force" .
 
 :fortnight
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_518a8bbd .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_518a8bbd .
 
 :_0e69ef04
-      a       u2:Unit ;
-      u2:hasDefinition "1.602176487e-19 C" ;
-      u2:hasSymbol "e" .
+      a       :Unit ;
+      :hasDefinition "1.602176487e-19 C" ;
+      :hasSymbol "e" .
 
 :_0663aff2
-      a       u2:Unit ;
-      u2:hasDefinition "1e-6" ;
-      u2:hasSymbol "ppmv" , "ppm" .
+      a       :Unit ;
+      :hasDefinition "1e-6" ;
+      :hasSymbol "ppmv" , "ppm" .
 
-:erg  a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_e4dcc8ac .
+:erg  a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_e4dcc8ac .
 
 :US_dry_pint
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_9a4d4789 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_9a4d4789 .
 
-:sec  a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_a0f1490a .
+:sec  a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_a0f1490a .
 
 :_7843fee8
-      a       u2:Unit ;
-      u2:hasAlias :inch_H2O_60F , :inches_H2O_60F ;
-      u2:hasDefinition "inch water_60F" .
+      a       :Unit ;
+      :hasAlias :inch_H2O_60F , :inches_H2O_60F ;
+      :hasDefinition "inch water_60F" .
 
 :degsK
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_a7ee38bb .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_a7ee38bb .
 
 :ton_TNT
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_b7b2fa1f .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_b7b2fa1f .
 
 :_a2fff373
-      a       u2:Unit ;
-      u2:hasAlias :einstein ;
-      u2:hasDefinition "mole" .
+      a       :Unit ;
+      :hasAlias :einstein ;
+      :hasDefinition "mole" .
 
 :_5d0588b9
-      a       u2:Unit ;
-      u2:hasAlias :mercury_32F , :mercuries_0C , :conventional_mercury , :mercuries_32F , :conventional_mercuries , :mercury_0C ;
-      u2:hasDefinition "gravity 13595.10 kg/m^3" .
+      a       :Unit ;
+      :hasAlias :mercury_32F , :mercuries_0C , :conventional_mercury , :mercuries_32F , :conventional_mercuries , :mercury_0C ;
+      :hasDefinition "gravity 13595.10 kg/m^3" .
 
 :_1b73b8ae
-      a       u2:Unit ;
-      u2:hasAlias :lunar_month ;
-      u2:hasDefinition "29.530589 day" .
+      a       :Unit ;
+      :hasAlias :lunar_month ;
+      :hasDefinition "29.530589 day" .
 
 :_63cb0d5f
-      a       u2:Unit ;
-      u2:hasAlias :millimeter_Hg , :torr , :millimeters_Hg ;
-      u2:hasDefinition "mm Hg" .
+      a       :Unit ;
+      :hasAlias :millimeter_Hg , :torr , :millimeters_Hg ;
+      :hasDefinition "mm Hg" .
 
 :peck
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:hasSymbol "pk" ;
-      u2:namesUnit :_4fc69eca .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :hasSymbol "pk" ;
+      :namesUnit :_4fc69eca .
 
 :abvolt
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_14d48c16 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_14d48c16 .
 
 :millimeter_Hg_0C
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_fd2b4af7 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_fd2b4af7 .
 
 :statohm
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_b1562406 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_b1562406 .
 
 :barleycorn
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_13876128 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_13876128 .
 
 :degrees_C
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_86385633 .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_86385633 .
 
 :circle
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_1fb88102 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_1fb88102 .
 
 :poise
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_eb8427fe .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_eb8427fe .
 
 :_f8ea039d
-      a       u2:Unit ;
-      u2:hasAlias :C12_faraday , :faraday ;
-      u2:hasDefinition "9.648531e4 C" .
+      a       :Unit ;
+      :hasAlias :C12_faraday , :faraday ;
+      :hasDefinition "9.648531e4 C" .
 
 :board_feet
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_c1295929 .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_c1295929 .
 
 :_1d948b2e
-      a       u2:Unit ;
-      u2:hasAlias :mil ;
-      u2:hasDefinition "2.54e-5 m" .
+      a       :Unit ;
+      :hasAlias :mil ;
+      :hasDefinition "2.54e-5 m" .
 
 :degree_rankine
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_e14a3aa7 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_e14a3aa7 .
 
 :_c1295929
-      a       u2:Unit ;
-      u2:hasAlias :board_feet , :board_foot ;
-      u2:hasDefinition "2.359737e-3 m^3" .
+      a       :Unit ;
+      :hasAlias :board_feet , :board_foot ;
+      :hasDefinition "2.359737e-3 m^3" .
 
 :_830adec8
-      a       u2:Unit ;
-      u2:hasAlias :gauss ;
-      u2:hasDefinition "1e-4 T" .
+      a       :Unit ;
+      :hasAlias :gauss ;
+      :hasDefinition "1e-4 T" .
 
 :_9e744d58
-      a       u2:Unit ;
-      u2:hasAlias :US_survey_feet , :US_survey_foot ;
-      u2:hasDefinition "(1200/3937) m" .
+      a       :Unit ;
+      :hasAlias :US_survey_feet , :US_survey_foot ;
+      :hasDefinition "(1200/3937) m" .
 
 :_5a5b4c68
-      a       u2:Unit ;
-      u2:hasAlias :therm , :US_therm ;
-      u2:hasDefinition "1.054804e8 J" .
+      a       :Unit ;
+      :hasAlias :therm , :US_therm ;
+      :hasDefinition "1.054804e8 J" .
 
 :deg_R
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_e14a3aa7 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_e14a3aa7 .
 
 :feet_H2O
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_2e4831ac .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_2e4831ac .
 
 :degreesC
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_86385633 .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_86385633 .
 
 :_06e1f7c2
-      a       u2:Unit ;
-      u2:hasAlias :teaspoon ;
-      u2:hasDefinition "tablespoon/3" .
+      a       :Unit ;
+      :hasAlias :teaspoon ;
+      :hasDefinition "tablespoon/3" .
 
 :bushel
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:hasSymbol "bu" ;
-      u2:namesUnit :_0470c391 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :hasSymbol "bu" ;
+      :namesUnit :_0470c391 .
 
 :biot
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_41abb8fe .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_41abb8fe .
 
 :US_liquid_quart
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_72255695 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_72255695 .
 
 :_01797f87
-      a       u2:Unit ;
-      u2:hasAlias :standard_free_fall ;
-      u2:hasDefinition "9.806650 m/s^2" .
+      a       :Unit ;
+      :hasAlias :standard_free_fall ;
+      :hasDefinition "9.806650 m/s^2" .
 
 :acre_feet
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_eb44856b .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_eb44856b .
 
 :assay_ton
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_fb730275 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_fb730275 .
 
 :chain
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_b1cac674 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_b1cac674 .
 
 :_eb8427fe
-      a       u2:Unit ;
-      u2:hasAlias :poise ;
-      u2:hasDefinition "1e-1 Pa.s" .
+      a       :Unit ;
+      :hasAlias :poise ;
+      :hasDefinition "1e-1 Pa.s" .
 
 :_a498fa01
-      a       u2:Unit ;
-      u2:hasAlias :force_ounce , :ounces_force , :ounce_force ;
-      u2:hasDefinition "2.780139e-1 N" .
+      a       :Unit ;
+      :hasAlias :force_ounce , :ounces_force , :ounce_force ;
+      :hasDefinition "2.780139e-1 N" .
 
 :_abec9ce1
-      a       u2:Unit ;
-      u2:hasAlias :oersted ;
-      u2:hasDefinition "7.957747e1 A/m" .
+      a       :Unit ;
+      :hasAlias :oersted ;
+      :hasDefinition "7.957747e1 A/m" .
 
 :_5178baa2
-      a       u2:Unit ;
-      u2:hasAlias :printers_pica , :pica ;
-      u2:hasDefinition "12 printers_point" .
+      a       :Unit ;
+      :hasAlias :printers_pica , :pica ;
+      :hasDefinition "12 printers_point" .
 
 :pond
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_7e0c6871 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_7e0c6871 .
 
 :US_survey_feet
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_9e744d58 .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_9e744d58 .
 
 :_760da6b3
-      a       u2:Unit ;
-      u2:hasAlias :poundal ;
-      u2:hasDefinition "1.382550e-1 N" .
+      a       :Unit ;
+      :hasAlias :poundal ;
+      :hasDefinition "1.382550e-1 N" .
 
 :cycle
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_1fb88102 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_1fb88102 .
 
 :_dcb22a74
-      a       u2:Unit ;
-      u2:hasAlias :grade ;
-      u2:hasDefinition "0.9 arc_degree" .
+      a       :Unit ;
+      :hasAlias :grade ;
+      :hasDefinition "0.9 arc_degree" .
 
 :_bdc7caae
-      a       u2:Unit ;
-      u2:hasAlias :statfarad ;
-      u2:hasDefinition "1.112650e-12 F" .
+      a       :Unit ;
+      :hasAlias :statfarad ;
+      :hasDefinition "1.112650e-12 F" .
 
 :_40e5df5d
-      a       u2:Unit ;
-      u2:hasAlias :perms_23C , :perm_23C ;
-      u2:hasDefinition "5.74525e-11 kg/(Pa.s.m^2)" .
+      a       :Unit ;
+      :hasAlias :perms_23C , :perm_23C ;
+      :hasDefinition "5.74525e-11 kg/(Pa.s.m^2)" .
 
 :international_feet
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_b470b0e2 .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_b470b0e2 .
 
 :statampere
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_5ee6e4db .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_5ee6e4db .
 
 :inch_Hg_60F
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_ab38f290 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_ab38f290 .
 
 :US_survey_foot
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_9e744d58 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_9e744d58 .
 
 :water
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:hasSymbol "h2o" , "H2O" ;
-      u2:namesUnit :_a65e12b4 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :hasSymbol "h2o" , "H2O" ;
+      :namesUnit :_a65e12b4 .
 
 :footlambert
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_fc6a66a3 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_fc6a66a3 .
 
 :grain
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:hasSymbol "gr" ;
-      u2:namesUnit :_19ae9060 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :hasSymbol "gr" ;
+      :namesUnit :_19ae9060 .
 
 :lunar_month
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_1b73b8ae .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_1b73b8ae .
 
 :blondel
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_d7d0df78 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_d7d0df78 .
 
 :UK_liquid_cup
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_14508275 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_14508275 .
 
 :percent
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:hasSymbol "%" ;
-      u2:namesUnit :_6ae529bf .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :hasSymbol "%" ;
+      :namesUnit :_6ae529bf .
 
 :stilb
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:hasSymbol "sb" ;
-      u2:namesUnit :_7cb50f73 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :hasSymbol "sb" ;
+      :namesUnit :_7cb50f73 .
 
 :horsepower
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:hasSymbol "hp" ;
-      u2:namesUnit :_dc7a9b29 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :hasSymbol "hp" ;
+      :namesUnit :_dc7a9b29 .
 
 :short_hundredweight
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_1d3e70a0 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_1d3e70a0 .
 
 :_68b68883
-      a       u2:Unit ;
-      u2:hasDefinition "1e9 eV" ;
-      u2:hasSymbol "bev" .
+      a       :Unit ;
+      :hasDefinition "1e9 eV" ;
+      :hasSymbol "bev" .
 
 :_d3c59bc9
-      a       u2:Unit ;
-      u2:hasAlias :degrees_F , :degree_F , :fahrenheit , :deg_F , :degree_fahrenheit , :degF , :degreeF , :degs_F , :degreesF , :degrees_fahrenheit , :degsF ;
-      u2:hasDefinition "°R @ 459.67" ;
-      u2:hasSymbol "℉" , "°F" .
+      a       :Unit ;
+      :hasAlias :degrees_F , :degree_F , :fahrenheit , :deg_F , :degree_fahrenheit , :degF , :degreeF , :degreesF , :degs_F , :degrees_fahrenheit , :degsF ;
+      :hasDefinition "°R @ 459.67" ;
+      :hasSymbol "℉" , "°F" .
 
 :week
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_800ddf87 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_800ddf87 .
 
 :_ac61f53b
-      a       u2:Unit ;
-      u2:hasAlias :statcoulomb ;
-      u2:hasDefinition "3.335640e-10 C" .
+      a       :Unit ;
+      :hasAlias :statcoulomb ;
+      :hasDefinition "3.335640e-10 C" .
 
 :printers_pica
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_5178baa2 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_5178baa2 .
 
 :_7d849ef3
-      a       u2:Unit ;
-      u2:hasAlias :UK_liquid_gill ;
-      u2:hasDefinition "UK_liquid_gallon/32" .
+      a       :Unit ;
+      :hasAlias :UK_liquid_gill ;
+      :hasDefinition "UK_liquid_gallon/32" .
 
 :US_statute_mile
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_dcecb084 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_dcecb084 .
 
 :force
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_199e6a19 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_199e6a19 .
 
 :pint
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:hasSymbol "pt" ;
-      u2:namesUnit :_0e586513 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :hasSymbol "pt" ;
+      :namesUnit :_0e586513 .
 
 :apdram
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_6734836e .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_6734836e .
 
 :_73679a08
-      a       u2:Unit ;
-      u2:hasAlias :abfarad ;
-      u2:hasDefinition "1e9 F" .
+      a       :Unit ;
+      :hasAlias :abfarad ;
+      :hasDefinition "1e9 F" .
 
 :electric_horsepower
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_7e7e5c9e .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_7e7e5c9e .
 
 :inch_H2O_60F
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_7843fee8 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_7843fee8 .
 
 :_c9ebfd86
-      a       u2:Unit ;
-      u2:hasAlias :ton , :short_ton ;
-      u2:hasDefinition "2000 pound" .
+      a       :Unit ;
+      :hasAlias :ton , :short_ton ;
+      :hasDefinition "2000 pound" .
 
 :langley
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_63d67a55 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_63d67a55 .
 
 :_e7be0c33
-      a       u2:Unit ;
-      u2:hasAlias :barye , :barie ;
-      u2:hasDefinition "0.1 N/m^2" .
+      a       :Unit ;
+      :hasAlias :barye , :barie ;
+      :hasDefinition "0.1 N/m^2" .
 
 :liquid_ounce
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:hasSymbol "oz" , "floz" ;
-      u2:namesUnit :_27077b27 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :hasSymbol "oz" , "floz" ;
+      :namesUnit :_27077b27 .
 
 :_800ddf87
-      a       u2:Unit ;
-      u2:hasAlias :week ;
-      u2:hasDefinition "7 day" .
+      a       :Unit ;
+      :hasAlias :week ;
+      :hasDefinition "7 day" .
 
 :perms_0C
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_3fecf90d .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_3fecf90d .
 
 :_856a4544
-      a       u2:Unit ;
-      u2:hasAlias :pound_force , :force_pound , :pounds_force ;
-      u2:hasDefinition "4.4482216152605 N" .
+      a       :Unit ;
+      :hasAlias :pound_force , :force_pound , :pounds_force ;
+      :hasDefinition "4.4482216152605 N" .
 
 :_1b40f767
-      a       u2:Unit ;
-      u2:hasAlias :dobson ;
-      u2:hasDefinition "446.2 micromoles/meter^2" .
+      a       :Unit ;
+      :hasAlias :dobson ;
+      :hasDefinition "446.2 micromoles/meter^2" .
 
 :inch_Hg_32F
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_d5bfaf1d .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_d5bfaf1d .
 
 :deg_F
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_d3c59bc9 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_d3c59bc9 .
 
 :dobson
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:hasSymbol "DU" ;
-      u2:namesUnit :_1b40f767 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :hasSymbol "DU" ;
+      :namesUnit :_1b40f767 .
 
 :avoirdupois_ounce
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_9074abf1 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_9074abf1 .
 
 :_dc48740a
-      a       u2:Unit ;
-      u2:hasAlias :international_inch , :inch ;
-      u2:hasDefinition "2.54 cm" .
+      a       :Unit ;
+      :hasAlias :international_inch , :inch ;
+      :hasDefinition "2.54 cm" .
 
 :US_liquid_ounce
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_27077b27 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_27077b27 .
 
 :acre_foot
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_eb44856b .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_eb44856b .
 
 :_199e6a19
-      a       u2:Unit ;
-      u2:hasAlias :gravity , :force ;
-      u2:hasDefinition "standard_free_fall" .
+      a       :Unit ;
+      :hasAlias :gravity , :force ;
+      :hasDefinition "standard_free_fall" .
 
 :_14d48c16
-      a       u2:Unit ;
-      u2:hasAlias :abvolt ;
-      u2:hasDefinition "1e-8 V" .
+      a       :Unit ;
+      :hasAlias :abvolt ;
+      :hasDefinition "1e-8 V" .
 
 :international_mile
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_ce44377e .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_ce44377e .
 
 :Julian_year
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_d8eef3c6 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_d8eef3c6 .
 
 :foot
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_b470b0e2 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_b470b0e2 .
 
 :_7e623454
-      a       u2:Unit ;
-      u2:hasAlias :international_yard , :yard ;
-      u2:hasDefinition "3 international_feet" .
+      a       :Unit ;
+      :hasAlias :international_yard , :yard ;
+      :hasDefinition "3 international_feet" .
 
 :_db8f68be
-      a       u2:Unit ;
-      u2:hasAlias :scruple ;
-      u2:hasDefinition "20 grain" .
+      a       :Unit ;
+      :hasAlias :scruple ;
+      :hasDefinition "20 grain" .
 
 :_a17898db
-      a       u2:Unit ;
-      u2:hasAlias :chemical_faraday ;
-      u2:hasDefinition "9.64957e4 C" .
+      a       :Unit ;
+      :hasAlias :chemical_faraday ;
+      :hasDefinition "9.64957e4 C" .
 
 :_a7ee38bb
-      a       u2:Unit ;
-      u2:hasAlias :degK , :degreeK , :degrees_K , :deg_K , :degreesK , :degree_K , :degs_K , :degree_kelvin , :degsK , :degrees_kelvin ;
-      u2:hasDefinition "K" ;
-      u2:hasSymbol "°K" .
+      a       :Unit ;
+      :hasAlias :degK , :degreeK , :degrees_K , :deg_K , :degreesK , :degree_K , :degs_K , :degree_kelvin , :degsK , :degrees_kelvin ;
+      :hasDefinition "K" ;
+      :hasSymbol "°K" .
 
 :_5ee6e4db
-      a       u2:Unit ;
-      u2:hasAlias :statampere ;
-      u2:hasDefinition "3.335640e-10 A" .
+      a       :Unit ;
+      :hasAlias :statampere ;
+      :hasDefinition "3.335640e-10 A" .
 
 :_ab91ce07
-      a       u2:Unit ;
-      u2:hasDefinition "lg(re 20e-6 Pa)" ;
-      u2:hasSymbol "B_SPL" .
+      a       :Unit ;
+      :hasDefinition "lg(re 20e-6 Pa)" ;
+      :hasSymbol "B_SPL" .
 
 :degreesN
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_040938f3 .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_040938f3 .
 
 :_219d0c68
-      a       u2:Unit ;
-      u2:hasAlias :statvolt ;
-      u2:hasDefinition "2.997925e2 V" .
+      a       :Unit ;
+      :hasAlias :statvolt ;
+      :hasDefinition "2.997925e2 V" .
 
 :_a6425f48
-      a       u2:Unit ;
-      u2:hasAlias :US_survey_yard ;
-      u2:hasDefinition "3 US_survey_feet" .
+      a       :Unit ;
+      :hasAlias :US_survey_yard ;
+      :hasDefinition "3 US_survey_feet" .
 
 :_47c23792
-      a       u2:Unit ;
-      u2:hasDefinition "rotation/minute" ;
-      u2:hasSymbol "rpm" .
+      a       :Unit ;
+      :hasDefinition "rotation/minute" ;
+      :hasSymbol "rpm" .
 
 :calorie
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:hasSymbol "cal" ;
-      u2:namesUnit :_035027ec .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :hasSymbol "cal" ;
+      :namesUnit :_035027ec .
 
 :inches_H2O_39F
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_e4684f55 .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_e4684f55 .
 
 :IT_Btu
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_5cee3bc9 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_5cee3bc9 .
 
 :US_liquid_gallon
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_d5993c05 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_d5993c05 .
 
-:tex  a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_e5fdb49d .
+:tex  a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_e5fdb49d .
 
 :_72255695
-      a       u2:Unit ;
-      u2:hasAlias :quart , :US_liquid_quart , :liquid_quart ;
-      u2:hasDefinition "US_liquid_gallon/4" .
+      a       :Unit ;
+      :hasAlias :quart , :US_liquid_quart , :liquid_quart ;
+      :hasDefinition "US_liquid_gallon/4" .
 
 :faraday
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_f8ea039d .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_f8ea039d .
 
 :ounce_force
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_a498fa01 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_a498fa01 .
 
 :_e9ffa163
-      a       u2:Unit ;
-      u2:hasAlias :degree_west , :degreeW , :degrees_west , :degreesW , :degree_W , :degrees_W ;
-      u2:hasDefinition "-1 degree_east" .
+      a       :Unit ;
+      :hasAlias :degree_west , :degreeW , :degrees_west , :degreesW , :degree_W , :degrees_W ;
+      :hasDefinition "-1 degree_east" .
 
 :degrees_west
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_e9ffa163 .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_e9ffa163 .
 
 :_97aaf5bb
-      a       u2:Unit ;
-      u2:hasAlias :baud ;
-      u2:hasDefinition "Hz" .
+      a       :Unit ;
+      :hasAlias :baud ;
+      :hasDefinition "Hz" .
 
 :mercuries_32F
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_5d0588b9 .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_5d0588b9 .
 
 :_d9a26f0c
-      a       u2:Unit ;
-      u2:hasAlias :leap_year ;
-      u2:hasDefinition "366 day" .
+      a       :Unit ;
+      :hasAlias :leap_year ;
+      :hasDefinition "366 day" .
 
 :degrees_N
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_040938f3 .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_040938f3 .
 
 :_a406cd04
-      a       u2:Unit ;
-      u2:hasAlias :sidereal_minute ;
-      u2:hasDefinition "5.983617e1 s" .
+      a       :Unit ;
+      :hasAlias :sidereal_minute ;
+      :hasDefinition "5.983617e1 s" .
 
 :_2b88b485
-      a       u2:Unit ;
-      u2:hasAlias :stere ;
-      u2:hasDefinition "1 m^3" .
+      a       :Unit ;
+      :hasAlias :stere ;
+      :hasDefinition "1 m^3" .
 
 :_7e2c792a
-      a       u2:Unit ;
-      u2:hasAlias :register_ton ;
-      u2:hasDefinition "2.831685 m^3" .
+      a       :Unit ;
+      :hasAlias :register_ton ;
+      :hasDefinition "2.831685 m^3" .
 
 :UK_liquid_gill
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_7d849ef3 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_7d849ef3 .
 
 :_8e1470ea
-      a       u2:Unit ;
-      u2:hasAlias :stokes ;
-      u2:hasDefinition "1e-4 m^2/s" .
+      a       :Unit ;
+      :hasAlias :stokes ;
+      :hasDefinition "1e-4 m^2/s" .
 
 :_0e586513
-      a       u2:Unit ;
-      u2:hasAlias :US_liquid_pint , :liquid_pint , :pint ;
-      u2:hasDefinition "US_liquid_gallon/8" .
+      a       :Unit ;
+      :hasAlias :US_liquid_pint , :liquid_pint , :pint ;
+      :hasDefinition "US_liquid_gallon/8" .
 
 :_eb4450a7
-      a       u2:Unit ;
-      u2:hasAlias :tablespoon ;
-      u2:hasDefinition "US_fluid_ounce/2" .
+      a       :Unit ;
+      :hasAlias :tablespoon ;
+      :hasDefinition "US_fluid_ounce/2" .
 
 :degs_R
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_e14a3aa7 .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_e14a3aa7 .
 
 :deg_K
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_a7ee38bb .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_a7ee38bb .
 
 :_048445d2
-      a       u2:Unit ;
-      u2:hasAlias :nit ;
-      u2:hasDefinition "1 cd/m^2" .
+      a       :Unit ;
+      :hasAlias :nit ;
+      :hasDefinition "1 cd/m^2" .
 
 :_ba96c66f
-      a       u2:Unit ;
-      u2:hasAlias :barrel ;
-      u2:hasDefinition "42 US_liquid_gallon" .
+      a       :Unit ;
+      :hasAlias :barrel ;
+      :hasDefinition "42 US_liquid_gallon" .
 
 :_8745e79b
-      a       u2:Unit ;
-      u2:hasAlias :Gregorian_year ;
-      u2:hasDefinition "365.2425 day" .
+      a       :Unit ;
+      :hasAlias :Gregorian_year ;
+      :hasDefinition "365.2425 day" .
 
 :jiffy
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_d025fa39 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_d025fa39 .
 
 :_7845c91a
-      a       u2:Unit ;
-      u2:hasAlias :fermi ;
-      u2:hasDefinition "1e-15 m" .
+      a       :Unit ;
+      :hasAlias :fermi ;
+      :hasDefinition "1e-15 m" .
 
 :micron
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_fdc0a408 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_fdc0a408 .
 
 :degsC
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_86385633 .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_86385633 .
 
 :_c1010e19
-      a       u2:Unit ;
-      u2:hasDefinition "1e-12" ;
-      u2:hasSymbol "pptv" , "ppt" .
+      a       :Unit ;
+      :hasDefinition "1e-12" ;
+      :hasSymbol "pptv" , "ppt" .
 
 :candle
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_03477819 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_03477819 .
 
 :ounces_force
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:hasSymbol "ozf" ;
-      u2:namesUnit :_a498fa01 .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :hasSymbol "ozf" ;
+      :namesUnit :_a498fa01 .
 
 :slug
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_f0050e15 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_f0050e15 .
 
 :water_60F
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_c9bcb147 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_c9bcb147 .
 
 :_08fce9d6
-      a       u2:Unit ;
-      u2:hasAlias :kayser ;
-      u2:hasDefinition "100/m" .
+      a       :Unit ;
+      :hasAlias :kayser ;
+      :hasDefinition "100/m" .
 
 :_5bb2a292
-      a       u2:Unit ;
-      u2:hasDefinition "1e-15" ;
-      u2:hasSymbol "ppqv" , "ppq" .
+      a       :Unit ;
+      :hasDefinition "1e-15" ;
+      :hasSymbol "ppqv" , "ppq" .
 
 :_6734836e
-      a       u2:Unit ;
-      u2:hasAlias :apdram ;
-      u2:hasDefinition "60 grain" .
+      a       :Unit ;
+      :hasAlias :apdram ;
+      :hasDefinition "60 grain" .
 
 :statmho
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_12a38a32 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_12a38a32 .
 
 :degrees_true
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_040938f3 .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_040938f3 .
 
 :IT_Btus
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_5cee3bc9 .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_5cee3bc9 .
 
 :_356a192b
-      a       u2:Unit ;
-      u2:hasAlias :bit , :count ;
-      u2:hasDefinition "1" .
+      a       :Unit ;
+      :hasAlias :bit , :count ;
+      :hasDefinition "1" .
 
 :fathom
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_9d18b7dc .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_9d18b7dc .
 
 :_bc3d88ed
-      a       u2:Unit ;
-      u2:hasAlias :technical_atmosphere ;
-      u2:hasDefinition "1 kg gravity/cm2" .
+      a       :Unit ;
+      :hasAlias :technical_atmosphere ;
+      :hasDefinition "1 kg gravity/cm2" .
 
 :physical_faraday
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_01bb6f2a .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_01bb6f2a .
 
 :UK_fluid_ounce
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_a8350565 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_a8350565 .
 
 :appound
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_386b14e9 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_386b14e9 .
 
 :degreesK
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_a7ee38bb .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_a7ee38bb .
 
 :_67cb8956
-      a       u2:Unit ;
-      u2:hasAlias :arpentlin ;
-      u2:hasDefinition "191.835 foot" .
+      a       :Unit ;
+      :hasAlias :arpentlin ;
+      :hasDefinition "191.835 foot" .
 
 :_06705fa7
-      a       u2:Unit ;
-      u2:hasAlias :sidereal_day ;
-      u2:hasDefinition "8.616409e4 s" .
+      a       :Unit ;
+      :hasAlias :sidereal_day ;
+      :hasDefinition "8.616409e4 s" .
 
 :statcoulomb
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_ac61f53b .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_ac61f53b .
 
 :_8ef8b0aa
-      a       u2:Unit ;
-      u2:hasAlias :clo ;
-      u2:hasDefinition "1.55e-1 K.m^2/W" .
+      a       :Unit ;
+      :hasAlias :clo ;
+      :hasDefinition "1.55e-1 K.m^2/W" .
 
 :inches_Hg_32F
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_d5bfaf1d .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_d5bfaf1d .
 
 :_3ec8d17a
-      a       u2:Unit ;
-      u2:hasAlias :light_year ;
-      u2:hasDefinition "9.46073e15 m" .
+      a       :Unit ;
+      :hasAlias :light_year ;
+      :hasDefinition "9.46073e15 m" .
 
 :_b470b0e2
-      a       u2:Unit ;
-      u2:hasAlias :international_foot , :international_feet , :feet , :foot ;
-      u2:hasDefinition "12 international_inches" .
+      a       :Unit ;
+      :hasAlias :international_foot , :international_feet , :feet , :foot ;
+      :hasDefinition "12 international_inches" .
 
 :_5b91a853
-      a       u2:Unit ;
-      u2:hasAlias :dyne ;
-      u2:hasDefinition "1e-5 N" .
+      a       :Unit ;
+      :hasAlias :dyne ;
+      :hasDefinition "1e-5 N" .
 
-:amp  a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_6dcd4ce2 .
+:amp  a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_6dcd4ce2 .
 
 :_065ee504
-      a       u2:Unit ;
-      u2:hasAlias :month ;
-      u2:hasDefinition "year/12" .
+      a       :Unit ;
+      :hasAlias :month ;
+      :hasDefinition "year/12" .
 
 :circular_mil
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_9e9df374 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_9e9df374 .
 
 :_040938f3
-      a       u2:Unit ;
-      u2:hasAlias :degreesN , :degrees_north , :degree_E , :degrees_T , :degreesT , :degrees_N , :degrees_east , :degrees_E , :degree_T , :degree_east , :degree_true , :degree_north , :degreeT , :degrees_true , :degreesE , :degreeE , :degreeN , :degree_N ;
-      u2:hasDefinition "arc_degree" .
+      a       :Unit ;
+      :hasAlias :degreesN , :degrees_north , :degree_E , :degrees_T , :degreesT , :degrees_N , :degrees_E , :degrees_east , :degree_T , :degree_east , :degree_true , :degree_north , :degreeT , :degrees_true , :degreesE , :degreeE , :degreeN , :degree_N ;
+      :hasDefinition "arc_degree" .
 
 :_f89d43ce
-      a       u2:Unit ;
-      u2:hasDefinition "lg(re 0.775 V)" ;
-      u2:hasSymbol "Bv" .
+      a       :Unit ;
+      :hasDefinition "lg(re 0.775 V)" ;
+      :hasSymbol "Bv" .
 
 :denier
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_1ab0fc54 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_1ab0fc54 .
 
 :_47b2aa15
-      a       u2:Unit ;
-      u2:hasAlias :voltampere ;
-      u2:hasDefinition "V.A" .
+      a       :Unit ;
+      :hasAlias :voltampere ;
+      :hasDefinition "V.A" .
 
 :_40a22a4a
-      a       u2:Unit ;
-      u2:hasDefinition "knot" ;
-      u2:hasSymbol "kt" , "kts" .
+      a       :Unit ;
+      :hasDefinition "knot" ;
+      :hasSymbol "kt" , "kts" .
 
 :degrees_K
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_a7ee38bb .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_a7ee38bb .
 
 :degree_north
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_040938f3 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_040938f3 .
 
 :_035027ec
-      a       u2:Unit ;
-      u2:hasAlias :IT_calorie , :calorie ;
-      u2:hasDefinition "4.1868 J" .
+      a       :Unit ;
+      :hasAlias :IT_calorie , :calorie ;
+      :hasDefinition "4.1868 J" .
 
 :sidereal_year
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_870c09b0 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_870c09b0 .
 
 :degree_fahrenheit
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_d3c59bc9 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_d3c59bc9 .
 
 :kilogram_force
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_e1afacc3 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_e1afacc3 .
 
 :_b7b2fa1f
-      a       u2:Unit ;
-      u2:hasAlias :ton_TNT , :tons_TNT ;
-      u2:hasDefinition "4.184e9 J" .
+      a       :Unit ;
+      :hasAlias :ton_TNT , :tons_TNT ;
+      :hasDefinition "4.184e9 J" .
 
 :_e1afacc3
-      a       u2:Unit ;
-      u2:hasAlias :kilogram_force , :kilograms_force , :force_kilogram ;
-      u2:hasDefinition "9.806650 N" .
+      a       :Unit ;
+      :hasAlias :kilogram_force , :kilograms_force , :force_kilogram ;
+      :hasDefinition "9.806650 N" .
 
 :_e14a3aa7
-      a       u2:Unit ;
-      u2:hasAlias :degs_R , :degR , :degsR , :degree_rankine , :degrees_R , :degrees_rankine , :degreeR , :degreesR , :deg_R , :degree_R ;
-      u2:hasDefinition "K/1.8" ;
-      u2:hasSymbol "°R" .
+      a       :Unit ;
+      :hasAlias :degs_R , :degR , :degree_rankine , :degsR , :degrees_R , :degreeR , :degrees_rankine , :degreesR , :deg_R , :degree_R ;
+      :hasDefinition "K/1.8" ;
+      :hasSymbol "°R" .
 
 :_870c09b0
-      a       u2:Unit ;
-      u2:hasAlias :sidereal_year ;
-      u2:hasDefinition "3.155815e7 s" .
+      a       :Unit ;
+      :hasAlias :sidereal_year ;
+      :hasDefinition "3.155815e7 s" .
 
 :turn
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_1fb88102 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_1fb88102 .
 
 :_4b42b360
-      a       u2:Unit ;
-      u2:hasAlias :UK_liquid_quart ;
-      u2:hasDefinition "UK_liquid_gallon/4" .
+      a       :Unit ;
+      :hasAlias :UK_liquid_quart ;
+      :hasDefinition "UK_liquid_gallon/4" .
 
 :feetH2O
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:hasSymbol "ftH2O" , "fth2o" ;
-      u2:namesUnit :_2e4831ac .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :hasSymbol "ftH2O" , "fth2o" ;
+      :namesUnit :_2e4831ac .
 
 :big_point
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_0dc96a27 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_0dc96a27 .
 
 :_ada87b6c
-      a       u2:Unit ;
-      u2:hasAlias :dynamic , :geopotential ;
-      u2:hasDefinition "gravity" .
+      a       :Unit ;
+      :hasAlias :dynamic , :geopotential ;
+      :hasDefinition "gravity" .
 
 :liquid_gill
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_30298988 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_30298988 .
 
 :sidereal_day
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_06705fa7 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_06705fa7 .
 
 :work_year
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_39c4bf7e .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_39c4bf7e .
 
 :_f0050e15
-      a       u2:Unit ;
-      u2:hasAlias :slug ;
-      u2:hasDefinition "14.59390 kg" .
+      a       :Unit ;
+      :hasAlias :slug ;
+      :hasDefinition "14.59390 kg" .
 
 :_7bb123bb
-      a       u2:Unit ;
-      u2:hasAlias :pennyweight ;
-      u2:hasDefinition "1.555174e-3 kg" .
+      a       :Unit ;
+      :hasAlias :pennyweight ;
+      :hasDefinition "1.555174e-3 kg" .
 
 :mercury_0C
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_5d0588b9 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_5d0588b9 .
 
 :feet_water
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_2e4831ac .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_2e4831ac .
 
 :tons_force
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_3baf5098 .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_3baf5098 .
 
 :EC_therm
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_3c28d332 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_3c28d332 .
 
 :_c056be8a
-      a       u2:Unit ;
-      u2:hasAlias :abhenry ;
-      u2:hasDefinition "1e-9 H" .
+      a       :Unit ;
+      :hasAlias :abhenry ;
+      :hasDefinition "1e-9 H" .
 
 :perms_23C
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_40e5df5d .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_40e5df5d .
 
 :gilbert
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_b8539d81 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_b8539d81 .
 
 :_518a8bbd
-      a       u2:Unit ;
-      u2:hasAlias :fortnight ;
-      u2:hasDefinition "14 day" .
+      a       :Unit ;
+      :hasAlias :fortnight ;
+      :hasDefinition "14 day" .
 
 :perm_0C
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_3fecf90d .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_3fecf90d .
 
-:TNT  a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_2e0655b1 .
+:TNT  a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_2e0655b1 .
 
 :_8510dbb4
-      a       u2:Unit ;
-      u2:hasAlias :tropical_year , :year ;
-      u2:hasDefinition "3.15569259747e7 s" .
+      a       :Unit ;
+      :hasAlias :tropical_year , :year ;
+      :hasDefinition "3.15569259747e7 s" .
 
 :gamma
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_6e9a2cff .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_6e9a2cff .
 
 :metric_horsepower
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_f9863f0a .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_f9863f0a .
 
 :_a816adb0
-      a       u2:Unit ;
-      u2:hasAlias :Canadian_liquid_gallon , :UK_liquid_gallon ;
-      u2:hasDefinition "4.546090e-3 m^3" .
+      a       :Unit ;
+      :hasAlias :Canadian_liquid_gallon , :UK_liquid_gallon ;
+      :hasDefinition "4.546090e-3 m^3" .
 
 :degR
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_e14a3aa7 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_e14a3aa7 .
 
-:bit  a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_356a192b .
+:bit  a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_356a192b .
 
 :_3baf5098
-      a       u2:Unit ;
-      u2:hasAlias :tons_force , :ton_force , :force_ton ;
-      u2:hasDefinition "2000 force_pound" .
+      a       :Unit ;
+      :hasAlias :tons_force , :ton_force , :force_ton ;
+      :hasDefinition "2000 force_pound" .
 
 :Btus
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_5cee3bc9 .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_5cee3bc9 .
 
 :degreesR
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_e14a3aa7 .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_e14a3aa7 .
 
 :_e8d0301d
-      a       u2:Unit ;
-      u2:hasAlias :firkin ;
-      u2:hasDefinition "barrel/4" .
+      a       :Unit ;
+      :hasAlias :firkin ;
+      :hasDefinition "barrel/4" .
 
 :troy_pound
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_c709611a .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_c709611a .
 
 :UK_liquid_gallon
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_a816adb0 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_a816adb0 .
 
 :shake
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_a8ad8c14 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_a8ad8c14 .
 
 :oersted
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:hasSymbol "Oe" ;
-      u2:namesUnit :_abec9ce1 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :hasSymbol "Oe" ;
+      :namesUnit :_abec9ce1 .
 
 :liquid_pint
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_0e586513 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_0e586513 .
 
 :force_gram
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:hasSymbol "gf" ;
-      u2:namesUnit :_161de1b3 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :hasSymbol "gf" ;
+      :namesUnit :_161de1b3 .
 
 :_e5fdb49d
-      a       u2:Unit ;
-      u2:hasAlias :tex ;
-      u2:hasDefinition "1e-6 kg/m" .
+      a       :Unit ;
+      :hasAlias :tex ;
+      :hasDefinition "1e-6 kg/m" .
 
 :poundal
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_760da6b3 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_760da6b3 .
 
 :printers_point
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_74eda9b9 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_74eda9b9 .
 
 :_bdeedbb8
-      a       u2:Unit ;
-      u2:hasAlias :work_month ;
-      u2:hasDefinition "work_year/12" .
+      a       :Unit ;
+      :hasAlias :work_month ;
+      :hasDefinition "work_year/12" .
 
 :_d7d0df78
-      a       u2:Unit ;
-      u2:hasAlias :apostilb , :blondel ;
-      u2:hasDefinition "cd/(pi m^2)" .
+      a       :Unit ;
+      :hasAlias :apostilb , :blondel ;
+      :hasDefinition "cd/(pi m^2)" .
 
 :thermochemical_calorie
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_2bdec7d9 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_2bdec7d9 .
 
 :_12a38a32
-      a       u2:Unit ;
-      u2:hasAlias :statmho ;
-      u2:hasDefinition "1.112650e-12 S" .
+      a       :Unit ;
+      :hasAlias :statmho ;
+      :hasDefinition "1.112650e-12 S" .
 
 :degree_west
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_e9ffa163 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_e9ffa163 .
 
 :_7553526f
-      a       u2:Unit ;
-      u2:hasDefinition "lg(re 1 V)" ;
-      u2:hasSymbol "BV" .
+      a       :Unit ;
+      :hasDefinition "lg(re 1 V)" ;
+      :hasSymbol "BV" .
 
 :long_hundredweight
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_5ed453c1 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_5ed453c1 .
 
 :abohm
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_f5e874c2 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_f5e874c2 .
 
 :deg_C
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_86385633 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_86385633 .
 
-:bag  a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_df706576 .
+:bag  a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_df706576 .
 
 :tablespoon
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:hasSymbol "Tbl" , "Tbsp" , "tbsp" , "tblsp" , "Tblsp" ;
-      u2:namesUnit :_eb4450a7 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :hasSymbol "Tbl" , "Tbsp" , "tbsp" , "tblsp" , "Tblsp" ;
+      :namesUnit :_eb4450a7 .
 
 :_9d18b7dc
-      a       u2:Unit ;
-      u2:hasAlias :fathom ;
-      u2:hasDefinition "6 US_survey_feet" .
+      a       :Unit ;
+      :hasAlias :fathom ;
+      :hasDefinition "6 US_survey_feet" .
 
 :inch_Hg
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_691857c1 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_691857c1 .
 
 :liquid_quart
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_72255695 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_72255695 .
 
 :stathenry
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_eefe1365 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_eefe1365 .
 
-:Btu  a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_5cee3bc9 .
+:Btu  a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_5cee3bc9 .
 
 :_982ed498
-      a       u2:Unit ;
-      u2:hasAlias :phot ;
-      u2:hasDefinition "1e4 lm/m^2" .
+      a       :Unit ;
+      :hasAlias :phot ;
+      :hasDefinition "1e4 lm/m^2" .
 
 :_4f363ffd
-      a       u2:Unit ;
-      u2:hasAlias :sverdrup ;
-      u2:hasDefinition "1e6 m^3/s" .
+      a       :Unit ;
+      :hasAlias :sverdrup ;
+      :hasDefinition "1e6 m^3/s" .
 
 :_3d9453bb
-      a       u2:Unit ;
-      u2:hasAlias :kip ;
-      u2:hasDefinition "1000 lbf" .
+      a       :Unit ;
+      :hasAlias :kip ;
+      :hasDefinition "1000 lbf" .
 
 :_dcecb084
-      a       u2:Unit ;
-      u2:hasAlias :US_statute_mile , :US_survey_mile ;
-      u2:hasDefinition "5280 US_survey_feet" .
+      a       :Unit ;
+      :hasAlias :US_statute_mile , :US_survey_mile ;
+      :hasDefinition "5280 US_survey_feet" .
 
-:nuc  a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_78161f7d .
+:nuc  a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_78161f7d .
 
 :degrees_east
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_040938f3 .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_040938f3 .
 
 :perm_23C
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_40e5df5d .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_40e5df5d .
 
 :gram_force
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_161de1b3 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_161de1b3 .
 
 :rotations_per_second
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:hasSymbol "rps" , "cps" ;
-      u2:namesUnit :_1b7fac4e .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :hasSymbol "rps" , "cps" ;
+      :namesUnit :_1b7fac4e .
 
 :phot
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:hasSymbol "ph" ;
-      u2:namesUnit :_982ed498 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :hasSymbol "ph" ;
+      :namesUnit :_982ed498 .
 
 :degrees_rankine
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_e14a3aa7 .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_e14a3aa7 .
 
 :degreeR
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_e14a3aa7 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_e14a3aa7 .
 
 :degree_R
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_e14a3aa7 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_e14a3aa7 .
 
 :tons_of_refrigeration
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_a87c034c .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_a87c034c .
 
 :potential_vorticity_unit
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:hasSymbol "PVU" ;
-      u2:namesUnit :_f1f50a3b .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :hasSymbol "PVU" ;
+      :namesUnit :_f1f50a3b .
 
 :_d5993c05
-      a       u2:Unit ;
-      u2:hasAlias :liquid_gallon , :US_liquid_gallon , :gallon ;
-      u2:hasDefinition "3.785412e-3 m^3" .
+      a       :Unit ;
+      :hasAlias :liquid_gallon , :US_liquid_gallon , :gallon ;
+      :hasDefinition "3.785412e-3 m^3" .
 
 :fermi
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_7845c91a .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_7845c91a .
 
 :month
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_065ee504 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_065ee504 .
 
 :avoirdupois_pound
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_5eda5072 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_5eda5072 .
 
 :fahrenheit
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_d3c59bc9 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_d3c59bc9 .
 
 :_19015a05
-      a       u2:Unit ;
-      u2:hasAlias :sidereal_month ;
-      u2:hasDefinition "27.321661 day" .
+      a       :Unit ;
+      :hasAlias :sidereal_month ;
+      :hasDefinition "27.321661 day" .
 
 :C12_faraday
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_f8ea039d .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_f8ea039d .
 
 :_0cf48af4
-      a       u2:Unit ;
-      u2:hasAlias :apounce ;
-      u2:hasDefinition "480 grain" .
+      a       :Unit ;
+      :hasAlias :apounce ;
+      :hasDefinition "480 grain" .
 
 :inches_Hg
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:hasSymbol "inHg" , "in_Hg" ;
-      u2:namesUnit :_691857c1 .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :hasSymbol "inHg" , "in_Hg" ;
+      :namesUnit :_691857c1 .
 
 :sidereal_second
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_3bbba255 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_3bbba255 .
 
 :_0dc96a27
-      a       u2:Unit ;
-      u2:hasAlias :big_point ;
-      u2:hasDefinition "inch/72" .
+      a       :Unit ;
+      :hasAlias :big_point ;
+      :hasDefinition "inch/72" .
 
 :_473c446f
-      a       u2:Unit ;
-      u2:hasAlias :atmosphere , :standard_atmosphere ;
-      u2:hasDefinition "1.01325e5 Pa" .
+      a       :Unit ;
+      :hasAlias :atmosphere , :standard_atmosphere ;
+      :hasDefinition "1.01325e5 Pa" .
 
 :degrees_north
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_040938f3 .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_040938f3 .
 
 :_5eda5072
-      a       u2:Unit ;
-      u2:hasAlias :pound , :avoirdupois_pound ;
-      u2:hasDefinition "4.5359237e-1 kg" .
+      a       :Unit ;
+      :hasAlias :pound , :avoirdupois_pound ;
+      :hasDefinition "4.5359237e-1 kg" .
 
 :degreesW
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_e9ffa163 .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_e9ffa163 .
 
 :_d9c5f8cf
-      a       u2:Unit ;
-      u2:hasAlias :dram ;
-      u2:hasDefinition "US_fluid_ounce/16" .
+      a       :Unit ;
+      :hasAlias :dram ;
+      :hasDefinition "US_fluid_ounce/16" .
 
 :firkin
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_e8d0301d .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_e8d0301d .
 
 :_30298988
-      a       u2:Unit ;
-      u2:hasAlias :liquid_gill , :US_liquid_gill , :gill ;
-      u2:hasDefinition "US_liquid_gallon/32" .
+      a       :Unit ;
+      :hasAlias :liquid_gill , :US_liquid_gill , :gill ;
+      :hasDefinition "US_liquid_gallon/32" .
 
 :degree_T
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_040938f3 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_040938f3 .
 
 :_fb730275
-      a       u2:Unit ;
-      u2:hasAlias :assay_ton ;
-      u2:hasDefinition "2.916667e-2 kg" .
+      a       :Unit ;
+      :hasAlias :assay_ton ;
+      :hasDefinition "2.916667e-2 kg" .
 
 :degreeT
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_040938f3 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_040938f3 .
 
 :count
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_356a192b .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_356a192b .
 
 :_e4dcc8ac
-      a       u2:Unit ;
-      u2:hasAlias :erg ;
-      u2:hasDefinition "1e-7 J" .
+      a       :Unit ;
+      :hasAlias :erg ;
+      :hasDefinition "1e-7 J" .
 
 :voltampere
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:hasSymbol "VA" ;
-      u2:namesUnit :_47b2aa15 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :hasSymbol "VA" ;
+      :namesUnit :_47b2aa15 .
 
 :_39c4bf7e
-      a       u2:Unit ;
-      u2:hasAlias :work_year ;
-      u2:hasDefinition "2056 hours" .
+      a       :Unit ;
+      :hasAlias :work_year ;
+      :hasDefinition "2056 hours" .
 
 :gauss
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_830adec8 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_830adec8 .
 
 :_c9bcb147
-      a       u2:Unit ;
-      u2:hasAlias :water_60F , :waters_60F ;
-      u2:hasDefinition "gravity 999.001 kg/m^3" .
+      a       :Unit ;
+      :hasAlias :water_60F , :waters_60F ;
+      :hasDefinition "gravity 999.001 kg/m^3" .
 
 :sidereal_month
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_19015a05 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_19015a05 .
 
 :liquid_gallon
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_d5993c05 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_d5993c05 .
 
 :_a8ad8c14
-      a       u2:Unit ;
-      u2:hasAlias :shake ;
-      u2:hasDefinition "1e-8 s" .
+      a       :Unit ;
+      :hasAlias :shake ;
+      :hasDefinition "1e-8 s" .
 
 :barrel
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:hasSymbol "bbl" ;
-      u2:namesUnit :_ba96c66f .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :hasSymbol "bbl" ;
+      :namesUnit :_ba96c66f .
 
-:mil  a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_1d948b2e .
+:mil  a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_1d948b2e .
 
 :inches_H2O_60F
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_7843fee8 .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_7843fee8 .
 
 :foot_H2O
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_2e4831ac .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_2e4831ac .
 
 :degreesT
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_040938f3 .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_040938f3 .
 
 :leap_year
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_d9a26f0c .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_d9a26f0c .
 
 :water_horsepower
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_e42565cf .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_e42565cf .
 
 :_f1f50a3b
-      a       u2:Unit ;
-      u2:hasAlias :potential_vorticity_unit ;
-      u2:hasDefinition "1e-6 m^2 s^-1 K kg^-1" .
+      a       :Unit ;
+      :hasAlias :potential_vorticity_unit ;
+      :hasDefinition "1e-6 m^2 s^-1 K kg^-1" .
 
 :therm
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:hasSymbol "thm" ;
-      u2:namesUnit :_5a5b4c68 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :hasSymbol "thm" ;
+      :namesUnit :_5a5b4c68 .
 
 :degreeW
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_e9ffa163 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_e9ffa163 .
 
 :_df706576
-      a       u2:Unit ;
-      u2:hasAlias :bag ;
-      u2:hasDefinition "94 pound" .
+      a       :Unit ;
+      :hasAlias :bag ;
+      :hasDefinition "94 pound" .
 
 :rotation
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_1fb88102 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_1fb88102 .
 
 :degree_W
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_e9ffa163 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_e9ffa163 .
 
 :_b8539d81
-      a       u2:Unit ;
-      u2:hasAlias :gilbert ;
-      u2:hasDefinition "7.957747e-1 A" .
+      a       :Unit ;
+      :hasAlias :gilbert ;
+      :hasDefinition "7.957747e-1 A" .
 
 :common_year
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_e79dad9a .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_e79dad9a .
 
 :degK
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_a7ee38bb .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_a7ee38bb .
 
 :_585f9f9c
-      a       u2:Unit ;
-      u2:hasAlias :abmho ;
-      u2:hasDefinition "1e9 S" .
+      a       :Unit ;
+      :hasAlias :abmho ;
+      :hasDefinition "1e9 S" .
 
 :_5cee3bc9
-      a       u2:Unit ;
-      u2:hasAlias :IT_Btus , :Btus , :IT_Btu , :Btu ;
-      u2:hasDefinition "1.05505585262e3 J" .
+      a       :Unit ;
+      :hasAlias :IT_Btus , :Btus , :IT_Btu , :Btu ;
+      :hasDefinition "1.05505585262e3 J" .
 
 :_5ed453c1
-      a       u2:Unit ;
-      u2:hasAlias :long_hundredweight ;
-      u2:hasDefinition "5.080235e1 kg" .
+      a       :Unit ;
+      :hasAlias :long_hundredweight ;
+      :hasDefinition "5.080235e1 kg" .
 
 :_6dcd4ce2
-      a       u2:Unit ;
-      u2:hasAlias :amp ;
-      u2:hasDefinition "A" .
+      a       :Unit ;
+      :hasAlias :amp ;
+      :hasDefinition "A" .
 
 :sidereal_minute
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_a406cd04 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_a406cd04 .
 
 :_74eda9b9
-      a       u2:Unit ;
-      u2:hasAlias :printers_point ;
-      u2:hasDefinition "3.514598e-4 m" .
+      a       :Unit ;
+      :hasAlias :printers_point ;
+      :hasDefinition "3.514598e-4 m" .
 
 :_13876128
-      a       u2:Unit ;
-      u2:hasAlias :barleycorn ;
-      u2:hasDefinition "inch/3" .
+      a       :Unit ;
+      :hasAlias :barleycorn ;
+      :hasDefinition "inch/3" .
 
 :maxwell
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_5bd84efc .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_5bd84efc .
 
-:ton  a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_c9ebfd86 .
+:ton  a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_c9ebfd86 .
 
 :_63d67a55
-      a       u2:Unit ;
-      u2:hasAlias :langley ;
-      u2:hasDefinition "4.184000e4 J/m^2" .
+      a       :Unit ;
+      :hasAlias :langley ;
+      :hasDefinition "4.184000e4 J/m^2" .
 
 :nmile
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_3edeacc2 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_3edeacc2 .
 
 :force_pound
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_856a4544 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_856a4544 .
 
 :_f5e874c2
-      a       u2:Unit ;
-      u2:hasAlias :abohm ;
-      u2:hasDefinition "1e-9 ohm" .
+      a       :Unit ;
+      :hasAlias :abohm ;
+      :hasDefinition "1e-9 ohm" .
 
 :degs_K
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_a7ee38bb .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_a7ee38bb .
 
 :_d8eef3c6
-      a       u2:Unit ;
-      u2:hasAlias :Julian_year ;
-      u2:hasDefinition "365.25 day" .
+      a       :Unit ;
+      :hasAlias :Julian_year ;
+      :hasDefinition "365.25 day" .
 
 :year
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:hasSymbol "yr" ;
-      u2:namesUnit :_8510dbb4 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :hasSymbol "yr" ;
+      :namesUnit :_8510dbb4 .
 
 :_f9863f0a
-      a       u2:Unit ;
-      u2:hasAlias :metric_horsepower ;
-      u2:hasDefinition "7.35499e2 W" .
+      a       :Unit ;
+      :hasAlias :metric_horsepower ;
+      :hasDefinition "7.35499e2 W" .
 
 :_fc6a66a3
-      a       u2:Unit ;
-      u2:hasAlias :footlambert ;
-      u2:hasDefinition "3.426259 cd/m^2" .
+      a       :Unit ;
+      :hasAlias :footlambert ;
+      :hasDefinition "3.426259 cd/m^2" .
 
 :international_yard
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_7e623454 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_7e623454 .
 
 :tons_TNT
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_b7b2fa1f .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_b7b2fa1f .
 
 :_c709611a
-      a       u2:Unit ;
-      u2:hasAlias :apothecary_pound , :troy_pound ;
-      u2:hasDefinition "3.732417e-1 kg" .
+      a       :Unit ;
+      :hasAlias :apothecary_pound , :troy_pound ;
+      :hasDefinition "3.732417e-1 kg" .
 
 :ton_of_refrigeration
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_a87c034c .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_a87c034c .
 
 :_1fb88102
-      a       u2:Unit ;
-      u2:hasAlias :cycle , :circle , :turn , :rotation , :revolution ;
-      u2:hasDefinition "2 pi rad" .
+      a       :Unit ;
+      :hasAlias :cycle , :circle , :turn , :rotation , :revolution ;
+      :hasDefinition "2 pi rad" .
 
 :_9e9df374
-      a       u2:Unit ;
-      u2:hasAlias :circular_mil ;
-      u2:hasDefinition "5.067075e-10 m^2" .
+      a       :Unit ;
+      :hasAlias :circular_mil ;
+      :hasDefinition "5.067075e-10 m^2" .
 
 :molecule
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_78161f7d .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_78161f7d .
 
 :mercury_60F
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_8edd2794 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_8edd2794 .
 
 :_a0f1490a
-      a       u2:Unit ;
-      u2:hasAlias :sec ;
-      u2:hasDefinition "s" .
+      a       :Unit ;
+      :hasAlias :sec ;
+      :hasDefinition "s" .
 
 :US_fluid_ounce
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_27077b27 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_27077b27 .
 
 :waters_4C
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_6649a63c .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_6649a63c .
 
 :acre
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_d8eef780 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_d8eef780 .
 
 :conventional_mercuries
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:hasSymbol "Hg" ;
-      u2:namesUnit :_5d0588b9 .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :hasSymbol "Hg" ;
+      :namesUnit :_5d0588b9 .
 
 :_7e54a0fb
-      a       u2:Unit ;
-      u2:hasAlias :avogadro_constant ;
-      u2:hasDefinition "6.02214179e23/mol" .
+      a       :Unit ;
+      :hasAlias :avogadro_constant ;
+      :hasDefinition "6.02214179e23/mol" .
 
 :abhenry
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_c056be8a .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_c056be8a .
 
 :degrees_T
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_040938f3 .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_040938f3 .
 
 :perch
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_8721f5c2 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_8721f5c2 .
 
 :_6ae529bf
-      a       u2:Unit ;
-      u2:hasAlias :percent ;
-      u2:hasDefinition "0.01" .
+      a       :Unit ;
+      :hasAlias :percent ;
+      :hasDefinition "0.01" .
 
 :_b1562406
-      a       u2:Unit ;
-      u2:hasAlias :statohm ;
-      u2:hasDefinition "8.987554e11 ohm" .
+      a       :Unit ;
+      :hasAlias :statohm ;
+      :hasDefinition "8.987554e11 ohm" .
 
 :_2bdec7d9
-      a       u2:Unit ;
-      u2:hasAlias :thermochemical_calorie ;
-      u2:hasDefinition "4.184000 J" .
+      a       :Unit ;
+      :hasAlias :thermochemical_calorie ;
+      :hasDefinition "4.184000 J" .
 
 :footcandle
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_3275b154 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_3275b154 .
 
 :abfarad
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_73679a08 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_73679a08 .
 
-:eon  a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_5e7061e3 .
+:eon  a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_5e7061e3 .
 
 :US_liquid_pint
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_0e586513 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_0e586513 .
 
 :_c2e7b0f0
-      a       u2:Unit ;
-      u2:hasDefinition "kip/in^2" ;
-      u2:hasSymbol "ksi" .
+      a       :Unit ;
+      :hasDefinition "kip/in^2" ;
+      :hasSymbol "ksi" .
 
 :international_inch
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_dc48740a .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_dc48740a .
 
 :sverdrup
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_4f363ffd .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_4f363ffd .
 
 :standard_atmosphere
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_473c446f .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_473c446f .
 
 :shaft_horsepower
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_dc7a9b29 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_dc7a9b29 .
 
 :mercuries_60F
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_8edd2794 .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_8edd2794 .
 
 :_01bb6f2a
-      a       u2:Unit ;
-      u2:hasAlias :physical_faraday ;
-      u2:hasDefinition "9.65219e4 C" .
+      a       :Unit ;
+      :hasAlias :physical_faraday ;
+      :hasDefinition "9.65219e4 C" .
 
 :atmosphere
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:hasSymbol "atm" ;
-      u2:namesUnit :_473c446f .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :hasSymbol "atm" ;
+      :namesUnit :_473c446f .
 
 :quart
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_72255695 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_72255695 .
 
 :einstein
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_a2fff373 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_a2fff373 .
 
 :US_dry_gallon
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_c4c9702e .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_c4c9702e .
 
 :_86385633
-      a       u2:Unit ;
-      u2:hasAlias :degsC , :degreeC , :deg_C , :degC , :degrees_C , :celsius , :degree_C , :degs_C , :degreesC ;
-      u2:hasDefinition "degree_Celsius" ;
-      u2:hasSymbol "℃" .
+      a       :Unit ;
+      :hasAlias :degsC , :degreeC , :deg_C , :degC , :degrees_C , :celsius , :degree_C , :degs_C , :degreesC ;
+      :hasDefinition "degree_Celsius" ;
+      :hasSymbol "℃" .
 
 :degs_F
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_d3c59bc9 .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_d3c59bc9 .
 
 :_46c72920
-      a       u2:Unit ;
-      u2:hasDefinition "lg(re 1 mW)" ;
-      u2:hasSymbol "Bm" .
+      a       :Unit ;
+      :hasDefinition "lg(re 1 mW)" ;
+      :hasSymbol "Bm" .
 
 :pounds_force
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:hasSymbol "lbf" ;
-      u2:namesUnit :_856a4544 .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :hasSymbol "lbf" ;
+      :namesUnit :_856a4544 .
 
 :UK_liquid_quart
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_4b42b360 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_4b42b360 .
 
 :_3d4ec05f
-      a       u2:Unit ;
-      u2:hasDefinition "1 pound gravity/in^2" ;
-      u2:hasSymbol "psi" .
+      a       :Unit ;
+      :hasDefinition "1 pound gravity/in^2" ;
+      :hasSymbol "psi" .
 
 :degrees_W
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_e9ffa163 .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_e9ffa163 .
 
 :register_ton
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_7e2c792a .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_7e2c792a .
 
 :degreeK
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_a7ee38bb .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_a7ee38bb .
 
 :force_ounce
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_a498fa01 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_a498fa01 .
 
 :stere
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_2b88b485 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_2b88b485 .
 
 :degree_K
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_a7ee38bb .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_a7ee38bb .
 
 :_5e7061e3
-      a       u2:Unit ;
-      u2:hasAlias :eon ;
-      u2:hasDefinition "1e9 year" .
+      a       :Unit ;
+      :hasAlias :eon ;
+      :hasDefinition "1e9 year" .
 
 :octet
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_fe5dbbce .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_fe5dbbce .
 
 :_eb44856b
-      a       u2:Unit ;
-      u2:hasAlias :acre_foot , :acre_feet ;
-      u2:hasDefinition "1.233489e3 m^3" .
+      a       :Unit ;
+      :hasAlias :acre_foot , :acre_feet ;
+      :hasDefinition "1.233489e3 m^3" .
 
 :Canadian_liquid_gallon
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_a816adb0 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_a816adb0 .
 
 :feet
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:hasSymbol "ft" ;
-      u2:namesUnit :_b470b0e2 .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :hasSymbol "ft" ;
+      :namesUnit :_b470b0e2 .
 
 :inch
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:hasSymbol "in" ;
-      u2:namesUnit :_dc48740a .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :hasSymbol "in" ;
+      :namesUnit :_dc48740a .
 
 :mercury_32F
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_5d0588b9 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_5d0588b9 .
 
 :mile
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:hasSymbol "mi" ;
-      u2:namesUnit :_ce44377e .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :hasSymbol "mi" ;
+      :namesUnit :_ce44377e .
 
 :baud
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:hasSymbol "Bd" , "bps" ;
-      u2:namesUnit :_97aaf5bb .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :hasSymbol "Bd" , "bps" ;
+      :namesUnit :_97aaf5bb .
 
 :_2e4831ac
-      a       u2:Unit ;
-      u2:hasAlias :footH2O , :foot_H2O , :foot_water , :feet_H2O , :feetH2O , :feet_water ;
-      u2:hasDefinition "foot water" .
+      a       :Unit ;
+      :hasAlias :footH2O , :foot_H2O , :foot_water , :feet_H2O , :feetH2O , :feet_water ;
+      :hasDefinition "foot water" .
 
 :_2e0655b1
-      a       u2:Unit ;
-      u2:hasAlias :TNT ;
-      u2:hasDefinition "4.184 MJ/kg" .
+      a       :Unit ;
+      :hasAlias :TNT ;
+      :hasDefinition "4.184 MJ/kg" .
 
 :avogadro_constant
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_7e54a0fb .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_7e54a0fb .
 
 :footH2O
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_2e4831ac .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_2e4831ac .
 
 :furlong
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_6751413e .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_6751413e .
 
 :UK_liquid_pint
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_ab402ec9 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_ab402ec9 .
 
 :yard
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:hasSymbol "yd" ;
-      u2:namesUnit :_7e623454 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :hasSymbol "yd" ;
+      :namesUnit :_7e623454 .
 
 :_c4c9702e
-      a       u2:Unit ;
-      u2:hasAlias :US_dry_gallon ;
-      u2:hasDefinition "4.404884e-3 m^3" .
+      a       :Unit ;
+      :hasAlias :US_dry_gallon ;
+      :hasDefinition "4.404884e-3 m^3" .
 
 :_16c97360
-      a       u2:Unit ;
-      u2:hasAlias :US_liquid_cup , :cup , :liquid_cup ;
-      u2:hasDefinition "US_liquid_gallon/16" .
+      a       :Unit ;
+      :hasAlias :US_liquid_cup , :cup , :liquid_cup ;
+      :hasDefinition "US_liquid_gallon/16" .
 
 :waters_60F
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_c9bcb147 .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_c9bcb147 .
 
 :gallon
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_d5993c05 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_d5993c05 .
 
 :apounce
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_0cf48af4 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_0cf48af4 .
 
 :water_4C
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_6649a63c .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_6649a63c .
 
 :kilograms_force
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:hasSymbol "kgf" ;
-      u2:namesUnit :_e1afacc3 .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :hasSymbol "kgf" ;
+      :namesUnit :_e1afacc3 .
 
 :_e4684f55
-      a       u2:Unit ;
-      u2:hasAlias :inch_H2O_39F , :inches_H2O_39F ;
-      u2:hasDefinition "inch water_39F" .
+      a       :Unit ;
+      :hasAlias :inch_H2O_39F , :inches_H2O_39F ;
+      :hasDefinition "inch water_39F" .
 
 :work_month
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_bdeedbb8 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_bdeedbb8 .
 
 :_23baf5ca
-      a       u2:Unit ;
-      u2:hasDefinition "cm^3" ;
-      u2:hasSymbol "cc" .
+      a       :Unit ;
+      :hasDefinition "cm^3" ;
+      :hasSymbol "cc" .
 
 :degree_kelvin
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_a7ee38bb .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_a7ee38bb .
 
 :_03477819
-      a       u2:Unit ;
-      u2:hasAlias :candle ;
-      u2:hasDefinition "cd" .
+      a       :Unit ;
+      :hasAlias :candle ;
+      :hasDefinition "cd" .
 
 :_6e9a2cff
-      a       u2:Unit ;
-      u2:hasAlias :gamma ;
-      u2:hasDefinition "1e-9 T" .
+      a       :Unit ;
+      :hasAlias :gamma ;
+      :hasDefinition "1e-9 T" .
 
 :_1b7fac4e
-      a       u2:Unit ;
-      u2:hasAlias :rotations_per_second , :rotation_per_second ;
-      u2:hasDefinition "rotation/second" .
+      a       :Unit ;
+      :hasAlias :rotations_per_second , :rotation_per_second ;
+      :hasDefinition "rotation/second" .
 
 :carat
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_f77b9ab7 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_f77b9ab7 .
 
 :international_foot
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_b470b0e2 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_b470b0e2 .
 
 :chemical_faraday
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_a17898db .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_a17898db .
 
 :_b1cac674
-      a       u2:Unit ;
-      u2:hasAlias :chain ;
-      u2:hasDefinition "2.011684e1 m" .
+      a       :Unit ;
+      :hasAlias :chain ;
+      :hasDefinition "2.011684e1 m" .
 
 :_de2a3440
-      a       u2:Unit ;
-      u2:hasAlias :sidereal_hour ;
-      u2:hasDefinition "3.590170e3 s" .
+      a       :Unit ;
+      :hasAlias :sidereal_hour ;
+      :hasDefinition "3.590170e3 s" .
 
 :_ce44377e
-      a       u2:Unit ;
-      u2:hasAlias :mile , :international_mile ;
-      u2:hasDefinition "5280 international_feet" .
+      a       :Unit ;
+      :hasAlias :mile , :international_mile ;
+      :hasDefinition "5280 international_feet" .
 
 :_ab402ec9
-      a       u2:Unit ;
-      u2:hasAlias :UK_liquid_pint ;
-      u2:hasDefinition "UK_liquid_gallon/8" .
+      a       :Unit ;
+      :hasAlias :UK_liquid_pint ;
+      :hasDefinition "UK_liquid_gallon/8" .
 
 :_78161f7d
-      a       u2:Unit ;
-      u2:hasAlias :molec , :nucleon , :nuc ;
-      u2:hasDefinition "mol/6.02214129e23" ;
-      u2:hasName :molecule .
+      a       :Unit ;
+      :hasAlias :molec , :nucleon , :nuc ;
+      :hasDefinition "mol/6.02214129e23" ;
+      :hasName :molecule .
 
 :Gregorian_year
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_8745e79b .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_8745e79b .
 
 :apostilb
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_d7d0df78 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_d7d0df78 .
 
 :dry_pint
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_9a4d4789 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_9a4d4789 .
 
 :_c8230af0
-      a       u2:Unit ;
-      u2:hasAlias :dry_quart , :US_dry_quart ;
-      u2:hasDefinition "US_dry_gallon/4" .
+      a       :Unit ;
+      :hasAlias :dry_quart , :US_dry_quart ;
+      :hasDefinition "US_dry_gallon/4" .
 
 :mercuries_0C
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_5d0588b9 .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_5d0588b9 .
 
 :_41abb8fe
-      a       u2:Unit ;
-      u2:hasAlias :biot , :abampere ;
-      u2:hasDefinition "10 A" .
+      a       :Unit ;
+      :hasAlias :biot , :abampere ;
+      :hasDefinition "10 A" .
 
 :_6f912672
-      a       u2:Unit ;
-      u2:hasAlias :long_ton ;
-      u2:hasDefinition "2240 pound" .
+      a       :Unit ;
+      :hasAlias :long_ton ;
+      :hasDefinition "2240 pound" .
 
 :_8721f5c2
-      a       u2:Unit ;
-      u2:hasAlias :pole , :perch , :rod ;
-      u2:hasDefinition "16.5 US_survey_feet" .
+      a       :Unit ;
+      :hasAlias :pole , :perch , :rod ;
+      :hasDefinition "16.5 US_survey_feet" .
 
 :_14508275
-      a       u2:Unit ;
-      u2:hasAlias :UK_liquid_cup ;
-      u2:hasDefinition "UK_liquid_gallon/16" .
+      a       :Unit ;
+      :hasAlias :UK_liquid_cup ;
+      :hasDefinition "UK_liquid_gallon/16" .
 
 :_0699858b
-      a       u2:Unit ;
-      u2:hasAlias :apothecary_ounce , :troy_ounce ;
-      u2:hasDefinition "3.110348e-2 kg" .
+      a       :Unit ;
+      :hasAlias :apothecary_ounce , :troy_ounce ;
+      :hasDefinition "3.110348e-2 kg" .
 
 :US_liquid_cup
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_16c97360 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_16c97360 .
 
 :_c4ab0a4c
-      a       u2:Unit ;
-      u2:hasDefinition "lg(re 1e-6 V)" ;
-      u2:hasSymbol "BµV" .
+      a       :Unit ;
+      :hasDefinition "lg(re 1e-6 V)" ;
+      :hasSymbol "BµV" .
 
-:kip  a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_3d9453bb .
+:kip  a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_3d9453bb .
 
 :pica
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_5178baa2 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_5178baa2 .
 
 :barie
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_e7be0c33 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_e7be0c33 .
 
 :_e42565cf
-      a       u2:Unit ;
-      u2:hasAlias :water_horsepower ;
-      u2:hasDefinition "7.46043e2 W" .
+      a       :Unit ;
+      :hasAlias :water_horsepower ;
+      :hasDefinition "7.46043e2 W" .
 
 :_fd2b4af7
-      a       u2:Unit ;
-      u2:hasAlias :millimeter_Hg_0C , :millimeters_Hg_0C ;
-      u2:hasDefinition "mm mercury_0C" .
+      a       :Unit ;
+      :hasAlias :millimeter_Hg_0C , :millimeters_Hg_0C ;
+      :hasDefinition "mm mercury_0C" .
 
 :_691857c1
-      a       u2:Unit ;
-      u2:hasAlias :inches_Hg , :inch_Hg ;
-      u2:hasDefinition "inch Hg" .
+      a       :Unit ;
+      :hasAlias :inches_Hg , :inch_Hg ;
+      :hasDefinition "inch Hg" .
 
 :parsec
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_e976e9ab .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_e976e9ab .
 
 :degsR
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_e14a3aa7 .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_e14a3aa7 .
 
 :force_ton
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_3baf5098 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_3baf5098 .
 
 :_7e7e5c9e
-      a       u2:Unit ;
-      u2:hasAlias :electric_horsepower ;
-      u2:hasDefinition "7.460000e2 W" .
+      a       :Unit ;
+      :hasAlias :electric_horsepower ;
+      :hasDefinition "7.460000e2 W" .
 
 :scruple
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_db8f68be .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_db8f68be .
 
 :_4fc69eca
-      a       u2:Unit ;
-      u2:hasAlias :peck ;
-      u2:hasDefinition "bushel/4" .
+      a       :Unit ;
+      :hasAlias :peck ;
+      :hasDefinition "bushel/4" .
 
 :US_survey_yard
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_a6425f48 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_a6425f48 .
 
 :tropical_month
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_f43c6ffc .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_f43c6ffc .
 
 :long_ton
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_6f912672 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_6f912672 .
 
 :abampere
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_41abb8fe .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_41abb8fe .
 
 :liquid_cup
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_16c97360 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_16c97360 .
 
 :millimeters_Hg_0C
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_fd2b4af7 .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_fd2b4af7 .
 
 :degrees_R
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_e14a3aa7 .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_e14a3aa7 .
 
 :kayser
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_08fce9d6 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_08fce9d6 .
 
 :_386b14e9
-      a       u2:Unit ;
-      u2:hasAlias :appound ;
-      u2:hasDefinition "5760 grain" .
+      a       :Unit ;
+      :hasAlias :appound ;
+      :hasDefinition "5760 grain" .
 
 :degs_C
-      a       u2:UnitName ;
-      u2:hasCardinality "plural" ;
-      u2:namesUnit :_86385633 .
+      a       :UnitName ;
+      :hasCardinality "plural" ;
+      :namesUnit :_86385633 .
 
 :short_ton
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_c9ebfd86 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_c9ebfd86 .
 
 :pennyweight
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_7bb123bb .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_7bb123bb .
 
 :statfarad
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_bdc7caae .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_bdc7caae .
 
 :ton_force
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_3baf5098 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_3baf5098 .
 
 :_7cb50f73
-      a       u2:Unit ;
-      u2:hasAlias :stilb ;
-      u2:hasDefinition "1e4 cd/m^2" .
+      a       :Unit ;
+      :hasAlias :stilb ;
+      :hasDefinition "1e4 cd/m^2" .
 
 :watthour
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_11a81627 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_11a81627 .
 
 :rotation_per_second
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_1b7fac4e .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_1b7fac4e .
 
 :dram
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:hasSymbol "dr" ;
-      u2:namesUnit :_d9c5f8cf .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :hasSymbol "dr" ;
+      :namesUnit :_d9c5f8cf .
 
 :_9074abf1
-      a       u2:Unit ;
-      u2:hasAlias :avoirdupois_ounce ;
-      u2:hasDefinition "2.834952e-2 kg" .
+      a       :Unit ;
+      :hasAlias :avoirdupois_ounce ;
+      :hasDefinition "2.834952e-2 kg" .
 
 :degreeN
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_040938f3 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_040938f3 .
 
 :_f77b9ab7
-      a       u2:Unit ;
-      u2:hasAlias :carat ;
-      u2:hasDefinition "2e-4 kg" .
+      a       :Unit ;
+      :hasAlias :carat ;
+      :hasDefinition "2e-4 kg" .
 
 :degree_N
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_040938f3 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_040938f3 .

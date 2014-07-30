@@ -1,352 +1,351 @@
 @prefix :        <http://mmisw.org/ont/mmitest/udunits2-accepted/> .
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix u2:      <http://mmisw.org/ont/mmitest/udunits2/> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 
 :_cb31a312
-      a       u2:Unit ;
-      u2:hasAlias :rem ;
-      u2:hasDefinition "cSv" .
+      a       :Unit ;
+      :hasAlias :rem ;
+      :hasDefinition "cSv" .
 
 :_251d0474
-      a       u2:Unit ;
-      u2:hasAlias :tonne ;
-      u2:hasDefinition "1000 kg" ;
-      u2:hasName :metric_ton ;
-      u2:hasSymbol "t" .
+      a       :Unit ;
+      :hasAlias :tonne ;
+      :hasDefinition "1000 kg" ;
+      :hasName :metric_ton ;
+      :hasSymbol "t" .
 
 :_9e18f835
-      a       u2:Unit ;
-      u2:hasDefinition "60 s" ;
-      u2:hasName :minute ;
-      u2:hasSymbol "min" .
+      a       :Unit ;
+      :hasDefinition "60 s" ;
+      :hasName :minute ;
+      :hasSymbol "min" .
 
 :arcsecond
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_3478eed1 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_3478eed1 .
 
 :arcmin
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_ca565b10 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_ca565b10 .
 
-:gal  a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_877b35ea .
+:gal  a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_877b35ea .
 
 :minute
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:hasSymbol "min" ;
-      u2:namesUnit :_9e18f835 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :hasSymbol "min" ;
+      :namesUnit :_9e18f835 .
 
 :_0e61b879
-      a       u2:Unit ;
-      u2:hasAlias :angstrom , :ångström ;
-      u2:hasDefinition "1e-10 m" .
+      a       :Unit ;
+      :hasAlias :angstrom , :ångström ;
+      :hasDefinition "1e-10 m" .
 
 :hour
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:hasSymbol "h" ;
-      u2:namesUnit :_b4bfffeb .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :hasSymbol "h" ;
+      :namesUnit :_b4bfffeb .
 
 :tonne
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_251d0474 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_251d0474 .
 
 :_3b82dba2
-      a       u2:Unit ;
-      u2:hasAlias :nautical_mile ;
-      u2:hasDefinition "1852 m" .
+      a       :Unit ;
+      :hasAlias :nautical_mile ;
+      :hasDefinition "1852 m" .
 
-:pi   a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:hasSymbol "π" ;
-      u2:namesUnit :_d9d736b3 .
+:pi   a       :UnitName ;
+      :hasCardinality "singular" ;
+      :hasSymbol "π" ;
+      :namesUnit :_d9d736b3 .
 
 :electron_volt
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_aa34964c .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_aa34964c .
 
 :_3ae81032
-      a       u2:Unit ;
-      u2:hasAlias :astronomical_unit ;
-      u2:hasDefinition "1.495979e11 m" .
+      a       :Unit ;
+      :hasAlias :astronomical_unit ;
+      :hasDefinition "1.495979e11 m" .
 
 :astronomical_unit
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:hasSymbol "ua" ;
-      u2:namesUnit :_3ae81032 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :hasSymbol "ua" ;
+      :namesUnit :_3ae81032 .
 
 :_d9d736b3
-      a       u2:Unit ;
-      u2:hasAlias :pi ;
-      u2:hasDefinition "3.141592653589793238462643383279" .
+      a       :Unit ;
+      :hasAlias :pi ;
+      :hasDefinition "3.141592653589793238462643383279" .
 
 :_41b343dd
-      a       u2:Unit ;
-      u2:hasDefinition "24 h" ;
-      u2:hasName :day ;
-      u2:hasSymbol "d" .
+      a       :Unit ;
+      :hasDefinition "24 h" ;
+      :hasName :day ;
+      :hasSymbol "d" .
 
-:are  a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:hasSymbol "a" ;
-      u2:namesUnit :_d6bca1da .
+:are  a       :UnitName ;
+      :hasCardinality "singular" ;
+      :hasSymbol "a" ;
+      :namesUnit :_d6bca1da .
 
 :angstrom
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_0e61b879 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_0e61b879 .
 
 :arcsec
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_3478eed1 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_3478eed1 .
 
 :electronvolt
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:hasSymbol "eV" ;
-      u2:namesUnit :_aa34964c .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :hasSymbol "eV" ;
+      :namesUnit :_aa34964c .
 
 :atomicmassunit
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_4611ca24 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_4611ca24 .
 
 :litre
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:hasSymbol "l" ;
-      u2:namesUnit :_44f241b8 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :hasSymbol "l" ;
+      :namesUnit :_44f241b8 .
 
 :barn
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:hasSymbol "b" ;
-      u2:namesUnit :_5d6eaecf .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :hasSymbol "b" ;
+      :namesUnit :_5d6eaecf .
 
 :liter
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:hasSymbol "L" ;
-      u2:namesUnit :_44f241b8 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :hasSymbol "L" ;
+      :namesUnit :_44f241b8 .
 
 :hectare
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_dc71c5c4 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_dc71c5c4 .
 
 :metric_ton
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:hasSymbol "t" ;
-      u2:namesUnit :_251d0474 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :hasSymbol "t" ;
+      :namesUnit :_251d0474 .
 
 :arc_minute
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:hasSymbol "'" , "′" ;
-      u2:namesUnit :_ca565b10 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :hasSymbol "'" , "′" ;
+      :namesUnit :_ca565b10 .
 
 :arcminute
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_ca565b10 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_ca565b10 .
 
 :_dc71c5c4
-      a       u2:Unit ;
-      u2:hasAlias :hectare ;
-      u2:hasDefinition "100 are" .
+      a       :Unit ;
+      :hasAlias :hectare ;
+      :hasDefinition "100 are" .
 
 :_aa34964c
-      a       u2:Unit ;
-      u2:hasAlias :electron_volt ;
-      u2:hasDefinition "1.60217733e-19 J" ;
-      u2:hasName :electronvolt ;
-      u2:hasSymbol "eV" .
+      a       :Unit ;
+      :hasAlias :electron_volt ;
+      :hasDefinition "1.60217733e-19 J" ;
+      :hasName :electronvolt ;
+      :hasSymbol "eV" .
 
 :unified_atomic_mass_unit
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:hasSymbol "u" ;
-      u2:namesUnit :_4611ca24 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :hasSymbol "u" ;
+      :namesUnit :_4611ca24 .
 
 :_877b35ea
-      a       u2:Unit ;
-      u2:hasAlias :gal ;
-      u2:hasDefinition "cm/s^2" .
+      a       :Unit ;
+      :hasAlias :gal ;
+      :hasDefinition "cm/s^2" .
 
 :_4611ca24
-      a       u2:Unit ;
-      u2:hasAlias :atomic_mass_unit , :atomicmassunit , :amu ;
-      u2:hasDefinition "1.6605402e-27 kg" ;
-      u2:hasName :unified_atomic_mass_unit ;
-      u2:hasSymbol "u" .
+      a       :Unit ;
+      :hasAlias :atomic_mass_unit , :atomicmassunit , :amu ;
+      :hasDefinition "1.6605402e-27 kg" ;
+      :hasName :unified_atomic_mass_unit ;
+      :hasSymbol "u" .
 
 :_d6bca1da
-      a       u2:Unit ;
-      u2:hasAlias :are ;
-      u2:hasDefinition "dam^2" .
+      a       :Unit ;
+      :hasAlias :are ;
+      :hasDefinition "dam^2" .
 
 :arc_second
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:hasSymbol "\"" , "″" ;
-      u2:namesUnit :_3478eed1 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :hasSymbol "\"" , "″" ;
+      :namesUnit :_3478eed1 .
 
 :international_knot
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_27e4326d .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_27e4326d .
 
-:day  a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:hasSymbol "d" ;
-      u2:namesUnit :_41b343dd .
+:day  a       :UnitName ;
+      :hasCardinality "singular" ;
+      :hasSymbol "d" ;
+      :namesUnit :_41b343dd .
 
 :knot_international
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_27e4326d .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_27e4326d .
 
 :roentgen
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:hasSymbol "R" ;
-      u2:namesUnit :_21583eea .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :hasSymbol "R" ;
+      :namesUnit :_21583eea .
 
 :_748c9c59
-      a       u2:Unit ;
-      u2:hasAlias :angular_degree , :arcdeg , :degree ;
-      u2:hasDefinition "(pi/180) rad" ;
-      u2:hasName :arc_degree ;
-      u2:hasSymbol "°" .
+      a       :Unit ;
+      :hasAlias :angular_degree , :arcdeg , :degree ;
+      :hasDefinition "(pi/180) rad" ;
+      :hasName :arc_degree ;
+      :hasSymbol "°" .
 
 :_44f241b8
-      a       u2:Unit ;
-      u2:hasAlias :litre ;
-      u2:hasDefinition "dm^3" ;
-      u2:hasName :liter ;
-      u2:hasSymbol "L" .
+      a       :Unit ;
+      :hasAlias :litre ;
+      :hasDefinition "dm^3" ;
+      :hasName :liter ;
+      :hasSymbol "L" .
 
-:rem  a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_cb31a312 .
+:rem  a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_cb31a312 .
 
 :angular_second
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_3478eed1 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_3478eed1 .
 
 :atomic_mass_unit
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_4611ca24 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_4611ca24 .
 
 :arc_degree
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:hasSymbol "°" ;
-      u2:namesUnit :_748c9c59 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :hasSymbol "°" ;
+      :namesUnit :_748c9c59 .
 
 :_5d6eaecf
-      a       u2:Unit ;
-      u2:hasAlias :barn ;
-      u2:hasDefinition "100 fm^2" .
+      a       :Unit ;
+      :hasAlias :barn ;
+      :hasDefinition "100 fm^2" .
 
 :knot
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_27e4326d .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_27e4326d .
 
 :angular_minute
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_ca565b10 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_ca565b10 .
 
 :ångström
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:hasSymbol "Å" , "Å" ;
-      u2:namesUnit :_0e61b879 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :hasSymbol "Å" , "Å" ;
+      :namesUnit :_0e61b879 .
 
 :angular_degree
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_748c9c59 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_748c9c59 .
 
-:amu  a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_4611ca24 .
+:amu  a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_4611ca24 .
 
 :arcdeg
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_748c9c59 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_748c9c59 .
 
 :_cfe29ddd
-      a       u2:Unit ;
-      u2:hasAlias :curie ;
-      u2:hasDefinition "3.7e10 Bq" .
+      a       :Unit ;
+      :hasAlias :curie ;
+      :hasDefinition "3.7e10 Bq" .
 
 :_21583eea
-      a       u2:Unit ;
-      u2:hasAlias :roentgen ;
-      u2:hasDefinition "2.58e-4 C/kg" .
+      a       :Unit ;
+      :hasAlias :roentgen ;
+      :hasDefinition "2.58e-4 C/kg" .
 
 :_27e4326d
-      a       u2:Unit ;
-      u2:hasAlias :international_knot , :knot_international , :knot ;
-      u2:hasDefinition "nautical_mile/hour" .
+      a       :Unit ;
+      :hasAlias :international_knot , :knot_international , :knot ;
+      :hasDefinition "nautical_mile/hour" .
 
 :_3478eed1
-      a       u2:Unit ;
-      u2:hasAlias :arcsec , :angular_second , :arcsecond ;
-      u2:hasDefinition "'/60" ;
-      u2:hasName :arc_second ;
-      u2:hasSymbol "\"" , "″" .
+      a       :Unit ;
+      :hasAlias :arcsec , :angular_second , :arcsecond ;
+      :hasDefinition "'/60" ;
+      :hasName :arc_second ;
+      :hasSymbol "\"" , "″" .
 
 :_f7ddc606
-      a       u2:Unit ;
-      u2:hasAlias :bar ;
-      u2:hasDefinition "1000 hPa" .
+      a       :Unit ;
+      :hasAlias :bar ;
+      :hasDefinition "1000 hPa" .
 
 :_ca565b10
-      a       u2:Unit ;
-      u2:hasAlias :arcminute , :arcmin , :angular_minute ;
-      u2:hasDefinition "°/60" ;
-      u2:hasName :arc_minute ;
-      u2:hasSymbol "'" , "′" .
+      a       :Unit ;
+      :hasAlias :arcminute , :arcmin , :angular_minute ;
+      :hasDefinition "°/60" ;
+      :hasName :arc_minute ;
+      :hasSymbol "'" , "′" .
 
 :degree
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_748c9c59 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_748c9c59 .
 
-:bar  a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_f7ddc606 .
+:bar  a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_f7ddc606 .
 
 :curie
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:hasSymbol "Ci" ;
-      u2:namesUnit :_cfe29ddd .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :hasSymbol "Ci" ;
+      :namesUnit :_cfe29ddd .
 
 :nautical_mile
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_3b82dba2 .
+      a       :UnitName ;
+      :hasCardinality "singular" ;
+      :namesUnit :_3b82dba2 .
 
 :_b4bfffeb
-      a       u2:Unit ;
-      u2:hasDefinition "60 min" ;
-      u2:hasName :hour ;
-      u2:hasSymbol "hr" , "h" .
+      a       :Unit ;
+      :hasDefinition "60 min" ;
+      :hasName :hour ;
+      :hasSymbol "hr" , "h" .

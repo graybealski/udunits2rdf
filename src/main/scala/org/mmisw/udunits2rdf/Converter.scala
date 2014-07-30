@@ -61,7 +61,7 @@ class UnitConverter(xmlIn: Node, baseDefs: BaseDefs, namespace: String) extends 
   private val hasCardinality = baseDefs.hasCardinality
   private val namesUnit      = baseDefs.namesUnit
 
-  model.setNsPrefix("u2", baseDefs.namespace)
+  if (namespace != baseDefs.namespace) model.setNsPrefix("u2", baseDefs.namespace)
 
   private object stats {
     var unitsInInput = 0
