@@ -24,26 +24,35 @@ class BaseDefs(val namespace: String) {
 
   val UnitClass      = createClass("Unit")
   val UnitNameClass  = createClass("UnitName")
+  val PrefixClass    = createClass("Prefix")
 
   val hasDefinition  = createProperty("hasDefinition")
   val hasName        = createProperty("hasName", range = UnitNameClass)
   val hasAlias       = createProperty("hasAlias", range = UnitNameClass)
 
-  addDomain(hasDefinition, UnitClass)
-  addDomain(hasName, UnitClass)
-  addDomain(hasAlias, UnitClass)
-
   val namesUnit      = createProperty("namesUnit", range = UnitClass)
   val hasSymbol      = createProperty("hasSymbol")
   val hasCardinality = createProperty("hasCardinality")
 
-  addDomain(namesUnit, UnitNameClass)
-  addDomain(hasSymbol, UnitNameClass)
+  val hasValue       = createProperty("hasValue")
+  val hasPrefixName  = createProperty("hasPrefixName")
+
+  addDomain(hasDefinition,  UnitClass)
+  addDomain(hasName,        UnitClass)
+  addDomain(hasAlias,       UnitClass)
+
+  addDomain(namesUnit,      UnitNameClass)
+  addDomain(hasSymbol,      UnitNameClass)
   addDomain(hasCardinality, UnitNameClass)
+
+  addDomain(hasValue,       PrefixClass)
+  addDomain(hasPrefixName,  PrefixClass)
 
   addType(hasName,       OWL.FunctionalProperty)
   addType(hasDefinition, OWL.FunctionalProperty)
   addType(namesUnit,     OWL.FunctionalProperty)
+
+  addType(hasValue,      OWL.FunctionalProperty)
 
   private def createProperty(name: String, range: Resource = XSD.xstring): Property = {
     val prop = model.createProperty(namespace + name)
