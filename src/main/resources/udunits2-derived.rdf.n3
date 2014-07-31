@@ -1,255 +1,291 @@
 @prefix :        <http://mmisw.org/ont/mmitest/udunits2-derived/> .
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix u2:      <http://mmisw.org/ont/mmitest/udunits2/> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 
-:_3bf67536
-      a       :Unit ;
-      :hasDefinition "N.m" ;
-      :hasName :joule ;
-      :hasSymbol "J" .
+u2:hasCardinality
+      rdfs:domain u2:UnitName ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
 
 :gram
-      a       :UnitName ;
-      :hasCardinality "singular" ;
-      :hasSymbol "g" ;
-      :namesUnit :_0c6e2e25 .
-
-:sievert
-      a       :UnitName ;
-      :hasCardinality "singular" ;
-      :hasSymbol "Sv" ;
-      :namesUnit :_854014f0 .
+      a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:hasSymbol "g" ;
+      u2:namesUnit :_0c6e2e25 .
 
 :henry
-      a       :UnitName ;
-      :hasCardinality "singular" ;
-      :hasSymbol "H" ;
-      :namesUnit :_6a30db22 .
-
-:newton
-      a       :UnitName ;
-      :hasCardinality "singular" ;
-      :hasSymbol "N" ;
-      :namesUnit :_f425db5a .
+      a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:hasSymbol "H" ;
+      u2:namesUnit :_6a30db22 .
 
 :_42d4a060
-      a       :Unit ;
-      :hasDefinition "K @ 273.15" ;
-      :hasName :degree_Celsius ;
-      :hasSymbol "°C" .
+      a       u2:Unit ;
+      u2:hasDefinition "K @ 273.15" ;
+      u2:hasName :degree_Celsius ;
+      u2:hasSymbol "°C" .
 
-:coulomb
-      a       :UnitName ;
-      :hasCardinality "singular" ;
-      :hasSymbol "C" ;
-      :namesUnit :_abcb503c .
-
-:watt
-      a       :UnitName ;
-      :hasCardinality "singular" ;
-      :hasSymbol "W" ;
-      :namesUnit :_17a4abb9 .
+u2:Unit
+      a       owl:Class ;
+      rdfs:label "Unit" .
 
 :volt
-      a       :UnitName ;
-      :hasCardinality "singular" ;
-      :hasSymbol "V" ;
-      :namesUnit :_ad04a0b8 .
-
-:lumen
-      a       :UnitName ;
-      :hasCardinality "singular" ;
-      :hasSymbol "lm" ;
-      :namesUnit :_4b72e705 .
+      a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:hasSymbol "V" ;
+      u2:namesUnit :_ad04a0b8 .
 
 :_ec96bc27
-      a       :Unit ;
-      :hasDefinition "rad^2" ;
-      :hasName :steradian ;
-      :hasSymbol "sr" .
-
-:steradian
-      a       :UnitName ;
-      :hasCardinality "singular" ;
-      :hasSymbol "sr" ;
-      :namesUnit :_ec96bc27 .
+      a       u2:Unit ;
+      u2:hasDefinition "rad^2" ;
+      u2:hasName :steradian ;
+      u2:hasSymbol "sr" .
 
 :_7d0e39d5
-      a       :Unit ;
-      :hasAlias :becquerel ;
-      :hasDefinition "1/s" ;
-      :hasName :hertz ;
-      :hasSymbol "Hz" .
-
-:_993c8f1a
-      a       :Unit ;
-      :hasDefinition "Wb/m^2" ;
-      :hasName :tesla ;
-      :hasSymbol "T" .
+      a       u2:Unit ;
+      u2:hasAlias :becquerel ;
+      u2:hasDefinition "1/s" ;
+      u2:hasName :hertz ;
+      u2:hasSymbol "Hz" .
 
 :_17a4abb9
-      a       :Unit ;
-      :hasDefinition "J/s" ;
-      :hasName :watt ;
-      :hasSymbol "W" .
-
-:_c1fa6dc6
-      a       :Unit ;
-      :hasDefinition "N/m^2" ;
-      :hasName :pascal ;
-      :hasSymbol "Pa" .
-
-:_a06d5ce7
-      a       :Unit ;
-      :hasDefinition "mol/s" ;
-      :hasName :katal ;
-      :hasSymbol "kat" .
-
-:_0c6e2e25
-      a       :Unit ;
-      :hasDefinition "1e-3 kg" ;
-      :hasName :gram ;
-      :hasSymbol "g" .
+      a       u2:Unit ;
+      u2:hasDefinition "J/s" ;
+      u2:hasName :watt ;
+      u2:hasSymbol "W" .
 
 :_be99ec61
-      a       :Unit ;
-      :hasDefinition "C/V" ;
-      :hasName :farad ;
-      :hasSymbol "F" .
+      a       u2:Unit ;
+      u2:hasDefinition "C/V" ;
+      u2:hasName :farad ;
+      u2:hasSymbol "F" .
 
-:joule
-      a       :UnitName ;
-      :hasCardinality "singular" ;
-      :hasSymbol "J" ;
-      :namesUnit :_3bf67536 .
+:_0c6e2e25
+      a       u2:Unit ;
+      u2:hasDefinition "1e-3 kg" ;
+      u2:hasName :gram ;
+      u2:hasSymbol "g" .
 
 :_4b72e705
-      a       :Unit ;
-      :hasDefinition "cd.sr" ;
-      :hasName :lumen ;
-      :hasSymbol "lm" .
-
-:_bdd01af8
-      a       :Unit ;
-      :hasDefinition "V/A" ;
-      :hasName :ohm ;
-      :hasSymbol "Ω" , "Ω" .
+      a       u2:Unit ;
+      u2:hasDefinition "cd.sr" ;
+      u2:hasName :lumen ;
+      u2:hasSymbol "lm" .
 
 :_abcb503c
-      a       :Unit ;
-      :hasDefinition "s.A" ;
-      :hasName :coulomb ;
-      :hasSymbol "C" .
-
-:_854014f0
-      a       :Unit ;
-      :hasAlias :sievert ;
-      :hasDefinition "J/kg" ;
-      :hasName :gray ;
-      :hasSymbol "Gy" .
-
-:siemens
-      a       :UnitName ;
-      :hasCardinality "singular" ;
-      :hasSymbol "S" ;
-      :namesUnit :_4653532e .
-
-:_48441204
-      a       :Unit ;
-      :hasDefinition "lm/m^2" ;
-      :hasName :lux ;
-      :hasSymbol "lx" .
-
-:katal
-      a       :UnitName ;
-      :hasCardinality "singular" ;
-      :hasSymbol "kat" ;
-      :namesUnit :_a06d5ce7 .
+      a       u2:Unit ;
+      u2:hasDefinition "s.A" ;
+      u2:hasName :coulomb ;
+      u2:hasSymbol "C" .
 
 :_ad04a0b8
-      a       :Unit ;
-      :hasDefinition "W/A" ;
-      :hasName :volt ;
-      :hasSymbol "V" .
-
-:_f425db5a
-      a       :Unit ;
-      :hasDefinition "m.kg/s^2" ;
-      :hasName :newton ;
-      :hasSymbol "N" .
+      a       u2:Unit ;
+      u2:hasDefinition "W/A" ;
+      u2:hasName :volt ;
+      u2:hasSymbol "V" .
 
 :weber
-      a       :UnitName ;
-      :hasCardinality "singular" ;
-      :hasSymbol "Wb" ;
-      :namesUnit :_6a74bd21 .
+      a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:hasSymbol "Wb" ;
+      u2:namesUnit :_6a74bd21 .
 
-:pascal
-      a       :UnitName ;
-      :hasCardinality "singular" ;
-      :hasSymbol "Pa" ;
-      :namesUnit :_c1fa6dc6 .
-
-:_6a30db22
-      a       :Unit ;
-      :hasDefinition "Wb/A" ;
-      :hasName :henry ;
-      :hasSymbol "H" .
+u2:hasAlias
+      rdfs:domain u2:Unit ;
+      rdfs:range u2:UnitName .
 
 :farad
-      a       :UnitName ;
-      :hasCardinality "singular" ;
-      :hasSymbol "F" ;
-      :namesUnit :_be99ec61 .
+      a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:hasSymbol "F" ;
+      u2:namesUnit :_be99ec61 .
 
-:gray
-      a       :UnitName ;
-      :hasCardinality "singular" ;
-      :hasSymbol "Gy" ;
-      :namesUnit :_854014f0 .
+u2:namesUnit
+      a       owl:FunctionalProperty ;
+      rdfs:domain u2:UnitName ;
+      rdfs:range u2:Unit .
 
 :_6a74bd21
-      a       :Unit ;
-      :hasDefinition "V.s" ;
-      :hasName :weber ;
-      :hasSymbol "Wb" .
+      a       u2:Unit ;
+      u2:hasDefinition "V.s" ;
+      u2:hasName :weber ;
+      u2:hasSymbol "Wb" .
 
 :hertz
-      a       :UnitName ;
-      :hasCardinality "singular" ;
-      :hasSymbol "Hz" ;
-      :namesUnit :_7d0e39d5 .
+      a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:hasSymbol "Hz" ;
+      u2:namesUnit :_7d0e39d5 .
+
+:_3bf67536
+      a       u2:Unit ;
+      u2:hasDefinition "N.m" ;
+      u2:hasName :joule ;
+      u2:hasSymbol "J" .
+
+:sievert
+      a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:hasSymbol "Sv" ;
+      u2:namesUnit :_854014f0 .
+
+:newton
+      a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:hasSymbol "N" ;
+      u2:namesUnit :_f425db5a .
+
+:coulomb
+      a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:hasSymbol "C" ;
+      u2:namesUnit :_abcb503c .
+
+:watt
+      a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:hasSymbol "W" ;
+      u2:namesUnit :_17a4abb9 .
+
+:lumen
+      a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:hasSymbol "lm" ;
+      u2:namesUnit :_4b72e705 .
+
+:steradian
+      a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:hasSymbol "sr" ;
+      u2:namesUnit :_ec96bc27 .
+
+:_993c8f1a
+      a       u2:Unit ;
+      u2:hasDefinition "Wb/m^2" ;
+      u2:hasName :tesla ;
+      u2:hasSymbol "T" .
+
+:_a06d5ce7
+      a       u2:Unit ;
+      u2:hasDefinition "mol/s" ;
+      u2:hasName :katal ;
+      u2:hasSymbol "kat" .
+
+:_c1fa6dc6
+      a       u2:Unit ;
+      u2:hasDefinition "N/m^2" ;
+      u2:hasName :pascal ;
+      u2:hasSymbol "Pa" .
+
+:joule
+      a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:hasSymbol "J" ;
+      u2:namesUnit :_3bf67536 .
+
+:_bdd01af8
+      a       u2:Unit ;
+      u2:hasDefinition "V/A" ;
+      u2:hasName :ohm ;
+      u2:hasSymbol "Ω" , "Ω" .
+
+:_854014f0
+      a       u2:Unit ;
+      u2:hasAlias :sievert ;
+      u2:hasDefinition "J/kg" ;
+      u2:hasName :gray ;
+      u2:hasSymbol "Gy" .
+
+:siemens
+      a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:hasSymbol "S" ;
+      u2:namesUnit :_4653532e .
+
+:_48441204
+      a       u2:Unit ;
+      u2:hasDefinition "lm/m^2" ;
+      u2:hasName :lux ;
+      u2:hasSymbol "lx" .
+
+:katal
+      a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:hasSymbol "kat" ;
+      u2:namesUnit :_a06d5ce7 .
+
+:_f425db5a
+      a       u2:Unit ;
+      u2:hasDefinition "m.kg/s^2" ;
+      u2:hasName :newton ;
+      u2:hasSymbol "N" .
+
+u2:hasDefinition
+      a       owl:FunctionalProperty ;
+      rdfs:domain u2:Unit ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+:pascal
+      a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:hasSymbol "Pa" ;
+      u2:namesUnit :_c1fa6dc6 .
+
+:_6a30db22
+      a       u2:Unit ;
+      u2:hasDefinition "Wb/A" ;
+      u2:hasName :henry ;
+      u2:hasSymbol "H" .
+
+:gray
+      a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:hasSymbol "Gy" ;
+      u2:namesUnit :_854014f0 .
 
 :becquerel
-      a       :UnitName ;
-      :hasCardinality "singular" ;
-      :hasSymbol "Bq" ;
-      :namesUnit :_7d0e39d5 .
+      a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:hasSymbol "Bq" ;
+      u2:namesUnit :_7d0e39d5 .
 
-:ohm  a       :UnitName ;
-      :hasCardinality "singular" ;
-      :hasSymbol "Ω" ;
-      :namesUnit :_bdd01af8 .
-
-:_4653532e
-      a       :Unit ;
-      :hasDefinition "A/V" ;
-      :hasName :siemens ;
-      :hasSymbol "S" .
+:ohm  a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:hasSymbol "Ω" ;
+      u2:namesUnit :_bdd01af8 .
 
 :tesla
-      a       :UnitName ;
-      :hasCardinality "singular" ;
-      :hasSymbol "T" ;
-      :namesUnit :_993c8f1a .
+      a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:hasSymbol "T" ;
+      u2:namesUnit :_993c8f1a .
 
-:lux  a       :UnitName ;
-      :hasCardinality "singular" ;
-      :hasSymbol "lx" ;
-      :namesUnit :_48441204 .
+:_4653532e
+      a       u2:Unit ;
+      u2:hasDefinition "A/V" ;
+      u2:hasName :siemens ;
+      u2:hasSymbol "S" .
+
+u2:hasSymbol
+      rdfs:domain u2:UnitName ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+u2:hasName
+      a       owl:FunctionalProperty ;
+      rdfs:domain u2:Unit ;
+      rdfs:range u2:UnitName .
+
+u2:UnitName
+      a       owl:Class ;
+      rdfs:label "UnitName" .
+
+:lux  a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:hasSymbol "lx" ;
+      u2:namesUnit :_48441204 .
 
 :degree_Celsius
-      a       :UnitName ;
-      :hasCardinality "singular" ;
-      :hasSymbol "°C" ;
-      :namesUnit :_42d4a060 .
+      a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:hasSymbol "°C" ;
+      u2:namesUnit :_42d4a060 .

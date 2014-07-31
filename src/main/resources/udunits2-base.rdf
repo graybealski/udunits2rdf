@@ -1,8 +1,39 @@
 <?xml version="1.0"?>
 <rdf:RDF
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:u2="http://mmisw.org/ont/mmitest/udunits2/"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns="http://mmisw.org/ont/mmitest/udunits2-base/"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xml:base="http://mmisw.org/ont/mmitest/udunits2-base/">
+  <owl:Class rdf:about="http://mmisw.org/ont/mmitest/udunits2/UnitName">
+    <rdfs:label>UnitName</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://mmisw.org/ont/mmitest/udunits2/Unit">
+    <rdfs:label>Unit</rdfs:label>
+  </owl:Class>
+  <owl:FunctionalProperty rdf:about="http://mmisw.org/ont/mmitest/udunits2/hasDefinition">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://mmisw.org/ont/mmitest/udunits2/Unit"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://mmisw.org/ont/mmitest/udunits2/hasName">
+    <rdfs:range rdf:resource="http://mmisw.org/ont/mmitest/udunits2/UnitName"/>
+    <rdfs:domain rdf:resource="http://mmisw.org/ont/mmitest/udunits2/Unit"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://mmisw.org/ont/mmitest/udunits2/namesUnit">
+    <rdfs:range rdf:resource="http://mmisw.org/ont/mmitest/udunits2/Unit"/>
+    <rdfs:domain rdf:resource="http://mmisw.org/ont/mmitest/udunits2/UnitName"/>
+  </owl:FunctionalProperty>
+  <rdf:Description rdf:about="http://mmisw.org/ont/mmitest/udunits2/hasCardinality">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://mmisw.org/ont/mmitest/udunits2/UnitName"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://mmisw.org/ont/mmitest/udunits2/hasSymbol">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://mmisw.org/ont/mmitest/udunits2/UnitName"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://mmisw.org/ont/mmitest/udunits2/hasAlias">
+    <rdfs:range rdf:resource="http://mmisw.org/ont/mmitest/udunits2/UnitName"/>
+    <rdfs:domain rdf:resource="http://mmisw.org/ont/mmitest/udunits2/Unit"/>
+  </rdf:Description>
 </rdf:RDF>

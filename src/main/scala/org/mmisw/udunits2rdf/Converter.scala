@@ -63,6 +63,11 @@ class UnitConverter(xmlIn: Node, baseDefs: BaseDefs, namespace: String) extends 
 
   if (namespace != baseDefs.namespace) model.setNsPrefix("u2", baseDefs.namespace)
 
+  // but add all baseDefs statements as well; immediate goal is get ORR to show
+  // the "synopsis of ontology contents" (otherwise that section would be empty);
+  // but it doesn't hurt to make the vocabulary itself more self-contained
+  model.add(baseDefs.model)
+
   private object stats {
     var unitsInInput = 0
     var unitsInOutput = 0
