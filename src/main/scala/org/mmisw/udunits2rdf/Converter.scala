@@ -13,8 +13,22 @@ import scala.collection.mutable
  * @param xmlIn       Input XML
  * @param namespace   Namespace for the generated ontology
  */
-abstract class Converter(xmlIn: Node, namespace: String) {
+abstract class Converter(xmlIn: Node, baseDefs: BaseDefs, namespace: String) {
   require(namespace.matches(".*(/|#)$"), "namespace must end with / or #")
+
+  protected val UnitClass      = baseDefs.UnitClass
+  protected val UnitNameClass  = baseDefs.UnitNameClass
+  protected val PrefixClass    = baseDefs.PrefixClass
+
+  protected val hasDefinition  = baseDefs.hasDefinition
+  protected val hasName        = baseDefs.hasName
+  protected val hasAlias       = baseDefs.hasAlias
+  protected val hasSymbol      = baseDefs.hasSymbol
+
+  protected val hasCardinality = baseDefs.hasCardinality
+  protected val namesUnit      = baseDefs.namesUnit
+
+  protected val hasValue       = baseDefs.hasValue
 
   def convert: Model
 
@@ -29,6 +43,13 @@ abstract class Converter(xmlIn: Node, namespace: String) {
   }
 
   protected val model = createModel
+
+  if (namespace != baseDefs.namespace) model.setNsPrefix("u2", baseDefs.namespace)
+
+  // but add all baseDefs statements as well; immediate goal is get ORR to show
+  // the "synopsis of ontology contents" (otherwise that section would be empty);
+  // but it doesn't hurt to make the vocabulary itself more self-contained
+  model.add(baseDefs.model)
 
   protected def createResource(name: String): Resource = {
     model.createResource(namespace + name)
@@ -49,24 +70,8 @@ abstract class Converter(xmlIn: Node, namespace: String) {
 /**
  * UDUnits to RDF converter.
  */
-class UnitConverter(xmlIn: Node, baseDefs: BaseDefs, namespace: String) extends Converter(xmlIn: Node, namespace: String) {
-  private val UnitClass      = baseDefs.UnitClass
-  private val UnitNameClass  = baseDefs.UnitNameClass
-
-  private val hasDefinition  = baseDefs.hasDefinition
-  private val hasName        = baseDefs.hasName
-  private val hasAlias       = baseDefs.hasAlias
-  private val hasSymbol      = baseDefs.hasSymbol
-
-  private val hasCardinality = baseDefs.hasCardinality
-  private val namesUnit      = baseDefs.namesUnit
-
-  if (namespace != baseDefs.namespace) model.setNsPrefix("u2", baseDefs.namespace)
-
-  // but add all baseDefs statements as well; immediate goal is get ORR to show
-  // the "synopsis of ontology contents" (otherwise that section would be empty);
-  // but it doesn't hurt to make the vocabulary itself more self-contained
-  model.add(baseDefs.model)
+class UnitConverter(xmlIn: Node, baseDefs: BaseDefs, namespace: String) extends
+      Converter(xmlIn: Node, baseDefs: BaseDefs, namespace: String) {
 
   private object stats {
     var unitsInInput = 0
@@ -246,10 +251,8 @@ class UnitConverter(xmlIn: Node, baseDefs: BaseDefs, namespace: String) extends 
 /**
  * UDUnits prefixes to RDF converter.
  */
-class PrefixConverter(xmlIn: Node, namespace: String) extends Converter(xmlIn: Node, namespace: String) {
-  private val PrefixClass = createClass("Prefix")
-  private val valueProp   = createProperty("value")
-  private val symbolProp  = createProperty("symbol")
+class PrefixConverter(xmlIn: Node, baseDefs: BaseDefs, namespace: String) extends
+      Converter(xmlIn: Node, baseDefs: BaseDefs, namespace: String) {
 
   private object stats {
     var numPrefixesInInput = 0
@@ -272,10 +275,10 @@ class PrefixConverter(xmlIn: Node, namespace: String) extends Converter(xmlIn: N
         val concept = createPrefixInstance(namespace + name)
 
         for (value <- prefix \ "value") {
-          concept.addProperty(valueProp, value.text.trim)
+          concept.addProperty(hasValue, value.text.trim)
         }
         for (symbol <- prefix \ "symbol") {
-          concept.addProperty(symbolProp, symbol.text.trim)
+          concept.addProperty(hasSymbol, symbol.text.trim)
         }
       }
       else {

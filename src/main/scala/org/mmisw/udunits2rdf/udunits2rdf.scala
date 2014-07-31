@@ -61,7 +61,8 @@ object udunits2rdf extends App {
     if (namespace != baseDefs.namespace) baseDefs.saveModel("src/main/resources/udunits2.n3")
 
     val xmlIn = scala.xml.XML.loadFile(xmlFilename)
-    val converter = if (xmlFilename.endsWith("prefixes.xml")) new PrefixConverter(xmlIn, namespace)
+    val converter = if (xmlFilename.endsWith("prefixes.xml"))
+                    new PrefixConverter(xmlIn, baseDefs, namespace)
                     else new UnitConverter(xmlIn, baseDefs, namespace)
     val model = converter.convert
 

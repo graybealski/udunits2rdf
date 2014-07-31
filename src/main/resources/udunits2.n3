@@ -2,8 +2,17 @@
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 
+:Prefix
+      a       owl:Class ;
+      rdfs:label "Prefix" .
+
 :hasCardinality
       rdfs:domain :UnitName ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+:hasValue
+      a       owl:FunctionalProperty ;
+      rdfs:domain :Prefix ;
       rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
 
 :hasSymbol
@@ -36,3 +45,7 @@
       a       owl:FunctionalProperty ;
       rdfs:domain :UnitName ;
       rdfs:range :Unit .
+
+:hasPrefixName
+      rdfs:domain :Prefix ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#string> .

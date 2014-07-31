@@ -2,92 +2,131 @@
 <rdf:RDF
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns="http://mmisw.org/ont/mmitest/udunits2-prefixes/"
+    xmlns:u2="http://mmisw.org/ont/mmitest/udunits2/"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xml:base="http://mmisw.org/ont/mmitest/udunits2-prefixes/">
-  <owl:Class rdf:about="Prefix">
+  <owl:Class rdf:about="http://mmisw.org/ont/mmitest/udunits2/Prefix">
     <rdfs:label>Prefix</rdfs:label>
   </owl:Class>
-  <Prefix rdf:about="pico">
-    <symbol>p</symbol>
-    <value>1e-12</value>
-  </Prefix>
-  <Prefix rdf:about="hecto">
-    <symbol>h</symbol>
-    <value>100</value>
-  </Prefix>
-  <Prefix rdf:about="centi">
-    <symbol>c</symbol>
-    <value>.01</value>
-  </Prefix>
-  <Prefix rdf:about="zepto">
-    <symbol>z</symbol>
-    <value>1e-21</value>
-  </Prefix>
-  <Prefix rdf:about="femto">
-    <symbol>f</symbol>
-    <value>1e-15</value>
-  </Prefix>
-  <Prefix rdf:about="yotta">
-    <symbol>Y</symbol>
-    <value>1e24</value>
-  </Prefix>
-  <Prefix rdf:about="giga">
-    <symbol>G</symbol>
-    <value>1e9</value>
-  </Prefix>
-  <Prefix rdf:about="tera">
-    <symbol>T</symbol>
-    <value>1e12</value>
-  </Prefix>
-  <Prefix rdf:about="zetta">
-    <symbol>Z</symbol>
-    <value>1e21</value>
-  </Prefix>
-  <Prefix rdf:about="deci">
-    <symbol>d</symbol>
-    <value>.1</value>
-  </Prefix>
-  <Prefix rdf:about="peta">
-    <symbol>P</symbol>
-    <value>1e15</value>
-  </Prefix>
-  <Prefix rdf:about="deka">
-    <symbol>da</symbol>
-    <value>10</value>
-  </Prefix>
-  <Prefix rdf:about="yocto">
-    <symbol>y</symbol>
-    <value>1e-24</value>
-  </Prefix>
-  <Prefix rdf:about="milli">
-    <symbol>m</symbol>
-    <value>1e-3</value>
-  </Prefix>
-  <Prefix rdf:about="mega">
-    <symbol>M</symbol>
-    <value>1e6</value>
-  </Prefix>
-  <Prefix rdf:about="kilo">
-    <symbol>k</symbol>
-    <value>1e3</value>
-  </Prefix>
-  <Prefix rdf:about="atto">
-    <symbol>a</symbol>
-    <value>1e-18</value>
-  </Prefix>
-  <Prefix rdf:about="nano">
-    <symbol>n</symbol>
-    <value>1e-9</value>
-  </Prefix>
-  <Prefix rdf:about="exa">
-    <symbol>E</symbol>
-    <value>1e18</value>
-  </Prefix>
-  <Prefix rdf:about="micro">
-    <symbol>u</symbol>
-    <symbol>μ</symbol>
-    <symbol>µ</symbol>
-    <value>1e-6</value>
-  </Prefix>
+  <owl:Class rdf:about="http://mmisw.org/ont/mmitest/udunits2/UnitName">
+    <rdfs:label>UnitName</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://mmisw.org/ont/mmitest/udunits2/Unit">
+    <rdfs:label>Unit</rdfs:label>
+  </owl:Class>
+  <owl:FunctionalProperty rdf:about="http://mmisw.org/ont/mmitest/udunits2/hasValue">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://mmisw.org/ont/mmitest/udunits2/Prefix"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://mmisw.org/ont/mmitest/udunits2/hasDefinition">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://mmisw.org/ont/mmitest/udunits2/Unit"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://mmisw.org/ont/mmitest/udunits2/hasName">
+    <rdfs:range rdf:resource="http://mmisw.org/ont/mmitest/udunits2/UnitName"/>
+    <rdfs:domain rdf:resource="http://mmisw.org/ont/mmitest/udunits2/Unit"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://mmisw.org/ont/mmitest/udunits2/namesUnit">
+    <rdfs:range rdf:resource="http://mmisw.org/ont/mmitest/udunits2/Unit"/>
+    <rdfs:domain rdf:resource="http://mmisw.org/ont/mmitest/udunits2/UnitName"/>
+  </owl:FunctionalProperty>
+  <u2:Prefix rdf:about="pico">
+    <u2:hasSymbol>p</u2:hasSymbol>
+    <u2:hasValue>1e-12</u2:hasValue>
+  </u2:Prefix>
+  <u2:Prefix rdf:about="hecto">
+    <u2:hasSymbol>h</u2:hasSymbol>
+    <u2:hasValue>100</u2:hasValue>
+  </u2:Prefix>
+  <rdf:Description rdf:about="http://mmisw.org/ont/mmitest/udunits2/hasCardinality">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://mmisw.org/ont/mmitest/udunits2/UnitName"/>
+  </rdf:Description>
+  <u2:Prefix rdf:about="zepto">
+    <u2:hasSymbol>z</u2:hasSymbol>
+    <u2:hasValue>1e-21</u2:hasValue>
+  </u2:Prefix>
+  <u2:Prefix rdf:about="femto">
+    <u2:hasSymbol>f</u2:hasSymbol>
+    <u2:hasValue>1e-15</u2:hasValue>
+  </u2:Prefix>
+  <u2:Prefix rdf:about="giga">
+    <u2:hasSymbol>G</u2:hasSymbol>
+    <u2:hasValue>1e9</u2:hasValue>
+  </u2:Prefix>
+  <u2:Prefix rdf:about="tera">
+    <u2:hasSymbol>T</u2:hasSymbol>
+    <u2:hasValue>1e12</u2:hasValue>
+  </u2:Prefix>
+  <u2:Prefix rdf:about="zetta">
+    <u2:hasSymbol>Z</u2:hasSymbol>
+    <u2:hasValue>1e21</u2:hasValue>
+  </u2:Prefix>
+  <u2:Prefix rdf:about="deci">
+    <u2:hasSymbol>d</u2:hasSymbol>
+    <u2:hasValue>.1</u2:hasValue>
+  </u2:Prefix>
+  <u2:Prefix rdf:about="milli">
+    <u2:hasSymbol>m</u2:hasSymbol>
+    <u2:hasValue>1e-3</u2:hasValue>
+  </u2:Prefix>
+  <u2:Prefix rdf:about="nano">
+    <u2:hasSymbol>n</u2:hasSymbol>
+    <u2:hasValue>1e-9</u2:hasValue>
+  </u2:Prefix>
+  <u2:Prefix rdf:about="exa">
+    <u2:hasSymbol>E</u2:hasSymbol>
+    <u2:hasValue>1e18</u2:hasValue>
+  </u2:Prefix>
+  <u2:Prefix rdf:about="centi">
+    <u2:hasSymbol>c</u2:hasSymbol>
+    <u2:hasValue>.01</u2:hasValue>
+  </u2:Prefix>
+  <u2:Prefix rdf:about="yotta">
+    <u2:hasSymbol>Y</u2:hasSymbol>
+    <u2:hasValue>1e24</u2:hasValue>
+  </u2:Prefix>
+  <rdf:Description rdf:about="http://mmisw.org/ont/mmitest/udunits2/hasAlias">
+    <rdfs:range rdf:resource="http://mmisw.org/ont/mmitest/udunits2/UnitName"/>
+    <rdfs:domain rdf:resource="http://mmisw.org/ont/mmitest/udunits2/Unit"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://mmisw.org/ont/mmitest/udunits2/hasPrefixName">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://mmisw.org/ont/mmitest/udunits2/Prefix"/>
+  </rdf:Description>
+  <u2:Prefix rdf:about="peta">
+    <u2:hasSymbol>P</u2:hasSymbol>
+    <u2:hasValue>1e15</u2:hasValue>
+  </u2:Prefix>
+  <u2:Prefix rdf:about="deka">
+    <u2:hasSymbol>da</u2:hasSymbol>
+    <u2:hasValue>10</u2:hasValue>
+  </u2:Prefix>
+  <u2:Prefix rdf:about="yocto">
+    <u2:hasSymbol>y</u2:hasSymbol>
+    <u2:hasValue>1e-24</u2:hasValue>
+  </u2:Prefix>
+  <rdf:Description rdf:about="http://mmisw.org/ont/mmitest/udunits2/hasSymbol">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://mmisw.org/ont/mmitest/udunits2/UnitName"/>
+  </rdf:Description>
+  <u2:Prefix rdf:about="mega">
+    <u2:hasSymbol>M</u2:hasSymbol>
+    <u2:hasValue>1e6</u2:hasValue>
+  </u2:Prefix>
+  <u2:Prefix rdf:about="atto">
+    <u2:hasSymbol>a</u2:hasSymbol>
+    <u2:hasValue>1e-18</u2:hasValue>
+  </u2:Prefix>
+  <u2:Prefix rdf:about="kilo">
+    <u2:hasSymbol>k</u2:hasSymbol>
+    <u2:hasValue>1e3</u2:hasValue>
+  </u2:Prefix>
+  <u2:Prefix rdf:about="micro">
+    <u2:hasSymbol>u</u2:hasSymbol>
+    <u2:hasSymbol>μ</u2:hasSymbol>
+    <u2:hasSymbol>µ</u2:hasSymbol>
+    <u2:hasValue>1e-6</u2:hasValue>
+  </u2:Prefix>
 </rdf:RDF>

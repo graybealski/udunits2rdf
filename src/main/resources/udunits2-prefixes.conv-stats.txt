@@ -1,5 +1,5 @@
 udunits2rdf conversion
-date:   Wed Jul 30 17:24:19 PDT 2014
+date:   Wed Jul 30 20:29:44 PDT 2014
 input:  src/main/resources/udunits2-prefixes.xml
 output: src/main/resources/udunits2-prefixes.rdf
 
