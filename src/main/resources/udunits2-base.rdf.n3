@@ -3,18 +3,122 @@
 @prefix u2:      <http://mmisw.org/ont/mmitest/udunits2/> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 
+:ampere
+      a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:hasSymbol "A" ;
+      u2:namesUnit :_cc1e0b1e .
+
 u2:hasCardinality
       rdfs:domain u2:UnitName ;
       rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
 
-u2:hasSymbol
-      rdfs:domain u2:UnitName ;
-      rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+u2:Unit
+      a       owl:Class ;
+      rdfs:label "Unit" .
+
+:_3aca8f51
+      a       u2:Unit ;
+      u2:hasDefinition "kelvin" ;
+      u2:hasName :kelvin ;
+      u2:hasSymbol "K" .
+
+:_352f7829
+      a       u2:Unit ;
+      u2:hasDefinition "second" ;
+      u2:hasName :second ;
+      u2:hasSymbol "s" .
+
+:_5b09ab94
+      a       u2:Unit ;
+      u2:hasDefinition "kilogram" ;
+      u2:hasName :kilogram ;
+      u2:hasSymbol "kg" .
+
+:_a2fff373
+      a       u2:Unit ;
+      u2:hasDefinition "mole" ;
+      u2:hasName :mole ;
+      u2:hasSymbol "mol" .
+
+:second
+      a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:hasSymbol "s" ;
+      u2:namesUnit :_352f7829 .
+
+:metre
+      a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:namesUnit :_17272b9d .
+
+:candela
+      a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:hasSymbol "cd" ;
+      u2:namesUnit :_a6a6f5b1 .
 
 u2:hasDefinition
       a       owl:FunctionalProperty ;
       rdfs:domain u2:Unit ;
       rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+:_17272b9d
+      a       u2:Unit ;
+      u2:hasAlias :metre ;
+      u2:hasDefinition "meter" ;
+      u2:hasName :meter ;
+      u2:hasSymbol "m" .
+
+:kilogram
+      a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:hasSymbol "kg" ;
+      u2:namesUnit :_5b09ab94 .
+
+u2:hasAlias
+      rdfs:domain u2:Unit ;
+      rdfs:range u2:UnitName .
+
+u2:namesUnit
+      a       owl:FunctionalProperty ;
+      rdfs:domain u2:UnitName ;
+      rdfs:range u2:Unit .
+
+:mole
+      a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:hasSymbol "mol" ;
+      u2:namesUnit :_a2fff373 .
+
+u2:hasPrefixName
+      rdfs:domain u2:Prefix ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+u2:Prefix
+      a       owl:Class ;
+      rdfs:label "Prefix" .
+
+u2:hasValue
+      a       owl:FunctionalProperty ;
+      rdfs:domain u2:Prefix ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+:_a6a6f5b1
+      a       u2:Unit ;
+      u2:hasDefinition "candela" ;
+      u2:hasName :candela ;
+      u2:hasSymbol "cd" .
+
+u2:hasSymbol
+      rdfs:domain u2:UnitName ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+:meter
+      a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:hasSymbol "m" ;
+      u2:namesUnit :_17272b9d .
 
 u2:UnitName
       a       owl:Class ;
@@ -25,15 +129,14 @@ u2:hasName
       rdfs:domain u2:Unit ;
       rdfs:range u2:UnitName .
 
-u2:hasAlias
-      rdfs:domain u2:Unit ;
-      rdfs:range u2:UnitName .
+:_cc1e0b1e
+      a       u2:Unit ;
+      u2:hasDefinition "ampere" ;
+      u2:hasName :ampere ;
+      u2:hasSymbol "A" .
 
-u2:Unit
-      a       owl:Class ;
-      rdfs:label "Unit" .
-
-u2:namesUnit
-      a       owl:FunctionalProperty ;
-      rdfs:domain u2:UnitName ;
-      rdfs:range u2:Unit .
+:kelvin
+      a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:hasSymbol "K" ;
+      u2:namesUnit :_3aca8f51 .

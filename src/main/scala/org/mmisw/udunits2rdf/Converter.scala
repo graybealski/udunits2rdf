@@ -78,6 +78,7 @@ class UnitConverter(xmlIn: Node, baseDefs: BaseDefs, namespace: String) extends
     var unitsInOutput = 0
     var unitNamesInOutput = 0
     var unitsWithNoDef = 0
+    var unitsWithNoDefAndNoName = 0
     var unitsWithMultipleDefs = 0
     var unitsWithMultipleSingularNames = 0
     var unitsWithMultiplePluralNames = 0
@@ -91,6 +92,7 @@ class UnitConverter(xmlIn: Node, baseDefs: BaseDefs, namespace: String) extends
          |  unitsInOutput                   = $unitsInOutput
          |  unitNamesInOutput               = $unitNamesInOutput
          |  unitsWithNoDef                  = $unitsWithNoDef
+         |  unitsWithNoDefAndNoName         = $unitsWithNoDefAndNoName
          |  unitsWithMultipleDefs           = $unitsWithMultipleDefs
          |  unitsWithMultipleSingularNames  = $unitsWithMultipleSingularNames
          |  unitsWithMultiplePluralNames    = $unitsWithMultiplePluralNames
@@ -99,22 +101,22 @@ class UnitConverter(xmlIn: Node, baseDefs: BaseDefs, namespace: String) extends
        """.stripMargin
   }
 
-  // index by corresponding def
+  // indexed by corresponding def or name
   private val unitInstances = mutable.Map[String, Resource]()
 
-  private def getUnitInstance(_def: String, unit: Node): Resource = {
-    if (unitInstances.contains(_def)) {
-      val unitInstance = unitInstances.get(_def).head
-      stats.addWarning(s"warning: repeated def='${_def}'")
+  private def getUnitInstance(name: String, unit: Node): Resource = {
+    if (unitInstances.contains(name)) {
+      val unitInstance = unitInstances.get(name).head
+      stats.addWarning(s"warning: repeated def or name='$name'")
       unitInstance
     }
     else {
-      val id = "_" + DigestUtils.sha1Hex(_def).substring(0, 8)
+      val id = "_" + DigestUtils.sha1Hex(name).substring(0, 8)
       val uri = namespace + id
       val unitInstance = model.createResource(uri, UnitClass)
       model.add(model.createStatement(unitInstance, RDF.`type`, UnitClass))
-      unitInstance.addProperty(hasDefinition, _def)
-      unitInstances.update(_def, unitInstance)
+      unitInstance.addProperty(hasDefinition, name)
+      unitInstances.update(name, unitInstance)
       unitInstance
     }
   }
@@ -126,6 +128,14 @@ class UnitConverter(xmlIn: Node, baseDefs: BaseDefs, namespace: String) extends
     }
     else if (defs.length == 0) {
       stats.unitsWithNoDef += 1
+      // note: only first singular name checked:
+      val names = (unit \ "name" \ "singular").map(_.text).filter(_.length > 0)
+      if (names.length >= 1) {
+        createUnitInstance(names.head, unit)
+      }
+      else {
+        stats.unitsWithNoDefAndNoName += 1
+      }
     }
     else if (defs.length > 1) {
       stats.unitsWithMultipleDefs += 1
@@ -142,23 +152,23 @@ class UnitConverter(xmlIn: Node, baseDefs: BaseDefs, namespace: String) extends
 
   def getStats = stats.toString
 
-  private def createUnitInstance(_def: String, unit: Node): Resource = {
+  private def createUnitInstance(name: String, unit: Node): Resource = {
 
-    val unitInstance = getUnitInstance(_def, unit)
+    val unitInstance = getUnitInstance(name, unit)
 
     // names at first level  (aliases are handled below):
 
     val singulars = (unit \ "name" \ "singular").map(_.text).filter(_.length > 0)
-    singulars.headOption foreach { name =>
+    singulars.headOption foreach { singular =>
       //
       // first singular name, if any, will be the primary name
       //
-      val nameInstance = createUnitNameInstance(name, "singular", false, unitInstance, Some(unit))
+      val nameInstance = createUnitNameInstance(singular, "singular", isAlias = false, unitInstance, Some(unit))
       model.add(model.createStatement(unitInstance, hasName, nameInstance))
     }
 
     if (singulars.length > 1) {
-      println(s"\nwithMultipleSingularNames ${_def}: $singulars")
+      println(s"\nwithMultipleSingularNames $name: $singulars")
       stats.unitsWithMultipleSingularNames += 1
     }
 
@@ -175,7 +185,7 @@ class UnitConverter(xmlIn: Node, baseDefs: BaseDefs, namespace: String) extends
     }
 
     // <aliases>: if present, we only consider the first occurrence.
-    processAliases(_def, unitInstance, (unit \ "aliases").headOption)
+    processAliases(unitInstance, (unit \ "aliases").headOption)
 
     // symbols:
     for (symbol <- unit \ "symbol") {
@@ -186,7 +196,7 @@ class UnitConverter(xmlIn: Node, baseDefs: BaseDefs, namespace: String) extends
     unitInstance
   }
 
-  private def processAliases(_def: String, unitInstance: Resource, aliasesOpt: Option[Node]) {
+  private def processAliases(unitInstance: Resource, aliasesOpt: Option[Node]) {
     var currUnitNameInstance: Option[Resource] = None
     aliasesOpt foreach {node =>
       //println(s"\nnode = $node -- ${_def}")

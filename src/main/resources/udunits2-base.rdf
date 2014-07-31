@@ -6,12 +6,19 @@
     xmlns="http://mmisw.org/ont/mmitest/udunits2-base/"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xml:base="http://mmisw.org/ont/mmitest/udunits2-base/">
+  <owl:Class rdf:about="http://mmisw.org/ont/mmitest/udunits2/Prefix">
+    <rdfs:label>Prefix</rdfs:label>
+  </owl:Class>
   <owl:Class rdf:about="http://mmisw.org/ont/mmitest/udunits2/UnitName">
     <rdfs:label>UnitName</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="http://mmisw.org/ont/mmitest/udunits2/Unit">
     <rdfs:label>Unit</rdfs:label>
   </owl:Class>
+  <owl:FunctionalProperty rdf:about="http://mmisw.org/ont/mmitest/udunits2/hasValue">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://mmisw.org/ont/mmitest/udunits2/Prefix"/>
+  </owl:FunctionalProperty>
   <owl:FunctionalProperty rdf:about="http://mmisw.org/ont/mmitest/udunits2/hasDefinition">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="http://mmisw.org/ont/mmitest/udunits2/Unit"/>
@@ -28,12 +35,99 @@
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="http://mmisw.org/ont/mmitest/udunits2/UnitName"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://mmisw.org/ont/mmitest/udunits2/hasSymbol">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="http://mmisw.org/ont/mmitest/udunits2/UnitName"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://mmisw.org/ont/mmitest/udunits2/hasAlias">
     <rdfs:range rdf:resource="http://mmisw.org/ont/mmitest/udunits2/UnitName"/>
     <rdfs:domain rdf:resource="http://mmisw.org/ont/mmitest/udunits2/Unit"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://mmisw.org/ont/mmitest/udunits2/hasPrefixName">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://mmisw.org/ont/mmitest/udunits2/Prefix"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://mmisw.org/ont/mmitest/udunits2/hasSymbol">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://mmisw.org/ont/mmitest/udunits2/UnitName"/>
+  </rdf:Description>
+  <u2:Unit rdf:about="_17272b9d">
+    <u2:hasSymbol>m</u2:hasSymbol>
+    <u2:hasAlias>
+      <u2:UnitName rdf:about="metre">
+        <u2:namesUnit rdf:resource="_17272b9d"/>
+        <u2:hasCardinality>singular</u2:hasCardinality>
+      </u2:UnitName>
+    </u2:hasAlias>
+    <u2:hasName>
+      <u2:UnitName rdf:about="meter">
+        <u2:hasSymbol>m</u2:hasSymbol>
+        <u2:namesUnit rdf:resource="_17272b9d"/>
+        <u2:hasCardinality>singular</u2:hasCardinality>
+      </u2:UnitName>
+    </u2:hasName>
+    <u2:hasDefinition>meter</u2:hasDefinition>
+  </u2:Unit>
+  <u2:UnitName rdf:about="ampere">
+    <u2:hasSymbol>A</u2:hasSymbol>
+    <u2:namesUnit>
+      <u2:Unit rdf:about="_cc1e0b1e">
+        <u2:hasSymbol>A</u2:hasSymbol>
+        <u2:hasName rdf:resource="ampere"/>
+        <u2:hasDefinition>ampere</u2:hasDefinition>
+      </u2:Unit>
+    </u2:namesUnit>
+    <u2:hasCardinality>singular</u2:hasCardinality>
+  </u2:UnitName>
+  <u2:UnitName rdf:about="candela">
+    <u2:hasSymbol>cd</u2:hasSymbol>
+    <u2:namesUnit>
+      <u2:Unit rdf:about="_a6a6f5b1">
+        <u2:hasSymbol>cd</u2:hasSymbol>
+        <u2:hasName rdf:resource="candela"/>
+        <u2:hasDefinition>candela</u2:hasDefinition>
+      </u2:Unit>
+    </u2:namesUnit>
+    <u2:hasCardinality>singular</u2:hasCardinality>
+  </u2:UnitName>
+  <u2:UnitName rdf:about="kilogram">
+    <u2:hasSymbol>kg</u2:hasSymbol>
+    <u2:namesUnit>
+      <u2:Unit rdf:about="_5b09ab94">
+        <u2:hasSymbol>kg</u2:hasSymbol>
+        <u2:hasName rdf:resource="kilogram"/>
+        <u2:hasDefinition>kilogram</u2:hasDefinition>
+      </u2:Unit>
+    </u2:namesUnit>
+    <u2:hasCardinality>singular</u2:hasCardinality>
+  </u2:UnitName>
+  <u2:Unit rdf:about="_3aca8f51">
+    <u2:hasSymbol>K</u2:hasSymbol>
+    <u2:hasName>
+      <u2:UnitName rdf:about="kelvin">
+        <u2:hasSymbol>K</u2:hasSymbol>
+        <u2:namesUnit rdf:resource="_3aca8f51"/>
+        <u2:hasCardinality>singular</u2:hasCardinality>
+      </u2:UnitName>
+    </u2:hasName>
+    <u2:hasDefinition>kelvin</u2:hasDefinition>
+  </u2:Unit>
+  <u2:UnitName rdf:about="mole">
+    <u2:hasSymbol>mol</u2:hasSymbol>
+    <u2:namesUnit>
+      <u2:Unit rdf:about="_a2fff373">
+        <u2:hasSymbol>mol</u2:hasSymbol>
+        <u2:hasName rdf:resource="mole"/>
+        <u2:hasDefinition>mole</u2:hasDefinition>
+      </u2:Unit>
+    </u2:namesUnit>
+    <u2:hasCardinality>singular</u2:hasCardinality>
+  </u2:UnitName>
+  <u2:Unit rdf:about="_352f7829">
+    <u2:hasSymbol>s</u2:hasSymbol>
+    <u2:hasName>
+      <u2:UnitName rdf:about="second">
+        <u2:hasSymbol>s</u2:hasSymbol>
+        <u2:namesUnit rdf:resource="_352f7829"/>
+        <u2:hasCardinality>singular</u2:hasCardinality>
+      </u2:UnitName>
+    </u2:hasName>
+    <u2:hasDefinition>second</u2:hasDefinition>
+  </u2:Unit>
 </rdf:RDF>
