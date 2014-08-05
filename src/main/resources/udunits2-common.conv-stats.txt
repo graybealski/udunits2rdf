@@ -1,5 +1,4 @@
 udunits2rdf conversion
-date:   Wed Jul 30 17:24:09 PDT 2014
 input:  src/main/resources/udunits2-common.xml
 output: src/main/resources/udunits2-common.rdf
 
@@ -8,13 +7,14 @@ conversion stats:
   unitsInOutput                   = 221
   unitNamesInOutput               = 351
   unitsWithNoDef                  = 0
+  unitsWithNoDefAndNoName         = 0
   unitsWithMultipleDefs           = 0
   unitsWithMultipleSingularNames  = 0
   unitsWithMultiplePluralNames    = 0
 
-  warning: repeated def='4.546090e-3 m^3'
-  warning: repeated def='standard_free_fall'
-  warning: repeated def='10 A'
-  warning: repeated def='1'
+  warning: repeated def or name='4.546090e-3 m^3'
+  warning: repeated def or name='standard_free_fall'
+  warning: repeated def or name='10 A'
+  warning: repeated def or name='1'
        
-        
+      

@@ -1,5 +1,6 @@
 package org.mmisw.udunits2rdf
 
+import com.hp.hpl.jena.ontology.OntModelSpec
 import com.hp.hpl.jena.rdf.model.{Property, Resource, ModelFactory, Model}
 import com.hp.hpl.jena.vocabulary.{RDFS, OWL, RDF}
 import org.apache.commons.codec.digest.DigestUtils
@@ -34,8 +35,8 @@ abstract class Converter(xmlIn: Node, baseDefs: BaseDefs, namespace: String) {
 
   def getStats: String
 
-  protected def createModel: Model = {
-    val model = ModelFactory.createDefaultModel()
+  protected def createModel = {
+    val model = ModelFactory.createOntologyModel(OntModelSpec.OWL_DL_MEM)
     model.setNsPrefix("",      namespace)
     model.setNsPrefix("rdfs",  RDFS.getURI)
     model.setNsPrefix("owl",   OWL.getURI)
@@ -43,6 +44,17 @@ abstract class Converter(xmlIn: Node, baseDefs: BaseDefs, namespace: String) {
   }
 
   protected val model = createModel
+
+  object ontology {
+    private val ontology = model.createOntology("")
+
+    def addStringProperty(propertyUri: String, value: String) {
+      if (value.trim.length > 0) {
+        val property = model.createProperty(propertyUri)
+        ontology.addProperty(property, value.trim)
+      }
+    }
+  }
 
   if (namespace != baseDefs.namespace) model.setNsPrefix("u2", baseDefs.namespace)
 

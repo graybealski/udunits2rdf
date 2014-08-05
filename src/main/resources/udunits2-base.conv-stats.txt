@@ -1,5 +1,4 @@
 udunits2rdf conversion
-date:   Wed Jul 30 21:11:41 PDT 2014
 input:  src/main/resources/udunits2-base.xml
 output: src/main/resources/udunits2-base.rdf
 
@@ -15,4 +14,4 @@ conversion stats:
 
   
        
-        
+      

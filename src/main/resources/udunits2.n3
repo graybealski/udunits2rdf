@@ -1,51 +1,51 @@
-@prefix :        <http://mmisw.org/ont/mmitest/udunits2/> .
+@prefix :        <http://mmisw.org/ont/mmi/udunits2/> .
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
-
-:Prefix
-      a       owl:Class ;
-      rdfs:label "Prefix" .
-
-:hasCardinality
-      rdfs:domain :UnitName ;
-      rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
-
-:hasValue
-      a       owl:FunctionalProperty ;
-      rdfs:domain :Prefix ;
-      rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
-
-:hasSymbol
-      rdfs:domain :UnitName ;
-      rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
 
 :hasDefinition
       a       owl:FunctionalProperty ;
       rdfs:domain :Unit ;
       rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
 
-:UnitName
-      a       owl:Class ;
-      rdfs:label "UnitName" .
+:namesUnit
+      a       owl:FunctionalProperty ;
+      rdfs:domain :UnitName ;
+      rdfs:range :Unit .
 
 :hasName
       a       owl:FunctionalProperty ;
       rdfs:domain :Unit ;
       rdfs:range :UnitName .
 
-:hasAlias
-      rdfs:domain :Unit ;
-      rdfs:range :UnitName .
+:Prefix
+      a       owl:Class ;
+      rdfs:label "Prefix" .
 
 :Unit
       a       owl:Class ;
       rdfs:label "Unit" .
 
-:namesUnit
-      a       owl:FunctionalProperty ;
-      rdfs:domain :UnitName ;
-      rdfs:range :Unit .
-
 :hasPrefixName
+      rdfs:domain :Prefix ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+:hasAlias
+      rdfs:domain :Unit ;
+      rdfs:range :UnitName .
+
+:hasSymbol
+      rdfs:domain :UnitName ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+:hasCardinality
+      rdfs:domain :UnitName ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+:UnitName
+      a       owl:Class ;
+      rdfs:label "UnitName" .
+
+:hasValue
+      a       owl:FunctionalProperty ;
       rdfs:domain :Prefix ;
       rdfs:range <http://www.w3.org/2001/XMLSchema#string> .

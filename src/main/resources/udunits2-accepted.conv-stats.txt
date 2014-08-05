@@ -1,5 +1,4 @@
 udunits2rdf conversion
-date:   Wed Jul 30 17:23:59 PDT 2014
 input:  src/main/resources/udunits2-accepted.xml
 output: src/main/resources/udunits2-accepted.rdf
 
@@ -8,10 +7,11 @@ conversion stats:
   unitsInOutput                   = 23
   unitNamesInOutput               = 41
   unitsWithNoDef                  = 0
+  unitsWithNoDefAndNoName         = 0
   unitsWithMultipleDefs           = 0
   unitsWithMultipleSingularNames  = 0
   unitsWithMultiplePluralNames    = 0
 
   
        
-        
+      

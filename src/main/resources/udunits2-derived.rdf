@@ -1,59 +1,75 @@
 <?xml version="1.0"?>
 <rdf:RDF
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:u2="http://mmisw.org/ont/mmitest/udunits2/"
+    xmlns="http://mmisw.org/ont/mmi/udunits2-derived/"
+    xmlns:u2="http://mmisw.org/ont/mmi/udunits2/"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
-    xmlns="http://mmisw.org/ont/mmitest/udunits2-derived/"
+    xmlns:omv="http://omv.ontoware.org/2005/05/ontology#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:omvmmi="http://mmisw.org/ont/mmi/20081020/ontologyMetadata/"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xml:base="http://mmisw.org/ont/mmitest/udunits2-derived/">
-  <owl:Class rdf:about="http://mmisw.org/ont/mmitest/udunits2/UnitName">
-    <rdfs:label>UnitName</rdfs:label>
+  xml:base="http://mmisw.org/ont/mmi/udunits2-derived/">
+  <owl:Ontology rdf:about="">
+    <omvmmi:creditRequired>no</omvmmi:creditRequired>
+    <omv:documentation>http://www.unidata.ucar.edu/software/udunits/udunits-2-units.html</omv:documentation>
+    <omv:reference>https://github.com/mmisw/udunits2rdf/wiki</omv:reference>
+    <omvmmi:temporaryMmiRole>Ontology Producer</omvmmi:temporaryMmiRole>
+    <omvmmi:hasResourceType>unit</omvmmi:hasResourceType>
+    <omvmmi:contactRole>Content Manager</omvmmi:contactRole>
+    <omvmmi:contact>Steve Emmerson (303-497-8648, emmerson@ucar.edu, http://www.unidata.ucar.edu/staff/steve/)</omvmmi:contact>
+    <omv:acronym>udunits2-derived</omv:acronym>
+    <omv:keywords>units, Unidata, udunits, scientific units, base units</omv:keywords>
+    <omvmmi:origVocManager>Steve Emmerson (303-497-8648, emmerson@ucar.edu, http://www.unidata.ucar.edu/staff/steve/)</omvmmi:origVocManager>
+    <omvmmi:origVocUri>https://raw.githubusercontent.com/Unidata/UDUNITS-2/master/lib/udunits2-derived.xml</omvmmi:origVocUri>
+    <omvmmi:origVocSyntaxFormat>XML</omvmmi:origVocSyntaxFormat>
+    <omvmmi:origVocDocumentationUri>https://raw.githubusercontent.com/Unidata/UDUNITS-2/master/lib/udunits2-derived.xml</omvmmi:origVocDocumentationUri>
+    <omvmmi:hasContentCreator>Unidata</omvmmi:hasContentCreator>
+    <omv:hasCreator>MMI</omv:hasCreator>
+    <omv:hasContributor>John Graybeal, Carlos Rueda</omv:hasContributor>
+    <omv:name>udunits2-derived</omv:name>
+    <omvmmi:origVocKeywords>units, Unidata, udunits, scientific units, base units</omvmmi:origVocKeywords>
+  </owl:Ontology>
+  <owl:Class rdf:about="http://mmisw.org/ont/mmi/udunits2/Prefix">
+    <rdfs:label>Prefix</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="http://mmisw.org/ont/mmitest/udunits2/Unit">
+  <owl:Class rdf:about="http://mmisw.org/ont/mmi/udunits2/Unit">
     <rdfs:label>Unit</rdfs:label>
   </owl:Class>
-  <owl:FunctionalProperty rdf:about="http://mmisw.org/ont/mmitest/udunits2/hasDefinition">
+  <owl:Class rdf:about="http://mmisw.org/ont/mmi/udunits2/UnitName">
+    <rdfs:label>UnitName</rdfs:label>
+  </owl:Class>
+  <owl:FunctionalProperty rdf:about="http://mmisw.org/ont/mmi/udunits2/hasDefinition">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="http://mmisw.org/ont/mmitest/udunits2/Unit"/>
+    <rdfs:domain rdf:resource="http://mmisw.org/ont/mmi/udunits2/Unit"/>
   </owl:FunctionalProperty>
-  <owl:FunctionalProperty rdf:about="http://mmisw.org/ont/mmitest/udunits2/hasName">
-    <rdfs:range rdf:resource="http://mmisw.org/ont/mmitest/udunits2/UnitName"/>
-    <rdfs:domain rdf:resource="http://mmisw.org/ont/mmitest/udunits2/Unit"/>
+  <owl:FunctionalProperty rdf:about="http://mmisw.org/ont/mmi/udunits2/hasName">
+    <rdfs:range rdf:resource="http://mmisw.org/ont/mmi/udunits2/UnitName"/>
+    <rdfs:domain rdf:resource="http://mmisw.org/ont/mmi/udunits2/Unit"/>
   </owl:FunctionalProperty>
-  <owl:FunctionalProperty rdf:about="http://mmisw.org/ont/mmitest/udunits2/namesUnit">
-    <rdfs:range rdf:resource="http://mmisw.org/ont/mmitest/udunits2/Unit"/>
-    <rdfs:domain rdf:resource="http://mmisw.org/ont/mmitest/udunits2/UnitName"/>
+  <owl:FunctionalProperty rdf:about="http://mmisw.org/ont/mmi/udunits2/namesUnit">
+    <rdfs:range rdf:resource="http://mmisw.org/ont/mmi/udunits2/Unit"/>
+    <rdfs:domain rdf:resource="http://mmisw.org/ont/mmi/udunits2/UnitName"/>
   </owl:FunctionalProperty>
-  <rdf:Description rdf:about="http://mmisw.org/ont/mmitest/udunits2/hasCardinality">
+  <owl:FunctionalProperty rdf:about="http://mmisw.org/ont/mmi/udunits2/hasValue">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="http://mmisw.org/ont/mmitest/udunits2/UnitName"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://mmisw.org/ont/mmitest/udunits2/hasAlias">
-    <rdfs:range rdf:resource="http://mmisw.org/ont/mmitest/udunits2/UnitName"/>
-    <rdfs:domain rdf:resource="http://mmisw.org/ont/mmitest/udunits2/Unit"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://mmisw.org/ont/mmitest/udunits2/hasSymbol">
+    <rdfs:domain rdf:resource="http://mmisw.org/ont/mmi/udunits2/Prefix"/>
+  </owl:FunctionalProperty>
+  <rdf:Description rdf:about="http://mmisw.org/ont/mmi/udunits2/hasSymbol">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="http://mmisw.org/ont/mmitest/udunits2/UnitName"/>
+    <rdfs:domain rdf:resource="http://mmisw.org/ont/mmi/udunits2/UnitName"/>
   </rdf:Description>
-  <u2:Unit rdf:about="_7d0e39d5">
-    <u2:hasAlias>
-      <u2:UnitName rdf:about="becquerel">
-        <u2:hasSymbol>Bq</u2:hasSymbol>
-        <u2:namesUnit rdf:resource="_7d0e39d5"/>
-        <u2:hasCardinality>singular</u2:hasCardinality>
-      </u2:UnitName>
-    </u2:hasAlias>
-    <u2:hasSymbol>Hz</u2:hasSymbol>
-    <u2:hasName>
-      <u2:UnitName rdf:about="hertz">
-        <u2:hasSymbol>Hz</u2:hasSymbol>
-        <u2:namesUnit rdf:resource="_7d0e39d5"/>
-        <u2:hasCardinality>singular</u2:hasCardinality>
-      </u2:UnitName>
-    </u2:hasName>
-    <u2:hasDefinition>1/s</u2:hasDefinition>
-  </u2:Unit>
+  <rdf:Description rdf:about="http://mmisw.org/ont/mmi/udunits2/hasAlias">
+    <rdfs:range rdf:resource="http://mmisw.org/ont/mmi/udunits2/UnitName"/>
+    <rdfs:domain rdf:resource="http://mmisw.org/ont/mmi/udunits2/Unit"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://mmisw.org/ont/mmi/udunits2/hasPrefixName">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://mmisw.org/ont/mmi/udunits2/Prefix"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://mmisw.org/ont/mmi/udunits2/hasCardinality">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://mmisw.org/ont/mmi/udunits2/UnitName"/>
+  </rdf:Description>
   <u2:Unit rdf:about="_854014f0">
     <u2:hasAlias>
       <u2:UnitName rdf:about="sievert">
@@ -72,105 +88,24 @@
     </u2:hasName>
     <u2:hasDefinition>J/kg</u2:hasDefinition>
   </u2:Unit>
-  <u2:Unit rdf:about="_3bf67536">
-    <u2:hasSymbol>J</u2:hasSymbol>
+  <u2:Unit rdf:about="_7d0e39d5">
+    <u2:hasAlias>
+      <u2:UnitName rdf:about="becquerel">
+        <u2:hasSymbol>Bq</u2:hasSymbol>
+        <u2:namesUnit rdf:resource="_7d0e39d5"/>
+        <u2:hasCardinality>singular</u2:hasCardinality>
+      </u2:UnitName>
+    </u2:hasAlias>
+    <u2:hasSymbol>Hz</u2:hasSymbol>
     <u2:hasName>
-      <u2:UnitName rdf:about="joule">
-        <u2:hasSymbol>J</u2:hasSymbol>
-        <u2:namesUnit rdf:resource="_3bf67536"/>
+      <u2:UnitName rdf:about="hertz">
+        <u2:hasSymbol>Hz</u2:hasSymbol>
+        <u2:namesUnit rdf:resource="_7d0e39d5"/>
         <u2:hasCardinality>singular</u2:hasCardinality>
       </u2:UnitName>
     </u2:hasName>
-    <u2:hasDefinition>N.m</u2:hasDefinition>
+    <u2:hasDefinition>1/s</u2:hasDefinition>
   </u2:Unit>
-  <u2:UnitName rdf:about="gram">
-    <u2:hasSymbol>g</u2:hasSymbol>
-    <u2:namesUnit>
-      <u2:Unit rdf:about="_0c6e2e25">
-        <u2:hasSymbol>g</u2:hasSymbol>
-        <u2:hasName rdf:resource="gram"/>
-        <u2:hasDefinition>1e-3 kg</u2:hasDefinition>
-      </u2:Unit>
-    </u2:namesUnit>
-    <u2:hasCardinality>singular</u2:hasCardinality>
-  </u2:UnitName>
-  <u2:UnitName rdf:about="newton">
-    <u2:hasSymbol>N</u2:hasSymbol>
-    <u2:namesUnit>
-      <u2:Unit rdf:about="_f425db5a">
-        <u2:hasSymbol>N</u2:hasSymbol>
-        <u2:hasName rdf:resource="newton"/>
-        <u2:hasDefinition>m.kg/s^2</u2:hasDefinition>
-      </u2:Unit>
-    </u2:namesUnit>
-    <u2:hasCardinality>singular</u2:hasCardinality>
-  </u2:UnitName>
-  <u2:UnitName rdf:about="henry">
-    <u2:hasSymbol>H</u2:hasSymbol>
-    <u2:namesUnit>
-      <u2:Unit rdf:about="_6a30db22">
-        <u2:hasSymbol>H</u2:hasSymbol>
-        <u2:hasName rdf:resource="henry"/>
-        <u2:hasDefinition>Wb/A</u2:hasDefinition>
-      </u2:Unit>
-    </u2:namesUnit>
-    <u2:hasCardinality>singular</u2:hasCardinality>
-  </u2:UnitName>
-  <u2:Unit rdf:about="_42d4a060">
-    <u2:hasSymbol>°C</u2:hasSymbol>
-    <u2:hasName>
-      <u2:UnitName rdf:about="degree_Celsius">
-        <u2:hasSymbol>°C</u2:hasSymbol>
-        <u2:namesUnit rdf:resource="_42d4a060"/>
-        <u2:hasCardinality>singular</u2:hasCardinality>
-      </u2:UnitName>
-    </u2:hasName>
-    <u2:hasDefinition>K @ 273.15</u2:hasDefinition>
-  </u2:Unit>
-  <u2:UnitName rdf:about="coulomb">
-    <u2:hasSymbol>C</u2:hasSymbol>
-    <u2:namesUnit>
-      <u2:Unit rdf:about="_abcb503c">
-        <u2:hasSymbol>C</u2:hasSymbol>
-        <u2:hasName rdf:resource="coulomb"/>
-        <u2:hasDefinition>s.A</u2:hasDefinition>
-      </u2:Unit>
-    </u2:namesUnit>
-    <u2:hasCardinality>singular</u2:hasCardinality>
-  </u2:UnitName>
-  <u2:UnitName rdf:about="watt">
-    <u2:hasSymbol>W</u2:hasSymbol>
-    <u2:namesUnit>
-      <u2:Unit rdf:about="_17a4abb9">
-        <u2:hasSymbol>W</u2:hasSymbol>
-        <u2:hasName rdf:resource="watt"/>
-        <u2:hasDefinition>J/s</u2:hasDefinition>
-      </u2:Unit>
-    </u2:namesUnit>
-    <u2:hasCardinality>singular</u2:hasCardinality>
-  </u2:UnitName>
-  <u2:UnitName rdf:about="volt">
-    <u2:hasSymbol>V</u2:hasSymbol>
-    <u2:namesUnit>
-      <u2:Unit rdf:about="_ad04a0b8">
-        <u2:hasSymbol>V</u2:hasSymbol>
-        <u2:hasName rdf:resource="volt"/>
-        <u2:hasDefinition>W/A</u2:hasDefinition>
-      </u2:Unit>
-    </u2:namesUnit>
-    <u2:hasCardinality>singular</u2:hasCardinality>
-  </u2:UnitName>
-  <u2:UnitName rdf:about="lumen">
-    <u2:hasSymbol>lm</u2:hasSymbol>
-    <u2:namesUnit>
-      <u2:Unit rdf:about="_4b72e705">
-        <u2:hasSymbol>lm</u2:hasSymbol>
-        <u2:hasName rdf:resource="lumen"/>
-        <u2:hasDefinition>cd.sr</u2:hasDefinition>
-      </u2:Unit>
-    </u2:namesUnit>
-    <u2:hasCardinality>singular</u2:hasCardinality>
-  </u2:UnitName>
   <u2:Unit rdf:about="_ec96bc27">
     <u2:hasSymbol>sr</u2:hasSymbol>
     <u2:hasName>
@@ -182,6 +117,72 @@
     </u2:hasName>
     <u2:hasDefinition>rad^2</u2:hasDefinition>
   </u2:Unit>
+  <u2:UnitName rdf:about="farad">
+    <u2:hasSymbol>F</u2:hasSymbol>
+    <u2:namesUnit>
+      <u2:Unit rdf:about="_be99ec61">
+        <u2:hasSymbol>F</u2:hasSymbol>
+        <u2:hasName rdf:resource="farad"/>
+        <u2:hasDefinition>C/V</u2:hasDefinition>
+      </u2:Unit>
+    </u2:namesUnit>
+    <u2:hasCardinality>singular</u2:hasCardinality>
+  </u2:UnitName>
+  <u2:Unit rdf:about="_0c6e2e25">
+    <u2:hasSymbol>g</u2:hasSymbol>
+    <u2:hasName>
+      <u2:UnitName rdf:about="gram">
+        <u2:hasSymbol>g</u2:hasSymbol>
+        <u2:namesUnit rdf:resource="_0c6e2e25"/>
+        <u2:hasCardinality>singular</u2:hasCardinality>
+      </u2:UnitName>
+    </u2:hasName>
+    <u2:hasDefinition>1e-3 kg</u2:hasDefinition>
+  </u2:Unit>
+  <u2:UnitName rdf:about="joule">
+    <u2:hasSymbol>J</u2:hasSymbol>
+    <u2:namesUnit>
+      <u2:Unit rdf:about="_3bf67536">
+        <u2:hasSymbol>J</u2:hasSymbol>
+        <u2:hasName rdf:resource="joule"/>
+        <u2:hasDefinition>N.m</u2:hasDefinition>
+      </u2:Unit>
+    </u2:namesUnit>
+    <u2:hasCardinality>singular</u2:hasCardinality>
+  </u2:UnitName>
+  <u2:UnitName rdf:about="lux">
+    <u2:hasSymbol>lx</u2:hasSymbol>
+    <u2:namesUnit>
+      <u2:Unit rdf:about="_48441204">
+        <u2:hasSymbol>lx</u2:hasSymbol>
+        <u2:hasName rdf:resource="lux"/>
+        <u2:hasDefinition>lm/m^2</u2:hasDefinition>
+      </u2:Unit>
+    </u2:namesUnit>
+    <u2:hasCardinality>singular</u2:hasCardinality>
+  </u2:UnitName>
+  <u2:Unit rdf:about="_abcb503c">
+    <u2:hasSymbol>C</u2:hasSymbol>
+    <u2:hasName>
+      <u2:UnitName rdf:about="coulomb">
+        <u2:hasSymbol>C</u2:hasSymbol>
+        <u2:namesUnit rdf:resource="_abcb503c"/>
+        <u2:hasCardinality>singular</u2:hasCardinality>
+      </u2:UnitName>
+    </u2:hasName>
+    <u2:hasDefinition>s.A</u2:hasDefinition>
+  </u2:Unit>
+  <u2:UnitName rdf:about="weber">
+    <u2:hasSymbol>Wb</u2:hasSymbol>
+    <u2:namesUnit>
+      <u2:Unit rdf:about="_6a74bd21">
+        <u2:hasSymbol>Wb</u2:hasSymbol>
+        <u2:hasName rdf:resource="weber"/>
+        <u2:hasDefinition>V.s</u2:hasDefinition>
+      </u2:Unit>
+    </u2:namesUnit>
+    <u2:hasCardinality>singular</u2:hasCardinality>
+  </u2:UnitName>
   <u2:Unit rdf:about="_993c8f1a">
     <u2:hasSymbol>T</u2:hasSymbol>
     <u2:hasName>
@@ -193,16 +194,16 @@
     </u2:hasName>
     <u2:hasDefinition>Wb/m^2</u2:hasDefinition>
   </u2:Unit>
-  <u2:Unit rdf:about="_c1fa6dc6">
-    <u2:hasSymbol>Pa</u2:hasSymbol>
+  <u2:Unit rdf:about="_6a30db22">
+    <u2:hasSymbol>H</u2:hasSymbol>
     <u2:hasName>
-      <u2:UnitName rdf:about="pascal">
-        <u2:hasSymbol>Pa</u2:hasSymbol>
-        <u2:namesUnit rdf:resource="_c1fa6dc6"/>
+      <u2:UnitName rdf:about="henry">
+        <u2:hasSymbol>H</u2:hasSymbol>
+        <u2:namesUnit rdf:resource="_6a30db22"/>
         <u2:hasCardinality>singular</u2:hasCardinality>
       </u2:UnitName>
     </u2:hasName>
-    <u2:hasDefinition>N/m^2</u2:hasDefinition>
+    <u2:hasDefinition>Wb/A</u2:hasDefinition>
   </u2:Unit>
   <u2:Unit rdf:about="_a06d5ce7">
     <u2:hasSymbol>kat</u2:hasSymbol>
@@ -215,40 +216,61 @@
     </u2:hasName>
     <u2:hasDefinition>mol/s</u2:hasDefinition>
   </u2:Unit>
-  <u2:Unit rdf:about="_be99ec61">
-    <u2:hasSymbol>F</u2:hasSymbol>
+  <u2:UnitName rdf:about="pascal">
+    <u2:hasSymbol>Pa</u2:hasSymbol>
+    <u2:namesUnit>
+      <u2:Unit rdf:about="_c1fa6dc6">
+        <u2:hasSymbol>Pa</u2:hasSymbol>
+        <u2:hasName rdf:resource="pascal"/>
+        <u2:hasDefinition>N/m^2</u2:hasDefinition>
+      </u2:Unit>
+    </u2:namesUnit>
+    <u2:hasCardinality>singular</u2:hasCardinality>
+  </u2:UnitName>
+  <u2:Unit rdf:about="_f425db5a">
+    <u2:hasSymbol>N</u2:hasSymbol>
     <u2:hasName>
-      <u2:UnitName rdf:about="farad">
-        <u2:hasSymbol>F</u2:hasSymbol>
-        <u2:namesUnit rdf:resource="_be99ec61"/>
+      <u2:UnitName rdf:about="newton">
+        <u2:hasSymbol>N</u2:hasSymbol>
+        <u2:namesUnit rdf:resource="_f425db5a"/>
         <u2:hasCardinality>singular</u2:hasCardinality>
       </u2:UnitName>
     </u2:hasName>
-    <u2:hasDefinition>C/V</u2:hasDefinition>
+    <u2:hasDefinition>m.kg/s^2</u2:hasDefinition>
   </u2:Unit>
-  <u2:Unit rdf:about="_bdd01af8">
-    <u2:hasSymbol>Ω</u2:hasSymbol>
-    <u2:hasSymbol>Ω</u2:hasSymbol>
+  <u2:UnitName rdf:about="degree_Celsius">
+    <u2:hasSymbol>°C</u2:hasSymbol>
+    <u2:namesUnit>
+      <u2:Unit rdf:about="_42d4a060">
+        <u2:hasSymbol>°C</u2:hasSymbol>
+        <u2:hasName rdf:resource="degree_Celsius"/>
+        <u2:hasDefinition>K @ 273.15</u2:hasDefinition>
+      </u2:Unit>
+    </u2:namesUnit>
+    <u2:hasCardinality>singular</u2:hasCardinality>
+  </u2:UnitName>
+  <u2:Unit rdf:about="_17a4abb9">
+    <u2:hasSymbol>W</u2:hasSymbol>
     <u2:hasName>
-      <u2:UnitName rdf:about="ohm">
-        <u2:hasSymbol>Ω</u2:hasSymbol>
-        <u2:namesUnit rdf:resource="_bdd01af8"/>
+      <u2:UnitName rdf:about="watt">
+        <u2:hasSymbol>W</u2:hasSymbol>
+        <u2:namesUnit rdf:resource="_17a4abb9"/>
         <u2:hasCardinality>singular</u2:hasCardinality>
       </u2:UnitName>
     </u2:hasName>
-    <u2:hasDefinition>V/A</u2:hasDefinition>
+    <u2:hasDefinition>J/s</u2:hasDefinition>
   </u2:Unit>
-  <u2:Unit rdf:about="_48441204">
-    <u2:hasSymbol>lx</u2:hasSymbol>
-    <u2:hasName>
-      <u2:UnitName rdf:about="lux">
-        <u2:hasSymbol>lx</u2:hasSymbol>
-        <u2:namesUnit rdf:resource="_48441204"/>
-        <u2:hasCardinality>singular</u2:hasCardinality>
-      </u2:UnitName>
-    </u2:hasName>
-    <u2:hasDefinition>lm/m^2</u2:hasDefinition>
-  </u2:Unit>
+  <u2:UnitName rdf:about="lumen">
+    <u2:hasSymbol>lm</u2:hasSymbol>
+    <u2:namesUnit>
+      <u2:Unit rdf:about="_4b72e705">
+        <u2:hasSymbol>lm</u2:hasSymbol>
+        <u2:hasName rdf:resource="lumen"/>
+        <u2:hasDefinition>cd.sr</u2:hasDefinition>
+      </u2:Unit>
+    </u2:namesUnit>
+    <u2:hasCardinality>singular</u2:hasCardinality>
+  </u2:UnitName>
   <u2:UnitName rdf:about="siemens">
     <u2:hasSymbol>S</u2:hasSymbol>
     <u2:namesUnit>
@@ -260,15 +282,38 @@
     </u2:namesUnit>
     <u2:hasCardinality>singular</u2:hasCardinality>
   </u2:UnitName>
-  <u2:UnitName rdf:about="weber">
-    <u2:hasSymbol>Wb</u2:hasSymbol>
+  <u2:UnitName rdf:about="ohm">
+    <u2:hasSymbol>Ω</u2:hasSymbol>
     <u2:namesUnit>
-      <u2:Unit rdf:about="_6a74bd21">
-        <u2:hasSymbol>Wb</u2:hasSymbol>
-        <u2:hasName rdf:resource="weber"/>
-        <u2:hasDefinition>V.s</u2:hasDefinition>
+      <u2:Unit rdf:about="_bdd01af8">
+        <u2:hasSymbol>Ω</u2:hasSymbol>
+        <u2:hasSymbol>Ω</u2:hasSymbol>
+        <u2:hasName rdf:resource="ohm"/>
+        <u2:hasDefinition>V/A</u2:hasDefinition>
       </u2:Unit>
     </u2:namesUnit>
     <u2:hasCardinality>singular</u2:hasCardinality>
   </u2:UnitName>
+  <u2:Unit rdf:about="_0fd4c645">
+    <u2:hasSymbol>rad</u2:hasSymbol>
+    <u2:hasName>
+      <u2:UnitName rdf:about="radian">
+        <u2:hasSymbol>rad</u2:hasSymbol>
+        <u2:namesUnit rdf:resource="_0fd4c645"/>
+        <u2:hasCardinality>singular</u2:hasCardinality>
+      </u2:UnitName>
+    </u2:hasName>
+    <u2:hasDefinition>radian</u2:hasDefinition>
+  </u2:Unit>
+  <u2:Unit rdf:about="_ad04a0b8">
+    <u2:hasSymbol>V</u2:hasSymbol>
+    <u2:hasName>
+      <u2:UnitName rdf:about="volt">
+        <u2:hasSymbol>V</u2:hasSymbol>
+        <u2:namesUnit rdf:resource="_ad04a0b8"/>
+        <u2:hasCardinality>singular</u2:hasCardinality>
+      </u2:UnitName>
+    </u2:hasName>
+    <u2:hasDefinition>W/A</u2:hasDefinition>
+  </u2:Unit>
 </rdf:RDF>

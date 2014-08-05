@@ -1,58 +1,75 @@
 <?xml version="1.0"?>
 <rdf:RDF
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:u2="http://mmisw.org/ont/mmitest/udunits2/"
+    xmlns:u2="http://mmisw.org/ont/mmi/udunits2/"
+    xmlns="http://mmisw.org/ont/mmi/udunits2-accepted/"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
-    xmlns="http://mmisw.org/ont/mmitest/udunits2-accepted/"
+    xmlns:omv="http://omv.ontoware.org/2005/05/ontology#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:omvmmi="http://mmisw.org/ont/mmi/20081020/ontologyMetadata/"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xml:base="http://mmisw.org/ont/mmitest/udunits2-accepted/">
-  <owl:Class rdf:about="http://mmisw.org/ont/mmitest/udunits2/UnitName">
-    <rdfs:label>UnitName</rdfs:label>
+  xml:base="http://mmisw.org/ont/mmi/udunits2-accepted/">
+  <owl:Ontology rdf:about="">
+    <omvmmi:creditRequired>no</omvmmi:creditRequired>
+    <omv:documentation>http://www.unidata.ucar.edu/software/udunits/udunits-2-units.html</omv:documentation>
+    <omvmmi:origVocDocumentationUri>https://raw.githubusercontent.com/Unidata/UDUNITS-2/master/lib/udunits2-accepted.xml</omvmmi:origVocDocumentationUri>
+    <omv:reference>https://github.com/mmisw/udunits2rdf/wiki</omv:reference>
+    <omvmmi:temporaryMmiRole>Ontology Producer</omvmmi:temporaryMmiRole>
+    <omvmmi:hasResourceType>unit</omvmmi:hasResourceType>
+    <omvmmi:contactRole>Content Manager</omvmmi:contactRole>
+    <omv:acronym>udunits2-accepted</omv:acronym>
+    <omvmmi:contact>Steve Emmerson (303-497-8648, emmerson@ucar.edu, http://www.unidata.ucar.edu/staff/steve/)</omvmmi:contact>
+    <omv:keywords>units, Unidata, udunits, scientific units, base units</omv:keywords>
+    <omv:name>udunits2-accepted</omv:name>
+    <omvmmi:origVocManager>Steve Emmerson (303-497-8648, emmerson@ucar.edu, http://www.unidata.ucar.edu/staff/steve/)</omvmmi:origVocManager>
+    <omvmmi:origVocSyntaxFormat>XML</omvmmi:origVocSyntaxFormat>
+    <omvmmi:hasContentCreator>Unidata</omvmmi:hasContentCreator>
+    <omv:hasCreator>MMI</omv:hasCreator>
+    <omv:hasContributor>John Graybeal, Carlos Rueda</omv:hasContributor>
+    <omvmmi:origVocUri>https://raw.githubusercontent.com/Unidata/UDUNITS-2/master/lib/udunits2-accepted.xml</omvmmi:origVocUri>
+    <omvmmi:origVocKeywords>units, Unidata, udunits, scientific units, base units</omvmmi:origVocKeywords>
+  </owl:Ontology>
+  <owl:Class rdf:about="http://mmisw.org/ont/mmi/udunits2/Prefix">
+    <rdfs:label>Prefix</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="http://mmisw.org/ont/mmitest/udunits2/Unit">
+  <owl:Class rdf:about="http://mmisw.org/ont/mmi/udunits2/Unit">
     <rdfs:label>Unit</rdfs:label>
   </owl:Class>
-  <owl:FunctionalProperty rdf:about="http://mmisw.org/ont/mmitest/udunits2/hasDefinition">
+  <owl:Class rdf:about="http://mmisw.org/ont/mmi/udunits2/UnitName">
+    <rdfs:label>UnitName</rdfs:label>
+  </owl:Class>
+  <owl:FunctionalProperty rdf:about="http://mmisw.org/ont/mmi/udunits2/hasDefinition">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="http://mmisw.org/ont/mmitest/udunits2/Unit"/>
+    <rdfs:domain rdf:resource="http://mmisw.org/ont/mmi/udunits2/Unit"/>
   </owl:FunctionalProperty>
-  <owl:FunctionalProperty rdf:about="http://mmisw.org/ont/mmitest/udunits2/hasName">
-    <rdfs:range rdf:resource="http://mmisw.org/ont/mmitest/udunits2/UnitName"/>
-    <rdfs:domain rdf:resource="http://mmisw.org/ont/mmitest/udunits2/Unit"/>
+  <owl:FunctionalProperty rdf:about="http://mmisw.org/ont/mmi/udunits2/hasName">
+    <rdfs:range rdf:resource="http://mmisw.org/ont/mmi/udunits2/UnitName"/>
+    <rdfs:domain rdf:resource="http://mmisw.org/ont/mmi/udunits2/Unit"/>
   </owl:FunctionalProperty>
-  <owl:FunctionalProperty rdf:about="http://mmisw.org/ont/mmitest/udunits2/namesUnit">
-    <rdfs:range rdf:resource="http://mmisw.org/ont/mmitest/udunits2/Unit"/>
-    <rdfs:domain rdf:resource="http://mmisw.org/ont/mmitest/udunits2/UnitName"/>
+  <owl:FunctionalProperty rdf:about="http://mmisw.org/ont/mmi/udunits2/namesUnit">
+    <rdfs:range rdf:resource="http://mmisw.org/ont/mmi/udunits2/Unit"/>
+    <rdfs:domain rdf:resource="http://mmisw.org/ont/mmi/udunits2/UnitName"/>
   </owl:FunctionalProperty>
-  <rdf:Description rdf:about="http://mmisw.org/ont/mmitest/udunits2/hasCardinality">
+  <owl:FunctionalProperty rdf:about="http://mmisw.org/ont/mmi/udunits2/hasValue">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="http://mmisw.org/ont/mmitest/udunits2/UnitName"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://mmisw.org/ont/mmitest/udunits2/hasAlias">
-    <rdfs:range rdf:resource="http://mmisw.org/ont/mmitest/udunits2/UnitName"/>
-    <rdfs:domain rdf:resource="http://mmisw.org/ont/mmitest/udunits2/Unit"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://mmisw.org/ont/mmitest/udunits2/hasSymbol">
+    <rdfs:domain rdf:resource="http://mmisw.org/ont/mmi/udunits2/Prefix"/>
+  </owl:FunctionalProperty>
+  <rdf:Description rdf:about="http://mmisw.org/ont/mmi/udunits2/hasSymbol">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="http://mmisw.org/ont/mmitest/udunits2/UnitName"/>
+    <rdfs:domain rdf:resource="http://mmisw.org/ont/mmi/udunits2/UnitName"/>
   </rdf:Description>
-  <u2:Unit rdf:about="_251d0474">
-    <u2:hasSymbol>t</u2:hasSymbol>
-    <u2:hasAlias>
-      <u2:UnitName rdf:about="tonne">
-        <u2:namesUnit rdf:resource="_251d0474"/>
-        <u2:hasCardinality>singular</u2:hasCardinality>
-      </u2:UnitName>
-    </u2:hasAlias>
-    <u2:hasName>
-      <u2:UnitName rdf:about="metric_ton">
-        <u2:hasSymbol>t</u2:hasSymbol>
-        <u2:namesUnit rdf:resource="_251d0474"/>
-        <u2:hasCardinality>singular</u2:hasCardinality>
-      </u2:UnitName>
-    </u2:hasName>
-    <u2:hasDefinition>1000 kg</u2:hasDefinition>
-  </u2:Unit>
+  <rdf:Description rdf:about="http://mmisw.org/ont/mmi/udunits2/hasAlias">
+    <rdfs:range rdf:resource="http://mmisw.org/ont/mmi/udunits2/UnitName"/>
+    <rdfs:domain rdf:resource="http://mmisw.org/ont/mmi/udunits2/Unit"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://mmisw.org/ont/mmi/udunits2/hasPrefixName">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://mmisw.org/ont/mmi/udunits2/Prefix"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://mmisw.org/ont/mmi/udunits2/hasCardinality">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://mmisw.org/ont/mmi/udunits2/UnitName"/>
+  </rdf:Description>
   <u2:Unit rdf:about="_0e61b879">
     <u2:hasAlias>
       <u2:UnitName rdf:about="ångström">
@@ -70,22 +87,65 @@
     </u2:hasAlias>
     <u2:hasDefinition>1e-10 m</u2:hasDefinition>
   </u2:Unit>
-  <u2:Unit rdf:about="_aa34964c">
-    <u2:hasSymbol>eV</u2:hasSymbol>
+  <u2:Unit rdf:about="_748c9c59">
+    <u2:hasSymbol>°</u2:hasSymbol>
     <u2:hasAlias>
-      <u2:UnitName rdf:about="electron_volt">
-        <u2:namesUnit rdf:resource="_aa34964c"/>
+      <u2:UnitName rdf:about="arcdeg">
+        <u2:namesUnit rdf:resource="_748c9c59"/>
+        <u2:hasCardinality>singular</u2:hasCardinality>
+      </u2:UnitName>
+    </u2:hasAlias>
+    <u2:hasAlias>
+      <u2:UnitName rdf:about="degree">
+        <u2:namesUnit rdf:resource="_748c9c59"/>
+        <u2:hasCardinality>singular</u2:hasCardinality>
+      </u2:UnitName>
+    </u2:hasAlias>
+    <u2:hasAlias>
+      <u2:UnitName rdf:about="angular_degree">
+        <u2:namesUnit rdf:resource="_748c9c59"/>
         <u2:hasCardinality>singular</u2:hasCardinality>
       </u2:UnitName>
     </u2:hasAlias>
     <u2:hasName>
-      <u2:UnitName rdf:about="electronvolt">
-        <u2:hasSymbol>eV</u2:hasSymbol>
-        <u2:namesUnit rdf:resource="_aa34964c"/>
+      <u2:UnitName rdf:about="arc_degree">
+        <u2:hasSymbol>°</u2:hasSymbol>
+        <u2:namesUnit rdf:resource="_748c9c59"/>
         <u2:hasCardinality>singular</u2:hasCardinality>
       </u2:UnitName>
     </u2:hasName>
-    <u2:hasDefinition>1.60217733e-19 J</u2:hasDefinition>
+    <u2:hasDefinition>(pi/180) rad</u2:hasDefinition>
+  </u2:Unit>
+  <u2:Unit rdf:about="_ca565b10">
+    <u2:hasSymbol>′</u2:hasSymbol>
+    <u2:hasSymbol>'</u2:hasSymbol>
+    <u2:hasAlias>
+      <u2:UnitName rdf:about="arcmin">
+        <u2:namesUnit rdf:resource="_ca565b10"/>
+        <u2:hasCardinality>singular</u2:hasCardinality>
+      </u2:UnitName>
+    </u2:hasAlias>
+    <u2:hasAlias>
+      <u2:UnitName rdf:about="arcminute">
+        <u2:namesUnit rdf:resource="_ca565b10"/>
+        <u2:hasCardinality>singular</u2:hasCardinality>
+      </u2:UnitName>
+    </u2:hasAlias>
+    <u2:hasAlias>
+      <u2:UnitName rdf:about="angular_minute">
+        <u2:namesUnit rdf:resource="_ca565b10"/>
+        <u2:hasCardinality>singular</u2:hasCardinality>
+      </u2:UnitName>
+    </u2:hasAlias>
+    <u2:hasName>
+      <u2:UnitName rdf:about="arc_minute">
+        <u2:hasSymbol>′</u2:hasSymbol>
+        <u2:hasSymbol>'</u2:hasSymbol>
+        <u2:namesUnit rdf:resource="_ca565b10"/>
+        <u2:hasCardinality>singular</u2:hasCardinality>
+      </u2:UnitName>
+    </u2:hasName>
+    <u2:hasDefinition>°/60</u2:hasDefinition>
   </u2:Unit>
   <u2:Unit rdf:about="_4611ca24">
     <u2:hasSymbol>u</u2:hasSymbol>
@@ -116,34 +176,70 @@
     </u2:hasName>
     <u2:hasDefinition>1.6605402e-27 kg</u2:hasDefinition>
   </u2:Unit>
-  <u2:Unit rdf:about="_748c9c59">
-    <u2:hasSymbol>°</u2:hasSymbol>
+  <u2:Unit rdf:about="_aa34964c">
+    <u2:hasSymbol>eV</u2:hasSymbol>
     <u2:hasAlias>
-      <u2:UnitName rdf:about="arcdeg">
-        <u2:namesUnit rdf:resource="_748c9c59"/>
-        <u2:hasCardinality>singular</u2:hasCardinality>
-      </u2:UnitName>
-    </u2:hasAlias>
-    <u2:hasAlias>
-      <u2:UnitName rdf:about="degree">
-        <u2:namesUnit rdf:resource="_748c9c59"/>
-        <u2:hasCardinality>singular</u2:hasCardinality>
-      </u2:UnitName>
-    </u2:hasAlias>
-    <u2:hasAlias>
-      <u2:UnitName rdf:about="angular_degree">
-        <u2:namesUnit rdf:resource="_748c9c59"/>
+      <u2:UnitName rdf:about="electron_volt">
+        <u2:namesUnit rdf:resource="_aa34964c"/>
         <u2:hasCardinality>singular</u2:hasCardinality>
       </u2:UnitName>
     </u2:hasAlias>
     <u2:hasName>
-      <u2:UnitName rdf:about="arc_degree">
-        <u2:hasSymbol>°</u2:hasSymbol>
-        <u2:namesUnit rdf:resource="_748c9c59"/>
+      <u2:UnitName rdf:about="electronvolt">
+        <u2:hasSymbol>eV</u2:hasSymbol>
+        <u2:namesUnit rdf:resource="_aa34964c"/>
         <u2:hasCardinality>singular</u2:hasCardinality>
       </u2:UnitName>
     </u2:hasName>
-    <u2:hasDefinition>(pi/180) rad</u2:hasDefinition>
+    <u2:hasDefinition>1.60217733e-19 J</u2:hasDefinition>
+  </u2:Unit>
+  <u2:Unit rdf:about="_251d0474">
+    <u2:hasSymbol>t</u2:hasSymbol>
+    <u2:hasAlias>
+      <u2:UnitName rdf:about="tonne">
+        <u2:namesUnit rdf:resource="_251d0474"/>
+        <u2:hasCardinality>singular</u2:hasCardinality>
+      </u2:UnitName>
+    </u2:hasAlias>
+    <u2:hasName>
+      <u2:UnitName rdf:about="metric_ton">
+        <u2:hasSymbol>t</u2:hasSymbol>
+        <u2:namesUnit rdf:resource="_251d0474"/>
+        <u2:hasCardinality>singular</u2:hasCardinality>
+      </u2:UnitName>
+    </u2:hasName>
+    <u2:hasDefinition>1000 kg</u2:hasDefinition>
+  </u2:Unit>
+  <u2:Unit rdf:about="_3478eed1">
+    <u2:hasSymbol>″</u2:hasSymbol>
+    <u2:hasSymbol>"</u2:hasSymbol>
+    <u2:hasAlias>
+      <u2:UnitName rdf:about="arcsec">
+        <u2:namesUnit rdf:resource="_3478eed1"/>
+        <u2:hasCardinality>singular</u2:hasCardinality>
+      </u2:UnitName>
+    </u2:hasAlias>
+    <u2:hasAlias>
+      <u2:UnitName rdf:about="arcsecond">
+        <u2:namesUnit rdf:resource="_3478eed1"/>
+        <u2:hasCardinality>singular</u2:hasCardinality>
+      </u2:UnitName>
+    </u2:hasAlias>
+    <u2:hasAlias>
+      <u2:UnitName rdf:about="angular_second">
+        <u2:namesUnit rdf:resource="_3478eed1"/>
+        <u2:hasCardinality>singular</u2:hasCardinality>
+      </u2:UnitName>
+    </u2:hasAlias>
+    <u2:hasName>
+      <u2:UnitName rdf:about="arc_second">
+        <u2:hasSymbol>″</u2:hasSymbol>
+        <u2:hasSymbol>"</u2:hasSymbol>
+        <u2:namesUnit rdf:resource="_3478eed1"/>
+        <u2:hasCardinality>singular</u2:hasCardinality>
+      </u2:UnitName>
+    </u2:hasName>
+    <u2:hasDefinition>'/60</u2:hasDefinition>
   </u2:Unit>
   <u2:Unit rdf:about="_44f241b8">
     <u2:hasSymbol>L</u2:hasSymbol>
@@ -184,118 +280,17 @@
     </u2:hasAlias>
     <u2:hasDefinition>nautical_mile/hour</u2:hasDefinition>
   </u2:Unit>
-  <u2:Unit rdf:about="_3478eed1">
-    <u2:hasSymbol>″</u2:hasSymbol>
-    <u2:hasSymbol>"</u2:hasSymbol>
-    <u2:hasAlias>
-      <u2:UnitName rdf:about="arcsec">
-        <u2:namesUnit rdf:resource="_3478eed1"/>
-        <u2:hasCardinality>singular</u2:hasCardinality>
-      </u2:UnitName>
-    </u2:hasAlias>
-    <u2:hasAlias>
-      <u2:UnitName rdf:about="arcsecond">
-        <u2:namesUnit rdf:resource="_3478eed1"/>
-        <u2:hasCardinality>singular</u2:hasCardinality>
-      </u2:UnitName>
-    </u2:hasAlias>
-    <u2:hasAlias>
-      <u2:UnitName rdf:about="angular_second">
-        <u2:namesUnit rdf:resource="_3478eed1"/>
-        <u2:hasCardinality>singular</u2:hasCardinality>
-      </u2:UnitName>
-    </u2:hasAlias>
-    <u2:hasName>
-      <u2:UnitName rdf:about="arc_second">
-        <u2:hasSymbol>″</u2:hasSymbol>
-        <u2:hasSymbol>"</u2:hasSymbol>
-        <u2:namesUnit rdf:resource="_3478eed1"/>
-        <u2:hasCardinality>singular</u2:hasCardinality>
-      </u2:UnitName>
-    </u2:hasName>
-    <u2:hasDefinition>'/60</u2:hasDefinition>
-  </u2:Unit>
-  <u2:Unit rdf:about="_ca565b10">
-    <u2:hasSymbol>′</u2:hasSymbol>
-    <u2:hasSymbol>'</u2:hasSymbol>
-    <u2:hasAlias>
-      <u2:UnitName rdf:about="arcmin">
-        <u2:namesUnit rdf:resource="_ca565b10"/>
-        <u2:hasCardinality>singular</u2:hasCardinality>
-      </u2:UnitName>
-    </u2:hasAlias>
-    <u2:hasAlias>
-      <u2:UnitName rdf:about="arcminute">
-        <u2:namesUnit rdf:resource="_ca565b10"/>
-        <u2:hasCardinality>singular</u2:hasCardinality>
-      </u2:UnitName>
-    </u2:hasAlias>
-    <u2:hasAlias>
-      <u2:UnitName rdf:about="angular_minute">
-        <u2:namesUnit rdf:resource="_ca565b10"/>
-        <u2:hasCardinality>singular</u2:hasCardinality>
-      </u2:UnitName>
-    </u2:hasAlias>
-    <u2:hasName>
-      <u2:UnitName rdf:about="arc_minute">
-        <u2:hasSymbol>′</u2:hasSymbol>
-        <u2:hasSymbol>'</u2:hasSymbol>
-        <u2:namesUnit rdf:resource="_ca565b10"/>
-        <u2:hasCardinality>singular</u2:hasCardinality>
-      </u2:UnitName>
-    </u2:hasName>
-    <u2:hasDefinition>°/60</u2:hasDefinition>
-  </u2:Unit>
-  <u2:Unit rdf:about="_cb31a312">
-    <u2:hasAlias>
-      <u2:UnitName rdf:about="rem">
-        <u2:namesUnit rdf:resource="_cb31a312"/>
-        <u2:hasCardinality>singular</u2:hasCardinality>
-      </u2:UnitName>
-    </u2:hasAlias>
-    <u2:hasDefinition>cSv</u2:hasDefinition>
-  </u2:Unit>
-  <u2:Unit rdf:about="_9e18f835">
+  <u2:UnitName rdf:about="minute">
     <u2:hasSymbol>min</u2:hasSymbol>
-    <u2:hasName>
-      <u2:UnitName rdf:about="minute">
+    <u2:namesUnit>
+      <u2:Unit rdf:about="_9e18f835">
         <u2:hasSymbol>min</u2:hasSymbol>
-        <u2:namesUnit rdf:resource="_9e18f835"/>
-        <u2:hasCardinality>singular</u2:hasCardinality>
-      </u2:UnitName>
-    </u2:hasName>
-    <u2:hasDefinition>60 s</u2:hasDefinition>
-  </u2:Unit>
-  <u2:UnitName rdf:about="gal">
-    <u2:namesUnit>
-      <u2:Unit rdf:about="_877b35ea">
-        <u2:hasAlias rdf:resource="gal"/>
-        <u2:hasDefinition>cm/s^2</u2:hasDefinition>
+        <u2:hasName rdf:resource="minute"/>
+        <u2:hasDefinition>60 s</u2:hasDefinition>
       </u2:Unit>
     </u2:namesUnit>
     <u2:hasCardinality>singular</u2:hasCardinality>
   </u2:UnitName>
-  <u2:UnitName rdf:about="hour">
-    <u2:hasSymbol>h</u2:hasSymbol>
-    <u2:namesUnit>
-      <u2:Unit rdf:about="_b4bfffeb">
-        <u2:hasSymbol>h</u2:hasSymbol>
-        <u2:hasSymbol>hr</u2:hasSymbol>
-        <u2:hasName rdf:resource="hour"/>
-        <u2:hasDefinition>60 min</u2:hasDefinition>
-      </u2:Unit>
-    </u2:namesUnit>
-    <u2:hasCardinality>singular</u2:hasCardinality>
-  </u2:UnitName>
-  <u2:Unit rdf:about="_3b82dba2">
-    <u2:hasAlias>
-      <u2:UnitName rdf:about="nautical_mile">
-        <u2:namesUnit rdf:resource="_3b82dba2"/>
-        <u2:hasCardinality>singular</u2:hasCardinality>
-      </u2:UnitName>
-    </u2:hasAlias>
-    <u2:hasDefinition>1852 m</u2:hasDefinition>
-  </u2:Unit>
   <u2:UnitName rdf:about="pi">
     <u2:hasSymbol>π</u2:hasSymbol>
     <u2:namesUnit>
@@ -306,62 +301,80 @@
     </u2:namesUnit>
     <u2:hasCardinality>singular</u2:hasCardinality>
   </u2:UnitName>
-  <u2:Unit rdf:about="_3ae81032">
+  <u2:Unit rdf:about="_f7ddc606">
     <u2:hasAlias>
-      <u2:UnitName rdf:about="astronomical_unit">
-        <u2:hasSymbol>ua</u2:hasSymbol>
-        <u2:namesUnit rdf:resource="_3ae81032"/>
+      <u2:UnitName rdf:about="bar">
+        <u2:namesUnit rdf:resource="_f7ddc606"/>
         <u2:hasCardinality>singular</u2:hasCardinality>
       </u2:UnitName>
     </u2:hasAlias>
-    <u2:hasDefinition>1.495979e11 m</u2:hasDefinition>
+    <u2:hasDefinition>1000 hPa</u2:hasDefinition>
   </u2:Unit>
-  <u2:Unit rdf:about="_41b343dd">
-    <u2:hasSymbol>d</u2:hasSymbol>
+  <u2:UnitName rdf:about="gal">
+    <u2:namesUnit>
+      <u2:Unit rdf:about="_877b35ea">
+        <u2:hasAlias rdf:resource="gal"/>
+        <u2:hasDefinition>cm/s^2</u2:hasDefinition>
+      </u2:Unit>
+    </u2:namesUnit>
+    <u2:hasCardinality>singular</u2:hasCardinality>
+  </u2:UnitName>
+  <u2:Unit rdf:about="_21583eea">
+    <u2:hasAlias>
+      <u2:UnitName rdf:about="roentgen">
+        <u2:hasSymbol>R</u2:hasSymbol>
+        <u2:namesUnit rdf:resource="_21583eea"/>
+        <u2:hasCardinality>singular</u2:hasCardinality>
+      </u2:UnitName>
+    </u2:hasAlias>
+    <u2:hasDefinition>2.58e-4 C/kg</u2:hasDefinition>
+  </u2:Unit>
+  <u2:Unit rdf:about="_b4bfffeb">
+    <u2:hasSymbol>h</u2:hasSymbol>
+    <u2:hasSymbol>hr</u2:hasSymbol>
     <u2:hasName>
-      <u2:UnitName rdf:about="day">
-        <u2:hasSymbol>d</u2:hasSymbol>
-        <u2:namesUnit rdf:resource="_41b343dd"/>
+      <u2:UnitName rdf:about="hour">
+        <u2:hasSymbol>h</u2:hasSymbol>
+        <u2:namesUnit rdf:resource="_b4bfffeb"/>
         <u2:hasCardinality>singular</u2:hasCardinality>
       </u2:UnitName>
     </u2:hasName>
-    <u2:hasDefinition>24 h</u2:hasDefinition>
+    <u2:hasDefinition>60 min</u2:hasDefinition>
   </u2:Unit>
-  <u2:UnitName rdf:about="are">
-    <u2:hasSymbol>a</u2:hasSymbol>
+  <u2:Unit rdf:about="_cb31a312">
+    <u2:hasAlias>
+      <u2:UnitName rdf:about="rem">
+        <u2:namesUnit rdf:resource="_cb31a312"/>
+        <u2:hasCardinality>singular</u2:hasCardinality>
+      </u2:UnitName>
+    </u2:hasAlias>
+    <u2:hasDefinition>cSv</u2:hasDefinition>
+  </u2:Unit>
+  <u2:Unit rdf:about="_dc71c5c4">
+    <u2:hasAlias>
+      <u2:UnitName rdf:about="hectare">
+        <u2:namesUnit rdf:resource="_dc71c5c4"/>
+        <u2:hasCardinality>singular</u2:hasCardinality>
+      </u2:UnitName>
+    </u2:hasAlias>
+    <u2:hasDefinition>100 are</u2:hasDefinition>
+  </u2:Unit>
+  <u2:Unit rdf:about="_d6bca1da">
+    <u2:hasAlias>
+      <u2:UnitName rdf:about="are">
+        <u2:hasSymbol>a</u2:hasSymbol>
+        <u2:namesUnit rdf:resource="_d6bca1da"/>
+        <u2:hasCardinality>singular</u2:hasCardinality>
+      </u2:UnitName>
+    </u2:hasAlias>
+    <u2:hasDefinition>dam^2</u2:hasDefinition>
+  </u2:Unit>
+  <u2:UnitName rdf:about="astronomical_unit">
+    <u2:hasSymbol>ua</u2:hasSymbol>
     <u2:namesUnit>
-      <u2:Unit rdf:about="_d6bca1da">
-        <u2:hasAlias rdf:resource="are"/>
-        <u2:hasDefinition>dam^2</u2:hasDefinition>
-      </u2:Unit>
-    </u2:namesUnit>
-    <u2:hasCardinality>singular</u2:hasCardinality>
-  </u2:UnitName>
-  <u2:UnitName rdf:about="barn">
-    <u2:hasSymbol>b</u2:hasSymbol>
-    <u2:namesUnit>
-      <u2:Unit rdf:about="_5d6eaecf">
-        <u2:hasAlias rdf:resource="barn"/>
-        <u2:hasDefinition>100 fm^2</u2:hasDefinition>
-      </u2:Unit>
-    </u2:namesUnit>
-    <u2:hasCardinality>singular</u2:hasCardinality>
-  </u2:UnitName>
-  <u2:UnitName rdf:about="hectare">
-    <u2:namesUnit>
-      <u2:Unit rdf:about="_dc71c5c4">
-        <u2:hasAlias rdf:resource="hectare"/>
-        <u2:hasDefinition>100 are</u2:hasDefinition>
-      </u2:Unit>
-    </u2:namesUnit>
-    <u2:hasCardinality>singular</u2:hasCardinality>
-  </u2:UnitName>
-  <u2:UnitName rdf:about="roentgen">
-    <u2:hasSymbol>R</u2:hasSymbol>
-    <u2:namesUnit>
-      <u2:Unit rdf:about="_21583eea">
-        <u2:hasAlias rdf:resource="roentgen"/>
-        <u2:hasDefinition>2.58e-4 C/kg</u2:hasDefinition>
+      <u2:Unit rdf:about="_3ae81032">
+        <u2:hasAlias rdf:resource="astronomical_unit"/>
+        <u2:hasDefinition>1.495979e11 m</u2:hasDefinition>
       </u2:Unit>
     </u2:namesUnit>
     <u2:hasCardinality>singular</u2:hasCardinality>
@@ -376,13 +389,34 @@
     </u2:hasAlias>
     <u2:hasDefinition>3.7e10 Bq</u2:hasDefinition>
   </u2:Unit>
-  <u2:Unit rdf:about="_f7ddc606">
+  <u2:Unit rdf:about="_5d6eaecf">
     <u2:hasAlias>
-      <u2:UnitName rdf:about="bar">
-        <u2:namesUnit rdf:resource="_f7ddc606"/>
+      <u2:UnitName rdf:about="barn">
+        <u2:hasSymbol>b</u2:hasSymbol>
+        <u2:namesUnit rdf:resource="_5d6eaecf"/>
         <u2:hasCardinality>singular</u2:hasCardinality>
       </u2:UnitName>
     </u2:hasAlias>
-    <u2:hasDefinition>1000 hPa</u2:hasDefinition>
+    <u2:hasDefinition>100 fm^2</u2:hasDefinition>
+  </u2:Unit>
+  <u2:Unit rdf:about="_41b343dd">
+    <u2:hasSymbol>d</u2:hasSymbol>
+    <u2:hasName>
+      <u2:UnitName rdf:about="day">
+        <u2:hasSymbol>d</u2:hasSymbol>
+        <u2:namesUnit rdf:resource="_41b343dd"/>
+        <u2:hasCardinality>singular</u2:hasCardinality>
+      </u2:UnitName>
+    </u2:hasName>
+    <u2:hasDefinition>24 h</u2:hasDefinition>
+  </u2:Unit>
+  <u2:Unit rdf:about="_3b82dba2">
+    <u2:hasAlias>
+      <u2:UnitName rdf:about="nautical_mile">
+        <u2:namesUnit rdf:resource="_3b82dba2"/>
+        <u2:hasCardinality>singular</u2:hasCardinality>
+      </u2:UnitName>
+    </u2:hasAlias>
+    <u2:hasDefinition>1852 m</u2:hasDefinition>
   </u2:Unit>
 </rdf:RDF>

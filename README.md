@@ -7,30 +7,22 @@ Conversion of [UDUnits](http://www.unidata.ucar.edu/software/udunits/) XML files
 
 You will need the [sbt tool](http://www.scala-sbt.org/download.html).
 
-Starting from https://github.com/Unidata/UDUNITS-2/tree/master/lib, follow the links
-until finding the one for the raw version of the XML file to be converted, and download that file somewhere
-on your computer. Then run the `udunits2rdf` program to generate the RDF version.
+The original XML files are included in this repository. If there is a new version of any
+of these files:
+- go to https://github.com/Unidata/UDUNITS-2/tree/master/lib
+- follow the links until finding the raw version of the updated XML file
+- download the file to `src/main/resources/`.
 
-A complete session on the command line:
-
+For example:
 ```shell
 $ curl "https://raw.githubusercontent.com/Unidata/UDUNITS-2/master/lib/udunits2-accepted.xml" -o src/main/resources/udunits2-accepted.xml
-$ sbt
-> run --namespace http://mmisw.org/ont/mmitest/udunits2-accepted/ --xml src/main/resources/udunits2-accepted.xml
-[info] Running org.mmisw.udunits2rdf.udunits2rdf --namespace http://mmisw.org/ont/mmitest/udunits2-accepted/ --xml src/main/resources/udunits2-accepted.xml
-udunits2rdf conversion
-date:   Tue Jul 29 22:12:51 PDT 2014
-input:  src/main/resources/udunits2-accepted.xml
-output: src/main/resources/udunits2-accepted.rdf
+```
+Script `scripts/download.sh` helps do all downloads with a single command.
 
-conversion stats:
-  unitsInInput                    = 23
-  unitsInOutput                   = 23
-  unitNamesInOutput               = 41
-  unitsWithNoDef                  = 0
-  unitsWithMultipleDefs           = 0
-  unitsWithMultipleSingularNames  = 0
-  unitsWithMultiplePluralNames    = 0
+Then run the `udunits2rdf` program to generate the RDF version of the XML files:
+
+```shell
+$ sbt run
 ```
 
-Scripts under`scripts/` help do all downloads and conversions with single commands.
+This program reads in configuration parameters from `src/main/resources/application.conf`.

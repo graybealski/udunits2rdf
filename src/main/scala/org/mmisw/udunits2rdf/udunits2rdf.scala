@@ -1,80 +1,49 @@
 package org.mmisw.udunits2rdf
 
 import java.io.PrintWriter
-import scala.collection.mutable
-
+import com.typesafe.config.ConfigFactory
+import scala.collection.JavaConversions._
 
 /**
  * main program.
  */
 object udunits2rdf extends App {
 
-  /**
-   * helper to process arguments and run program.
-   * @param opts       map of options values
-   * @param required   required keys
-   * @param block  block to execute
-   */
-  def withOptions(opts: mutable.Map[String, String], required: String*)(block : => Unit) {
-    val defaults = {
-      val sep = "\n    "
-      sep + (for ((k,v) <- opts.toMap) yield s"$k = $v").mkString(sep)
-    }
-    val usage =
-      s"""
-        | USAGE:
-        |   udunits2rdf --basedefs ns --namespace ns --xml xml [--rdf rdf]
-        | Example:
-        |   udunits2rdf --basedefs  http://mmisw.org/ont/mmitest/udunits2/  --namespace http://mmisw.org/ont/mmitest/udunits2-accepted/ --xml src/main/resources/udunits2-accepted.xml
-        |   generates
-        |       src/main/resources/udunits2.n3
-        |       src/main/resources/udunits2-accepted.rdf
-        |
-        | Defaults: $defaults
-        |
-      """.stripMargin
+  val config = ConfigFactory.load().getConfig("udunits2rdf")
 
-    next(args.toList)
+  val origDir             = config.getString("origDir")
+  val basedefsNamespace   = config.getString("basedefs")
+  val baseNamespace       = config.getString("baseNamespace")
 
-    def next(list: List[String]) {
-      list match {
-        case "--basedefs" :: namespace :: args => opts("basedefs") = namespace; next(args)
-        case "--namespace" :: namespace :: args => opts("namespace") = namespace; next(args)
-        case "--xml" :: xml :: args => opts("xml") = xml; next(args)
-        case "--rdf" :: rdf :: args => opts("rdf") = rdf; next(args)
-        case Nil => if (required.forall(opts.contains)) block else println(usage)
-        case _ => println(usage)
-      }
-    }
-  }
+  config.getStringList("vocs") foreach processVoc
 
-  val opts = mutable.Map[String, String]()
+  def processVoc(vocName: String) {
 
-  withOptions(opts, "basedefs", "namespace", "xml") {
-    val basedefsNamespace   = opts("basedefs")
-    val xmlFilename = opts("xml")
-    val rdfFilename = opts.getOrElse("rdf", xmlFilename.replaceAll("\\.xml$", ".rdf"))
+    val xmlFilename         = s"src/main/resources/udunits2-$vocName.xml"
+    val namespace           = s"$baseNamespace/udunits2-$vocName/"
+
+    val rdfFilename   = xmlFilename.replaceAll("\\.xml$", ".rdf")
     val statsFilename = xmlFilename.replaceAll("\\.xml$", ".conv-stats.txt")
-    val namespace   = opts("namespace")
 
     val baseDefs = new BaseDefs(basedefsNamespace)
     if (namespace != baseDefs.namespace) baseDefs.saveModel("src/main/resources/udunits2.n3")
 
     val xmlIn = scala.xml.XML.loadFile(xmlFilename)
+
     val converter = if (xmlFilename.endsWith("prefixes.xml"))
-                    new PrefixConverter(xmlIn, baseDefs, namespace)
-                    else new UnitConverter(xmlIn, baseDefs, namespace)
+      new PrefixConverter(xmlIn, baseDefs, namespace) else
+      new UnitConverter(xmlIn, baseDefs, namespace)
+
     val model = converter.convert
 
     def getStats = {
       s"""udunits2rdf conversion
-           |date:   ${new java.util.Date()}
-           |input:  $xmlFilename
-           |output: $rdfFilename
-           |
-           |conversion stats:
-           |${converter.getStats}
-        """.stripMargin
+         |input:  $xmlFilename
+         |output: $rdfFilename
+         |
+         |conversion stats:
+         |${converter.getStats}
+      """.stripMargin
     }
 
     def writeStats(statsStr: String) {
@@ -82,6 +51,38 @@ object udunits2rdf extends App {
       pw.printf(statsStr)
       pw.close()
     }
+
+    def addMetadata() {
+      val omvmmi = "http://mmisw.org/ont/mmi/20081020/ontologyMetadata/"
+      val omv    = "http://omv.ontoware.org/2005/05/ontology#"
+
+      model.setNsPrefix("omvmmi", omvmmi)
+      model.setNsPrefix("omv", omv)
+
+      val origVocab = origDir + "udunits2-" + vocName + ".xml"
+
+      converter.ontology.addStringProperty(omvmmi + "hasResourceType", "unit")
+      converter.ontology.addStringProperty(omvmmi + "hasContentCreator", "Unidata")
+      converter.ontology.addStringProperty(omvmmi + "origVocUri", origVocab)
+      converter.ontology.addStringProperty(omvmmi + "origVocManager", "Steve Emmerson (303-497-8648, emmerson@ucar.edu, http://www.unidata.ucar.edu/staff/steve/)")
+      converter.ontology.addStringProperty(omvmmi + "contact",        "Steve Emmerson (303-497-8648, emmerson@ucar.edu, http://www.unidata.ucar.edu/staff/steve/)")
+      converter.ontology.addStringProperty(omvmmi + "contactRole",    "Content Manager")
+      converter.ontology.addStringProperty(omvmmi + "temporaryMmiRole", "Ontology Producer")
+      converter.ontology.addStringProperty(omvmmi + "creditRequired", "no")
+      converter.ontology.addStringProperty(omvmmi + "origVocDocumentationUri", origVocab)
+      converter.ontology.addStringProperty(omvmmi + "origVocKeywords", "units, Unidata, udunits, scientific units, base units")
+      converter.ontology.addStringProperty(omvmmi + "origVocSyntaxFormat", "XML")
+
+      converter.ontology.addStringProperty(omv + "name", "udunits2-" + vocName)
+      converter.ontology.addStringProperty(omv + "acronym", "udunits2-" + vocName)
+      converter.ontology.addStringProperty(omv + "documentation", "http://www.unidata.ucar.edu/software/udunits/udunits-2-units.html")
+      converter.ontology.addStringProperty(omv + "hasCreator", "MMI")
+      converter.ontology.addStringProperty(omv + "reference", "https://github.com/mmisw/udunits2rdf/wiki")
+      converter.ontology.addStringProperty(omv + "hasContributor", "John Graybeal, Carlos Rueda")
+      converter.ontology.addStringProperty(omv + "keywords", "units, Unidata, udunits, scientific units, base units")
+    }
+
+    addMetadata()
 
     util.saveModel(namespace, model, rdfFilename + ".n3")
     util.saveModel(namespace, model, rdfFilename)

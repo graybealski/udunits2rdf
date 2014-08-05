@@ -1,67 +1,44 @@
-@prefix :        <http://mmisw.org/ont/mmitest/udunits2-base/> .
+@prefix :        <http://mmisw.org/ont/mmi/udunits2-base/> .
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix u2:      <http://mmisw.org/ont/mmitest/udunits2/> .
+@prefix omvmmi:  <http://mmisw.org/ont/mmi/20081020/ontologyMetadata/> .
+@prefix u2:      <http://mmisw.org/ont/mmi/udunits2/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix omv:     <http://omv.ontoware.org/2005/05/ontology#> .
 
-:ampere
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:hasSymbol "A" ;
-      u2:namesUnit :_cc1e0b1e .
-
-u2:hasCardinality
-      rdfs:domain u2:UnitName ;
-      rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
-
-u2:Unit
-      a       owl:Class ;
-      rdfs:label "Unit" .
-
-:_3aca8f51
-      a       u2:Unit ;
-      u2:hasDefinition "kelvin" ;
-      u2:hasName :kelvin ;
-      u2:hasSymbol "K" .
-
-:_352f7829
-      a       u2:Unit ;
-      u2:hasDefinition "second" ;
-      u2:hasName :second ;
-      u2:hasSymbol "s" .
-
-:_5b09ab94
-      a       u2:Unit ;
-      u2:hasDefinition "kilogram" ;
-      u2:hasName :kilogram ;
-      u2:hasSymbol "kg" .
-
-:_a2fff373
-      a       u2:Unit ;
-      u2:hasDefinition "mole" ;
-      u2:hasName :mole ;
-      u2:hasSymbol "mol" .
-
-:second
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:hasSymbol "s" ;
-      u2:namesUnit :_352f7829 .
-
-:metre
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:namesUnit :_17272b9d .
-
-:candela
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:hasSymbol "cd" ;
-      u2:namesUnit :_a6a6f5b1 .
+<>    a       owl:Ontology ;
+      omvmmi:contact "Steve Emmerson (303-497-8648, emmerson@ucar.edu, http://www.unidata.ucar.edu/staff/steve/)" ;
+      omvmmi:contactRole "Content Manager" ;
+      omvmmi:creditRequired
+              "no" ;
+      omvmmi:hasContentCreator
+              "Unidata" ;
+      omvmmi:hasResourceType
+              "unit" ;
+      omvmmi:origVocDocumentationUri
+              "https://raw.githubusercontent.com/Unidata/UDUNITS-2/master/lib/udunits2-base.xml" ;
+      omvmmi:origVocKeywords
+              "units, Unidata, udunits, scientific units, base units" ;
+      omvmmi:origVocManager
+              "Steve Emmerson (303-497-8648, emmerson@ucar.edu, http://www.unidata.ucar.edu/staff/steve/)" ;
+      omvmmi:origVocSyntaxFormat
+              "XML" ;
+      omvmmi:origVocUri "https://raw.githubusercontent.com/Unidata/UDUNITS-2/master/lib/udunits2-base.xml" ;
+      omvmmi:temporaryMmiRole
+              "Ontology Producer" ;
+      omv:acronym "udunits2-base" ;
+      omv:documentation "http://www.unidata.ucar.edu/software/udunits/udunits-2-units.html" ;
+      omv:hasContributor "John Graybeal, Carlos Rueda" ;
+      omv:hasCreator "MMI" ;
+      omv:keywords "units, Unidata, udunits, scientific units, base units" ;
+      omv:name "udunits2-base" ;
+      omv:reference "https://github.com/mmisw/udunits2rdf/wiki" .
 
 u2:hasDefinition
       a       owl:FunctionalProperty ;
       rdfs:domain u2:Unit ;
-      rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+      rdfs:range xsd:string .
 
 :_17272b9d
       a       u2:Unit ;
@@ -70,49 +47,32 @@ u2:hasDefinition
       u2:hasName :meter ;
       u2:hasSymbol "m" .
 
-:kilogram
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:hasSymbol "kg" ;
-      u2:namesUnit :_5b09ab94 .
-
-u2:hasAlias
-      rdfs:domain u2:Unit ;
-      rdfs:range u2:UnitName .
+:_3aca8f51
+      a       u2:Unit ;
+      u2:hasDefinition "kelvin" ;
+      u2:hasName :kelvin ;
+      u2:hasSymbol "K" .
 
 u2:namesUnit
       a       owl:FunctionalProperty ;
       rdfs:domain u2:UnitName ;
       rdfs:range u2:Unit .
 
-:mole
+u2:hasAlias
+      rdfs:domain u2:Unit ;
+      rdfs:range u2:UnitName .
+
+:_a2fff373
+      a       u2:Unit ;
+      u2:hasDefinition "mole" ;
+      u2:hasName :mole ;
+      u2:hasSymbol "mol" .
+
+:kilogram
       a       u2:UnitName ;
       u2:hasCardinality "singular" ;
-      u2:hasSymbol "mol" ;
-      u2:namesUnit :_a2fff373 .
-
-u2:hasPrefixName
-      rdfs:domain u2:Prefix ;
-      rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
-
-u2:Prefix
-      a       owl:Class ;
-      rdfs:label "Prefix" .
-
-u2:hasValue
-      a       owl:FunctionalProperty ;
-      rdfs:domain u2:Prefix ;
-      rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
-
-:_a6a6f5b1
-      a       u2:Unit ;
-      u2:hasDefinition "candela" ;
-      u2:hasName :candela ;
-      u2:hasSymbol "cd" .
-
-u2:hasSymbol
-      rdfs:domain u2:UnitName ;
-      rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+      u2:hasSymbol "kg" ;
+      u2:namesUnit :_5b09ab94 .
 
 :meter
       a       u2:UnitName ;
@@ -120,14 +80,29 @@ u2:hasSymbol
       u2:hasSymbol "m" ;
       u2:namesUnit :_17272b9d .
 
-u2:UnitName
-      a       owl:Class ;
-      rdfs:label "UnitName" .
-
 u2:hasName
       a       owl:FunctionalProperty ;
       rdfs:domain u2:Unit ;
       rdfs:range u2:UnitName .
+
+u2:hasPrefixName
+      rdfs:domain u2:Prefix ;
+      rdfs:range xsd:string .
+
+u2:hasSymbol
+      rdfs:domain u2:UnitName ;
+      rdfs:range xsd:string .
+
+:kelvin
+      a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:hasSymbol "K" ;
+      u2:namesUnit :_3aca8f51 .
+
+u2:hasValue
+      a       owl:FunctionalProperty ;
+      rdfs:domain u2:Prefix ;
+      rdfs:range xsd:string .
 
 :_cc1e0b1e
       a       u2:Unit ;
@@ -135,8 +110,65 @@ u2:hasName
       u2:hasName :ampere ;
       u2:hasSymbol "A" .
 
-:kelvin
+:candela
       a       u2:UnitName ;
       u2:hasCardinality "singular" ;
-      u2:hasSymbol "K" ;
-      u2:namesUnit :_3aca8f51 .
+      u2:hasSymbol "cd" ;
+      u2:namesUnit :_a6a6f5b1 .
+
+:mole
+      a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:hasSymbol "mol" ;
+      u2:namesUnit :_a2fff373 .
+
+:ampere
+      a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:hasSymbol "A" ;
+      u2:namesUnit :_cc1e0b1e .
+
+:_a6a6f5b1
+      a       u2:Unit ;
+      u2:hasDefinition "candela" ;
+      u2:hasName :candela ;
+      u2:hasSymbol "cd" .
+
+:second
+      a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:hasSymbol "s" ;
+      u2:namesUnit :_352f7829 .
+
+:_352f7829
+      a       u2:Unit ;
+      u2:hasDefinition "second" ;
+      u2:hasName :second ;
+      u2:hasSymbol "s" .
+
+u2:Prefix
+      a       owl:Class ;
+      rdfs:label "Prefix" .
+
+:metre
+      a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:namesUnit :_17272b9d .
+
+u2:Unit
+      a       owl:Class ;
+      rdfs:label "Unit" .
+
+u2:hasCardinality
+      rdfs:domain u2:UnitName ;
+      rdfs:range xsd:string .
+
+:_5b09ab94
+      a       u2:Unit ;
+      u2:hasDefinition "kilogram" ;
+      u2:hasName :kilogram ;
+      u2:hasSymbol "kg" .
+
+u2:UnitName
+      a       owl:Class ;
+      rdfs:label "UnitName" .
