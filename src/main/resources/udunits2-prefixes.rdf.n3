@@ -7,11 +7,6 @@
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix omv:     <http://omv.ontoware.org/2005/05/ontology#> .
 
-u2:hasDefinition
-      a       owl:FunctionalProperty ;
-      rdfs:domain u2:Unit ;
-      rdfs:range xsd:string .
-
 <>    a       owl:Ontology ;
       omvmmi:contact "Steve Emmerson (303-497-8648, emmerson@ucar.edu, http://www.unidata.ucar.edu/staff/steve/)" ;
       omvmmi:contactRole "Content Manager" ;
@@ -40,15 +35,20 @@ u2:hasDefinition
       omv:name "udunits2-prefixes" ;
       omv:reference "https://github.com/mmisw/udunits2rdf/wiki" .
 
+:yotta
+      a       u2:Prefix ;
+      u2:hasSymbol "Y" ;
+      u2:hasValue "1e24" .
+
 :kilo
       a       u2:Prefix ;
       u2:hasSymbol "k" ;
       u2:hasValue "1e3" .
 
-:yotta
+:deci
       a       u2:Prefix ;
-      u2:hasSymbol "Y" ;
-      u2:hasValue "1e24" .
+      u2:hasSymbol "d" ;
+      u2:hasValue ".1" .
 
 :exa  a       u2:Prefix ;
       u2:hasSymbol "E" ;
@@ -58,78 +58,6 @@ u2:hasDefinition
       a       u2:Prefix ;
       u2:hasSymbol "z" ;
       u2:hasValue "1e-21" .
-
-u2:namesUnit
-      a       owl:FunctionalProperty ;
-      rdfs:domain u2:UnitName ;
-      rdfs:range u2:Unit .
-
-u2:hasAlias
-      rdfs:domain u2:Unit ;
-      rdfs:range u2:UnitName .
-
-:milli
-      a       u2:Prefix ;
-      u2:hasSymbol "m" ;
-      u2:hasValue "1e-3" .
-
-:yocto
-      a       u2:Prefix ;
-      u2:hasSymbol "y" ;
-      u2:hasValue "1e-24" .
-
-:femto
-      a       u2:Prefix ;
-      u2:hasSymbol "f" ;
-      u2:hasValue "1e-15" .
-
-:mega
-      a       u2:Prefix ;
-      u2:hasSymbol "M" ;
-      u2:hasValue "1e6" .
-
-:hecto
-      a       u2:Prefix ;
-      u2:hasSymbol "h" ;
-      u2:hasValue "100" .
-
-u2:hasName
-      a       owl:FunctionalProperty ;
-      rdfs:domain u2:Unit ;
-      rdfs:range u2:UnitName .
-
-:giga
-      a       u2:Prefix ;
-      u2:hasSymbol "G" ;
-      u2:hasValue "1e9" .
-
-u2:hasPrefixName
-      rdfs:domain u2:Prefix ;
-      rdfs:range xsd:string .
-
-:peta
-      a       u2:Prefix ;
-      u2:hasSymbol "P" ;
-      u2:hasValue "1e15" .
-
-u2:hasSymbol
-      rdfs:domain u2:UnitName ;
-      rdfs:range xsd:string .
-
-u2:hasValue
-      a       owl:FunctionalProperty ;
-      rdfs:domain u2:Prefix ;
-      rdfs:range xsd:string .
-
-:tera
-      a       u2:Prefix ;
-      u2:hasSymbol "T" ;
-      u2:hasValue "1e12" .
-
-:deci
-      a       u2:Prefix ;
-      u2:hasSymbol "d" ;
-      u2:hasValue ".1" .
 
 :atto
       a       u2:Prefix ;
@@ -141,6 +69,11 @@ u2:hasValue
       u2:hasSymbol "p" ;
       u2:hasValue "1e-12" .
 
+:milli
+      a       u2:Prefix ;
+      u2:hasSymbol "m" ;
+      u2:hasValue "1e-3" .
+
 :centi
       a       u2:Prefix ;
       u2:hasSymbol "c" ;
@@ -151,33 +84,65 @@ u2:hasValue
       u2:hasSymbol "da" ;
       u2:hasValue "10" .
 
+:yocto
+      a       u2:Prefix ;
+      u2:hasSymbol "y" ;
+      u2:hasValue "1e-24" .
+
+:femto
+      a       u2:Prefix ;
+      u2:hasSymbol "f" ;
+      u2:hasValue "1e-15" .
+
 :nano
       a       u2:Prefix ;
       u2:hasSymbol "n" ;
       u2:hasValue "1e-9" .
 
+:mega
+      a       u2:Prefix ;
+      u2:hasSymbol "M" ;
+      u2:hasValue "1e6" .
+
+:hecto
+      a       u2:Prefix ;
+      u2:hasSymbol "h" ;
+      u2:hasValue "100" .
+
 u2:Prefix
       a       owl:Class ;
       rdfs:label "Prefix" .
 
-u2:Unit
-      a       owl:Class ;
-      rdfs:label "Unit" .
+:giga
+      a       u2:Prefix ;
+      u2:hasSymbol "G" ;
+      u2:hasValue "1e9" .
 
 :zetta
       a       u2:Prefix ;
       u2:hasSymbol "Z" ;
       u2:hasValue "1e21" .
 
+u2:hasPrefixName
+      rdfs:domain u2:Prefix ;
+      rdfs:range xsd:string .
+
 :micro
       a       u2:Prefix ;
       u2:hasSymbol "u" , "μ" , "µ" ;
       u2:hasValue "1e-6" .
 
-u2:hasCardinality
-      rdfs:domain u2:UnitName ;
+:peta
+      a       u2:Prefix ;
+      u2:hasSymbol "P" ;
+      u2:hasValue "1e15" .
+
+u2:hasValue
+      a       owl:FunctionalProperty ;
+      rdfs:domain u2:Prefix ;
       rdfs:range xsd:string .
 
-u2:UnitName
-      a       owl:Class ;
-      rdfs:label "UnitName" .
+:tera
+      a       u2:Prefix ;
+      u2:hasSymbol "T" ;
+      u2:hasValue "1e12" .

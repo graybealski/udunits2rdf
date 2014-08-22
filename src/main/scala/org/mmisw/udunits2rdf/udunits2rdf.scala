@@ -15,6 +15,13 @@ object udunits2rdf extends App {
   val basedefsNamespace   = config.getString("basedefs")
   val baseNamespace       = config.getString("baseNamespace")
 
+  def generateBaseDefsFile() {
+    val baseDefs = new BaseDefs(basedefsNamespace)
+    baseDefs.addDefinitionsToModel() // with all definitions.
+    baseDefs.saveModel("src/main/resources/udunits2.n3")
+  }
+  generateBaseDefsFile
+
   config.getStringList("vocs") foreach processVoc
 
   def processVoc(vocName: String) {
@@ -25,12 +32,14 @@ object udunits2rdf extends App {
     val rdfFilename   = xmlFilename.replaceAll("\\.xml$", ".rdf")
     val statsFilename = xmlFilename.replaceAll("\\.xml$", ".conv-stats.txt")
 
+    val forPrefix = xmlFilename.endsWith("prefixes.xml")
+
     val baseDefs = new BaseDefs(basedefsNamespace)
-    if (namespace != baseDefs.namespace) baseDefs.saveModel("src/main/resources/udunits2.n3")
+    baseDefs.addDefinitionsToModel(Some(vocName))  // #9
 
     val xmlIn = scala.xml.XML.loadFile(xmlFilename)
 
-    val converter = if (xmlFilename.endsWith("prefixes.xml"))
+    val converter = if (forPrefix)
       new PrefixConverter(xmlIn, baseDefs, namespace) else
       new UnitConverter(xmlIn, baseDefs, namespace)
 

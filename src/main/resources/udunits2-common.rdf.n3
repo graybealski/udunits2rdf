@@ -934,10 +934,6 @@ u2:hasName
       rdfs:domain u2:Unit ;
       rdfs:range u2:UnitName .
 
-u2:hasPrefixName
-      rdfs:domain u2:Prefix ;
-      rdfs:range xsd:string .
-
 :statmho
       a       u2:UnitName ;
       u2:hasCardinality "singular" ;
@@ -947,11 +943,6 @@ u2:hasPrefixName
       a       u2:Unit ;
       u2:hasAlias :ton_force , :tons_force , :force_ton ;
       u2:hasDefinition "2000 force_pound" .
-
-u2:hasValue
-      a       owl:FunctionalProperty ;
-      rdfs:domain u2:Prefix ;
-      rdfs:range xsd:string .
 
 :light_year
       a       u2:UnitName ;
@@ -1174,12 +1165,6 @@ u2:hasValue
       u2:hasCardinality "singular" ;
       u2:namesUnit :_6649a63c .
 
-:_e14a3aa7
-      a       u2:Unit ;
-      u2:hasAlias :degrees_R , :deg_R , :degsR , :degree_rankine , :degreeR , :degrees_rankine , :degR , :degs_R , :degreesR , :degree_R ;
-      u2:hasDefinition "K/1.8" ;
-      u2:hasSymbol "°R" .
-
 :_a17898db
       a       u2:Unit ;
       u2:hasAlias :chemical_faraday ;
@@ -1189,6 +1174,12 @@ u2:hasValue
       a       u2:UnitName ;
       u2:hasCardinality "singular" ;
       u2:namesUnit :_8721f5c2 .
+
+:_e14a3aa7
+      a       u2:Unit ;
+      u2:hasAlias :degrees_R , :deg_R , :degsR , :degree_rankine , :degreeR , :degrees_rankine , :degR , :degs_R , :degreesR , :degree_R ;
+      u2:hasDefinition "K/1.8" ;
+      u2:hasSymbol "°R" .
 
 :_bdeedbb8
       a       u2:Unit ;
@@ -2942,10 +2933,6 @@ u2:UnitName
       a       u2:UnitName ;
       u2:hasCardinality "plural" ;
       u2:namesUnit :_040938f3 .
-
-u2:Prefix
-      a       owl:Class ;
-      rdfs:label "Prefix" .
 
 u2:hasCardinality
       rdfs:domain u2:UnitName ;

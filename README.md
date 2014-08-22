@@ -27,3 +27,19 @@ $ sbt run
 ```
 
 This program reads in configuration parameters from `src/main/resources/application.conf`.
+
+### Noteworthy changes
+
+- 2014-08-22
+  - for each vocab, include only relevant base definitions #9
+
+- 2014-08-04
+  - general code adjustments to simplify execution
+  - include metadata
+
+- 2014-07-30
+  - capture base definitions separately
+  - more complete conversion, but still needs adjustments
+
+- 2014-07-13
+  - first "new" version based on old "watchdog" code.

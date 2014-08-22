@@ -219,10 +219,6 @@ u2:hasName
       rdfs:domain u2:Unit ;
       rdfs:range u2:UnitName .
 
-u2:hasPrefixName
-      rdfs:domain u2:Prefix ;
-      rdfs:range xsd:string .
-
 :_6a30db22
       a       u2:Unit ;
       u2:hasDefinition "Wb/A" ;
@@ -235,17 +231,17 @@ u2:hasPrefixName
       u2:hasName :katal ;
       u2:hasSymbol "kat" .
 
-:katal
-      a       u2:UnitName ;
-      u2:hasCardinality "singular" ;
-      u2:hasSymbol "kat" ;
-      u2:namesUnit :_a06d5ce7 .
-
 :pascal
       a       u2:UnitName ;
       u2:hasCardinality "singular" ;
       u2:hasSymbol "Pa" ;
       u2:namesUnit :_c1fa6dc6 .
+
+:katal
+      a       u2:UnitName ;
+      u2:hasCardinality "singular" ;
+      u2:hasSymbol "kat" ;
+      u2:namesUnit :_a06d5ce7 .
 
 :_f425db5a
       a       u2:Unit ;
@@ -258,11 +254,6 @@ u2:hasPrefixName
       u2:hasCardinality "singular" ;
       u2:hasSymbol "T" ;
       u2:namesUnit :_993c8f1a .
-
-u2:hasValue
-      a       owl:FunctionalProperty ;
-      rdfs:domain u2:Prefix ;
-      rdfs:range xsd:string .
 
 :_be99ec61
       a       u2:Unit ;
@@ -305,10 +296,6 @@ u2:hasValue
       u2:hasDefinition "radian" ;
       u2:hasName :radian ;
       u2:hasSymbol "rad" .
-
-u2:Prefix
-      a       owl:Class ;
-      rdfs:label "Prefix" .
 
 u2:Unit
       a       owl:Class ;

@@ -29,9 +29,6 @@
     <omv:acronym>udunits2-common</omv:acronym>
     <omvmmi:origVocKeywords>units, Unidata, udunits, scientific units, base units</omvmmi:origVocKeywords>
   </owl:Ontology>
-  <owl:Class rdf:about="http://mmisw.org/ont/mmi/udunits2/Prefix">
-    <rdfs:label>Prefix</rdfs:label>
-  </owl:Class>
   <owl:Class rdf:about="http://mmisw.org/ont/mmi/udunits2/Unit">
     <rdfs:label>Unit</rdfs:label>
   </owl:Class>
@@ -39,20 +36,16 @@
     <rdfs:label>UnitName</rdfs:label>
   </owl:Class>
   <owl:FunctionalProperty rdf:about="http://mmisw.org/ont/mmi/udunits2/hasDefinition">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="http://mmisw.org/ont/mmi/udunits2/Unit"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </owl:FunctionalProperty>
   <owl:FunctionalProperty rdf:about="http://mmisw.org/ont/mmi/udunits2/namesUnit">
-    <rdfs:range rdf:resource="http://mmisw.org/ont/mmi/udunits2/Unit"/>
     <rdfs:domain rdf:resource="http://mmisw.org/ont/mmi/udunits2/UnitName"/>
+    <rdfs:range rdf:resource="http://mmisw.org/ont/mmi/udunits2/Unit"/>
   </owl:FunctionalProperty>
   <owl:FunctionalProperty rdf:about="http://mmisw.org/ont/mmi/udunits2/hasName">
-    <rdfs:range rdf:resource="http://mmisw.org/ont/mmi/udunits2/UnitName"/>
     <rdfs:domain rdf:resource="http://mmisw.org/ont/mmi/udunits2/Unit"/>
-  </owl:FunctionalProperty>
-  <owl:FunctionalProperty rdf:about="http://mmisw.org/ont/mmi/udunits2/hasValue">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="http://mmisw.org/ont/mmi/udunits2/Prefix"/>
+    <rdfs:range rdf:resource="http://mmisw.org/ont/mmi/udunits2/UnitName"/>
   </owl:FunctionalProperty>
   <u2:Unit rdf:about="_d0767833">
     <u2:hasSymbol>cmHg</u2:hasSymbol>
@@ -79,17 +72,13 @@
     <u2:hasSymbol>rpm</u2:hasSymbol>
     <u2:hasDefinition>rotation/minute</u2:hasDefinition>
   </u2:Unit>
-  <rdf:Description rdf:about="http://mmisw.org/ont/mmi/udunits2/hasPrefixName">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="http://mmisw.org/ont/mmi/udunits2/Prefix"/>
-  </rdf:Description>
   <u2:Unit rdf:about="_0e69ef04">
     <u2:hasSymbol>e</u2:hasSymbol>
     <u2:hasDefinition>1.602176487e-19 C</u2:hasDefinition>
   </u2:Unit>
   <rdf:Description rdf:about="http://mmisw.org/ont/mmi/udunits2/hasAlias">
-    <rdfs:range rdf:resource="http://mmisw.org/ont/mmi/udunits2/UnitName"/>
     <rdfs:domain rdf:resource="http://mmisw.org/ont/mmi/udunits2/Unit"/>
+    <rdfs:range rdf:resource="http://mmisw.org/ont/mmi/udunits2/UnitName"/>
   </rdf:Description>
   <u2:Unit rdf:about="_80ee5b1b">
     <u2:hasSymbol>cmH2O</u2:hasSymbol>
@@ -113,8 +102,8 @@
     <u2:hasDefinition>1e9 eV</u2:hasDefinition>
   </u2:Unit>
   <rdf:Description rdf:about="http://mmisw.org/ont/mmi/udunits2/hasSymbol">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="http://mmisw.org/ont/mmi/udunits2/UnitName"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </rdf:Description>
   <u2:Unit rdf:about="_40a22a4a">
     <u2:hasSymbol>kts</u2:hasSymbol>
@@ -158,8 +147,8 @@
     <u2:hasDefinition>1e-6</u2:hasDefinition>
   </u2:Unit>
   <rdf:Description rdf:about="http://mmisw.org/ont/mmi/udunits2/hasCardinality">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="http://mmisw.org/ont/mmi/udunits2/UnitName"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </rdf:Description>
   <u2:Unit rdf:about="_1b7fac4e">
     <u2:hasAlias>

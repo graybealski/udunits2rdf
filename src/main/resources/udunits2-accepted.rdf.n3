@@ -199,17 +199,17 @@ u2:hasSymbol
       u2:hasCardinality "singular" ;
       u2:namesUnit :_ca565b10 .
 
+:_d6bca1da
+      a       u2:Unit ;
+      u2:hasAlias :are ;
+      u2:hasDefinition "dam^2" .
+
 :_aa34964c
       a       u2:Unit ;
       u2:hasAlias :electron_volt ;
       u2:hasDefinition "1.60217733e-19 J" ;
       u2:hasName :electronvolt ;
       u2:hasSymbol "eV" .
-
-:_d6bca1da
-      a       u2:Unit ;
-      u2:hasAlias :are ;
-      u2:hasDefinition "dam^2" .
 
 :_251d0474
       a       u2:Unit ;
@@ -292,10 +292,6 @@ u2:hasName
       u2:hasSymbol "a" ;
       u2:namesUnit :_d6bca1da .
 
-u2:hasPrefixName
-      rdfs:domain u2:Prefix ;
-      rdfs:range xsd:string .
-
 :metric_ton
       a       u2:UnitName ;
       u2:hasCardinality "singular" ;
@@ -313,11 +309,6 @@ u2:hasPrefixName
       u2:hasDefinition "dm^3" ;
       u2:hasName :liter ;
       u2:hasSymbol "L" .
-
-u2:hasValue
-      a       owl:FunctionalProperty ;
-      rdfs:domain u2:Prefix ;
-      rdfs:range xsd:string .
 
 :_41b343dd
       a       u2:Unit ;
@@ -392,10 +383,6 @@ u2:hasValue
       a       u2:UnitName ;
       u2:hasCardinality "singular" ;
       u2:namesUnit :_748c9c59 .
-
-u2:Prefix
-      a       owl:Class ;
-      rdfs:label "Prefix" .
 
 :hectare
       a       u2:UnitName ;
