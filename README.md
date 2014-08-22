@@ -15,7 +15,8 @@ of these files:
 
 For example:
 ```shell
-$ curl "https://raw.githubusercontent.com/Unidata/UDUNITS-2/master/lib/udunits2-accepted.xml" -o src/main/resources/udunits2-accepted.xml
+$ XML="https://raw.githubusercontent.com/Unidata/UDUNITS-2/master/lib/udunits2-accepted.xml"
+$ curl $XML -o src/main/resources/udunits2-accepted.xml
 ```
 Script `scripts/download.sh` helps do all downloads with a single command.
 

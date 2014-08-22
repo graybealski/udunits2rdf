@@ -53,6 +53,8 @@ object udunits2rdf extends App {
     }
 
     def addMetadata() {
+      def addStr(name:String, value:String) { converter.ontology.addStringProperty(name, value) }
+
       val omvmmi = "http://mmisw.org/ont/mmi/20081020/ontologyMetadata/"
       val omv    = "http://omv.ontoware.org/2005/05/ontology#"
 
@@ -61,25 +63,28 @@ object udunits2rdf extends App {
 
       val origVocab = origDir + "udunits2-" + vocName + ".xml"
 
-      converter.ontology.addStringProperty(omvmmi + "hasResourceType", "unit")
-      converter.ontology.addStringProperty(omvmmi + "hasContentCreator", "Unidata")
-      converter.ontology.addStringProperty(omvmmi + "origVocUri", origVocab)
-      converter.ontology.addStringProperty(omvmmi + "origVocManager", "Steve Emmerson (303-497-8648, emmerson@ucar.edu, http://www.unidata.ucar.edu/staff/steve/)")
-      converter.ontology.addStringProperty(omvmmi + "contact",        "Steve Emmerson (303-497-8648, emmerson@ucar.edu, http://www.unidata.ucar.edu/staff/steve/)")
-      converter.ontology.addStringProperty(omvmmi + "contactRole",    "Content Manager")
-      converter.ontology.addStringProperty(omvmmi + "temporaryMmiRole", "Ontology Producer")
-      converter.ontology.addStringProperty(omvmmi + "creditRequired", "no")
-      converter.ontology.addStringProperty(omvmmi + "origVocDocumentationUri", origVocab)
-      converter.ontology.addStringProperty(omvmmi + "origVocKeywords", "units, Unidata, udunits, scientific units, base units")
-      converter.ontology.addStringProperty(omvmmi + "origVocSyntaxFormat", "XML")
+      val contact = "Steve Emmerson (303-497-8648, emmerson@ucar.edu, http://www.unidata.ucar.edu/staff/steve/)"
+      val documentation = "http://www.unidata.ucar.edu/software/udunits/udunits-2-units.html"
 
-      converter.ontology.addStringProperty(omv + "name", "udunits2-" + vocName)
-      converter.ontology.addStringProperty(omv + "acronym", "udunits2-" + vocName)
-      converter.ontology.addStringProperty(omv + "documentation", "http://www.unidata.ucar.edu/software/udunits/udunits-2-units.html")
-      converter.ontology.addStringProperty(omv + "hasCreator", "MMI")
-      converter.ontology.addStringProperty(omv + "reference", "https://github.com/mmisw/udunits2rdf/wiki")
-      converter.ontology.addStringProperty(omv + "hasContributor", "John Graybeal, Carlos Rueda")
-      converter.ontology.addStringProperty(omv + "keywords", "units, Unidata, udunits, scientific units, base units")
+      addStr(omvmmi + "hasResourceType",          "unit")
+      addStr(omvmmi + "hasContentCreator",        "Unidata")
+      addStr(omvmmi + "origVocUri",               origVocab)
+      addStr(omvmmi + "origVocManager",           contact)
+      addStr(omvmmi + "contact",                  contact)
+      addStr(omvmmi + "contactRole",              "Content Manager")
+      addStr(omvmmi + "temporaryMmiRole",         "Ontology Producer")
+      addStr(omvmmi + "creditRequired",           "no")
+      addStr(omvmmi + "origVocDocumentationUri",  origVocab)
+      addStr(omvmmi + "origVocKeywords",          "units, Unidata, udunits, scientific units, base units")
+      addStr(omvmmi + "origVocSyntaxFormat",      "XML")
+
+      addStr(omv + "name",             "udunits2-" + vocName)
+      addStr(omv + "acronym",          "udunits2-" + vocName)
+      addStr(omv + "documentation",    documentation)
+      addStr(omv + "hasCreator",       "MMI")
+      addStr(omv + "reference",        "https://github.com/mmisw/udunits2rdf/wiki")
+      addStr(omv + "hasContributor",   "John Graybeal, Carlos Rueda")
+      addStr(omv + "keywords",         "units, Unidata, udunits, scientific units, base units")
     }
 
     addMetadata()

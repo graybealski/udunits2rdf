@@ -12,7 +12,7 @@ conversion stats:
   unitsWithMultipleSingularNames  = 0
   unitsWithMultiplePluralNames    = 0
 
-  warning: repeated def or name='1/s'
-  warning: repeated def or name='J/kg'
+  Warning: repeated def or name: '1/s'
+  Warning: repeated def or name: 'J/kg'
        
       

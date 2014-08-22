@@ -97,7 +97,7 @@ class UnitConverter(xmlIn: Node, baseDefs: BaseDefs, namespace: String) extends
 
     var warnings = List[String]()
 
-    def addWarning(s: String)  { warnings = s :: warnings}
+    def addWarning(s: String)  { warnings = "Warning: " + s :: warnings}
 
     override def toString =
       s"""  unitsInInput                    = $unitsInInput
@@ -119,7 +119,7 @@ class UnitConverter(xmlIn: Node, baseDefs: BaseDefs, namespace: String) extends
   private def getUnitInstance(name: String, unit: Node): Resource = {
     if (unitInstances.contains(name)) {
       val unitInstance = unitInstances.get(name).head
-      stats.addWarning(s"warning: repeated def or name='$name'")
+      stats.addWarning(s"repeated def or name: '$name'")
       unitInstance
     }
     else {
@@ -225,9 +225,9 @@ class UnitConverter(xmlIn: Node, baseDefs: BaseDefs, namespace: String) extends
             case <noplural/> => // ignored
 
             case w if !w.isInstanceOf[Text] =>
-              stats.addWarning(s"1 warning: unrecognized ${w.getClass}: {$w}")
+              stats.addWarning(s"(1) unrecognized ${w.getClass}: {$w}")
             case w => if (w.text.length > 0)
-              stats.addWarning(s"2 warning: ignored text: {$w}")
+              stats.addWarning(s"(2) ignored text: {$w}")
           }
 
         case <symbol>{symbol}</symbol> =>
@@ -241,9 +241,9 @@ class UnitConverter(xmlIn: Node, baseDefs: BaseDefs, namespace: String) extends
         case <noplural/> => // ignored
 
         case w if !w.isInstanceOf[Text] =>
-          stats.addWarning(s"3 warning: unrecognized ${w.getClass}: {$w}")
+          stats.addWarning(s"(3) unrecognized ${w.getClass}: {$w}")
         case w => if (w.text.length > 0)
-          stats.addWarning(s"4 warning: ignored text: {$w}")
+          stats.addWarning(s"(4) ignored text: {$w}")
       }
     }
   }

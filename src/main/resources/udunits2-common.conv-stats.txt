@@ -12,9 +12,9 @@ conversion stats:
   unitsWithMultipleSingularNames  = 0
   unitsWithMultiplePluralNames    = 0
 
-  warning: repeated def or name='4.546090e-3 m^3'
-  warning: repeated def or name='standard_free_fall'
-  warning: repeated def or name='10 A'
-  warning: repeated def or name='1'
+  Warning: repeated def or name: '4.546090e-3 m^3'
+  Warning: repeated def or name: 'standard_free_fall'
+  Warning: repeated def or name: '10 A'
+  Warning: repeated def or name: '1'
        
       
